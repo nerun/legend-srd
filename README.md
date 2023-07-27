@@ -6,7 +6,7 @@ This repository was created to make the _Legend System Reference Document_ avail
 
 This project is led by [Daniel Dias Rodrigues](https://github.com/nerun) (a.k.a. "Nerun"), from the Brazilian blog [GURPZine](https://www.gurpzine.com.br).
 
-Please, take the time to read my very short [Apologetic manifest of the universal format](Apologetic manifest of the universal format.md). There I explain the reasons for this project, and for choosing the UTF-8 format and the markdown language.
+Please, take the time to read my very short [Apologetic manifest of the universal format](Apologetic%20manifest%20of%20the%20universal%20format.md), where I explain the reasons for this project, and for choosing the UTF-8 format and the markdown language.
 
 ## Work in progress
 
