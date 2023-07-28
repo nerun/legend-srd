@@ -19,5 +19,5 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 | 11 | Guilds, Factions and Cults |   9   |   0  |     0 |
 | 12 | Heroic Ablities            |   7   |   0  |     0 |
 | 13 | Gamemastering Legend       |  14   |   0  |     0 |
-| 14 | `Licença`                  |  `2`  |  `2` |`100,0`|
-|    | TOTAIS                     |  238  |  14  |   5,9 |
+|`14`| `Licença`                  |  `2`  |  `2` |`100,0`|
+|    | TOTAL                      |  238  |   4  |   1,7 |
