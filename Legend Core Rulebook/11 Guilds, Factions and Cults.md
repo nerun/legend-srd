@@ -247,19 +247,19 @@ The Grand Master must have at least five of the guild skills at 90% and obtain a
 
 The guild offers training in: Craft (Poison), Resilience, Stealth, Any Dagger style, Any Bow style, Sorcery (Black Serpent Grimoire) and Manipulation.
 
-#### Alaric's Tale – Cult of the Thunderer
-
-Alaric dwells in the Gloamwood amid barbaric tribes.
-
-At the age of 21 all warriors of the tribe are expected to become initiates of the Thunderer cult and Alaric is no exception. On his 21st birthday he is taken into the tribe's most sacred shrine where he must undergo certain testing rituals – of his courage, his magic and his understanding of the Thunderer.
-
-The cult skills are Spear fighting, Lore (The Thunderer), Evade, Perception and Common Magic. Alaric has each of these skills at more than 30% and so passes the tests involving his skills.
-
-Next is his commitment to the cult: this is sealed through Alaric establishing a Pact with the Thunderer. In a deeply mystical ceremony Alaric is tested with fire and words and, in the final act, ascends the bare hill above the shrine to stand and glory in the full force of an oncoming storm. This rite creates the Pact (the Thunderer) and Alaric's player enters this onto his character sheet. Alaric dedicates 4 POW to the Pact, making his Pact (The Thunderer) 14% (CHA + 4 dedicated POW). He is now an initiate of the cult and bound by its teachings.
-
-The benefits Alaric derives from his cult are as follows:
-
-  - Alaric can learn the cult's Divine Magic spells and cast them at Lore (The Thunderer) 52%. The inherent Magnitude for any Divine Spell he casts is equal to his Pact divided by 10 and rounded up, so Alaric's Divine Spells will have a Magnitude of 2. As his Pact deepens, so will the potency of his Divine Magic. He can also pray for up to four Divine Spells – the amount of his POW dedication. Alaric learns, through his initiation and later progress in the cult, Lightning Strike, Shield, Bless (Spear & Shield) and Channel Strength.
-  - He can gain access to training in the cult's skills at a much reduced cost with dedicated teachers. The cult also specialises in several Common Magic spells, which again Alaric can learn at reduced cost and with dedicated teachers.
-  - Most importantly, Alaric has the support of the entire cult behind him. As an Initiate he will be expected to work long and hard for the cult but in return he will be able to call upon colleagues and fellow cultists for help or advice. Furthermore, initiation into the cult marks Alaric as a warrior within the tribe and this is a moment of great pride for the young Adventurer.
+> #### Alaric's Tale – Cult of the Thunderer
+> 
+> Alaric dwells in the Gloamwood amid barbaric tribes.
+> 
+> At the age of 21 all warriors of the tribe are expected to become initiates of the Thunderer cult and Alaric is no exception. On his 21st birthday he is taken into the tribe's most sacred shrine where he must undergo certain testing rituals – of his courage, his magic and his understanding of the Thunderer.
+> 
+> The cult skills are Spear fighting, Lore (The Thunderer), Evade, Perception and Common Magic. Alaric has each of these skills at more than 30% and so passes the tests involving his skills.
+> 
+> Next is his commitment to the cult: this is sealed through Alaric establishing a Pact with the Thunderer. In a deeply mystical ceremony Alaric is tested with fire and words and, in the final act, ascends the bare hill above the shrine to stand and glory in the full force of an oncoming storm. This rite creates the Pact (the Thunderer) and Alaric's player enters this onto his character sheet. Alaric dedicates 4 POW to the Pact, making his Pact (The Thunderer) 14% (CHA + 4 dedicated POW). He is now an initiate of the cult and bound by its teachings.
+> 
+> The benefits Alaric derives from his cult are as follows:
+> 
+>   - Alaric can learn the cult's Divine Magic spells and cast them at Lore (The Thunderer) 52%. The inherent Magnitude for any Divine Spell he casts is equal to his Pact divided by 10 and rounded up, so Alaric's Divine Spells will have a Magnitude of 2. As his Pact deepens, so will the potency of his Divine Magic. He can also pray for up to four Divine Spells – the amount of his POW dedication. Alaric learns, through his initiation and later progress in the cult, Lightning Strike, Shield, Bless (Spear & Shield) and Channel Strength.
+>   - He can gain access to training in the cult's skills at a much reduced cost with dedicated teachers. The cult also specialises in several Common Magic spells, which again Alaric can learn at reduced cost and with dedicated teachers.
+>   - Most importantly, Alaric has the support of the entire cult behind him. As an Initiate he will be expected to work long and hard for the cult but in return he will be able to call upon colleagues and fellow cultists for help or advice. Furthermore, initiation into the cult marks Alaric as a warrior within the tribe and this is a moment of great pride for the young Adventurer.
 
