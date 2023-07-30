@@ -2,9 +2,11 @@
 
 This project aims to convert to markdown the PDF version of [Legend Core Rulebook](https://www.mongoosepublishing.com/products/legend-core-rulebook?variant=42088757854455) published by _Mongoose Publishing_ in 2011. Here you can follow the progress of this work.
 
-## Convertion to markdown progress
+> Conversion to markdown completed on Jul 30, 2023. Now all files need to be revised and formatted correctly.
 
-| Chapter                         | Pgs. | Conv.|    %  |
+## Revision progress
+
+| Chapter                         | Pgs. | Rev. |    %  |
 |---------------------------------|:----:|:----:|------:|
 | ~~1 Welcome to Legend~~         |   2  |   2  | 100.0 |
 |   2 Adventurer Creation         |  33  |   0  |     0 |
@@ -22,29 +24,8 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 |~~14 License~~                   |   2  |   2  | 100.0 |
 |                         TOTAL   | 238  |  23  |   9.7 |
 
-## Procedures and Tools
+## Docs and Guides
 
-On Linux:
-
-1. Extract chapter or pages:
-
-		pdftk infile.pdf cat 12-15 output outfile_p12-15.pdf
-
-2. Convert to text:
-
-		pdftotext outfile_p12-15.pdf outfile_p12-15.txt
-		
-	A good alternative:
-		
-		pdf2txt.py outfile_p12-15.pdf
-
-3. Copy txt inside the right chapter:
-
-		echo >> num\ chapter.md
-		cat outfile_p12-15.txt >> num\ chapter.md
-
-4. Edit with Ghostwriter.
-
-Better alternative: [PDF to Markdown Converter](https://pdf2md.morethan.io) (source in [GitHub](https://github.com/jzillmann/pdf-to-markdown)).
-
-To fix broken paragraphs: [paragrapher](https://gist.github.com/nerun/8318924aa35f3f27231f86468804cc8c).
+- CONE, Matt. [Basic Syntax](https://www.markdownguide.org/basic-syntax). *Makdown Guide*.
+- GitHub Docs. [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github). _GitHub.com_.
+- PRITCHARD, Adam. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). _GitHub: markdown-here_.
