@@ -6,7 +6,7 @@
   <a href="https://en.wikipedia.org/wiki/Markdown"><img src="https://img.shields.io/badge/language-Markdown-darkgreen" /></a>
   <a href="https://en.wikipedia.org/wiki/UTF-8"><img src="https://img.shields.io/badge/encoding-UTF--8-yellow" /></a><br />
   <a href="./Legend%20Core%20Rulebook"><img src="https://progress-bar.dev/10/?title=formatting%20(en_US)" /></a>
-  <a href="./Lendas%20Livro%20Básico"><img src="https://progress-bar.dev/2/?title=translation%20(pt_BR)" /></a>
+  <a href="./Lendas%20Livro%20Básico"><img src="https://progress-bar.dev/6/?title=translation%20(pt_BR)" /></a>
 </p>
 
 # Legend System Reference Document
