@@ -5,7 +5,7 @@
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-OGL%20v1.0a-red" /></a>
   <a href="https://en.wikipedia.org/wiki/Markdown"><img src="https://img.shields.io/badge/language-Markdown-darkgreen" /></a>
   <a href="https://en.wikipedia.org/wiki/UTF-8"><img src="https://img.shields.io/badge/encoding-UTF--8-yellow" /></a><br />
-  <a href="./Legend%20Core%20Rulebook"><img src="https://progress-bar.dev/10/?title=revision%20(en_US)" /></a>
+  <a href="./Legend%20Core%20Rulebook"><img src="https://progress-bar.dev/10/?title=formatting%20(en_US)" /></a>
   <a href="./Lendas%20Livro%20Básico"><img src="https://progress-bar.dev/2/?title=translation%20(pt_BR)" /></a>
 </p>
 
@@ -23,8 +23,8 @@ Please, take the time to read my very short [Apologetic manifest of the universa
 
 ### Conversion to markdown
 
-_Legend Core Rulebook_ was converted to markdown language. It is now being revised and correctly formatted. You can track the progress in the [Legend Core Rulebook](./Legend%20Core%20Rulebook) directory.
+  - _Legend Core Rulebook_ was converted to markdown language. It is now being correctly formatted. You can track the progress by [clicking here](./Legend%20Core%20Rulebook/README.md).
 
 ### Translation to Brazilian Portuguese
 
-Estou trabalhando em uma tradução para o português brasileiro, chama-se _Lendas_. Você pode acompanhar o progresso no diretório [Lendas](./Lendas%20Livro%20Básico).
+  - Estou trabalhando em uma tradução para o português brasileiro, chama-se Lendas. Você pode acompanhar o progresso [clicando aqui](./Lendas%20Livro%20Básico/README.md).
