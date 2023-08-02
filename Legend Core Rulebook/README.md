@@ -20,9 +20,9 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 | [10 Sorcery] | 19 | 0 | 0 |
 | [11 Guilds, Factions and Cults](11%20Guilds,%20Factions%20and%20Cults.md) | 9 | 9 | 100.0 |
 | [12 Heroic Ablities](12%20Heroic%20Abilities.md) | 7 | 7 | 100.0 |
-| [13 Gamemastering Legend] | 14 | 0 | 0 |
+| [13 Gamemastering Legend](13%20Gamemastering%20Legend.md) | 14 | 14 | 100.0 |
 | [14 License](14%20License.md) | 2 | 2 | 100.0 |
-| TOTAL | 238 | 23 | 9.7 |
+| TOTAL | 238 | 37 | 15.6 |
 
 ## Docs and Guides
 
