@@ -21,9 +21,11 @@ Whenever a Common Magic spell is cast there is always a sight and sound that nea
 
 # common magic
 
-#### Alaric's Tale
-
-_Being part of an barbarian clan living in the enchanted Gloamwood, Alaric experiences magic every day. As part of his clan education, and interest in the heavenly wars of the Thunderer, Alaric has learned Bladesharp 2, Thunder's Voice 1, Heal 2 and Vigor 1. He casts all four spells with his Common Magic skill of 34% and the number following the spell's name is the maximum magnitude at which Alaric can cast the spell._  _It is likely that, given time, Alaric will learn more Common Magic – either new spells, or by developing the Magnitude for existing ones._ 
+> #### Alaric's Tale
+> 
+> _Being part of an barbarian clan living in the enchanted Gloamwood, Alaric experiences magic every day. As part of his clan education, and interest in the heavenly wars of the Thunderer, Alaric has learned Bladesharp 2, Thunder's Voice 1, Heal 2 and Vigor 1. He casts all four spells with his Common Magic skill of 34% and the number following the spell's name is the maximum magnitude at which Alaric can cast the spell._
+> 
+> _It is likely that, given time, Alaric will learn more Common Magic – either new spells, or by developing the Magnitude for existing ones._
 
 ## Situational Modifiers for Common Magic
 
@@ -31,19 +33,19 @@ Like any skill, Common Magic is subject to circumstances which may inhibit a spe
 
 ##### Casting Modifiers Situational Modifiers
 
-```
-Situation Skill Modifier^1
-Spellcaster is gagged or silenced Automatic Failure
-Spellcaster is restrained –30%
-Spellcaster is prone –20%
-Spellcaster is on unstable ground –20%
-Partially obscured target –20%^2
-Heavily obscured target –40%^2
-Totally obscured target Automatic Failure
-```
-(^1) These modifiers are cumulative – a prone spellcaster casting at a partially obscured target decreases his Common Magic skill by –40%.
+| Situation                         | Skill Modifier [^1] |
+|-----------------------------------|---------------------|
+| Spellcaster is gagged or silenced | Automatic Failure   |
+| Spellcaster is restrained         | –30%                |
+| Spellcaster is prone              | –20%                |
+| Spellcaster is on unstable ground | –20%                |
+| Partially obscured target         | –20% [^2]           |
+| Heavily obscured target           | -40% [^2]           |
+| Totally obscured target           | Automatic Failure   |
 
-(^2) These modifiers only apply if the spell has a target other than the spellcaster, his immediate location, his carried possessions or a touched object/individual.
+[^1]: These modifiers are cumulative – a prone spellcaster casting at a partially obscured target decreases his Common Magic skill by –40%.
+
+[^2]: These modifiers only apply if the spell has a target other than the spellcaster, his immediate location, his carried possessions or a touched object/individual.
 
 ### Casting Time
 
@@ -75,17 +77,17 @@ Magnitude 1 spells are the weakest and easiest to learn. Learning a new spell ta
 
 ##### Learning Common Magic Spells
 
-```
-Magnitude Cost Time to Learn
-1 1 Improvement Roll 1 day
-2 2 Improvement Rolls 2 days
-3 3 Improvement Rolls 3 days
-4 4 Improvement Rolls 4 days
-5 5 Improvement Rolls 5 days
-6 6 Improvement Rolls 6 days
-7 7 Improvement Rolls 7 days
-+1 +1 Improvement Roll +1 day
-```
+| Magnitude | Cost                | Time to Learn |
+|-----------|---------------------|---------------|
+|  1        | 1 Improvement Roll  | 1 day         |
+|  2        | 2 Improvement Rolls | 2 days        |
+|  3        | 3 Improvement Rolls | 3 days        |
+|  4        | 4 Improvement Rolls | 4 days        |
+|  5        | 5 Improvement Rolls | 5 days        |
+|  6        | 6 Improvement Rolls | 6 days        |
+|  7        | 7 Improvement Rolls | 7 days        |
+| +1        | +1 Improvement Roll | +1 day        |
+
 A spell's Magnitude also defines the intellect required by the individual to absorb, memorise and articulate its fabric. The maximum Magnitude of a Common Magic spell any Adventurer can learn is equal to his INT divided by three (rounding up). Thus Alaric, with INT 16 can learn any Common Magic spell up to a maximum Magnitude of 6. If Alaric wanted to learn the Dragon Breath spell, it would cost him two Improvement Rolls and two days of study.
 
 Increasing the Magnitude of a known spell is similar to learning the spell at that Magnitude from scratch. Thus, if Alaric wanted to increase from Bladesharp 2 to Bladesharp 3 he would need to find a teacher who knows Bladesharp 3 and spend three days in study of the spell. However, the number of Improvement Rolls required to learn a higher Magnitude version of a spell, is equal to the difference in their Magnitudes, i.e. learning Bladesharp 4, when you already know Bladesharp 2, only costs a further two Improvement Rolls.
@@ -250,29 +252,12 @@ This spell actively disrupts offensive spells aimed at the caster or his equipme
 
 ##### Countermagic Shield Results
 
-```
-Incoming Spell's Magnitude is... Effect
-```
-```
-1 or more points weaker than Countermagic
-Shield's Magnitude.
-```
-```
-Incoming spell eliminated and
-Countermagic Shield remains.
-```
-```
-Equal to the Countermagic Shield's Magnitude. Both incoming spell and Countermagic Shield are eliminated.
+| Incoming Spell's Magnitude is... | Effect                       |
+|----------------------------------|------------------------------|
+| 1 or more points weaker than Countermagic Shield's Magnitude.   | Incoming spell eliminated and Countermagic Shield remains. |
+| Equal to the Countermagic Shield's Magnitude.                   | Both incoming spell and Countermagic Shield are eliminated.
+| 1 or more points stronger than Countermagic Shield's Magnitude. | Countermagic Shield eliminated and incoming spell takes effect. |
 
-```
-```
-1 or more points stronger than Countermagic
-Shield's Magnitude.
-```
-```
-Countermagic Shield eliminated and
-incoming spell takes effect.
-```
 ### Darkwall
 
 Area Special, Duration 5, Magnitude 2, Ranged

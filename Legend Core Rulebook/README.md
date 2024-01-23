@@ -15,14 +15,14 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 | [5 Equipment] | 27 | 0 | 0 |
 | [6 Combat] | 32 | 0 | 0 |
 | [7 Magic](7%20Magic.md) | 3 | 3 | 100.0 |
-| [8 Common Magic] | 15 | 0 | 0 |
+| [8 Common Magic](8%20Common%20Magic.md) | 15 | 15 | 100.0 |
 | [9 Divine Magic] | 19 | 0 | 0 |
 | [10 Sorcery] | 19 | 0 | 0 |
 | [11 Guilds, Factions and Cults](11%20Guilds,%20Factions%20and%20Cults.md) | 9 | 9 | 100.0 |
 | [12 Heroic Ablities](12%20Heroic%20Abilities.md) | 7 | 7 | 100.0 |
 | [13 Gamemastering Legend](13%20Gamemastering%20Legend.md) | 14 | 14 | 100.0 |
 | [14 License](14%20License.md) | 2 | 2 | 100.0 |
-| TOTAL | 238 | 37 | 15.6 |
+| TOTAL | 238 | 52 | 21.9 |
 
 ## Docs and Guides
 
