@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./_media/Legend%20Compatible%20Logo.png" width="355" />
+  <img src="_media/Legend%20Compatible%20Logo.png" width="355" />
 </p>
 <p align="center">
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-OGL%20v1.0a-red" /></a>
@@ -24,8 +24,8 @@ Please, take the time to read my very short [Apologetic manifest of the universa
 
 ### Conversion to markdown
 
-  - _Legend Core Rulebook_ was converted to markdown language. It is now being correctly formatted. You can track the progress by [clicking here](./Legend%20Core%20Rulebook/en/README.md).
+  - _Legend Core Rulebook_ was converted to markdown language. It is now being correctly formatted. You can track the progress by [clicking here](Legend%20Core%20Rulebook/en/README.md).
 
 ### Translation to Brazilian Portuguese
 
-  - Estou trabalhando em uma tradução para o português brasileiro, chama-se "Lendas". Você pode acompanhar o progresso [clicando aqui](./Legend%20Core%20Rulebook/pt-br/README.md).
+  - Estou trabalhando em uma tradução para o português brasileiro, chama-se "Lendas". Você pode acompanhar o progresso [clicando aqui](Legend%20Core%20Rulebook/pt-br/README.md).
