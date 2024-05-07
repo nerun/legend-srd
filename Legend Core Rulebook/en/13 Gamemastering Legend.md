@@ -31,9 +31,9 @@ The availability of magic is reflected in the four magic systems presented in th
 
 Thought therefore needs to be given to the availability of magic and this depends on the setting. Some examples follow.
 
-  -	 In gritty, Sword and Sorcery settings, only sorcery – which is seen as a dark and malevolent force – is available and then only to the few who are prepared to undergo its corrupting influence to attain it. Most people are fearful of magic and attempt to limit their exposure to it, for fear of what it might do to their immortal souls.
-  -	 In High Fantasy settings Divine Magic and Sorcery may be available but only to certain races, cults or orders. Common Magic is not something the general populace is exposed to but it is present and worked by those who use it as a gateway to more refined powers.
-  -	 Dark Fantasy settings, such as the Eternal Champion series, rely on magicians to be willing to bargain their very souls for magical power – although all kinds of magic are available to those willing to enter into such contracts. Magic is sinister, although not necessarily evil and Adventurers who use it are forever in jeopardy of losing their humanity as they use magic for whatever ends they have in mind.
+- In gritty, Sword and Sorcery settings, only sorcery – which is seen as a dark and malevolent force – is available and then only to the few who are prepared to undergo its corrupting influence to attain it. Most people are fearful of magic and attempt to limit their exposure to it, for fear of what it might do to their immortal souls.
+- In High Fantasy settings Divine Magic and Sorcery may be available but only to certain races, cults or orders. Common Magic is not something the general populace is exposed to but it is present and worked by those who use it as a gateway to more refined powers.
+- Dark Fantasy settings, such as the Eternal Champion series, rely on magicians to be willing to bargain their very souls for magical power – although all kinds of magic are available to those willing to enter into such contracts. Magic is sinister, although not necessarily evil and Adventurers who use it are forever in jeopardy of losing their humanity as they use magic for whatever ends they have in mind.
 
 ### Quests
 
@@ -43,11 +43,11 @@ Despite what has been said about community, Adventurers should find themselves e
 
 Magical quests are a feature of _Legend_. Adventurers are likely to be engaged in magical quests in many ways, some of the most common being:
 
-  -	 Finding a fabled treasure for the good of the community.
-  -	 Aiding a sorcerer or other magician in creating a magical treasure through finding components.
-  -	 Delving into a myth, dream or Otherworld experience, with a magical treasure or power as the prize.
-  -	 Returning a magical treasure to its place of origin or a place of destruction, to avert doom of some form.
-  -	 Seeking magical power to advance within a cult or for personal kudos/gain.
+- Finding a fabled treasure for the good of the community.
+- Aiding a sorcerer or other magician in creating a magical treasure through finding components.
+- Delving into a myth, dream or Otherworld experience, with a magical treasure or power as the prize.
+- Returning a magical treasure to its place of origin or a place of destruction, to avert doom of some form.
+- Seeking magical power to advance within a cult or for personal kudos/gain.
 
 Magical quests by their nature usually involve much risk – either in the form of protective magic, powerful guardians or the nature of the treasure/quest itself. This is the reason for carefully considering the place of magic in the setting. If magic is rare, then lower levels of magical threat might be employed as part of the quest: the Adventurers, being unfamiliar with magic largely, are likely to find any degree of magic daunting and need to counter it with mundane abilities, wits and ingenuity.
 
@@ -79,9 +79,9 @@ What this means is that the game session can focus on developing a Good Story, W
 
 For the Games Master this theme of storytelling and Adventurer focus means that it is worthwhile spending time with the players and taking an interest in how their Adventurers are created. Some tips to consider are:
 
-  -	 Help players develop the community section of Adventurer Creation. Have in mind a common theme that all players can subscribe to and assist in developing close Adventurer relationships early-on. This establishes a sense of fraternity amongst the players and develops instant bonds before play begins.
-  -	 Introduce factions and faction membership reasonably early. Cults are not something to be withheld until Adventurers reach a certain level; they exist to get Adventurers to a certain level. And, because factions in many settings for _Legend_ are all around, it makes sense that faction membership will come sooner rather than later.
-  -	 Encourage players to think about their skills when coming to make Improvement Rolls. It is natural to focus on skills for combat and magic but social and knowledge skills are equally important. Try to encourage diversity amongst the players but have them think 'in character' when choosing which skills to improve. Would a new initiate of a faction really seek to improve non-faction skills or would he, perhaps, focus on those skills that will help him gain status in the faction and prove his loyalty? Looking at these mechanics from a slightly different, Adventurer-driven perspective contributes to developing diverse and believable Adventurers.
+- Help players develop the community section of Adventurer Creation. Have in mind a common theme that all players can subscribe to and assist in developing close Adventurer relationships early-on. This establishes a sense of fraternity amongst the players and develops instant bonds before play begins.
+- Introduce factions and faction membership reasonably early. Cults are not something to be withheld until Adventurers reach a certain level; they exist to get Adventurers to a certain level. And, because factions in many settings for _Legend_ are all around, it makes sense that faction membership will come sooner rather than later.
+- Encourage players to think about their skills when coming to make Improvement Rolls. It is natural to focus on skills for combat and magic but social and knowledge skills are equally important. Try to encourage diversity amongst the players but have them think 'in character' when choosing which skills to improve. Would a new initiate of a faction really seek to improve non-faction skills or would he, perhaps, focus on those skills that will help him gain status in the faction and prove his loyalty? Looking at these mechanics from a slightly different, Adventurer-driven perspective contributes to developing diverse and believable Adventurers.
 
 ## Campaigns and Scenarios
 
@@ -107,8 +107,8 @@ Whatever the campaign's nature, it needs a style. The style is very much depende
 
 Published settings do a great deal of the background work for the Games Master but may not be to everyone's taste or style of play. Self-penned settings, whether historical or fantasy based, always require a great deal of work and research by the Games Master. Things to consider:
 
-  -	 Historical or pure fantasy? If historical, then there is a wealth of material to draw upon, from encyclopaedias and text books through to historical settings from other game systems. The key thing will be to fit the Legend rules to the requirements of the setting, or be prepared to alter the historical context to accommodate the rules (magic is the prime consideration here: will your historical setting use magic and, if so, how is it rationalised and explained? How will it affect the nature of the world?
-  -	 If you are creating your own fantasy world, then you have carte-blanche to create what you want but remember that most successful and convincing fantasy worlds function to a certain set of rules that help make them work and feel real. It is also tempting – and can be a great deal of fun – to mix lots of different fantasy elements into a single setting (magic, Industrial Revolution machinery, giant robots and so on). If you do this, consider how each element impacts on its fellows. Also try to resist throwing too much into the mix at the beginning: this can prove overwhelming for the players who may not grasp the nature and concepts of the setting as easily as the creator.
+- Historical or pure fantasy? If historical, then there is a wealth of material to draw upon, from encyclopaedias and text books through to historical settings from other game systems. The key thing will be to fit the Legend rules to the requirements of the setting, or be prepared to alter the historical context to accommodate the rules (magic is the prime consideration here: will your historical setting use magic and, if so, how is it rationalised and explained? How will it affect the nature of the world?
+- If you are creating your own fantasy world, then you have carte-blanche to create what you want but remember that most successful and convincing fantasy worlds function to a certain set of rules that help make them work and feel real. It is also tempting – and can be a great deal of fun – to mix lots of different fantasy elements into a single setting (magic, Industrial Revolution machinery, giant robots and so on). If you do this, consider how each element impacts on its fellows. Also try to resist throwing too much into the mix at the beginning: this can prove overwhelming for the players who may not grasp the nature and concepts of the setting as easily as the creator.
 
 Whatever the basis for the setting, be prepared to invest some time in its themes, coherence and the kinds of stories it will generate. Taking the time to prepare will help the campaign develop into something memorable rather than something that fizzles out after a few sessions of play.
 
@@ -124,12 +124,12 @@ As Games Master it is your task to present the scenario to the players. How you 
 
 Keeping track of how Adventurers develop and progress is as important for the Games Master as the players. By keeping a note of Adventurer's key skills, their levels, magic and magnitudes and so forth, scenarios can be more easily tailored to the capabilities of the Adventurers, thus keeping them challenged and rewarded. Things Games Masters should note, in some form:
 
-  -	 Gains or losses of possessions and equipment.
-  -	 Community – parents, siblings, uncles and aunts: how many, where they live and who they are. Use this information for scenario inspiration and background colour. Rescuing a family member from peril is often far more emotionally rewarding than a random Non-Player Character invented for the sake for the scenario.
-  -	 Training and mentoring – what have the Adventurers trained in recently? How was the relationship with the trainer? Does training come at something more than a financial cost? Do Adventurers need to prove what they have learned before more training is available?
-  -	 Magic – how was magic improved or more spells learned? As with training, there may be an onus on the Adventurers to do something in return.
-  -	 Major foes, rivals and enemies. Having recurring villains and antagonists helps bring a scenario to life and mirrors popular fiction and drama. Note also how the relationship with these antagonists changes with circumstances – a deadly foe might need to become an ally for a while, in certain circumstances.
-  -	 Skills – what skills do the Adventurers routinely improve? How are they changing compared with other skills and the other adventurers? Games Masters might need to make suggestions for helping an Adventurer to remain balanced and some skills, particularly those related to cults, might need more attention than others.
+- Gains or losses of possessions and equipment.
+- Community – parents, siblings, uncles and aunts: how many, where they live and who they are. Use this information for scenario inspiration and background colour. Rescuing a family member from peril is often far more emotionally rewarding than a random Non-Player Character invented for the sake for the scenario.
+- Training and mentoring – what have the Adventurers trained in recently? How was the relationship with the trainer? Does training come at something more than a financial cost? Do Adventurers need to prove what they have learned before more training is available?
+- Magic – how was magic improved or more spells learned? As with training, there may be an onus on the Adventurers to do something in return.
+- Major foes, rivals and enemies. Having recurring villains and antagonists helps bring a scenario to life and mirrors popular fiction and drama. Note also how the relationship with these antagonists changes with circumstances – a deadly foe might need to become an ally for a while, in certain circumstances.
+- Skills – what skills do the Adventurers routinely improve? How are they changing compared with other skills and the other adventurers? Games Masters might need to make suggestions for helping an Adventurer to remain balanced and some skills, particularly those related to cults, might need more attention than others.
 
 If the campaign has truly engaged the players much of the book keeping will be collaborative as the scope of the campaign will be discussed between scenarios and game sessions. This is to be encouraged as it helps to maintain momentum and involvement. The players gain a true stake in their Adventurers, resulting in a richer, more rewarding experience.
 
@@ -143,9 +143,9 @@ Now, gauge the strength of the threats, especially Combat Encounters that the Ad
 
 What _constitutes_ a suitable level depends on the nature of the reward or objective of the scenario but, in general, use the following checklist:
 
-  -	 Skills of enemies should not be more than 20% higher than the average opposing skills of the Adventurers. Around a third of the creatures should be around 20% lower, representing easy challenges, one third about the same and one third 20% higher. Of course, particular Non-Player Characters may have much higher skills reflecting their status and position but think long and hard about whether or not such encounters will result in a conflict and, if so, what resources the Adventurers have to help them deal with it.
-  -	 Consider what Combat Manoeuvres foes will use in combat ahead of the encounters. Might they have favoured combinations or specialities? Do not rely on manoeuvres that inflict high amounts of damage – like Bypass Armour and Maximise Damage – all the time; think creatively about the encounter's aims, skills and nature; not all fights should end in death. Jot down these options next to the encounter's statistics. Do not be afraid to vary them according to the nature of the fight but also try to remain consistent with your plans. Knowing that the elves of Grimwood Forest always try to Pin Weapon as a first Combat Manoeuvre can assist the Adventurers in their own strategies and may encourage them to use different tactics for different foes.
-  -	 Enemies should have roughly the same Magnitude of spells available to them as the Adventurers. Challenging opponents may have a few extra Magnitude more but spread around different spells and effects. Thus, if the Adventurers tend to have an average Magnitude of 4 in typical Common Magic spells, an opponent might have Bladesharp 5 or 6 but not Bladesharp 10.
+- Skills of enemies should not be more than 20% higher than the average opposing skills of the Adventurers. Around a third of the creatures should be around 20% lower, representing easy challenges, one third about the same and one third 20% higher. Of course, particular Non-Player Characters may have much higher skills reflecting their status and position but think long and hard about whether or not such encounters will result in a conflict and, if so, what resources the Adventurers have to help them deal with it.
+- Consider what Combat Manoeuvres foes will use in combat ahead of the encounters. Might they have favoured combinations or specialities? Do not rely on manoeuvres that inflict high amounts of damage – like Bypass Armour and Maximise Damage – all the time; think creatively about the encounter's aims, skills and nature; not all fights should end in death. Jot down these options next to the encounter's statistics. Do not be afraid to vary them according to the nature of the fight but also try to remain consistent with your plans. Knowing that the elves of Grimwood Forest always try to Pin Weapon as a first Combat Manoeuvre can assist the Adventurers in their own strategies and may encourage them to use different tactics for different foes.
+- Enemies should have roughly the same Magnitude of spells available to them as the Adventurers. Challenging opponents may have a few extra Magnitude more but spread around different spells and effects. Thus, if the Adventurers tend to have an average Magnitude of 4 in typical Common Magic spells, an opponent might have Bladesharp 5 or 6 but not Bladesharp 10.
 
 ## Scenario Aids
 
