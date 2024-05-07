@@ -3,7 +3,7 @@
 
 ---
 
-### English
+<span style="font-size:14pt;font-weight:bold">English</span>
 
 - [READ-ME](Legend%20Core%20Rulebook/en/README.md)
 - [Procedures and tools](Legend%20Core%20Rulebook/en/Procedures%20and%20tools.md)
@@ -24,7 +24,7 @@
 
 ---
 
-### Português
+<span style="font-size:14pt;font-weight:bold">Português</span>
 
 - [LEIA-ME](Legend%20Core%20Rulebook/pt-br/README.md)
 - [1 Bem-vindo à Lendas](Legend%20Core%20Rulebook/pt-br/1%20Bem-vindo%20à%20Lendas.md)
