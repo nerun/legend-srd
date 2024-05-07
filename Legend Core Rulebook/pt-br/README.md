@@ -21,3 +21,7 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 | 13 Gamemastering Legend       |  14   |   0  |     0 |
 | [14 Licença](Legend%20Core%20Rulebook/pt-br/14%20Licença.md) | 2 | 2 | 100,0 |
 | TOTAL | 238 | 14 | 5,9 |
+
+<span style="color:red">❌</span> Não traduzidos.
+ 
+<span style="color:green">✔</span> Traduzidos.

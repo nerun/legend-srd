@@ -24,6 +24,10 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 | [14 License](Legend%20Core%20Rulebook/en/14%20License.md) | 2 | 2 | 100.0 |
 | TOTAL | 238 | 52 | 21.9 |
 
+<span style="color:red">❌</span> Not formatted.
+ 
+<span style="color:green">✔</span> Properly formatted.
+
 ## Docs and Guides
 
 - CONE, Matt. [Basic Syntax](https://www.markdownguide.org/basic-syntax). *Makdown Guide*.
