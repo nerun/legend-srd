@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="_media/Legend%20Compatible%20Logo.png" width="355" />
-</p>
+# Legend System Reference Document
+
 <p align="center">
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-OGL%20v1.0a-red" /></a>
   <a href="https://en.wikipedia.org/wiki/Markdown"><img src="https://img.shields.io/badge/language-Markdown-darkgreen" /></a>
@@ -9,8 +8,6 @@
   <a href="./Legend%20Core%20Rulebook"><img src="https://progress-bar.dev/30/?title=formatting%20and%20revision" /></a>
   <a href="./Lendas%20Livro%20Básico"><img src="https://progress-bar.dev/6/?title=translation%20(pt_BR)" /></a>
 </p>
-
-# Legend System Reference Document
 
 [Legend Core Rulebook](https://www.mongoosepublishing.com/products/legend-core-rulebook?variant=42088757854455) was published by _Mongoose Publishing_ in 2011 and has been available in PDF format for just US$ 0.99 ever since.
 
