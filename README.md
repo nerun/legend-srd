@@ -25,7 +25,9 @@ Please, take the time to read my very short [Apologetic manifest of the universa
 ### Conversion to markdown
 
   - _Legend Core Rulebook_ was converted to markdown language. It is now being correctly formatted. You can track the progress by [clicking here](Legend%20Core%20Rulebook/en/README.md).
+  - <span style="color:red">❌</span> Not formatted. &emsp; <span style="color:green">✔</span> Properly formatted.
 
 ### Translation to Brazilian Portuguese
 
   - Estou trabalhando em uma tradução para o português brasileiro, chama-se "Lendas". Você pode acompanhar o progresso [clicando aqui](Legend%20Core%20Rulebook/pt-br/README.md).
+  - <span style="color:red">❌</span> Não traduzidos. &emsp; <span style="color:green">✔</span> Traduzidos.
