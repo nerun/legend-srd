@@ -29,66 +29,54 @@ A sorcerer works magic through two skills, Sorcery (Grimoire) and Manipulation.
 
 ## Sorcery (Grimoire) (INT x2)
 
-The Sorcery (Grimoire) skill reflects the knowledge of all the spells _learned_ from within a particular grimoire. It is this skill which a sorcerer rolls against to see if they cast a spell correctly.
+The Sorcery (Grimoire) skill reflects the knowledge of all the spells _learned_ from within a particular grimoire. It is this skill which a sorcerer rolls against to see if they cast a spell correctly. The skill also limits the effect of the spell. A sorcerer can study more than one Grimoire and thus possess many Sorcery (Grimoire) skills. Sorcerers are not in the habit of carrying their grimoires around with them: a grimoire is a powerful document and the physical thing is often closely guarded. Therefore sorcerers are forced to memorise spells from their grimoire(s). The complex equations, symbols, incantations and arcane gestures consume a great deal of mental capacity. Therefore no sorcerer can ever memorise more spells, from one or multiple grimoires, than he has INT, with one spell occupying one point of the INT Characteristic. A sorcerer with INT 16 could thus keep in his mind up to 16 spells from the same or multiple grimoires. Casting a spell does not erase it from his mind; but to change which spells he has memorised a sorcerer must spend 1D6 hours expelling an old spell from memory and memorising a new one from its grimoire.
 
-The skill also limits the effect of the spell. A sorcerer can study more than one Grimoire and thus 
+_For Example, Jedekiah is a sorcerer of one of the illustrious Jade Circle Schools. As a member of the Seventh Circle sect he has Sorcery (Seventh Jade Grimoire) 60% and Sorcery (Book of the Whisperer) 45%. His INT is 14. The Seventh Jade grimoire has over a dozen spells in its pages whilst the Whisperer's Bookhas only six. Jedekiah can therefore memorise any combination of spells from either grimoire as long as the total number of spells does not exceed 14. To successfully cast those spells found in the Seventh Jade Grimoire he needs to roll 60% or less; and 45% or less to cast those from the Whisperer'sBook._
 
-# sorcery
-
-possess many Sorcery (Grimoire) skills. Sorcerers are not in the habit of carrying their grimoires around with them: a grimoire is a powerful document and the physical thing is often closely guarded. Therefore sorcerers are forced to memorise spells from their grimoire(s). The complex equations, symbols, incantations and arcane gestures consume a great deal of mental capacity.
-
-Therefore no sorcerer can ever memorise more spells, from one or multiple grimoires, than he has INT, with one spell occupying one point of the INT Characteristic. A sorcerer with INT 16 could thus keep in his mind up to 16 spells from the same or multiple grimoires. Casting a spell does not erase it from his mind; but to change which spells he has memorised a sorcerer must spend 1D6 hours expelling an old spell from memory and memorising a new one from its grimoire.
-
-_For Example, Jedekiah is a sorcerer of one of the illustrious Jade Circle Schools. As a member of the Seventh Circle sect he has Sorcery (Seventh Jade Grimoire) 60% and Sorcery (Book of the Whisperer) 45%. His INT is 14. The Seventh Jade grimoire has over a dozen spells in its pages whilst the Whisperer's Bookhas only six. Jedekiah can therefore memorise any combination of spells from either grimoire as long as the total number of spells does not exceed 14. To successfully cast those spells found in the Seventh Jade Grimoire he needs to roll 60% or less; and 45% or less to cast those from the Whisperer'sBook._  If the same spell is found in one or more grimoires a sorcerer knows, he always casts it at the highest rated Sorcery (Grimoire) percentage.
+If the same spell is found in one or more grimoires a sorcerer knows, he always casts it at the highest rated Sorcery (Grimoire) percentage.
 
 ## Manipulation (INT+POW)
 
-On their own, Sorcery spells can be quite weak and limited in their scope. However a sorcerer's true power lies in his ability to extend the fundamental aspects of all spells, enhancing their reach. By default, Sorcery spells cast without any Manipulation have a Magnitude of 1, a Range of touch, a Duration equal to the caster's POW in minutes and focus upon a single target.
-
-However, the Manipulation skill allows a sorcerer to modify the spell's Magnitude, Range, Duration, Targets and even Combine several spells into a single casting.
+On their own, Sorcery spells can be quite weak and limited in their scope. However a sorcerer's true power lies in his ability to extend the fundamental aspects of all spells, enhancing their reach. By default, Sorcery spells cast without any Manipulation have a Magnitude of 1, a Range of touch, a Duration equal to the caster's POW in minutes and focus upon a single target. However, the Manipulation skill allows a sorcerer to modify the spell's Magnitude, Range, Duration, Targets and even Combine several spells into a single casting.
 
 Manipulation is a single skill which can be applied to all known Sorcery spells; a separate Manipulation per Grimoire is not necessary.
 
-The Manipulation skill is never rolled against when casting a spell. Instead, each 10% or fraction thereof of the Manipulation skill allows one point of Manipulation to be assigned to a single Sorcery spell component. Sorcerers therefore need to specify at the moment of casting how the points of their Manipulation skill will be used. _For example, Jedekiah with Manipulation 50% could place three points into manipulating Duration and two into manipulating Range; or five into a single component._  Manipulation of the following components is possible:
+The Manipulation skill is never rolled against when casting a spell. Instead, each 10% or fraction thereof of the Manipulation skill allows one point of Manipulation to be assigned to a single Sorcery spell component. Sorcerers therefore need to specify at the moment of casting how the points of their Manipulation skill will be used. _For example, Jedekiah with Manipulation 50% could place three points into manipulating Duration and two into manipulating Range; or five into a single component._
 
-Magnitude: Used to penetrate magical defences or resist magical attacks.
+Manipulation of the following components is possible:
 
-Range: Used to increase the distance a spell can be cast over.
-Duration: Used to extend the period of time the spell's effects last.
-Targets: Used to increase the number of targets affected by the spell.
-Combine: Used to fuse together several spells into a single casting.
+- Magnitude: Used to penetrate magical defences or resist magical attacks.
+- Range: Used to increase the distance a spell can be cast over.
+- Duration: Used to extend the period of time the spell's effects last.
+- Targets: Used to increase the number of targets affected by the spell.
+- Combine: Used to fuse together several spells into a single casting.
 
 The Sorcery Manipulation Table shows what effect each point of Manipulation has on the different spell components. It takes no Manipulation to cast a Sorcery spell in its basic format (as indicated by the 'None' row).
 
-#### Sorcery Manipulation Table
+#### _Sorcery Manipulation Table_
 
-```
-Points of
-Manipulation Magnitude Range
-```
-```
-Duration
-(minutes) Targets Combine
-None 1 Touch POW 1 None
-1 2 1m x POW 2xPOW 2 2 Spells
-2 3 5m x POW 3xPOW 3 3 Spells
-3 4 10m x POW 4xPOW 4 4 Spells
-4 5 50m x POW 5xPOW 5 5 Spells
-5 6 100m x POW 6xPOW 6 6 Spells
-6 7 500m x POW 7xPOW 7 7 Spells
-7 8 1km x POW 8xPOW 8 8 Spells
-8 9 5km x POW 9xPOW 9 9 Spells
-9 10 10km x POW 10xPOW 10 10 Spells
-10 11 15km x POW 11 x POW 11 11 Spells
-Each point... +1 Magnitude +5km x POW +1 x POW +1 +1 Spells
-```
-### Magnitude
+| Points of Manipulation | Magnitude | Range | Duration (minutes) | Targets | Combine |
+|:-------------:|:--:|:----------:|:--------:|:--:|:---------:|
+| None          | 1  | Touch      | POW      | 1  | None      |
+| 1             | 2  | 1m x POW   | 2 x POW  | 2  | 2 Spells  |
+| 2             | 3  | 5m x POW   | 3 x POW  | 3  | 3 Spells  |
+| 3             | 4  | 10m x POW  | 4 x POW  | 4  | 4 Spells  |
+| 4             | 5  | 50m x POW  | 5 x POW  | 5  | 5 Spells  |
+| 5             | 6  | 100m x POW | 6 x POW  | 6  | 6 Spells  |
+| 6             | 7  | 500m x POW | 7 x POW  | 7  | 7 Spells  |
+| 7             | 8  | 1km x POW  | 8 x POW  | 8  | 8 Spells  |
+| 8             | 9  | 5km x POW  | 9 x POW  | 9  | 9 Spells  |
+| 9             | 10 | 10km x POW | 10 x POW | 10 | 10 Spells |
+| 10            | 11 | 15km x POW | 11 x POW | 11 | 11 Spells |
+| Each point... | +1 Magnitude | +5km x POW | +1 x POW | +1 | +1 Spells |
+
+### _Magnitude_
 
 Sorcery spells have a default Magnitude of 1 at no additional Magic Point cost. It costs one Magic Point to augment the Magnitude of a Sorcery spell, regardless of its final intensity.
 
 Manipulating this component allows the sorcerer to increase the Magnitude of a spell. For Sorcery spells Magnitude is only used to see if it will overcome magical defences or resist magical attacks. It does _not_ modify the effect of the spell which is controlled by the Sorcery (Grimoire) skill.
 
-### Range
+### _Range_
 
 Sorcery spells have a default Range of Touch, at no additional Magic Point cost. It costs one Magic Point to augment the Range of a Sorcery spell, regardless of its final distance.
 
@@ -98,25 +86,23 @@ Spells cast at a Range of Touch require the sorcerer to make a successful Unarme
 
 If Range is augmented beyond Touch then the caster automatically strikes his intended target, unless the target is able to dive for cover or flee out of reach _before_ the spell is completed.
 
-### Duration
+### _Duration_
 
 Sorcery spells have a default Duration equal to the POW of the caster in minutes, at no additional Magic Point cost. It costs one Magic Point to augment the Duration of a Sorcery spell, regardless of its final time span.
 
 Manipulating this component allows the sorcerer to increase the Duration of a Sorcery spell. The maximum Duration to which the spell can be increased to is noted in the Sorcery Manipulation table.
 
-### Targets
+### _Targets_
 
 Sorcery spells have a default Target of one person or item, at no additional Magic Point cost. It costs one Magic Point to augment the Targets of a Sorcery spell, regardless of the final number of recipients.
 
 Manipulating this component allows the sorcerer to increase the number of targets of a Sorcery spell. The maximum number of targets the spell can affect is noted in the Sorcery Manipulation table. If the spell is cast successfully, the _effect_ of the spell is applied multiple times, once for each target included; the spell's potency is never divided between them.
 
-### Combine
+### _Combine_
 
 Manipulating this component allows the sorcerer to combine the effects of multiple Sorcery spells in a single casting, so they will affect the target simultaneously. This is the most powerful aspect of Sorcery, as it allows a skilful sorcerer to use his Magic Points judiciously and achieve multiple effects within a short space of time.
 
-A spell may not be combined with itself – only different spells may be combined.
-
-If the combined spells come from different grimoires, then the lowest Sorcery (Grimoire) skill is used as the base casting chance.
+A spell may not be combined with itself – only different spells may be combined. If the combined spells come from different grimoires, then the lowest Sorcery (Grimoire) skill is used as the base casting chance.
 
 The spells must all have the same target or targets. A sorcerer cannot combine a Palsy targeting an enemy and a Spell Resistance targeting himself, for instance.
 
@@ -130,27 +116,27 @@ A sorcerer must be able to gesture with his hands, be able to visualise the lay-
 
 Casting a Sorcery spell requires a successful Skill Test of the Sorcery (Grimoire) skill to which that spell belongs.
 
-### Magic Points
+### _Magic Points_
 
 Sorcery spells cost one Magic Point plus as many Magic Points as the number of Manipulation effects applied to it. Jedekiah, for example, casting a Sorcery spell upon himself with no Manipulation uses only a single Magic Point. Applying five Manipulations would cost six Magic Points (one for the basic spell, plus one point per Manipulation). Casting _two_ spells upon himself at the same time with the same Manipulations applied to both spells would cost seven Magic Points, as well as reducing his Sorcery (Grimoire) skill by 10%.
 
-### Casting Modifiers
+### _Casting Modifiers_
 
 Sorcery spellcasting tests apply the same modifiers as Common Magic spellcasting tests.
 
-### Casting Critical Successes
+### _Casting Critical Successes_
 
 If the Sorcery (Grimoire) roll is a critical success, the spell costs no Magic Points to cast, irrespective of the amount of Manipulation applied to it.
 
-### Casting Failures
+### _Casting Failures_
 
 If the casting test fails the spell does not take effect and costs the caster a single Magic Point.
 
-### Casting Fumbles
+### _Casting Fumbles_
 
 If the Sorcery roll is fumbled the spell fails and the sorcerer loses the full Magic Point cost of the spell.
 
-### Casting Time
+### _Casting Time_
 
 All Sorcery spells take as many Combat Actions to cast as the number of Manipulations used to cast them, with a minimum casting time of 1. No other Combat Action may be taken while casting a spell, although the Adventurer may still walk up to his Movement rate while spellcasting.
 
@@ -162,28 +148,24 @@ Physical and magical attacks on a sorcerer as he casts automatically ruin the sp
 
 Like Common Magic, a caster can dismiss any active Sorcery spell(s) he has cast as a single Combat Action, at any point.
 
-### Acquiring Sorcery
+### _Acquiring Sorcery_
 
 Adventurers desiring to learn Sorcery must fulfil certain conditions:
 
-Have access to the grimoire from which the spell originates.
-Be able to read the language of the grimoire.
-Have time to conduct the study in quiet and solitude.
-Possess enough Improvement Rolls to learn the Sorcery (Grimoire) skill for that grimoire.
+- Have access to the grimoire from which the spell originates.
+- Be able to read the language of the grimoire.
+- Have time to conduct the study in quiet and solitude.
+- Possess enough Improvement Rolls to learn the Sorcery (Grimoire) skill for that grimoire.
 
 No matter how many spells are contained within, it requires one week of studying a grimoire to gain its specific Sorcery (Grimoire) skill. This is treated as learning a new Advanced Skill and starts at a base percentage of INT x2. Once the theories and philosophy described by the grimoire are understood, the sorcerer may then begin to learn the spell or spells contained within.
 
-Each spell takes a further week and two Improvement Rolls to learn, after which the sorcerer will then be able to cast that spell using the Sorcery (Grimoire) skill for the grimoire it belongs to.
-
-A sorcerer belonging to a sorcery cult is usually forbidden from transcribing the spells from the grimoire – as doing so may allow the knowledge to spread beyond their reach.
+Each spell takes a further week and two Improvement Rolls to learn, after which the sorcerer will then be able to cast that spell using the Sorcery (Grimoire) skill for the grimoire it belongs to. A sorcerer belonging to a sorcery cult is usually forbidden from transcribing the spells from the grimoire – as doing so may allow the knowledge to spread beyond their reach.
 
 Depending on the setting and culture, admittance to such grimoires may be difficult. Whilst membership of some sorcery cults or schools may allow study of their grimoire free of charge; others might require gifts paid, quests performed or attaining a specific membership rank before granting access.
 
-### Spell Traits and Descriptions
+### _Spell Traits and Descriptions_
 
-Every Sorcery spell is defined by several traits defining the spell and how it is used in the game.
-
-A description then follows describing the spell's precise effects. The traits used by Sorcery spells are detailed here.
+Every Sorcery spell is defined by several traits defining the spell and how it is used in the game. A description then follows describing the spell's precise effects. The traits used by Sorcery spells are detailed here.
 
 By default all Sorcery spells are binary in effect rather than progressive: they either work or they do not. The strength of the effect, or scope of the target they can affect, is dependent on the caster's Sorcery skill in the grimoire from which that spell comes.
 
@@ -197,9 +179,7 @@ By default all Sorcery spells are binary in effect rather than progressive: they
 
 Autonomous
 
-There are many Abjure spells; for instance, Abjure Air, Abjure Food, Abjure Water and so on.
-
-Each discrete Abjure spell permits a sorcerer to forgo a single specific substance or process necessary for life, such as air, water, food, sleep and so forth. The sorcerer can affect a living target of up to three points of SIZ for every 10% of his Sorcery (Grimoire) skill, utterly removing the need for that particular requirement until the spell ends. Thus an Abjure (Air) spell could allow a sorcerer to move underwater without needing to breath.
+There are many Abjure spells; for instance, Abjure Air, Abjure Food, Abjure Water and so on. Each discrete Abjure spell permits a sorcerer to forgo a single specific substance or process necessary for life, such as air, water, food, sleep and so forth. The sorcerer can affect a living target of up to three points of SIZ for every 10% of his Sorcery (Grimoire) skill, utterly removing the need for that particular requirement until the spell ends. Thus an Abjure (Air) spell could allow a sorcerer to move underwater without needing to breath.
 
 Many exotic versions of this spell exist, which affect dreams, pain or even aging.
 
@@ -209,9 +189,7 @@ Concentration, Resist (Special)*
 
 This spell animates a specific type of substance as indicated by the particular spell; thus there are many variants of Animate available. The sorcerer animates three points of SIZ or a cubic metre of insubstantial material for every 10% of his Sorcery (Grimoire) skill, causing it to move about and interact clumsily with its surroundings. The substance moves at a rate of one metre by default,   although points of SIZ or ENC may be substituted for extra movement on a three for one basis; and cubic metres on a one for one basis.
 
-Jedekiah knows the Animate (Wind) spell and has increased his Sorcery (Seventh Jade Grimoire) to 73%. He is sailing a small skiff across the sea when he sees a warship bearing down on him.
-
-In desperation he tries to escape and invokes the wind to his aid. The Games Master decides that the skiff's sails hold two cubic metres of air, so the remaining six cubic metres Jedekiah can normally control may be used instead to increase the wind's speed. Converting them over and adding to the base one metre speed provided by the spell, allows the skiff to be blown at an additional seven metres per round. More than enough to outdistance the warship.
+Jedekiah knows the Animate (Wind) spell and has increased his Sorcery (Seventh Jade Grimoire) to 73%. He is sailing a small skiff across the sea when he sees a warship bearing down on him. In desperation he tries to escape and invokes the wind to his aid. The Games Master decides that the skiff's sails hold two cubic metres of air, so the remaining six cubic metres Jedekiah can normally control may be used instead to increase the wind's speed. Converting them over and adding to the base one metre speed provided by the spell, allows the skiff to be blown at an additional seven metres per round. More than enough to outdistance the warship.
 
 The sorcerer's chance to have the animated object perform any complex physical skill is equal to his own chance to perform that action halved (before any modifiers). If combined with the appropriate Form/Set spell (through application of the Combine Manipulation), the caster can perform much finer manoeuvring of the target. In this case, the animated object will use the caster's full skill scores for physical activities.
 
@@ -255,9 +233,7 @@ Autonomous
 
 This spell protects the body of the recipient (including clothing and small belongings carried upon his person) by generating an invisible force field, which deflects incoming damage. Any attack where damage does not exceed one Hit Point per 10% of the caster's Sorcery (Grimoire) skill, glances off with no effect – although the protected Adventurer may still suffer from Knockback if applicable. Attacks that inflict more damage than the spell can handle, completely bypass it with no reduction.
 
-Damage Resistance may be combined with other spells which provide magical Armour Points.
-
-In this case the damage is compared to the Damage Resistance spell first and only encounters the Protection spell if the Damage Resistance is bypassed.
+Damage Resistance may be combined with other spells which provide magical Armour Points. In this case the damage is compared to the Damage Resistance spell first and only encounters the Protection spell if the Damage Resistance is bypassed.
 
 ## Diminish (Characteristic)
 
@@ -291,9 +267,7 @@ This spell is incompatible with any other Characteristic boosting spell.
 
 Concentration, Resist (Evade)
 
-Using this spell allows the caster (or whomever or whatever he targets with the spell) to fly.
-
-A sorcerer can affect a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill. Those affected by this spell move at the spellcaster's behest, not their own. By default the spell grants a Movement rate of one metre per round, although points of SIZ may be substituted for extra movement on a three for one basis.
+Using this spell allows the caster (or whomever or whatever he targets with the spell) to fly. A sorcerer can affect a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill. Those affected by this spell move at the spellcaster's behest, not their own. By default the spell grants a Movement rate of one metre per round, although points of SIZ may be substituted for extra movement on a three for one basis.
 
 Offensive use of the spell allows a victim to attempt an opposed Evade roll (or equivalent) to initially break free of the spell's grip.
 
@@ -301,9 +275,7 @@ Offensive use of the spell allows a victim to attempt an opposed Evade roll (or 
 
 Autonomous, Resist (Resilience)
 
-There are many Form/Set spells in existence, each one controlling a general type of substance.
-
-The categories are broadly based upon form and material, for example; gases, liquids, earth and stone, metal, wood, flames, darkness, ice, flesh and bone and so on.
+There are many Form/Set spells in existence, each one controlling a general type of substance. The categories are broadly based upon form and material, for example; gases, liquids, earth and stone, metal, wood, flames, darkness, ice, flesh and bone and so on.
 
 The spell affects up to three points of SIZ (or one cubic metre of an ethereal/gaseous substance) per 10% of the caster's Sorcery (Grimoire) skill. For the duration of the spell, the affected material can be formed into whatever shape the sorcerer desires; although complex configurations require an appropriate craft skill and several rounds of concentration to mould. Assuming the material is solid, the substance retains its shape at the end of the spell. More mutable substances like water immediately flow back to their natural form.
 
@@ -329,9 +301,7 @@ Haste increases the Movement rate of whatever it is cast on. The spell affects t
 
 Autonomous, Resist (Evade)
 
-Hinder decreases the movement rate of whatever it is cast on. The spell affects targets of up to 3 SIZ per 10% of the caster's Sorcery (Grimoire) skill. By default, the base Movement of the target is halved.
-
-To further reduce speed a sorcerer may substitute surplus points of SIZ for extra effect, each 3 SIZ giving an additional reduction of one metre per round. A target's Movement cannot be lowered to less than one with this spell. Hinder is incompatible with other Movement slowing spells.
+Hinder decreases the movement rate of whatever it is cast on. The spell affects targets of up to 3 SIZ per 10% of the caster's Sorcery (Grimoire) skill. By default, the base Movement of the target is halved. To further reduce speed a sorcerer may substitute surplus points of SIZ for extra effect, each 3 SIZ giving an additional reduction of one metre per round. A target's Movement cannot be lowered to less than one with this spell. Hinder is incompatible with other Movement slowing spells.
 
 ## Holdfast
 
@@ -351,9 +321,7 @@ Intuition allows a sorcerer to discern the emotions and motives of the target, a
 
 Concentration
 
-This spell allows the caster to perceive magic, by augmenting his primary senses. It allows him to see, hear or perhaps even smell spells, enchanted items and even a creature's Magic Points.
-
-The sorcerer must be able to actually detect the creature or object for this spell to work. Mystic Vision also enables observation into the hero, spirit and essence planes – although the spell does not grant access.
+This spell allows the caster to perceive magic, by augmenting his primary senses. It allows him to see, hear or perhaps even smell spells, enchanted items and even a creature's Magic Points. The sorcerer must be able to actually detect the creature or object for this spell to work. Mystic Vision also enables observation into the hero, spirit and essence planes – although the spell does not grant access.
 
 Sorcerers will either roughly know how many Magic Points an object or creature currently has (1–10, 11–20, 21–30 and so forth), or will automatically be aware of a spell's magical origin (Common, Divine or Sorcery).
 
@@ -381,15 +349,11 @@ This spell paralyses one random Hit Location on the target. The sorcerer can aff
 
 Concentration, Resist (Special)
 
-Each specific Phantom spell produces an illusion which affects a different sense or perception.
-
-There are five basic versions, one for each of sight, sound, smell, taste and touch; but there are also variants for unusual sensory mechanisms (such as the darksense of trolls). Illusions produced by each Phantom spell are stimulations of the _target's_ own perceptions and nervous system – not temporary manifestations of reality.
+Each specific Phantom spell produces an illusion which affects a different sense or perception. There are five basic versions, one for each of sight, sound, smell, taste and touch; but there are also variants for unusual sensory mechanisms (such as the darksense of trolls). Illusions produced by each Phantom spell are stimulations of the _target's_ own perceptions and nervous system – not temporary manifestations of reality.
 
 Targets of a phantasm must succeed in an opposed test of their Persistence against the caster's Sorcery (Grimoire), otherwise they truly believe what they are experiencing.
 
-Phantasms cannot cause direct harm, although they may be injurious in an indirect manner, such as creating an illusion of a cow over a griffon, or by masking the taste of a virulent poison.
-
-However, most effects are psychosomatic in nature and permit further Resistance rolls when used offensively.
+Phantasms cannot cause direct harm, although they may be injurious in an indirect manner, such as creating an illusion of a cow over a griffon, or by masking the taste of a virulent poison. However, most effects are psychosomatic in nature and permit further Resistance rolls when used offensively.
 
 Phantom spells can react to their surroundings as long as the sorcerer maintains concentration over them. If concentration lapses, then the illusion remains static within the victim's mind, continuing to produce the last effect imagined by the caster – the smell of roses, a moaning wind, bone biting cold and so on. The sorcerer can resume concentration at a later time to change the illusion as long as the spell has not expired. Multiple Phantom spells can be concentrated on simultaneously as long as they are cast as a single spell using the Combine manipulation.
 
@@ -435,9 +399,7 @@ The sorcerer decides at the time the spell is cast where the receptor initially 
 
 A sorcerer can use Project (Sense) to be able to aim a second spell at a target who is out of direct observation – whether because of distance or blocking obstacles. The piggy-backed spell must also have sufficient Range to reach the target.
 
-Project (Sense) can be detected by those using magical perception and, if desired, dispelled.
-
-Attacking the receptor with a magically augmented weapon or a spell, will transfer the magical damage/effect back to the recipient.
+Project (Sense) can be detected by those using magical perception and, if desired, dispelled. Attacking the receptor with a magically augmented weapon or a spell, will transfer the magical damage/effect back to the recipient.
 
 ## Regenerate
 
@@ -475,9 +437,7 @@ Each Shapechange variant is a separate spell. However, each species is quite bro
 
 Autonomous, Resist (Resilience)
 
-A sorcerer may cast Smother on a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill.
-
-If he fails to resist he begins to asphyxiate, immediately suffering damage at the start of the following Combat Round and continues to suffocate for the duration of the spell.
+A sorcerer may cast Smother on a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill. If he fails to resist he begins to asphyxiate, immediately suffering damage at the start of the following Combat Round and continues to suffocate for the duration of the spell.
 
 This spell can also be used to extinguish fires, as the flames will be starved of oxygen. In this case the sorcerer can affect up to three cubic metres of flames per 10% of Sorcery (Grimoire) skill.
 
@@ -499,9 +459,7 @@ This spell blocks spirits or otherworld entities of up to 3 POW per 10% of the c
 
 Concentration, Resist (Persistence)
 
-Each Characteristic has a Tap spell; thus Tap (Strength), Tap (Constitution) and so on.
-
-These devastating spells allow the caster to _permanently_ strip a target of Characteristic points, transforming the tapped Characteristic points into Magic Points for his own use. It works only on creatures possessing the Characteristic being tapped. It is possible for a sorcerer to Tap his own Characteristics... but that is truly the act of a desperate sorcerer.
+Each Characteristic has a Tap spell; thus Tap (Strength), Tap (Constitution) and so on. These devastating spells allow the caster to _permanently_ strip a target of Characteristic points, transforming the tapped Characteristic points into Magic Points for his own use. It works only on creatures possessing the Characteristic being tapped. It is possible for a sorcerer to Tap his own Characteristics... but that is truly the act of a desperate sorcerer.
 
 The Characteristics of targeted creatures can be reduced to a minimum of 1. However, Tap only consumes and transfers one point per round, making it less versatile in combat. Characteristic points lost to Tap are destroyed permanently, though the victim can regain them via certain healing magic, or by raising them through the normal means of increasing a Characteristic.
 
@@ -521,9 +479,7 @@ This spell dramatically accelerates the natural healing rate of the target. It h
 
 Autonomous, Resist (Persistence)
 
-The telepathy spell allows a sorcerer to not only mentally communicate with the target but also receive its sensory perceptions as well. If this is undesired the target may resist the spell. The caster can establish a link with creatures of up to 3 INT per 10% of his Sorcery (Grimoire) skill.
-
-The more skilful the sorcerer, the better able he is to penetrate the mental complexities of more intelligent creatures. If sub-sentient such as in the case of an animal, the sorcerer gains limited comprehension in terms of feelings – but can still communicate.
+The telepathy spell allows a sorcerer to not only mentally communicate with the target but also receive its sensory perceptions as well. If this is undesired the target may resist the spell. The caster can establish a link with creatures of up to 3 INT per 10% of his Sorcery (Grimoire) skill. The more skilful the sorcerer, the better able he is to penetrate the mental complexities of more intelligent creatures. If sub-sentient such as in the case of an animal, the sorcerer gains limited comprehension in terms of feelings – but can still communicate.
 
 ## Teleport
 
@@ -542,4 +498,3 @@ This spell injures victims by wracking them with magical force. If the target fa
 Armour provides no protection but magical defences (such as Countermagic Shield or Spell Resistance) reduce rolled damage by the Magnitude they normally block (assuming the Wrack spell penetrates).
 
 There are many versions of this spell that afflict the victim with different torments. For example one form of Wrack (Darkness) slowly freezes the target with frigid tendrils of shadow, whereas another might cause their limbs to crack and shatter or simply inflict an agonising poison.
-

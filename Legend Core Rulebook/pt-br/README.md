@@ -4,6 +4,8 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 
 ## Progresso da Tradução
 
+<span style="color:red">❌</span> Não traduzidos. &emsp; <span style="color:green">✔</span> Traduzidos.
+
 | Capítulo                        | Págs. | Trad.|    %  |
 |---------------------------------|:-----:|:----:|------:|
 | [1 Bem-vindo à Lendas](Legend%20Core%20Rulebook/pt-br/1%20Bem-vindo%20à%20Lendas.md) | 2 | 2 | 100,0 |
@@ -21,7 +23,3 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 | 13 Gamemastering Legend       |  14   |   0  |     0 |
 | [14 Licença](Legend%20Core%20Rulebook/pt-br/14%20Licença.md) | 2 | 2 | 100,0 |
 | TOTAL | 238 | 14 | 5,9 |
-
-<span style="color:red">❌</span> Não traduzidos.
- 
-<span style="color:green">✔</span> Traduzidos.

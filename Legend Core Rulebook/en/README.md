@@ -6,6 +6,8 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 
 ## Revision progress
 
+<span style="color:red">❌</span> Not formatted. &emsp; <span style="color:green">✔</span> Properly formatted.
+
 | Chapter | Pgs. | Rev. |    %  |
 |---------|:----:|:----:|------:|
 | [1 Welcome to Legend](Legend%20Core%20Rulebook/en/1%20Welcome%20to%20Legend.md) | 2 | 2 |100.0 |
@@ -17,16 +19,12 @@ This project aims to convert to markdown the PDF version of [Legend Core Ruleboo
 | [7 Magic](Legend%20Core%20Rulebook/en/7%20Magic.md) | 3 | 3 | 100.0 |
 | [8 Common Magic](Legend%20Core%20Rulebook/en/8%20Common%20Magic.md) | 15 | 15 | 100.0 |
 | [9 Divine Magic] | 19 | 0 | 0 |
-| [10 Sorcery] | 19 | 0 | 0 |
+| [10 Sorcery](Legend%20Core%20Rulebook/en/10%20Sorcery.md) | 19 | 19 | 100.0 |
 | [11 Guilds, Factions and Cults](Legend%20Core%20Rulebook/en/11%20Guilds,%20Factions%20and%20Cults.md) | 9 | 9 | 100.0 |
 | [12 Heroic Ablities](Legend%20Core%20Rulebook/en/12%20Heroic%20Abilities.md) | 7 | 7 | 100.0 |
 | [13 Gamemastering Legend](Legend%20Core%20Rulebook/en/13%20Gamemastering%20Legend.md) | 14 | 14 | 100.0 |
 | [14 License](Legend%20Core%20Rulebook/en/14%20License.md) | 2 | 2 | 100.0 |
-| TOTAL | 238 | 52 | 21.9 |
-
-<span style="color:red">❌</span> Not formatted.
- 
-<span style="color:green">✔</span> Properly formatted.
+| TOTAL | 238 | 52 | 29.8 |
 
 ## Docs and Guides
 
