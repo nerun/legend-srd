@@ -1,4 +1,4 @@
-# Legend System Reference Document
+<h1 align="center">Legend System Reference Document</h1>
 
 <p align="center">
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-OGL%20v1.0a-red" /></a>
