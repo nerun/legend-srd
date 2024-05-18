@@ -12,7 +12,7 @@ In the words of Project Gutenberg:[^1]
 
 ## Markdown
 
-Of course, Project Gutenberg only accepts Plain Vanilla ASCII (.txt files), but [markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that is essentially pure text, that is, it has the same readability when read in a plain text editor.
+Of course, Project Gutenberg only accepts plain text (.txt files in UTF-8), but [markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that is essentially pure text, that is, it has the same readability when read in a plain text editor.
 
 Markdown a lightweight (or humane) markup language with simple, unobtrusive syntax. It is designed to be easy to write using any generic text editor and easy to read in its raw form. Markdown is a markup language intended for creating formatted text using any plain text editor. In fact, it's so simple and unobtrusive that a person can open a markdown file (extension ".md") and read it as if it were "Plain Vanilla ASCII file". You can rename it's extension to ".txt" if you prefer. On Windows, just use notepad, and on Linux, plain text editors abound: gedit (and its variants), kate, emacs, vim, nano etc.
 
