@@ -4,7 +4,7 @@
 
 [The Unicode Standard](https://en.wikipedia.org/wiki/Unicode) was a revolution in transcending the limitations of traditional character encodings such as ASCII, because Unicode supports other characters in addition to the 128 available in the English language, which makes it universal. And the [UTF-8](https://en.wikipedia.org/wiki/UTF-8) format was a master at implementing the Unicode standard while incorporating ASCII. In fact, ASCII is now a subset of UTF-8.
 
-This information is relevant because the ASCII format has survived the time and is considered one of the best formats to store electronic texts (etexts) that last in time. Most public domain novells, books, tales and stories available in [Project Gutenberg](https://www.gutenberg.org) are in ASCII format.
+This information is relevant because the ASCII format has survived the time and is considered one of the best formats to store electronic texts (e-texts) that last in time. Most public domain novells, books, tales and stories available in [Project Gutenberg](https://www.gutenberg.org) are in UTF-8 format.
 
 In the words of Project Gutenberg:[^1]
 
@@ -12,9 +12,9 @@ In the words of Project Gutenberg:[^1]
 
 ## Markdown
 
-Of course, Project Gutenberg only accepts plain text (.txt files in UTF-8), but [markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that is essentially pure text, that is, it has the same readability when read in a plain text editor.
+Of course, Project Gutenberg only accepts [plain text](https://en.wikipedia.org/wiki/Plain_text) (.txt files in UTF-8), but [markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that is essentially pure text, that is, it has the same readability when read in a plain text editor.
 
-Markdown a lightweight (or humane) markup language with simple, unobtrusive syntax. It is designed to be easy to write using any generic text editor and easy to read in its raw form. Markdown is a markup language intended for creating formatted text using any plain text editor. In fact, it's so simple and unobtrusive that a person can open a markdown file (extension ".md") and read it as if it were "Plain Vanilla ASCII file". You can rename it's extension to ".txt" if you prefer. On Windows, just use notepad, and on Linux, plain text editors abound: gedit (and its variants), kate, emacs, vim, nano etc.
+Markdown a lightweight (or humane) markup language with simple, unobtrusive syntax. It is designed to be easy to write using any generic text editor and easy to read in its raw form. Markdown is a markup language intended for creating formatted text using any plain text editor. In fact, it's so simple and unobtrusive that a person can open a markdown file (extension ".md") and read it as if it were plain text file. You can rename it's extension to ".txt" if you prefer. On Windows, just use notepad, and on Linux, plain text editors abound: gedit (and its variants), kate, emacs, vim, nano etc.
 
 ## An interchangeable language
 
@@ -34,7 +34,7 @@ The filename `test.md` tells pandoc which file to convert. The `-s` option says 
 
 The overall appearance of the converted file is very good and there is nothing to complain about.
 
-July 27, 2023 (_revised January 23, 2024_)
+July 27, 2023 (_revised May 19, 2024_)
 
 **Daniel Dias Rodrigues**
 
