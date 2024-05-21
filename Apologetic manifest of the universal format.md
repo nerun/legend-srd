@@ -24,7 +24,7 @@ The easiest way to do this is to import your content directly into a **LibreOffi
 
 However, the [pandoc](https://pandoc.org/) program is available for several operating systems: Windows, Linux, BSD, macOS, etc. It lets you convert to and from many different formats. And it's free and open source.
 
-Of course, pandoc is a command line tool, designed to be used in command prompt, powershell, linux terminal etc. But it's so easy as write this:
+Of course, pandoc is a command line tool, designed to be used in command prompt, powershell, linux terminal etc., but it's so easy as write this:
 
 ```shell
 $ pandoc test.md -f markdown -t docx -s -o test.docx
