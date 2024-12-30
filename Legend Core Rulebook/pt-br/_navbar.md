@@ -1,5 +1,5 @@
 <!-- Logo -->
-[![](./_media/favicon.ico)](/)
+[![](../../_media/favicon.ico)](/)
 
 <!-- Title -->
 Lengend SRD
