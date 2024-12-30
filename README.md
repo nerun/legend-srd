@@ -1,4 +1,4 @@
-<h1 align="center">Legend System Reference Document</h1>
+<h1 align="center">Legend System Reference Document</h1> <!-- {docsify-ignore-all} -->
 
 <p align="center">
   <a href="https://nerun.github.io/legend-srd/#/LICENSE"><img src="https://img.shields.io/badge/license-OGL%20v1.0a-red" /></a>
@@ -17,14 +17,14 @@ This project is led by [Daniel Dias Rodrigues](https://github.com/nerun) (a.k.a.
 
 Please, take the time to read my very short [Apologetic manifest of the universal format](Apologetic%20manifest%20of%20the%20universal%20format.md), where I explain the reasons for this project, and for choosing the UTF-8 format and the markdown language.
 
-## A Work in progress
+### A Work in progress <!-- {docsify-ignore-all} -->
 
-### Conversion to markdown
+#### Conversion to markdown
 
   - _Legend Core Rulebook_ was converted to markdown language. It is now being correctly formatted. You can track the progress by [clicking here](Legend%20Core%20Rulebook/en/README.md).
   - <span style="color:red">❌</span> Not formatted. &emsp; <span style="color:green">✔</span> Properly formatted.
 
-### Translation to Brazilian Portuguese
+#### Translation to Brazilian Portuguese
 
   - Estou trabalhando em uma tradução para o português brasileiro, chama-se "Lendas". Você pode acompanhar o progresso [clicando aqui](Legend%20Core%20Rulebook/pt-br/README.md).
   - <span style="color:red">❌</span> Não traduzidos. &emsp; <span style="color:green">✔</span> Traduzidos.
