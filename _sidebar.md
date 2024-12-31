@@ -14,7 +14,7 @@
   - [6 Combat <span style="color:red">❌</span>](Legend%20Core%20Rulebook/en/6%20Combat.md)
   - [7 Magic <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/7%20Magic.md)
   - [8 Common Magic <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/8%20Common%20Magic.md)
-  - [9 Divine Magic <span style="color:red">❌</span>](Legend%20Core%20Rulebook/en/9%20Divine%20Magic.md)
+  - [9 Divine Magic <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/9%20Divine%20Magic.md)
   - [10 Sorcery <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/10%20Sorcery.md)
   - [11 Guilds, Factions and Cults <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/11%20Guilds,%20Factions%20and%20Cults.md)
   - [12 Heroic Abilities <span style="color:green">✔</span>](Legend%20Core%20Rulebook/en/12%20Heroic%20Abilities.md)

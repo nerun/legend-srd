@@ -5,7 +5,7 @@
   <a href="https://en.wikipedia.org/wiki/Markdown"><img src="https://img.shields.io/badge/language-Markdown-darkgreen" /></a>
   <a href="https://en.wikipedia.org/wiki/UTF-8"><img src="https://img.shields.io/badge/encoding-UTF--8-yellow" /></a><br />
   <a href="https://nerun.github.io/legend-srd/#/Legend%20Core%20Rulebook/en/README"><img src="https://progress-bar.xyz/100/?title=conversion%20to%20markdown" /></a>
-  <a href="https://nerun.github.io/legend-srd/#/Legend%20Core%20Rulebook/en/README"><img src="https://progress-bar.xyz/30/?title=formatting%20and%20revision" /></a>
+  <a href="https://nerun.github.io/legend-srd/#/Legend%20Core%20Rulebook/en/README"><img src="https://progress-bar.xyz/38/?title=formatting%20and%20revision" /></a>
   <a href="https://nerun.github.io/legend-srd/#/Legend%20Core%20Rulebook/pt-br/README"><img src="https://progress-bar.xyz/6/?title=translation%20(pt_BR)" /></a>
 </p>
 
