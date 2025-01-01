@@ -12,10 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-toggle {
-    top: 0;
+    top: 120px;
     bottom: unset;
-    width: 300px;
-    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
