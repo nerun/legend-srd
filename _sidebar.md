@@ -1,5 +1,5 @@
 - [Introduction](README.md)
-- [Manifest of the universal format](Apologetic%20manifest%20of%20the%20universal%20format.md)
+- [Manifesto of the universal format](Apologetic%20manifesto%20of%20the%20universal%20format.md)
 
 ---
 
