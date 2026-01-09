@@ -1,6 +1,6 @@
 # Summary
 
-* [About](../README.md)
+* [About](README.md)
 * [Markdown Manifesto (en-US)](manifesto%20en_US.md)
 * [Markdown Manifesto (pt-BR)](manifesto%20pt_BR.md)
 * [Procedures and tools](Procedures_and_tools.md)
