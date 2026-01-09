@@ -1,0 +1,1034 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>❌ Game System - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="4-game-system"><a class="header" href="#4-game-system">4. Game System</a></h1>
+<p>This chapter provides a series of rules for different in-game circumstances that will face <em>Legend</em> Adventurers and Games Masters from time-to-time. Some circumstances might be one-offs; others will be more frequent.</p>
+<h2 id="action-and-time"><a class="header" href="#action-and-time">Action and Time</a></h2>
+<p>Action takes place in several different timescales, according to the stage of the story and the nature of the action. A fight, for instance, takes place in Combat Rounds, a detailed timescale that allows the anatomy of the combat to be played through and its effects applied appropriately.</p>
+<p>However, other actions and activities not need to be measured in such a detailed way; searching a room, for example, might take several minutes and travelling between two towns might take days. Time is typically abstracted into useful scales that advance the Adventurers’ story, keep things moving and focus the attention on what is most important. In a fight, for instance, it is important to know who is hurt, where and how badly, so tracking time at a detailed level is crucial. However, for travelling between two towns, along a known road with few hazards it is simply enough to state ‘It takes you three days to get from A to B’.</p>
+<h2 id="time-scales"><a class="header" href="#time-scales">Time Scales</a></h2>
+<p>The key timescales, and what actions and motion can be accomplished, are as follows: <em>Combat Rounds, Local Time and Strategic Time.</em></p>
+<h5 id="combat-rounds"><a class="header" href="#combat-rounds">Combat Rounds</a></h5>
+<p>Dealt with in more detail in the Combat chapter, a Combat Round represents five seconds of game time. In a Combat Round an Adventurer can:</p>
+<ol>
+<li>Act a number of times depending on his Combat Actions available.</li>
+<li>Move a distance, usually a number of metres, equal to his Movement score (see page 92).</li>
+</ol>
+<p>Once a Combat Round finishes another might start depending on the state of the combatants, or time might shift to Local Time (see the following section) to handle things such as first aid or healing.</p>
+<p>Although Combat Rounds are used primarily for measuring fights between Adventurers and their adversaries, Combat Rounds can be useful for measuring very detailed activities that require a blow- by-blow resolution. For example, a chase between hunter and hunted can be measured in Combat Rounds, representing the twists and turns that happen very quickly during any tense pursuit. The circumstances and tension required will determine when Combat Rounds are used and the rules for action and movement within the Combat Round, as found on pages 125 to 152, should be used.</p>
+<h1 id="game-system"><a class="header" href="#game-system">game system</a></h1>
+<h5 id="local-time"><a class="header" href="#local-time">Local Time</a></h5>
+<p>Local Time is anything from a few minutes to a few hours (but not more than about six hours) and is used to generally measure specific activities, such as skill usage, that do not require the detailed attention of a Combat Round but require a specific concentration of effort with a definite end result. Picking a lock might take five minutes and this is a measure of Local Time.</p>
+<p>Observing the patrols made by teams of guards around a castle’s walls might require several hours but is still a measure of Local Time. Usually, in Local Time, the following occurs:</p>
+<ol>
+<li>The Adventurer states his intention (Local Time starts).</li>
+<li>The Games Master assigns how long this takes to accomplish.</li>
+<li>Any appropriate Skill Tests are made and the results noted.</li>
+<li>The Games Master communicates the results and the time taken in step 2 passes (Local Time ends).</li>
+</ol>
+<p>The sequence may then either continue in Local Time, move into Combat Rounds or even go into Strategic Time (see the following section).</p>
+<p>Some examples of Local Time tasks and the typical time required are in given in the Local Time Table.</p>
+<h5 id="local-time-table"><a class="header" href="#local-time-table">Local Time Table</a></h5>
+<pre><code>Example Task Time
+Attempt a Craft or Lore skill. 5 minutes to 10 days, depending on
+complexity, tools available and so forth.
+Attempt to influence, persuade, or seduce
+someone.
+</code></pre>
+<pre><code>5 minutes to 6 hours, depending on the
+nature of the person being worked on.
+Attempt to sway a crowd through oratory. 20 minutes to 6 hours, depending on the mood of the crowd.
+
+Pick a lock. 1 minute to 1 hour, depending on the
+complexity of the lock.
+Search a room thoroughly. 5 minutes to 2 hours, depending on the
+room's size.
+Observe, note and understand a person or
+group of people's habits (through following
+them or observing from a distance).
+</code></pre>
+<pre><code>1 hour to 6 hours.
+</code></pre>
+<pre><code>Effect a functional repair on a piece of broken
+equipment, given the right tools and resources.
+</code></pre>
+<pre><code>1 hour to 6 hours, depending on the
+circumstances.
+Read a scroll, parchment or several chapters of
+a book.
+</code></pre>
+<pre><code>10 minutes to 3 hours, depending on the
+complexity of the language and subject
+matter.
+Pick up a trail and follow it using Tracking. 2 minutes to 2 hours, depending on local conditions.
+
+Build a makeshift shelter, raft or similar. 3 to 6 hours.
+Forage for food, set snares and so forth. 2 to 4 hours.
+Prepare and cook a carcass for eating. 1 to 12 hours, depending on the SIZ of the carcass.
+
+</code></pre>
+<h5 id="strategic-time"><a class="header" href="#strategic-time">Strategic Time</a></h5>
+<p>Strategic Time is measured in days, weeks, months or even years. Detailed events within Strategic Time do not necessarily need to be described and routine tasks and activities that are generally covered using Local Time are abstracted and presumed to happen automatically and successfully (although this, again, depends on the circumstances).</p>
+<p>Use Strategic Time for those periods where it is not necessary to know the detail, just the outcome  - ‘You sail for 10 days and reach the port by dawn on the 11th day’. ‘You travel the moors for two days and spot the village in the distance on the third.’ ‘You spend a week studying the grimoire but are none the wiser at the end of it.’  Long distances and environmental factors may be important to Strategic Time and may also have an effect on Local Time and Combat Rounds. The Games Masters’ Chapter offers some additional guidance on weather conditions and their effects.</p>
+<p>Most of the time, Strategic Time will be concerned with how far Adventurers can travel depending on the mode of transport used. The Strategic Time Travel Table offers examples for various conditions. The travel times assume a travelling day of around 10 hours with regular stops for rest, water and food. If Adventurers are desperate and need to increase the distances given in the Strategic Time Travel Table, then they can effectively double the distance travelled in the Strategic Time period but gain a level of Fatigue if a Hard (–40%) Resilience roll is not successfully made. Naturally an appropriate Skill Test (Drive, Ride, Athletics and so on) also needs to be made to double the distance covered, along with dealing with any hazards that might need to be resolved in Combat Rounds or Local Time.</p>
+<h6 id="strategic-time-travel-table"><a class="header" href="#strategic-time-travel-table">Strategic Time Travel Table</a></h6>
+<pre><code>Travel Example Distance Covered (kilometres)
+Walking 30 per Day (10 hours)
+Horseback at casual speed 60 per Day (10 hours)
+Wagon at casual speed 15 per Day (10 hours)
+Open Sea, favourable conditions 300 (in a 24 hour period)
+Open Sea, unfavourable conditions 36 (in a 24 hour period)
+Coast or River, favourable conditions 60 per Day (10 hours)
+Coast or River, unfavourable conditions 32 per Day (10 Hours)
+</code></pre>
+<h2 id="adventurer-advancement"><a class="header" href="#adventurer-advancement">Adventurer Advancement</a></h2>
+<p><em>Legend</em> Adventurers begin the game as callow youths and, through time and game play, may develop into heroes. They do this by improving the Common and Advanced skills they have, learning new skills, studying magic, seeking the secrets of Heroic Abilities and by improving their Characteristics which, in turn, help other Attributes to improve.</p>
+<h3 id="improvement-rolls"><a class="header" href="#improvement-rolls">Improvement Rolls</a></h3>
+<p>Skills and Characteristics are increased through the use of Improvement Rolls, which the Games Master awards at the close of a particular game session or point in a story. Improvement Rolls are not given at the end of every game session but are awarded when the action reaches a natural close and the Adventurers have time to rest, reflect and consolidate what they may have learned in the time just past.</p>
+<pre><code>As a base, each Adventurer should receive three Improvement Rolls when the time comes for them to be awarded. This can be modified if the Adventurers performed particularly poorly or heroically and the Games Master should judge how the award should be made: a minimum of one and a maximum of five Improvement Rolls depending on how the Adventurers acquitted themselves.
+
+</code></pre>
+<h5 id="improvement-roll-modifier"><a class="header" href="#improvement-roll-modifier">Improvement Roll Modifier</a></h5>
+<pre><code>Every Adventurer has an Improvement Roll Modifier, based on the CHA Characteristic, of between –1 and +1, or more. This represents the relationship an Adventurer has with his community, peers and colleagues, who offer their services or advice, or, if CHA is particularly low, the difficulty of attempting to improve one's capabilities without the assistance of others.
+
+</code></pre>
+<pre><code>The number of Improvement Rolls an Adventurer has to spend is modified by the value of the Improvement Roll Modifier. So, in the case of Alaric , his Improvement Roll Modifier is zero. In the two examples given earlier Alaric would receive four and two Improvement Rolls respectively, as the Games Master has decided to allocate them.
+
+</code></pre>
+<pre><code>Lilina, on the other hand, has CHA 16 and therefore an Improvement Roll Modifier of +1.
+
+Lilina is very confident in her personality and this is abstracted in her ability to seek advice, make use of friends, colleagues and others in her community and make the most of her experiences. In the two examples earlier she would gain five Improvement Rolls (instead of the four the Games Master awards) and three Improvement Rolls rather than two.
+
+</code></pre>
+<pre><code>Conversely Thrace, with a CHA of 5, is a somewhat sullen individual who tends to keep himself to himself, probably because he lacks confidence socially or because he is, genuinely, anti-social. This places him at a disadvantage in his development and his Improvement Roll Modifier of –1means that, in the examples from earlier, he gains only three and one Improvement Rolls respectively.
+
+</code></pre>
+<h5 id="using-improvement-rolls"><a class="header" href="#using-improvement-rolls">Using Improvement Rolls</a></h5>
+<pre><code>A player can choose to spend one Improvement Roll to attempt to increase one known skill.
+
+</code></pre>
+<h5 id="alarics-tale"><a class="header" href="#alarics-tale">Alaric’s Tale</a></h5>
+<p><em>Alaric, Lilina and Thrace have just completed an adventure that saw them sneak into the troll’s lair in search of evidence for the whereabouts of the troll who killed Alaric’s father. During play all three Adventurers acted heroically and cleverly to the challenges set before them and so, when they return to the village, cut, bruised and bloodied, but with important information, the Games Master awards each Adventurer four Improvement Rolls.</em>  <em>Later…</em>  <em>The game session included a debate held in the Chieftain’s hall that concerned the welfare of the entire clan. Throughout this important council Alaric, Lilina and Thrace were completely disinterested and contribute nothing to the proceedings. At the end of the session, the Games Master makes an award of only two Improvement Rolls explaining that the award would have been higher if the Adventurers had participated more and learned from their experience.</em></p>
+<ul>
+<li>
+<p>Select the skill to be increased and roll 1D100. Add the Adventurer’s INT Characteristic to the result of the 1D100 roll.</p>
+</li>
+<li>
+<p>If this 1D100 result is <em>greater</em> than the skill’s current score, the skill increases by 1D4+ points.</p>
+</li>
+<li>
+<p>If this 1D100 result is <em>equal to or less</em> than the skill’s current score, the skill only increases by one point.</p>
+</li>
+</ul>
+<h5 id="alarics-tale-1"><a class="header" href="#alarics-tale-1">Alaric’s Tale</a></h5>
+<p>Alaric wishes to increase his Athletics, which is currently at 35%. He practises the skill in earnest and then spends one Improvement Roll.</p>
+<p>He rolls 1D100 and results in 29. However, he also adds his INT of 16 and this makes a result of 45. Since this is greater than the 35% of his current Athletics skill, it is improved by 1D4+ points. If the result of the 1D100 roll and the addition of his INT had been less than or equal to 35, his Athletics skill would have increased by only one point.</p>
+<h5 id="skills-above-100"><a class="header" href="#skills-above-100">Skills Above 100%</a></h5>
+<p>There is no limit to the score a skill can reach; a skill can reach 100% and exceed it. However, the more adept an Adventurer becomes at any particular skill, the more difficult it becomes for him to learn something about that skill he did not already know. Thus, as an Adventurer’s skill percentage climbs, it will become more difficult and time consuming for him to raise that skill.</p>
+<ul>
+<li>
+<p>When an Adventurer wants to improve a skill that exceeds 100%, he only needs to roll against a target value of 100. However, if his current skill is between 101–200% he only adds <em>half</em> his INT to the roll.</p>
+</li>
+<li>
+<p>If the skill is 201–300% he only adds one <em>quarter</em> of his INT to the roll; and, between 301–400% an eighth (and so forth).</p>
+</li>
+<li>
+<p>If the Adventurer manages to roll over 100, with his INT bonus as outlined above, then the skill improves by 1d4+1 points. If the result is less than 100 then the Adventurer only gains 1 point, as usual.</p>
+</li>
+</ul>
+<p><em>For example Jurgen, a master swordsman, has Sword and Shield at 153% and INT 16. To improve his Sword and Shield he rolls 1D100 and adds 8 (half his INT) to the result. The roll is 94 and Jurgen’s INT bonus takes the result to 102 meaning that Jurgen gains a 1D4+1 increase.</em>  <em>Years later, Jurgen’s Sword and Shield has reached a dizzying 203%. To increase it, Jurgen must roll 1D100 and score 100 or more, adding only a quarter of his INT (4) to the roll. The 1D100 roll is 43 and Jurgen’s INT bonus of 4 takes it 47 – nowhere near enough for the skill to increase by 1D4+1% and so it climbs to just 204%.</em></p>
+<h5 id="learning-new-skills-through-improvement-rolls"><a class="header" href="#learning-new-skills-through-improvement-rolls">Learning New Skills through Improvement Rolls</a></h5>
+<p>An Adventurer can learn a new Advanced Skill through spending Improvement Rolls. Two Improvement Rolls give the Adventurer the Advanced skill at its basic Characteristic-derived score.</p>
+<p>Some Advanced skills however, cannot be learned through simply spending Improvement Rolls.</p>
+<p>The following Advanced Skills can <em>only</em> be gained through training (see page 72).</p>
+<pre><code>  -	 Craft
+  -	 Culture – if studying a culture completely alien to one's own.
+  -	 Engineering
+  -	 Healing
+  -	 Language
+  -	 Lore (with the exception of Lore (Regional))
+  -	 Teaching
+  -	 Sorcery and Manipulation
+</code></pre>
+<p>Once learned with the assistance of a teacher, these skills then become improvable using Improvement Rolls.</p>
+<h3 id="improving-characteristics"><a class="header" href="#improving-characteristics">Improving Characteristics</a></h3>
+<p>Adventurers can gradually improve their Characteristics, becoming more intelligent, stronger or dextrous over time. Characteristics improve at a much slower rate than skills but can have more of an effect on an Adventurer. The process of increasing a Characteristic through exercise is abstracted through spending Improvement Rolls in a similar way to improving a skill – however the cost to do so is far higher. Improving a Characteristic by one point costs a number of Improvement Rolls equal to the Characteristic’s current value; hence, improving a Characteristic from 10 to 11 would cost 10 Improvement Rolls.</p>
+<p>Improvement Rolls, when used to improve Characteristics can be stockpiled from one allocation to the next but the player must state that his Adventurer is using these stockpiled Improvement Rolls towards a Characteristic increase – and stipulate which Characteristic is to benefit.</p>
+<p><em>For example, Thrace’s player, at the end of a story when the Games Master allocates Improvement Rolls says that he wants to increase his CHA 5 to CHA 6. It will cost him five Improvement Rolls to do this and he knows it will take time. Instead of using the two rolls he gains from the story to enhance skills, he puts them towards his CHA improvement instead. In the next Improvement Roll allocation he can again choose to put his Improvement Rolls towards increasing his CHA or use them for skill improvement.</em>  Adventurers can contribute some or all of their Improvement Rolls towards Characteristic improvement. In Thrace’s example he could contribute one Improvement Roll towards increasing his CHA and spend another on improving a skill. The choice is his.</p>
+<p>When a Characteristic increases, all skills that derive their base scores from it will change accordingly, as will the Adventurer’s Attributes such as Combat Actions, Strike Ranks and Damage Modifier. See the summary of Characteristic Changes on pages 11-12.</p>
+<h3 id="improving-skills-through-training"><a class="header" href="#improving-skills-through-training">Improving Skills Through Training</a></h3>
+<p>As well as using Improvement Rolls to increase skills, skills can also increase through dedicated training. For this to occur, the following conditions need to be met:</p>
+<ul>
+<li>
+<p>The Adventurer has sufficient time to dedicate to training – usually a period of Downtime (see page 84).</p>
+</li>
+<li>
+<p>Access to a teacher or mentor, either one-to-one or via a school, academy or cult.</p>
+</li>
+<li>
+<p>Funds to pay for training.</p>
+</li>
+</ul>
+<p>An Adventurer cannot <em>continually</em> improve a skill through training: after increasing a skill by training his next improvement needs to be through an Improvement Roll. Once that is accomplished, he can then improve that skill through training once more, if he meets the training conditions.</p>
+<p>To achieve any skill increase the Adventurer must spend a week in training and not undertaking any other activities. At the end of the training period a 1D100 roll is made to see if the Adventurer has made any headway and, if so, the skill improves. The amount of the improvement depends on the Adventurer’s ability to learn and the teacher’s ability to teach. Both are explained here.</p>
+<h5 id="teachers-and-mentors"><a class="header" href="#teachers-and-mentors">Teachers and Mentors</a></h5>
+<p>Two names for the same thing, anyone can act as a teacher or mentor as long as they have at least 20% more in the skill being taught than the Adventurer.</p>
+<p>Teachers also benefit from the Teaching Advanced Skill. Teaching is the ability to train, coach and mentor to best effect, ensuring the right conditions for learning and cementing the knowledge conveyed. The value of the Teaching skill provides a bonus to the skill increase for the student.</p>
+<p>If the teacher has Teaching, he adds the critical range of the Teaching skill (i.e., one 10th of the skill’s score) to the Adventurer’s increase – if the Adventurer successfully learns anything from the time in study.</p>
+<p>The Teaching skill also confers two other benefits, as follows:</p>
+<ul>
+<li>
+<p>The teacher can instruct an additional student for every 20% he has in Teaching. Thus, a teacher with Teaching 60% could teach four students simultaneously.</p>
+</li>
+<li>
+<p>The teacher can add one silver piece per 1% of Training skill to the standard training cost.</p>
+</li>
+</ul>
+<p>It is not necessary for a teacher to have the Teaching skill but it is clearly an advantage to the student if it is present.</p>
+<h5 id="training-procedure"><a class="header" href="#training-procedure">Training Procedure</a></h5>
+<p>To attempt a skill improvement through training the Adventurer spends a week in full time study with his teacher or mentor. At the end of the week he makes a 1D100 roll and compares it to his current score in the skill. Only one skill at a time can be increased through training.</p>
+<ul>
+<li>
+<p>If the roll is less than the skill’s current score, the skill increases by 1%. The Adventurer has not made significant progress through study.</p>
+</li>
+<li>
+<p>If the roll is equal to, or greater than, the skill’s current score, the skill increases by a number of points equal to the Adventurer’s INT divided by five (rounded up), plus the teacher’s Teaching critical range (if the teacher has the Teaching skill).</p>
+</li>
+</ul>
+<h5 id="learning-new-advanced-skills-through-training"><a class="header" href="#learning-new-advanced-skills-through-training">Learning New Advanced Skills Through Training</a></h5>
+<p>The following Advanced Skills can only be learned by an Adventurer if he has a teacher or mentor to teach him:</p>
+<pre><code>  -	 Craft
+  -	 Culture – if studying a culture completely alien to one's own.
+  -	 Engineering
+  -	 Healing
+  -	 Language
+  -	 Lore (with the exception of Lore (Regional))
+  -	 Teaching
+  -	 Sorcery and Manipulation
+</code></pre>
+<pre><code>It takes one month for the Adventurer to emerge with the Advanced Skill at its basic, Characteristic derived score. From that point on, the skill can then be improved through either Improvement Rolls or training.
+
+</code></pre>
+<pre><code>The teacher of the skill must be a professional, i.e. know the skill at 50% or higher.
+
+</code></pre>
+<pre><code>Learning a new Advanced Skill does not require a 1D100 roll to be successfully made; all that is necessary is the time and money needed for training. However, if the trainer has the Teaching skill, the time it takes to learn the new Advanced Skill is reduced by one day for every 10% he has in Teaching. Thus, in Alaric's example, if his mentor in Lore (The Thunderer) has Teaching 70%, Alaric would need only 21 days – three weeks – rather than 28 to learn the skill to its starting level.
+
+</code></pre>
+<h5 id="training-costs"><a class="header" href="#training-costs">Training Costs</a></h5>
+<pre><code>The standard costs for training are based on the Adventurer's current level in the skill and the trainer's Teaching skill. The table of costs that follows is a guide only and assumes that the Adventurer is finding an independent teacher who will offer one-to-one training. Dedicated academies may charge more or less, depending on reputation and a discount might be offered (5% per additional student, as a guideline) if a teacher is able to train multiple students at the same time. Remember that the teacher can add an additional Silver Piece for every 1% of his Teaching skill:
+
+</code></pre>
+<h5 id="alarics-tale-2"><a class="header" href="#alarics-tale-2">Alaric’s Tale</a></h5>
+<p>Alaric is keen to improve his Dance skill in order to impress Selina, the Chieftain’s daughter, at a forthcoming banquet. His Dance is 23%. Alaric approaches one of his aunts who has Dance 65% and Teaching at 50%. It will take a week to train Alaric how to dance without looking ungainly or awkward.</p>
+<p><em>At the end of the week Alaric rolls 1D100 and scores 92. His Dance skill therefore increases by the following:</em>  <em>Alaric’s INT 16 divided by 5 = 4, plus; His aunt’s Teaching critical range of 5 (50%/10)</em>  <em>Thus, after a week of hard effort and several crushed toes, Alaric has increased his Dance by a total of 9% taking it to 32%. He is still no expert but is far less clumsy than he was. His aunt suggests that, in return for her time, Alaric should donate 50 Silver Pieces to the local temple, to show his appreciation.</em></p>
+<h6 id="training-costs-table"><a class="header" href="#training-costs-table">Training Costs Table</a></h6>
+<pre><code>Adventurer's Current Skill %
+Learning a New
+Advanced Skill to
+Base Score Up to 50% 51% – 70%
+</code></pre>
+<pre><code>71% –
+100% 101%+
+Magic Skill 500 SP 500 SP 600 SP 800 SP 1,000 SP
+Lore Skill 400 SP 400 SP 500 SP 700 SP 900 SP
+Common
+Skill
+</code></pre>
+<pre><code>— 0 SP 50 SP 100 SP 300 SP
+</code></pre>
+<pre><code>Advanced
+Skill
+</code></pre>
+<pre><code>300 SP 150 SP 200 SP 400 SP 700 SP
+</code></pre>
+<pre><code>Combat Skill 150 SP 150 SP 300 SP 600 SP 900 SP
+</code></pre>
+<p>Therefore, an Adventurer wanting to train in his Sorcery (Grimoire) skill, currently at 74%, with a teacher who has Teach 85%, would spend 885 Silver Pieces for a week’s training.</p>
+<p>If an Adventurer is a member of a cult or guild that offers training in certain skills related to its membership, then he often benefits from a discount on training costs. The cult or guild’s description will specify what skills it trains in, what teachers it has available and what discount is offered to members. The Training Costs Table is used as the base cost for the training, unless otherwise specified in the cult or guild’s description.</p>
+<h2 id="ageing"><a class="header" href="#ageing">Ageing</a></h2>
+<p>The march of Time is inevitable. Unless an Adventurer is the lucky beneficiary of age-halting magic, he will get older and the effects of age will tell upon the frame. In <em>Legend</em> the signs of ageing do not begin until the Adventurer reaches the age of 40. At that point, and for each year thereafter (the birthday perhaps, or an anniversary agreed between the Games Master and the player), the Adventurer should make two Skill Tests: one for Resilience and one for Persistence. Each test is at a penalty equal to the number of years over 40 the Adventurer has attained. Thus, a 50 year old Adventurer suffers a –10% penalty to the Resilience and Persistence tests. The tests are also further modified according to the Adventurer’s life experiences, as noted in the following table.</p>
+<h6 id="life-experiences"><a class="header" href="#life-experiences">Life Experiences</a></h6>
+<h6 id="life-experience-persistence-and-resilience-modifiers"><a class="header" href="#life-experience-persistence-and-resilience-modifiers">Life Experience Persistence and Resilience Modifiers</a></h6>
+<h6 id="disease-or-poisoning-10-resilience"><a class="header" href="#disease-or-poisoning-10-resilience">Disease or Poisoning –10% (Resilience)</a></h6>
+<h6 id="emotional-trauma-5-persistence"><a class="header" href="#emotional-trauma-5-persistence">Emotional trauma –5% (Persistence)</a></h6>
+<h6 id="insanity-10-persistence"><a class="header" href="#insanity-10-persistence">Insanity –10% (Persistence)</a></h6>
+<h6 id="major-wound-10-resilience"><a class="header" href="#major-wound-10-resilience">Major Wound –10% (Resilience)</a></h6>
+<h6 id="resurrected-from-death-15-persistence-and-resilience"><a class="header" href="#resurrected-from-death-15-persistence-and-resilience">Resurrected from Death –15% (Persistence and Resilience)</a></h6>
+<h6 id="serious-wound-5-resilience"><a class="header" href="#serious-wound-5-resilience">Serious Wound –5% (Resilience)</a></h6>
+<p>Each different life experience is cumulative; so an Adventurer who has been poisoned and suffered a Major Wound incurs a –20% penalty to his Resilience and Persistence tests. However,   the Adventurer does not suffer from accumulated penalties for the multiple occurrences of the same experience. Thus, even though an Adventurer may have suffered several Major Wounds, he only incurs a single –10% penalty.</p>
+<p>If the Resilience and/or Persistence test is made successfully, the Adventurer does not incur any ageing effects <em>that year</em>. If either test fails, the Adventurer must roll on the appropriate, or both, columns of the Adventurer Ageing Table to determine which Characteristics suffer from the effects of ageing that year.</p>
+<h6 id="adventurer-ageing-table"><a class="header" href="#adventurer-ageing-table">Adventurer Ageing Table</a></h6>
+<h6 id="1d"><a class="header" href="#1d">1D</a></h6>
+<h6 id="physical-ageing-failed"><a class="header" href="#physical-ageing-failed">Physical Ageing (Failed</a></h6>
+<h6 id="resilience"><a class="header" href="#resilience">Resilience)</a></h6>
+<h6 id="mental-ageing-failed"><a class="header" href="#mental-ageing-failed">Mental Ageing (Failed</a></h6>
+<h6 id="persistence"><a class="header" href="#persistence">Persistence)</a></h6>
+<h6 id="12-str-int"><a class="header" href="#12-str-int">1–2 STR INT</a></h6>
+<h6 id="34-con-pow"><a class="header" href="#34-con-pow">3–4 CON POW</a></h6>
+<h6 id="56-dex-cha"><a class="header" href="#56-dex-cha">5–6 DEX CHA</a></h6>
+<p>Each Characteristic affected by ageing reduces by 1D2 points. These points can be recovered through normal Characteristic improvement, as described on page 71, representing efforts made by the Adventurer to keep themselves trim and alert as they grow older. What specific debilitating effects arise as part of the ageing process are down to the players and Games Master to define. Reducing STR or DEX indicates the general wear and tear on the body, for instance, with creaking joints and a gradual loss of mobility. Reducing INT indicates that age is starting to play tricks on the mind and memory, whilst reducing CHA indicates that the Adventurer is getting craggier and more short-tempered, perhaps, as they get older.</p>
+<h2 id="damage"><a class="header" href="#damage">Damage</a></h2>
+<p>Damage comes from a multitude of sources and the following rules account for the most common forms that Adventurers will face.</p>
+<h3 id="acid"><a class="header" href="#acid">Acid</a></h3>
+<p>What is important here is the dilution of the acid more than its type or source. Acids are therefore classified as being Weak, Strong or Concentrated. For game purposes <em>Legend</em> assumes that contact with the acid is significant or sustained, rather than just a droplet or two.</p>
+<p>A splash or spray of acid lasts only for a single round before it ceases working. Immersion in a considerable volume of acid however, inflicts the damage every round until the victim or location is removed and treated.</p>
+<pre><code>Acid Type
+</code></pre>
+<pre><code>Damage
+per Combat
+Round Treatable With...
+Weak 1D2 Water – the residual acid can be washed away by the victim
+if a source of water, or similar fluid, is available. It takes
+a minute of washing to remove the acid: whilst being
+washed away the acid does not inflict any further damage
+but the victim must focus on treating the affected location
+with water and cannot undertake any further actions. If
+he interrupts the washing process he continues to suffer 1
+point of damage per round until it can be completed.
+Strong 1D4 First Aid skill – a successful First Aid roll is required to
+reduce the acid's type from Strong to Weak; the victim
+continues to sustain damage from the acid whilst the First
+Aid treatment is being made. Thereafter the weak acid
+can be treated as noted previously. If the First Aid roll is a
+critical success, then the acid is neutralised without needing
+further attention.
+Concentrated 1D6 Healing skill – a successful Healing roll is needed to reduce the acid's type from Concentrated to Weak. Thereafter the weak acid can be treated as noted previously. If the Healing roll is a critical success, then the acid is neutralised without needing further attention.
+
+</code></pre>
+<p>Armour slows the effects of acid but does not stop it. An armoured location has its APs reduced by the acid’s damage until it reaches zero Hit Points, at which point the damage is then transferred to the Hit Location that it had been protecting. Armour reduced to zero AP is rendered useless as the acid burns through bindings, straps and joints.</p>
+<h3 id="asphyxiationsuffocationdrowning"><a class="header" href="#asphyxiationsuffocationdrowning">Asphyxiation/Suffocation/Drowning</a></h3>
+<p>If prepared, Adventurers are able to hold their breath for a number of seconds equal to CON x5.</p>
+<p>If unprepared (and as the circumstances are too varied to summarise, Games Masters must determine if an Adventurer is prepared, or able to prepare), the Adventurer must make a Resilience roll successfully to be able to gasp enough air and retain it without panicking, for CON x1D4 seconds. If the Resilience roll fails and/or when the Adventurer reaches the point where he must struggle to breathe, then damage sustained through asphyxiation/suffocation or drowning is as follows:</p>
+<p>Make a (further) Resilience roll.</p>
+<ul>
+<li>
+<p>If the roll is a critical success, the Adventurer takes no damage that round.</p>
+</li>
+<li>
+<p>If the roll is successful, the Adventurer sustains 1D3 points of damage to the Chest that round.</p>
+</li>
+<li>
+<p>If the roll fails, the Adventurer sustains 1D3 points of damage to the Chest and Head that round.</p>
+</li>
+<li>
+<p>If the roll is fumbled, the Adventurer sustains 1D6 points of damage to the Chest and Head that round.</p>
+</li>
+</ul>
+<p>The process continues until the Adventurer is able to breathe normally again or they die.</p>
+<p>Adventurers struggling for air can attempt to perform any appropriate skills that circumstances permit: Swim, for instance, or grapple with a foe holding them in a position where asphyxiation is occurring. However all such skill attempts are considered to be Hard (–40%).</p>
+<h3 id="disease-and-poison"><a class="header" href="#disease-and-poison">Disease and Poison</a></h3>
+<p>Diseases and poisons take many different forms but for game purposes function in a similar way. First, the <em>Potency</em> of the disease or poison must be calculated. All diseases and poisons are rated for Potency between 10 and 100 (or higher). The Potency is then matched against the appropriate resisting skill (usually Resilience or Persistence) in an opposed test.</p>
+<ul>
+<li>
+<p>If the resisting skill is a success then the effects of the disease or poison are avoided.</p>
+</li>
+<li>
+<p>If the resisting skill is a failure then the effects of the disease or poison are felt for the Duration.</p>
+</li>
+</ul>
+<h5 id="characteristics-of-poisons-and-diseases"><a class="header" href="#characteristics-of-poisons-and-diseases">Characteristics of Poisons and Diseases</a></h5>
+<p>Every disease or poison has a series of Characteristics that govern how it affects the target. The Characteristics are:</p>
+<p><strong>Application</strong> : How the poison or disease is administered:</p>
+<ul>
+<li>
+<p>Ingested – The disease or poison is ingested through either eating or drinking.</p>
+</li>
+<li>
+<p>Inhaled – The disease or poison is inhaled through breathing or snorting.</p>
+</li>
+<li>
+<p>Contact – The disease or poison is absorbed through skin contact.</p>
+</li>
+<li>
+<p>Injected – The disease or poison must be injected directly into the body (via a needle, sting or some other direct means).</p>
+</li>
+</ul>
+<p><strong>Onset time:</strong> The time prior to the effects taking hold. Poisons or diseases possessing multiple Conditions may have different onset times for each one.</p>
+<p><strong>Duration:</strong> The duration of the poison or disease’s Conditions</p>
+<p><strong>Resistance Time:</strong> When or how frequently the Adventurer needs to make a Resistance roll to counter the disease or poison’s effects.</p>
+<p><strong>Potency:</strong> The disease or poison’s Potency, rated between 10 and 100 (or higher).</p>
+<p><strong>Resistance</strong> : How the disease or poison is resisted – either Persistence or Resilience, usually, but another roll may be called for.</p>
+<p><strong>Conditions:</strong> Every poison or disease has one or more Conditions. These have specific effects as described in the Conditions table and if a victim fails to resist the poison or disease, he suffers all the Conditions described. See the Conditions table, following.</p>
+<p><strong>Antidote/Cure:</strong> If the Adventurer succumbs to the poison or disease’s Conditions, there is still a chance that an appropriate cure will mitigate the effects. If so, then the remedy will be noted here. Otherwise all non magical diseases and poisons can be alleviated by specific healing magic, such as the Cure Disease or Cure Poison spells.</p>
+<h5 id="conditions-table"><a class="header" href="#conditions-table">Conditions Table</a></h5>
+<pre><code>Condition Effects
+</code></pre>
+<pre><code>Agony
+</code></pre>
+<pre><code>The victim is incapacitated with pain. The affected area, if a location, cannot be used for the poison's duration. If the poison affects the whole body, the Adventurer cannot move save to crawl slowly and scream.
+
+</code></pre>
+<pre><code>Asphyxiation Victim suffers asphyxiation – he collapses, unable to breathe and is incapacitated. The rules for Asphyxiation, found on page 76, are used.
+
+</code></pre>
+<pre><code>Bleeding
+</code></pre>
+<pre><code>Victim suffers a further Hit Point of damage every hour, from each location currently wounded, or from internal bleeding. Internal bleeding generally applies damage to all Hit Locations simultaneously.
+
+Blindness Victim becomes blind.
+Confusion Victim cannot use any knowledge, communication or magic skill.
+
+Contagious Victim can transfer the poison or disease by touch.
+Deafness Victim loses his hearing.
+</code></pre>
+<pre><code>Death
+</code></pre>
+<pre><code>Victim must make a Resistance roll. If the Resistance roll fails then the victim dies immediately. If the Resistance roll is successful then all Hit Locations are reduced to a negative equivalent of their starting value: the victim then has a number of minutes to live equal to his CON Characteristic. It requires either the Healing skill or appropriate disease or poison healing magic to stabilise the victim.
+
+Dumbness Victim's vocal chords are paralysed, preventing verbal communication or the casting of spells.
+
+Exhaustion Victim gains an extra level of Fatigue, on top of any they are currently suffering from.
+
+</code></pre>
+<pre><code>Fever
+</code></pre>
+<pre><code>The victim's body temperature fluctuates wildly – from hot to cold – and muscles ache. All skills are halved and the victim also suffers from nausea (see the Nausea entry).
+
+</code></pre>
+<pre><code>Hallucination
+</code></pre>
+<pre><code>Victim experiences delusions and cannot differentiate between real and
+imaginary experiences. His skills and abilities are unaffected but his ability to relate to the real world is seriously impaired and characterised by fear, panic, hatred and, in extreme circumstances, irrational violence.
+
+Maiming Victim suffers a permanent loss of one Hit Point in the location(s) affected, due to necrosis of the injured tissue.
+
+</code></pre>
+<pre><code>Mania
+</code></pre>
+<pre><code>Victim is driven to follow some compulsion; such as avoid water, paranoia, attack companions and so forth. The mania induced by the disease or poison will be noted in its description.
+
+</code></pre>
+<pre><code>Nausea
+</code></pre>
+<pre><code>Victim cannot eat and must roll against his Resilience every time he performs a stressful physical action to avoid being physically sick. The sickness lasts for 1D3 rounds during which he cannot act and, once it has ended, he suffers a level of Fatigue until rested.
+
+Paralysis Victim is unable to physically move.
+Sapping Victim loses Magic Points based on its potency.
+</code></pre>
+<pre><code>Unconscious
+</code></pre>
+<pre><code>Victim loses consciousness for a period specified in the disease or poison's description. When consciousness is regained the victim suffers a level of Fatigue.
+
+</code></pre>
+<h3 id="sample-diseases"><a class="header" href="#sample-diseases">Sample Diseases</a></h3>
+<p>These are samples of various diseases encountered during <em>Legend</em> play, to be used as they stand or as a template for Games Master designed infections.</p>
+<h5 id="creeping-chills"><a class="header" href="#creeping-chills">Creeping Chills</a></h5>
+<p>Carried by the dreaded, chaos-tainted beastmen, Creeping Chills is spread by skin contact although the skin must be broken (through a wound, for instance) for the disease to take hold.</p>
+<p>Beastmen sometimes smear their weapons in their own blood, spittle or excrement all of which harbour the contagion. If contracted Creeping Chills takes 1D4 hours before its effects are felt.</p>
+<p>First, the victim feels a chilling numbness through his arms and legs, before this rapidly overtakes the whole body. As the chills spread, he is rendered partially incapacitated as per the following description.</p>
+<p><strong>Application</strong> : Contact
+<strong>Onset time:</strong> 1D4 hours
+<strong>Duration:</strong> 1D6+1 weeks
+<strong>Resistance Time</strong> : Weekly. The first Resistance roll must be made at the end of the Onset Time, then weekly thereafter. Successfully resisting the disease allows the Adventurer to avoid suffering the Conditions until the next roll must be made. Thus victims of Creeping Chills often appear to recover, only to suffer a later relapse.</p>
+<p><strong>Potency:</strong> 50+ CON of Beastman carrying it.
+<strong>Resistance</strong> : Resilience.
+<strong>Conditions:</strong> Fever. If the Resistance roll fails the victim suffers shivering attacks, muscle ache and has all skills halved until the disease is cured.</p>
+<p><strong>Antidote/Cure:</strong> Cure Disease spell. Creeping Chills is a magical disease, meaning that only the Cure Disease spell can cure it.</p>
+<h5 id="rabies"><a class="header" href="#rabies">Rabies</a></h5>
+<p>Carried by certain animals and transferred by a successful bite, rabies works on the brain, inflaming it and paralysing the throat. Victims begin with flu-like symptoms (muscle pains, coughing, fever) but within a few days the disease moves into its far more painful – and invariably fatal – phase.</p>
+<p><strong>Application</strong> : Contact
+<strong>Onset time:</strong> 2D6 weeks
+<strong>Duration:</strong> 2D6 days
+<strong>Resistance Time</strong> : One Resistance roll
+<strong>Potency:</strong> 80
+<strong>Resistance</strong> : Resilience.
+<strong>Conditions:</strong> Hallucination, Mania (hydrophobia), Death. If the disease takes hold, the victim suffers increasingly acute and debilitating hallucinations. Halfway through the Duration, manic hydrophobia automatically sets-in as the victim’s throat swells, the body dehydrates and it becomes physically painful to swallow water. At the end of the Duration, the victim mercifully slips into a coma and dies.</p>
+<p><strong>Antidote/Cure:</strong> Cure Disease spell. Rabies is not a magical disease but its severity means there is no natural cure or antidote for it; healing magic is essential and must be administered prior to the conclusion of the disease.</p>
+<h5 id="soul-palsy"><a class="header" href="#soul-palsy">Soul Palsy</a></h5>
+<p>Carried by certain supernatural creatures, Soul Palsy deliberately targets the victim’s soul, eroding Magic Points. The disease is usually contracted through inhaling the demonic breath of the supernatural monster carrying it.</p>
+<p><strong>Application</strong> : Inhalation
+<strong>Onset time:</strong> 1D4 days
+<strong>Duration:</strong> 1D6 days
+<strong>Resistance Time</strong> : Daily. The first Resistance roll must be made at the end of the Onset Time, then daily thereafter.</p>
+<p><strong>Potency:</strong> 65
+<strong>Resistance</strong> : Persistence.
+<strong>Conditions:</strong> Sapping. The Sapping condition saps 1D6 Magic Points if the daily Resistance roll is failed.</p>
+<p><strong>Antidote/Cure:</strong> Either the Cure Disease spell, or by drinking water specially Sanctified by a Priest of the victim’s cult. The Sanctified water has a Potency of the Priest’s Magic Points multiplied by five and it reduces the Potency of the Soul Palsy by this amount, either completely curing the disease or enabling the victim to better resist it.</p>
+<h3 id="sample-poisons"><a class="header" href="#sample-poisons">Sample Poisons</a></h3>
+<h5 id="blade-venom"><a class="header" href="#blade-venom">Blade Venom</a></h5>
+<p>Blade venom comes from many sources: poisons milked from venomous creatures and then treated further; toxic plants and herbs; or by alchemy perhaps. Typically blade venom is a sticky paste that is applied to a blade or spear/arrow head. It must be introduced through an open wound and once it takes effect, it inflicts a terrible burning pain in the injured location.</p>
+<p><strong>Application</strong> : Injection
+<strong>Onset time:</strong> 1D3 Combat Rounds
+<strong>Duration:</strong> 2D6 minutes
+<strong>Resistance Time</strong> : One Resistance roll.
+<strong>Potency:</strong> 55.
+<strong>Resistance</strong> : Resilience.
+<strong>Conditions:</strong> Agony. If the victim fails his Resistance roll the poisoned location is incapacitated with pain. The effect continues until the Duration is completed.</p>
+<p><strong>Antidote/Cure:</strong> Each specific blade venom usually has a counteracting agent, such as urine or yoghurt, which soothes the pain. If the cure is applied successfully before the end of the Onset time then the blade venom is completely counteracted. Successful use of the Healing skill will also neutralise the pain.</p>
+<h5 id="potent-snake-venom"><a class="header" href="#potent-snake-venom">Potent Snake Venom</a></h5>
+<p>This venom is of the kind typically injected by a poisonous snake such as a cobra or similar.</p>
+<p>Fangs are used to inject a neurotoxin in a dose sufficient to kill within a few minutes. The potency of the venom is based on either the quantity injected or the concentration – meaning that small snakes with quite small venom glands can often introduce a small amount of venom that is every bit as harmful as a large dose from a larger snake.</p>
+<p><strong>Application</strong> : Injection
+<strong>Onset time:</strong> Nausia after 1D3 minutes, Paralysis after 3D6 minutes, Asphyxiation at conclusion <strong>Duration:</strong> 1 hour <strong>Resistance Time</strong> : The victim must make a Resistance roll at the Onset Time of each stage of the poison. Failure indicates that Condition has taken effect.</p>
+<p><strong>Potency:</strong> 80
+<strong>Resistance</strong> : Resilience
+<strong>Conditions:</strong> Nausea, Paralysis, Asphyxiation. The venom initially causes the victim to start feeling nauseous if the first Resistance roll is failed. The location bitten then suffers paralysis if the second Resistance roll is failed. At the end of the Duration the victim must succeed in a final Resistance roll or suffer respiratory failure.</p>
+<p><strong>Antidote/Cure:</strong> Anti-venom. Some cultures have perfected anti-venom remedies which have a Potency of 1D20+10. The anti-venom must be introduced with a successful First Aid or Healing roll and add their Potency as a bonus to the victim’s Resilience roll to fight the venom throughout its duration.</p>
+<h5 id="sleeping-draught"><a class="header" href="#sleeping-draught">Sleeping Draught</a></h5>
+<p><strong>Application</strong> : Ingestion
+<strong>Onset time:</strong> 1D8 minutes
+<strong>Duration:</strong> 2D6 hours
+<strong>Resistance Time</strong> : Hourly. The first Resistance roll must be made at the end of the Onset Time, then hourly thereafter. Success indicates the victim has woken up but remains groggy for the remainder of the Duration.</p>
+<p><strong>Potency:</strong> 75.
+<strong>Resistance</strong> : Resilience.
+<strong>Conditions:</strong> Unconscious. If the victim fails the Resistance roll he falls into a deep sleep remaining unconscious until he succeeds in resisting the draught, or the Duration expires. The victim awakes feeling groggy and lethargic, gaining a level of fatigue in addition to any already suffered.</p>
+<p><strong>Antidote/Cure:</strong> The sap of the foxglove plant can protect against the effects of a sleeping draught if taken in advance of the poisoning. Otherwise, there is no method save magic that can counteract the effects.</p>
+<h3 id="falls"><a class="header" href="#falls">Falls</a></h3>
+<p>Falling can happen for a number of reasons. Failed or fumbled Athletics rolls to climb or jump often result in falls and Knockback can easily knock an Adventurer off a precipice or over a parapet. An Adventurer that takes damage from a fall ends up prone. Armour Points do not reduce falling damage.</p>
+<h6 id="falling-distance"><a class="header" href="#falling-distance">Falling Distance</a></h6>
+<pre><code>Distance Fallen Damage Taken
+1m or less No damage.
+2m to 5m 1D6 points of damage to a random location.
+6m to 10m 2D6 points of damage to two random locations.
+11 to 15m 3D6 points of damage to three random locations.
+16m to 20m 4D6 points of damage to four random locations.
++5m +1D6 damage.
+</code></pre>
+<p>A creature of SIZ 8 to 9 treats the distance fallen as one metre less. A creature of SIZ 6 to 7 treats the distance fallen as three metres less. A creature of SIZ 4 to 5 treats the distance fallen as five   metres less. A creature of SIZ 2 to 3 treats the distance fallen as eight metres less. A creature of SIZ 1 or less treats the distance fallen as 10 metres less.</p>
+<p>As long as the Adventurer was not surprised, they may attempt an Acrobatics test to mitigate falling damage – a successful test allows the Adventurer to treat the fall as if it were two metres shorter than it actually is. In addition, as long as this test is a success and the Adventurer is not reduced to 0 Hit Points in a location due to the fall, the Adventurer lands relatively safely and is not prone.</p>
+<p>Adventurers falling onto soft surfaces (such as thick moss or a hay stack) may treat the distance they fall as halved for the purposes of damage. The Games Master will decide whether this applies or not.</p>
+<p>Adventurers falling onto damaging surfaces (such as pit spikes or a concrete floor bubbling with two inches of acid) will suffer the effects of the surface to all locations that are damaged in the fall.</p>
+<h3 id="falling-objects"><a class="header" href="#falling-objects">Falling Objects</a></h3>
+<p>A falling object imparts an amount of damage based on its SIZ and the distance of the fall. An object imparts 1D6 damage for every six points of SIZ (or fraction thereof), plus an amount of damage equal to the Damage Taken column of the Falling Distance chart on page 82 – including any adjustments for objects of smaller size.</p>
+<p><em>For example, an anvil with SIZ 10 inflicts 2D6 damage. If said anvil fell from a height of 10 metres, it would impart an additional 2D6 damage! If a small rock SIZ 1 was dropped from the same height, it would inflict 1D6 damage but would gain no extra damage from the fall.</em></p>
+<h4 id="firecold"><a class="header" href="#firecold">Fire/Cold</a></h4>
+<p>Fire and intense heat can come from numerous sources, such as naked flames or super-heated metal.</p>
+<p>An Adventurer normally takes damage from fire or heat to a specific Hit Location. However, if an Adventurer is immersed in the source of the damage (such as standing within a burning room or being burned at a stake), then all locations will suffer from the damage the fire causes. The amount of damage suffered from fire or heat will depend on its intensity, as shown on the Fire and Heat table. The damage from the heat source is applied every Combat Round until the heat source is extinguished or removed, or the Adventurer manages to escape from it.</p>
+<h6 id="fire-and-heat"><a class="header" href="#fire-and-heat">Fire and Heat</a></h6>
+<pre><code>Damage Source Example Damage
+Flame Candle 1 point
+Large Flame Flaming brand 1D4 points
+Small Fire Camp fire, cooking fire 1D6 points
+Large Fire Scolding steam, large bonfires, burning rooms 2D6 points
+Inferno Lava, inside a blast furnace 3D6 points
+</code></pre>
+<p>Cold can be just as deadly, though generally harder to implement as a lethal weapon. If something is cold enough to cause damage, it will cause damage according to its intensity, just like fire or heat.</p>
+<h6 id="cold"><a class="header" href="#cold">Cold</a></h6>
+<pre><code>Damage Intensity Example Damage
+Chill A winter wind 1 point
+Cold A frozen pond 1D4 points
+Intense Cold Ocean waves 1D6 points
+Freezing Arctic Environment, summer 2D6 points
+Intensely Freezing Arctic Environment, winter. 3D6 points
+</code></pre>
+<h2 id="down-time"><a class="header" href="#down-time">Down Time</a></h2>
+<p>Down time is the period in between adventures when Adventurer spend their hours relaxing, training, carousing, researching, or simply getting on with their mundane lives. It is deliberately not a period that requires a Games Master to invest with any great detail but it can be interesting and fun to find out what Adventurers have been up to in their down time and, perhaps, use some of their activities either as the basis for a scenario or to form part of one.</p>
+<h3 id="activities"><a class="header" href="#activities">Activities</a></h3>
+<p>The Adventurers can get-up to countless activities during Down Time and they do not need to be specific about them unless they are associated with improving the Adventurer in some way, or might have a useful implication for further adventures.</p>
+<p>If the Games Master (and players) want to know what happens to their adventurers during Down Time and do not wish to fill in the blanks deliberately, here are some suggestions for common activities.</p>
+<h5 id="odd-jobs"><a class="header" href="#odd-jobs">Odd Jobs</a></h5>
+<p>The Adventurer takes on paid, part-time work using his skills as an Adventurer. The work is generally non-hazardous and relatively poorly paid. Either choose an odd job or roll randomly.</p>
+<p>To see how much the Adventurer earns, either decide how many days are spent in the odd job, and multiply it by the Payment per Day figure, or roll 1D20 to randomly determine the number of days.</p>
+<p>To see how successful the Adventurer was in the job, roll a second 1D20. If the die roll is a 20, this indicates that the Adventurer was sacked from the job for some reason and pay was withheld (or worse). If a 1 is rolled, then the Adventurer performed a sterling service. Double the earnings from the work.</p>
+<h5 id="cost-of-living"><a class="header" href="#cost-of-living">Cost of Living</a></h5>
+<p>When not adventuring, Adventurers have living expenses like everyone else; food, rent, taxes, socialising and so forth. Of course, how much an Adventurer chooses to spend depends almost entirely on what they have available to spend. Living luxuriously to one Adventurer may seem like border-line poverty to another, depending on what Adventurers are used to.</p>
+<p>Use the following table as a general guide to living expenses. The terms used are relative to the amount of money the Adventurer has available: ‘luxury’ to someone with only a few silvers in their purse might be taking a bath once a week. To someone with several thousand, it might be taking a bath in ass’s milk every day.</p>
+<h6 id="standard-of-living-table"><a class="header" href="#standard-of-living-table">Standard of Living Table</a></h6>
+<h6 id="standard-of-living-proportion-of-personal-wealth-spent"><a class="header" href="#standard-of-living-proportion-of-personal-wealth-spent">Standard of Living Proportion of Personal Wealth spent</a></h6>
+<h6 id="subsistence-10"><a class="header" href="#subsistence-10">Subsistence 10%</a></h6>
+<h6 id="within-means-25"><a class="header" href="#within-means-25">Within Means 25%</a></h6>
+<h6 id="comfortable-50"><a class="header" href="#comfortable-50">Comfortable 50%</a></h6>
+<h6 id="luxurious-80"><a class="header" href="#luxurious-80">Luxurious 80%</a></h6>
+<h6 id="ostentatious-100-or-more"><a class="header" href="#ostentatious-100-or-more">Ostentatious 100% or more</a></h6>
+<p>The amount spent on Cost of Living excludes any dues necessary to cults or guilds and are exclusive of training costs. Neither are the costs of specific weapons, armour or other individual goods used in adventuring included. As a period of Down Time begins, Adventurers should declare what standard of living they intend to pursue after having decided on training and personal improvement activities and paid any dues to cults or other patrons. These costs should be deducted from each Adventurer’s personal wealth and the remainder used to determine the standard of living enjoyed for the remainder of the Down Time.</p>
+<h6 id="odd-job-table"><a class="header" href="#odd-job-table">Odd Job Table</a></h6>
+<pre><code>1D20 Job Payment per Day Notes
+1 Bar Keep 5 CP Free lodging
+2 Bard/Busker 1D8 CP
+3 Bodyguard 1D4 SP Free lodging
+4 Bouncer 1D2 SP Free drink
+5 Burglary 1D100 SP
+6 Farmhand 3 CP Free lodging
+7 Gambler 1D100 SP Free set of dice or cards
+8 Grave Digger 3 CP Free shovel
+9 Hunter 1D10 SP Free food
+10 Librarian/Research
+Assistant
+</code></pre>
+<pre><code>2 SP May conduct personal
+research whilst working
+11 Local Politics 2D4 SP
+12 Manual Labourer 3 CP
+13 Militia Duty 2 SP Free food and lodging
+14 Odd-Jobber 1D10 CP
+15 Rat Catcher/Pest Control 2D4 CP Free net
+16 Rent Collector 2D4 CP
+17 Salesman 1D4 SP
+18 Tax Collector 1D6 SP
+19 Teacher 8 CP Free chalk and slate
+20 Temple Assistant 2 SP Free lodging
+</code></pre>
+<h2 id="encumbrance"><a class="header" href="#encumbrance">Encumbrance</a></h2>
+<p>Despite their most fervent prayers, Adventurers will be unable to carry every last weapon, piece of armour and treasure chest they discover. There is a limit to what an Adventurer can carry and those who exceed this limit will not be able to move very quickly.</p>
+<p>Every piece of equipment in the Equipment chapter has an Encumbrance (ENC) score, though some items are too small or light to have an ENC score. Adventurers can usually ignore the effects on Encumbrance that these have unless they start carrying a lot of them – assume that an average of 20 such items will equal 1 ENC, so long as the Adventurer has a suitable means of carrying them, such as a sack or backpack.</p>
+<p>An Adventurer can carry equipment with a total ENC that is less than or equal to his STR+SIZ without penalty.</p>
+<h3 id="overloading"><a class="header" href="#overloading">Overloading</a></h3>
+<p>An Adventurer carrying total ENC greater than his STR+SIZ is Overloaded.</p>
+<ul>
+<li>
+<p>Overloaded Adventurers suffer a –20% penalty to all tests that require physical actions, including Weapon Skill Tests and most tests that have DEX or STR as a Characteristic (some exceptions being Sleight and Mechanisms).</p>
+</li>
+<li>
+<p>Overloaded Adventurers have their Movement halved. They also suffer a –20% penalty to all Fatigue tests.</p>
+</li>
+</ul>
+<h2 id="healing"><a class="header" href="#healing">Healing</a></h2>
+<p>Healing can come from a variety of sources: First Aid and Healing skills are obvious, as is magical healing in the form of spells: these healing forms are dealt with in their respective descriptions.</p>
+<p>However, Adventurers also heal naturally and the rate of natural healing is dependent on the Adventurer’s Resilience.</p>
+<h3 id="natural-healing"><a class="header" href="#natural-healing">Natural Healing</a></h3>
+<p>The amount of Hit Points an Adventurer naturally regains is based on the Resilience value, as shown in the Natural Healing Table:</p>
+<h5 id="natural-healing-table"><a class="header" href="#natural-healing-table">Natural Healing Table</a></h5>
+<pre><code>Resilience Value Healing Rate
+01–10 1 Hit Point per 72 hours
+11–30 1 Hit Point per 48 hours
+31–50 1 Hit Point per 36 hours
+51–70 1 Hit Point per 24 hours
+71–90 1 Hit Point per 18 hours
+91+ 1 Hit Point per 12 hours
+</code></pre>
+<p>There are certain restrictions on natural healing, as follows:</p>
+<ul>
+<li>
+<p>An Adventurer cannot engage in anything other than light activity: if the Adventurer undertakes anything strenuous then the rate of healing is treated as one stage lower on the Natural Healing Table thus, an injured Adventurer with Resilience 44% heals at a rate of 1 Hit Point every 36 hours. If he decided to assist his colleagues in defending the village from attack, his Healing Rate would drop to 1 Hit Point every 48 hours, for the duration of the time he engages in work related to the village’s defence.</p>
+</li>
+<li>
+<p>Natural healing will not heal a Major Wound until that location has either been treated with a successful Healing test (see page 60) or significant magical healing has been applied.</p>
+</li>
+</ul>
+<h3 id="magical-healing"><a class="header" href="#magical-healing">Magical Healing</a></h3>
+<p>However magical healing is achieved, whether from a spell, prayer or potion, it has an instantaneous effect.</p>
+<p>In addition to the restoration of Hit Points, any location suffering a Major Wound that receives even a single Hit Point’s restorations through magical healing of commensurate power immediately stops bleeding and can benefit from natural healing.</p>
+<p>If an Adventurer has been knocked unconscious due to a Serious or Major Wound, the restoration of a single Hit Point to the wounded location that caused the unconsciousness will revive them.</p>
+<p>Unless specifically stated in the magic’s description, magical healing cannot re-attach severed limbs or revive the dead.</p>
+<h2 id="hero-points"><a class="header" href="#hero-points">Hero Points</a></h2>
+<p>Hero Points are part of the currency of <em>Legend</em>. Hero Points allow Adventurers to differentiate themselves from the rank and file, using Hero Points earned to gain an advantage over opponents, find a way through tricky situations, or mitigate that killing blow that gets through even the best Adventurer’s defence.</p>
+<p>Every Adventurer starts with a fixed number of Hero Points that are used throughout his adventures and Quests. New Adventurers start the game with two Hero Points and more can be earned as the game progresses.</p>
+<p>At the conclusion of a story, each Adventurer should receive two Hero Points. This can be modified if the Adventurer performed particularly poorly or heroically, giving a range of between zero and four Hero Points awarded. However Hero Points need not be reserved for the end of a story: if an Adventurer performs some action or deed that the Games Master deems especially heroic, or which significantly adds to the atmosphere or progression of the story, then he can make an immediate award, at his discretion. Such awards are never a right and cannot be demanded by players for their Adventurers; they are always the Games Master’s decision. In these cases ad-hoc awards should be of a single Hero Point and no Adventurer should benefit from more than one such award per story.</p>
+<h3 id="using-hero-points"><a class="header" href="#using-hero-points">Using Hero Points</a></h3>
+<p>Hero Points can be used in a variety of ways. Each of the following options costs a single Hero Point. Once spent, a Hero Point is gone forever.</p>
+<p><strong>Last Chance Combat Action</strong> : If an Adventurer has exhausted his Combat Actions during a fight and needs to find that last burst of desperate energy to perhaps avoid a messy end, he may spend a Hero Point to gain a Combat Action.</p>
+<p><strong>Second Chance:</strong> A player can re-roll any Skill Test that affects his Adventurer. This can be a Skill Test, damage roll or anything else that has some effect on him. He can even force an opponent to re-roll an attack or damage roll made against him.</p>
+<p><em>For example Alaric is engaged in an opposed Skill Test with his great rival, Owain. Both are attempting to impress the fair Selena with their storytelling skills (using Influence). Owain has rolled a critical success, beating Alaric’s normal success. Alaric thus spends a Hero Point forcing Owain to re-roll his Influence skill: the re-roll results in a failure for Owain and so Alaric wins the contest and impresses the giggling Selena through a last minute recollection of the heroic fight against the trolls…</em>  <strong>Glancing Blow:</strong> An Adventurer who suffers a Major Injury may spend a Hero Point to downgrade the wound to a Serious Injury. This reduces the damage taken to one Hit Point less than what would be required to inflict a Major Wound.</p>
+<p><strong>Heroic Insight:</strong> A Hero Point may be spent to gain a hint or clue from the Games Master that helps the Adventurer resolve a situation that has him at an impasse.</p>
+<p>_For example, Alaric is trapped within the troll’s lair and can hear troll guards bearing down on him.</p>
+<p>Panicked by the situation, he is truly stuck for what to do next. Alaric spends a Hero Point for a Heroic Insight: the Games Master smiles and informs Alaric’s player that, suddenly, he feels a vague draft of air against his cheek that could only have come from the crack of a concealed doorway. This prompts Alaric to search and he finds the exit just in time. The Heroic Insight has saved his life._  <strong>Heroic abilities:</strong> The Adventurer may spend Hero Points to acquire a Heroic Ability he has qualified for. For more details see the Heroic abilities section on page 218.</p>
+<h2 id="fatigue"><a class="header" href="#fatigue">Fatigue</a></h2>
+<p>Adventurers are usually hardy individuals but even the best of them are still just people, with limits to what they can physically achieve. The greatest warrior in the world may have</p>
+<h5 id="alarics-tale-3"><a class="header" href="#alarics-tale-3">Alaric’s Tale</a></h5>
+<p><em>In a battle with a group of trolls, Thrace saves the day through a mixture of quick thinking, deft tactics and mighty thrusts with his long spear. As his initiative saves the lives of Alaric and Lilina, the Games Master makes him an immediate award of one Hero Point at the end of the combat. At the end of the story’s session and following more heroics from all three Adventurers, the Games Master awards each of them two Hero Points.</em>   phenomenal endurance but even he will not be able to run 10 miles to a besieged village and then fight for three hours non-stop. As Adventurers engage in strenuous physical activity, they risk becoming Fatigued.</p>
+<p>Physical activity is divided into three categories; light, medium and heavy. The length of time an Adventurer can engage in physical activity without running the risk of becoming Exhausted is determined by his CON, as detailed under each category of physical activity. Once this time has elapsed, an Adventurer must begin to make Skill Tests in order to resist the effects of exhaustion.</p>
+<ul>
+<li><strong><em>Light Activity</em></strong> <em>:</em> Includes travelling at a reasonable pace, casting spells or carrying light loads.</li>
+</ul>
+<p>Adventurers never risk Fatigue while engaging in light activity.</p>
+<ul>
+<li><strong><em>Medium Activity</em></strong> <em>:</em> Includes back-breaking manual labour, running, climbing or swimming.</li>
+</ul>
+<p>An Adventurer can engage in medium activity for a number of minutes equal to his CON before risking Fatigue. Once this time has elapsed, the Adventurer must immediately make a Simple (+20%) Athletics test or begin suffering the effects of Fatigue. So long as the activity continues, he must make another Simple (+20%) Athletics test every time a number of minutes equal to the Adventurer’s CON elapse.</p>
+<ul>
+<li><strong><em>Heavy Activity</em></strong> <em>:</em> Includes fighting in combat, sprinting, swimming and climbing at top speed. An Adventurer can engage in heavy activity for a number of Combat Actions equal to his CON score before risking Fatigue. Once this time has elapsed, the Adventurer must immediately make a Normal (+0%) Athletics test or begin suffering the effects of Fatigue. So long as the activity continues, he must make another Normal (+0%) Athletics test every time a number of Combat Actions equal to the Adventurer’s CON elapse.</li>
+</ul>
+<p>Note that some versions of medium or heavy activity may not require Athletics tests. The Games Master may decide that, in order for an Adventurer to escape Fatigue after a long night in the Great Library searching for clues, a Persistence test is required instead, as the mental exertion counts as medium activity.</p>
+<h3 id="effects-of-fatigue"><a class="header" href="#effects-of-fatigue">Effects of Fatigue</a></h3>
+<p>If an Adventurer fails a test whilst engaged in medium or heavy activity, he will begin to show Fatigue. Every time a Fatigue test is failed, the Adventurer will drop down one level of Fatigue, as shown on the Fatigue Levels table.</p>
+<h3 id="time-and-fatigue"><a class="header" href="#time-and-fatigue">Time and Fatigue</a></h3>
+<p>Adventurers, regardless of activity, will naturally tire. Once an Adventurer has been awake for 10+CON hours, they must make a Persistence test or drop one Fatigue level. This test must be repeated for every hour the Adventurer remains awake.</p>
+<h3 id="recovering-from-fatigue"><a class="header" href="#recovering-from-fatigue">Recovering from Fatigue</a></h3>
+<p>An Adventurer will move up one level of Fatigue for every two hours of complete rest or four hours of light activity. A successful First Aid or Healing test can raise an Adventurer by one level of Fatigue once per day but cannot raise an Adventurer above Winded.</p>
+<h6 id="fatigue-levels"><a class="header" href="#fatigue-levels">Fatigue Levels</a></h6>
+<pre><code>Level of Fatigue Effects
+Fresh None.
+Winded All Skill Tests (including further tests to resist Fatigue) suffer a –10% penalty.
+
+Tired All Skill Tests (including further tests to resist Fatigue) suffer a –20% penalty. Movement suffers a –1m penalty.
+
+Wearied All Skill Tests (including further tests to resist Fatigue) suffer a –30% penalty. Movement suffers a –1m penalty. Strike Rank suffers a –2 penalty.
+
+Exhausted All Skill Tests (including further tests to resist Fatigue) suffer a –40% penalty. Movement is halved. Strike Rank suffers a –4 penalty. DEX is considered 5 points lower for the purposes of determining Combat Actions.
+
+</code></pre>
+<pre><code>Adventurer must make a Persistence test every minute or fall unconscious for 1D3x2 hours.
+
+Debilitated All Skill Tests (including further tests to resist Fatigue) suffer a –50% penalty. Movement is halved. Strike Rank suffers a –6 penalty. DEX is considered 10 points lower for the purposes of determining Combat Actions.
+
+</code></pre>
+<pre><code>Adventurer must make a Difficult Persistence test every Combat Round or
+fall unconscious for 1D6x2 hours.
+</code></pre>
+<h3 id="exposure-starvation-and-thirst"><a class="header" href="#exposure-starvation-and-thirst">Exposure, Starvation and Thirst</a></h3>
+<p>Freezing cold wastes or crippling hot deserts can take a terrible toll on Adventurers, as can hunger and thirst.</p>
+<p>Exposure occurs when an Adventurer is insufficiently prepared against a hostile environment, normally because of a failed Survival test. An Adventurer can normally survive for a number of hours equal to his CON before suffering from exposure, although this can change according to weather conditions.</p>
+<p>An Adventurer can survive for a number of days equal to his CON before becoming incapacitated from starvation, though after three days they will begin to suffer a –10% penalty to Fatigue tests.</p>
+<p>An Adventurer can survive for a number of hours equal to his CON x4 before becoming chronically thirsty, though particularly arid environments may reduce this to CON x3 or even CON x2.</p>
+<p>Whenever an Adventurer is suffering from exposure, starvation or thirst, the Fatigue test penalty immediately doubles to –20%. In addition, the Adventurer will automatically suffer one point of damage to all locations every day, for every condition he is experiencing. Natural or magical healing will not heal this damage – only sufficient shelter, food or water can remedy the problem and allow natural or magical healing to take place.</p>
+<h3 id="abstract-fatigue"><a class="header" href="#abstract-fatigue">Abstract Fatigue</a></h3>
+<p>The standard Fatigue rules aim for a balance between realism and ease of play. However, at the Games Master’s discretion, they can be still further simplified for players who find keeping track of elapsed rounds almost as tiresome as armed combat.</p>
+<p>The Games Master can simply call for a Simple (+20%) Athletics test after each major exertion by an Adventurer or antagonist. A major exertion might be: killing a foe, emptying a treasure chamber, fleeing a foe, withstanding a cavalry charge, mounting an infantry charge, swimming a rapid river, climbing a castle wall and so on. He should feel free to adjust the rhythm until he and the players are comfortable – some groups may agree that it takes three kills (or major duels) to induce a Fatigue test. Other groups may decide that the first kill merits a Simple (+20%) Athletics test, the second and third a Normal (+0%) Athletics test, the fourth and fifth a Difficult (–20%) Athletics test and so forth. A rest between combats might ‘reset’ this clock.</p>
+<p>The effects of abstract Fatigue are the same as those given in the regular rules.</p>
+<h2 id="inanimate-objects"><a class="header" href="#inanimate-objects">Inanimate Objects</a></h2>
+<p>Like Adventurers, inanimate objects – such as doors, walls, statues and so forth – can also sustain damage.</p>
+<p>All inanimate objects have Armour Points and Hit Points. Except for the most unusual of circumstances, attacks on inanimate objects will automatically hit – Adventurers simply need to work out how much damage they deal.</p>
+<p>The object’s Armour Points will be deducted from any damage dealt as normal, with the remainder being applied to its Hit Points. Once an object’s Hit Points have been reduced to zero, it is smashed and useless.</p>
+<p>Inanimate objects likely to block or restrain Adventurers, such as doors or ropes, have Armour and Hit Point scores. To break down a door, or burst one’s bonds, an Adventurer must succeed with either a Brawn, Unarmed or weapon attack roll, as appropriate. A successful roll deals damage to the item as per the weapon type; a failed roll has simply failed to apply enough force or damage to the item to deteriorate its condition. Once the object’s Hit Points reach zero, the item is broken or sundered. In the cases where Brawn is used (to break a rope, for example), a successful roll inflicts the same damage as an Unarmed attack.</p>
+<p>The Inanimate Objects table gives a range of examples of inanimate objects, along with their Armour Points and Hit Points.</p>
+<h6 id="inanimate-objects-1"><a class="header" href="#inanimate-objects-1">Inanimate Objects</a></h6>
+<pre><code>Object Armour Points Hit Points
+Boulder 10 40
+Castle gate 8 120
+Castle wall (2m section) 10 250
+Chain/shackle 8 8
+Club 4 4
+Dagger 6 4
+Hut wall (2m section) 3 15
+Iron door 12 75
+Rope 6 3
+War sword 6 10
+Wooden chair 2 6
+Wooden door (normal) 4 25
+Wooden door (reinforced) 6 30
+Wooden fence (2m section) 4 5
+</code></pre>
+<h3 id="inanimate-objects-and-weapons"><a class="header" href="#inanimate-objects-and-weapons">Inanimate Objects and Weapons</a></h3>
+<p>A weapon is designed to cleave flesh, not stone. Using a weapon on an inanimate object with Armour Points equal to or greater than that of the weapon, deals damage to both the object and the weapon. For instance, using a war sword on a boulder will certainly damage the boulder but the war sword itself will be destroyed long before the boulder is. Certain tools and weapons, such as the mining pick (see page 115), are designed for use on rock and would not be destroyed if used on a boulder.</p>
+<p>The Games Master should exercise judgement on which weapons or tools can affect which objects. For example, a warrior with a sword can easily slash through a rope but one armed only with a maul is likely to have a much harder time.</p>
+<h2 id="movement"><a class="header" href="#movement">Movement</a></h2>
+<p>Standard human base Movement is eight metres per Combat Round at walking pace. If sprinting, the Movement rate is multiplied by five; however, an Adventurer can only maintain a sprint for a number of Combat Rounds equal to his CON before he must test for Fatigue.</p>
+<p>The Comparative Movement table summarises typical distances covered, by creatures of differing base Movement rates, for a variety of time periods.</p>
+<h3 id="movement-in-armour"><a class="header" href="#movement-in-armour">Movement in Armour</a></h3>
+<p>The armour an Adventurer wears acts against the Movement rate and certain kinds of actions such as swimming or climbing.</p>
+<p><em>Armour Penalty = Total Locations Armoured, divided by five and rounded up. Thus, a full suit of plate armour (6 AP on seven locations gives an Armour Penalty of 42/5 = –9)</em>  The effects of Armour Penalty on an Adventurer’s Movement are as follows:</p>
+<ul>
+<li><strong>Walking or gentle jogging</strong> : Armour does not interfere with such movement, although it can increase the Fatigue level (see page 90).</li>
+</ul>
+<h6 id="comparative-movement"><a class="header" href="#comparative-movement">Comparative Movement</a></h6>
+<pre><code>Time
+Period
+</code></pre>
+<pre><code>Movement
+4m
+</code></pre>
+<pre><code>Movement
+6m
+</code></pre>
+<pre><code>Movement
+8m
+</code></pre>
+<pre><code>Movement
+10m
+</code></pre>
+<pre><code>Movement
+12m
+</code></pre>
+<pre><code>Movement
+16m
+</code></pre>
+<pre><code>Movement
+20m
+Combat
+Round
+</code></pre>
+<pre><code>4m (20m if
+sprinting)
+</code></pre>
+<pre><code>6m (30m if
+sprinting)
+</code></pre>
+<pre><code>8m (40m if
+sprinting)
+</code></pre>
+<pre><code>10m (50m
+if sprinting)
+</code></pre>
+<pre><code>12m
+(60m if
+sprinting)
+</code></pre>
+<pre><code>16m
+(80m if
+sprinting)
+</code></pre>
+<pre><code>20m
+(100 m if
+sprinting)
+Minute 48m
+(240m if
+sprinting)
+</code></pre>
+<pre><code>72m
+(360m if
+sprinting)
+</code></pre>
+<pre><code>96m
+(480m if
+sprinting)
+</code></pre>
+<pre><code>120m
+(600m if
+sprinting)
+</code></pre>
+<pre><code>144m
+(720m if
+sprinting)
+</code></pre>
+<pre><code>192m
+(960m, if
+sprinting)
+</code></pre>
+<pre><code>240m
+(1,200m if
+sprinting)
+Hour 2.8km 4.3km 5.6km 7.2km 8.6km 11.2km 14.4km
+Day (12
+hours)
+</code></pre>
+<pre><code>33.6km 51.6km 67.2km 86.4km 103.2km 134.4km 172.8km
+</code></pre>
+<ul>
+<li>
+<p><strong>Sprinting</strong> : Multiply the base Movement by five and subtract the Armour Penalty. The result is how fast the Adventurer can move during short chases, or when charging. <em>For example, an Adventurer wearing full plate armour can sprint or charge at 31 metres per Combat Round</em>.</p>
+</li>
+<li>
+<p><strong>Swimming</strong> : Divide the base Movement by two and subtract the Armour Penalty. If the result is zero, the Adventurer cannot move and barely keeps himself afloat. If the Movement is negative, then the Adventurer sinks. <em>For example, the Adventurer wearing full plate armour, with a –9 penalty, has a Swimming Movement of 4–9 = –5: the Adventurer will sink if he attempts to swim in his armour.</em></p>
+</li>
+<li>
+<p><strong>Climbing a rough surface (trees, steep hills and so on):</strong> The Armour Penalty is subtracted from three quarters of the base Movement (six metres per Combat Action for human Adventurers). If the result is zero or less, they are too burdened by their armour to climb. <em>Thus, our hero in his plate armour cannot climb as his Climbing movement is 6–9 = –3.</em></p>
+</li>
+<li>
+<p><strong>Climbing a sheer surface (walls, cliff faces and so on):</strong> The Armour Penalty is subtracted from the base Movement divided by two. As with climbing a rough surface, if the result is zero or less, the Adventurer cannot climb.</p>
+</li>
+<li>
+<p><strong>Jumping</strong> <strong><em>:</em></strong> Reduce the distance in metres the Adventurer can jump (see the Athletics skill, page 46) by the Armour Penalty divided by two. For standing jumps this impairment is halved.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/3_Skills.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/5_Equipment.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/3_Skills.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/5_Equipment.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

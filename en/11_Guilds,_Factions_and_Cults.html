@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>✅ Guilds, Factions and Cults - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="11-guilds-factions-and-cults"><a class="header" href="#11-guilds-factions-and-cults">11. Guilds, Factions and Cults</a></h1>
+<p>In <em>Legend</em> , few Adventurers stand alone. Most are members of some faction, order or cult. Guilds are the guardians of secret knowledge and craftsmanship, and often have a commercial focus coupled with their spiritual or social aspects. Magical orders pass on the secrets of sorcery to the next generation of apprentices and jealously protect their grimoires and hidden lore. Factions can be anything from an order of chivalrous knights to a gang of thieves, while cults range from established religions to fringe cults to spirit-worshipping lodges. Ultimately, what a faction calls itself is unimportant – what matters is belief and loyalty.</p>
+<h2 id="why-join-a-faction"><a class="header" href="#why-join-a-faction">Why Join a Faction?</a></h2>
+<p>Adventurers join factions for many reasons but the most common are:</p>
+<ul>
+<li>Cultural influence: all members of a particular clan worship a particular god and it has always been thus. Faction membership is not just expected but mandatory.</li>
+<li>Social advancement: membership of a particular guild or order is required to master a craft or a form of sorcery.</li>
+<li>Reinforce beliefs and behaviours: faction members cleave to a particular ideal or way of behaving and, in the faction, find a way of both expressing it and being rewarded for it.</li>
+<li>Power, Glory and Status: Rising through the faction’s ranks brings magical power, as explored earlier in Divine Magic but aside from that, factions offer rewards in the form of training and, perhaps, other gifts.</li>
+</ul>
+<h2 id="cults"><a class="header" href="#cults">Cults</a></h2>
+<p>A cult is any body of people who come together in veneration of a common symbol. This could be a god, a spirit or ancestor, an ideal or even a heroic personality. Cults fulfil many purposes: protection, progress and tuition, enlightenment and very often they are the focus for a complete community.</p>
+<p>Where divine cults are concerned, a god may have several cults dedicated to different aspects of the god’s personality. Thus a single god may have many cults or just one, embracing all aspects of the god’s nature.</p>
+<p>Cults are not limited to gods or spirits: a cult can form around a hero or heroine or even around a religious or philosophical ideal.</p>
+<h2 id="guilds"><a class="header" href="#guilds">Guilds</a></h2>
+<p>Guilds are associations of those who practice a particular profession or craft. All the jewellers in a city might belong to the jeweller’s guild, all the blacksmiths to the blacksmith’s guild and so forth. Each guild possesses certain secret techniques and methods that are revealed only to those who prove themselves worthy to learn them.</p>
+<p>Guilds wield vast political and economic power. Any craftsman or merchant who tries to operate without guild sanction will be shunned and driven out of business by the guild. Guildmasters have as much influence as any lord or high priest. Many long-established guilds take a mystical approach to their craft or profession, worshipping gods or spirits associated with the craft and practicing magical techniques.</p>
+<p>Not all guilds are publicly known or tolerated – thieves, mercenaries or assassins may also form secret underworld guilds.</p>
+<h3 id="sorcerous-orders"><a class="header" href="#sorcerous-orders">Sorcerous Orders</a></h3>
+<p>Sorcerous orders are gatherings of sorcerers and scholars. Learning the art of Sorcery takes many years of hard study, so sorcery is usually passed from master to a small handful of dedicated apprentices. Sorcerous orders are largely defined by the grimoires they possess – the most powerful orders have an extensive library of occult books. Such a library might contain as many as five or six unique grimoires, together with hundreds of commentaries, glosses, histories and related books of lore.</p>
+<p>Unlike guilds, most sorcerous orders exist on the fringes of society. Sorcerers bend the laws of reality and summon up ghastly horrors from beyond the stars, so they are often feared and abhorred by right-thinking folk.</p>
+<h3 id="martial-orders"><a class="header" href="#martial-orders">Martial Orders</a></h3>
+<p>Brave martial orders may be dedicated to a particular kingdom, or a deity, or an ideal. Membership of a chivalrous order is the dream of every noble warrior and squire but not all martial orders are made up of knights in shining armour. A martial order can also be a monastery of fighting monks on a distant mountain, or a band of hard-bitten mercenaries. Martial orders may control vast territories and great castles, and be possessed of considerable wealth and political power. Some orders even have divine blessings or secret fighting techniques.</p>
+<h2 id="factions-and-magic"><a class="header" href="#factions-and-magic">Factions and Magic</a></h2>
+<p>The kinds of magic offered vary depending on the faction’s nature.</p>
+<p><strong>Divine Cults</strong> offer Divine Magic and Common Magic to their members. Divine cults have, as their focus, a god or a pantheon of gods – beings of Divine power who, through a relationship with their faithful, extend both their magic and Characteristics to the membership.</p>
+<p><strong>Sorcerous Orders</strong> may have a god or a particular personality as the object of veneration but the order itself does not derive its magic from a Divine source, as would a Divine cult. Rather the order derives its magical power from the direct study of Sorcery, formulating grimoires reflecting the needs, deeds and myths of its object of veneration. Membership of Sorcerous Order gives access to one or more of the order’s Grimoires.</p>
+<p><strong>Guilds</strong> control access to the highest secrets of a particular craft or profession. An Adventurer who seeks a master capable of teaching the higher levels (75%) of a skill may be required to join the appropriate guild. Some guilds teach Common Magic related to that guild’s specialty – for example, a guild of blacksmiths might teach Bladesharp, Repair and Armoursmith’s Boon, while a guild of thieves might teach Bandit’s Cloak and Abacus.</p>
+<p><strong>Martial Orders</strong> may teach Common or Divine Magic, depending on their approach to combat.</p>
+<p>They often also possess special Heroic Abilities that are available only to their members.</p>
+<h4 id="comparative-rank-titles"><a class="header" href="#comparative-rank-titles">Comparative Rank Titles</a></h4>
+<p>Although the different factions have, for the sake of simplicity, the same structure of ranks, the names given to each rank differ between faction types. The Comparative Rank Titles table provides the comparisons:</p>
+<h4 id="comparative-rank-titles-1"><a class="header" href="#comparative-rank-titles-1">Comparative Rank Titles</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Rank Title</th><th>Divine Cult</th><th>Sorcery Order</th><th>Guild</th><th>Martial Order (chivalric)</th><th>Martial Order (monastic)</th></tr>
+</thead>
+<tbody>
+<tr><td>Level 0</td><td>Lay Member</td><td>Novice</td><td>Novice</td><td>Man-at-Arms</td><td>Novice</td></tr>
+<tr><td>Level 1</td><td>Initiate</td><td>Apprentice</td><td>Apprentice</td><td>Squire</td><td>Initiate</td></tr>
+<tr><td>Level 2</td><td>Acolyte</td><td>Adept</td><td>Journeyman</td><td>Knight</td><td>Brother</td></tr>
+<tr><td>Level 3</td><td>Priest</td><td>Mage</td><td>Master</td><td>Knight Captain</td><td>Elder Brother</td></tr>
+<tr><td>Level 4</td><td>High Priest</td><td>Archmage</td><td>Grand Master</td><td>Grand Master</td><td>Abbot</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="ranks"><a class="header" href="#ranks">Ranks</a></h2>
+<p>Part of the cult framework is to determine what ranks are available and how Adventurers progress from one to another. The core rank structure is summarised here, along with the advancement requirements and appropriate benefits. If the cult has any specific duties that members must perform, they will be outlined in the description of the rank.</p>
+<h3 id="level-0-common-members"><a class="header" href="#level-0-common-members">Level 0: Common Members</a></h3>
+<p>The first step in joining a faction and rising through its ranks is to become a Common Member.</p>
+<p>An Adventurer can belong to several factions as a Common Member, as long as they are not  diametrically opposed. The vast majority of members of a faction are Common Members, casual follows who support and aid the faction.</p>
+<h3 id="level-1-initiated-members"><a class="header" href="#level-1-initiated-members">Level 1: Initiated Members</a></h3>
+<p>This is the start of the inner membership of the faction and Initiated Members have to donate a substantial amount of time and money to the organisation. In return, they receive benefits denied to Common Members. It is possible for an Adventurer to be an Initiated Member of more than one faction at a time.</p>
+<h3 id="level-2-fervent-members"><a class="header" href="#level-2-fervent-members">Level 2: Fervent Members</a></h3>
+<p>Few members of the faction will rise to the position of Fervent Member, a rank that requires dedication and service but where the inner secrets of the faction begin to be revealed. Fervent Members can be Common Members and even Initiated Members of other factions but cannot be Fervent Members of more than one faction.</p>
+<h3 id="level-3-masters"><a class="header" href="#level-3-masters">Level 3: Masters</a></h3>
+<p>Masters are the respected and established leaders of the faction and have full command of the faction’s secret skills or spells. There is usually only a single master in a given gathering of the faction.</p>
+<h3 id="level-4-grand-masters"><a class="header" href="#level-4-grand-masters">Level 4: Grand Masters</a></h3>
+<p>The leaders of the cult, Grand Masters embody everything the faction stands for and have access to its deepest secrets. When trouble threatens, it is the Grand Masters who will fight for its survival and prosperity.</p>
+<h5 id="cult-ranks--requirement-and-benefits"><a class="header" href="#cult-ranks--requirement-and-benefits">Cult Ranks – Requirement and Benefits</a></h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th></th><th>Requirements</th><th>Benefits</th></tr>
+</thead>
+<tbody>
+<tr><td>Common Members</td><td>Candidate must have at least a basic understanding of the beliefs of the faction and make a small donation or perform a service for the faction.</td><td>The Adventurer will automatically be able to find tutors for any skills the cult teaches. They must still pay the normal rates for these services.</td></tr>
+<tr><td>Initiated Members</td><td>Candidates will be tested to determine their knowledge of the faction, their sincerity for joining and even their current reputation. The Adventurer must know five of the faction skills. Initiated members may also be required to donate some of their income to the faction.</td><td>As well as all the benefits enjoyed by Common Members, the Initiated Member will have automatic access to Common Magic spells (those only taught by their cult). Pious Members pay half the normal price for being taught faction skills.<br /><br />If an Adventurer is an Initiated Member of a faction, he will usually be considered a Common Member of all allied factions without being required to make any donation.</td></tr>
+<tr><td>Fervent Members</td><td>Candidates must have been an Initiated Member of the faction for at least two years and must have at least five faction skills of at least 50%. A valuable gift must be made to the faction, in accordance with its tenets and its status. For example, in a guild, the Fervent Member must complete a masterwork and present it to the masters; in a martial order, the would-be knight must complete a quest.</td><td>Fervent Members may call for Divine Intervention.</td></tr>
+<tr><td>Masters</td><td>Candidates must have been a Fervent Member of the faction for at least two years and must have at least five cult skills of at least 75%.</td><td>Faction skills are learnt for free.<br /><br />Moreover, Masters have the resources of their entire following at their disposal though they are advised not to abuse the trust of the faction’s members.</td></tr>
+<tr><td>Grand Masters</td><td>Candidates must have been a Master of the cult for at least three years and must have at least five cult skills of at least 90%.</td><td>Faction skills are learnt for free.</td></tr>
+</tbody>
+</table>
+</div>
+<h4 id="common-magic"><a class="header" href="#common-magic">Common Magic</a></h4>
+<p>Factions can offer Common Magic. The range of Common Magic available may be far wider than its Divine, Spirit or Sorcery Magic portfolio; or be limited to a handful of spells the faction finds especially useful. It is therefore not uncommon to see a faction listed as providing ‘All’ Common Magic spells – meaning all the spells found in <em>Legend’s</em> Common Magic chapter.</p>
+<p>Similarly some factions may only provide a list of named spells – or may have special Common Magic spells of their own development.</p>
+<h4 id="divine-magic"><a class="header" href="#divine-magic">Divine Magic</a></h4>
+<p>The god a faction worships determines what Divine Magic is offered. A war god, for example, can be expected to have Divine Spells relating to combat and battle; whereas a fertility goddess can be expected to have spells related with healing and growth. Again, there are no hard and fast rules here, save the description of the cult and the nature of the deity.</p>
+<p>The number of Divine Spells a cult offers depends on the cult’s size and standing. However most cults will offer around four or five Divine Spells to Pious Members or above.</p>
+<h4 id="sorcery"><a class="header" href="#sorcery">Sorcery</a></h4>
+<p>Those orders following a sorcerous tradition may have an ideal or philosophy as the focus of veneration, or a particular god, demi-god or saint. The Sorcery spells offered are collectively known as a grimoire and order members have access to the order’s grimoire or grimoires as described in the Sorcery chapter.</p>
+<h4 id="faction-skills"><a class="header" href="#faction-skills">Faction Skills</a></h4>
+<p>These are skills mastered by the cult and considered important to it. Training in these skills is more or less guaranteed with faction members being able to find access to a teacher via a temple, academy, school, shrine or through faction contacts. Faction skills are usually trained at a discount and if so this will be mentioned in the faction’s description.</p>
+<p>Additionally increasing competence in faction skills is usually mandatory for Adventurers to progress from one rank to the next. Thus, when considering training and spending Improvement Rolls, Adventurers need to consider and then balance-up, faction advancement requirements.</p>
+<h2 id="sample-cults"><a class="header" href="#sample-cults">Sample Cults</a></h2>
+<p>Three cults are presented here as examples.</p>
+<h3 id="the-cult-of-the-thunderer-divine-cult"><a class="header" href="#the-cult-of-the-thunderer-divine-cult">The Cult of the Thunderer (Divine Cult)</a></h3>
+<p>The warrior-god of the forest-tribes is the Thunderer, who shakes the branches and drives back the darkness. The forest tribes learned to worship the Thunderer and the rest of their pantheon from the sea-going barbarians of the north; in the mountains of the north, the Thunderer is associated with a magic iron hammer but the forest tribes have few ironsmiths. In their rites, therefore, the Thunderer’s holy weapon is the spear, which symbolises his heavenly thunderbolts.</p>
+<p>Warriors of the Thunderer are honour-bound to defend the tribe and hunt down monsters.</p>
+<p>Storms are their sacred time and battles or ceremonies conducted amid the thunder and the howling rain are especially blessed.</p>
+<p><strong>Divine Magic</strong>: Blessing (any Cult Skill), Crash of Thunder, Lightning Strike, Shield, Channel Strength.</p>
+<h4 id="membership-officers-and-ranks"><a class="header" href="#membership-officers-and-ranks">Membership, Officers and Ranks</a></h4>
+<h5 id="lay-members"><a class="header" href="#lay-members">Lay Members</a></h5>
+<p>Lay Members are any who support the warriors and are prepared to offer worship at the shrines of the Thunderer.</p>
+<h5 id="initiates"><a class="header" href="#initiates">Initiates</a></h5>
+<p>Initiates must have five cult skills at a minimum of 30%. They must all dedicate at least 1 POW to their Pact with the Thunderer.</p>
+<h5 id="acolytes"><a class="header" href="#acolytes">Acolytes</a></h5>
+<p>Acolytes of the Thunderer are veteran warriors and protectors of the tribe. Acolytes must have slain an enemy of the tribe, have five cult skills of at least 50% dedicating at least 3 POW to their Pact with the Thunderer. The Pact skill must also be at a minimum of 50%.</p>
+<h5 id="priests"><a class="header" href="#priests">Priests</a></h5>
+<p>Priest of the cult oversee ceremonies and keep the sacred fire of the Thunderer. They must also dedicate at least 5 POW to their Pact with the Thunderer. Five cult skills must be 80% or higher and the Pact skill must also be 80% or higher. As the heroes of the cult, they are expected to challenge all enemies of the Thunderer wherever they are found.</p>
+<h6 id="high-priests"><a class="header" href="#high-priests">High Priests</a></h6>
+<p>High Priests are given the gift of prophecy and can hear the future in the words of the thunder.</p>
+<p>They must dedicate at least 7 POW to their pact and have five cult skills including Pact at 100%.</p>
+<p>There may only be three High Priests at a time.</p>
+<h4 id="cult-skills"><a class="header" href="#cult-skills">Cult Skills</a></h4>
+<p>The cult offers training in the following skills. Pact is mandatory as one of the five skills for joining and advancing within the cult: <em>Acrobatics, Athletics, Common Magic, Evade, Pact (the Thunderer), Perception, Resilience, any Spear style.</em></p>
+<h3 id="order-of-the-black-serpent-sorcery-order"><a class="header" href="#order-of-the-black-serpent-sorcery-order">Order of the Black Serpent (Sorcery Order)</a></h3>
+<p>The Order of the Black Serpent follows the teachings of Menakhem Ka, the insane demi-god of the Ziggurat of the Eclipse. His desire to become a true god was articulated in his blasphemous grimoire before he departed into the depths of the great desert.</p>
+<p>Since then, the order has swollen in size from the original eight disciples and now numbers some 800 eager, would-be gods who seek to overthrow the established order wherever they establish one of their heretical schools.</p>
+<h4 id="magic"><a class="header" href="#magic">Magic</a></h4>
+<p><strong>Common Magic</strong>: Disruption, Mobility and Speedart</p>
+<p><strong>Sorcery (Black Serpent Grimoire)</strong>: Animate (Sand), Dominate (Serpent), Form/Set (Sand), Shapechange (Human to Serpent).</p>
+<p><strong>Heroic Abilities:</strong> Immunity to Poison; Reincarnate as Black Snake**<em>.</em>**</p>
+<h4 id="membership"><a class="header" href="#membership">Membership</a></h4>
+<h5 id="novice"><a class="header" href="#novice">Novice</a></h5>
+<p>Novices must allow themselves to be bitten by one of the order’s feared Grey Mambas. Those who survive are permitted membership!</p>
+<h5 id="apprentice"><a class="header" href="#apprentice">Apprentice</a></h5>
+<p>Apprentices must have five of the order skills at 30% at least and must have killed at least one foe of the cult using poison or one of the cult’s Sorcery spells.</p>
+<h5 id="adept"><a class="header" href="#adept">Adept</a></h5>
+<p>Adepts must have five of the order skills at 50% at least and the Immunity to Poison Heroic Ability.</p>
+<h5 id="mage"><a class="header" href="#mage">Mage</a></h5>
+<p>Magi of the order must have five of the order skills at 75% and the Black Snake Reincarnation Secret.</p>
+<h4 id="order-skills"><a class="header" href="#order-skills">Order Skills</a></h4>
+<p>The order offers training in: Craft (Poison), Resilience, Stealth, Any Dagger style, Any Bow style, Sorcery (Black Serpent Grimoire) and Manipulation.</p>
+<h2 id="guild-of-assassins"><a class="header" href="#guild-of-assassins">Guild of Assassins</a></h2>
+<p>Go down a certain street in a certain desert town and knock on the white door. An old man will greet you, offer you mint tea, and talk with you for a time. Tell him your woes and your troubles, and describe to him certain individuals who have caused you distress. He will listen to you, saying nothing, perhaps even seeming to sleep but when you get up to leave, the old man will hand you a pebble. If it is black, then nothing more will happen but if it is white, those troublesome individuals will die – and the old man will find you, someday, and demand payment for these deaths.</p>
+<p>The Assassin’s Guild are not a band of hired thugs or murderers. They are adjusters on the scales of life, weighing one man’s virtues against another. Would the city be better off if the young prince ruled instead of the old king? Which priestess should lead the temple? They only kill if their victim deserves death according to their cryptic methodology.</p>
+<p>At the lower ranks of the guild, the Assassins are willing to employ thieves, rogues and Adventurers as assassins; however, only those dedicated to the cause of death may ascend to the higher ranks.</p>
+<p><strong>Common Magic</strong>: Bandit’s Cloak, Boon of Lasting Night, Coordination, Detect Enemy, Mindspeech, Hand of Death</p>
+<p><strong>Heroic Abilities:</strong> Dead Eye, Severing Slash, Wall Leaping</p>
+<h4 id="membership-1"><a class="header" href="#membership-1">Membership</a></h4>
+<h5 id="novice-1"><a class="header" href="#novice-1">Novice</a></h5>
+<p>Novices must kill a target of the guild without question or hesitation.</p>
+<h5 id="apprentice-1"><a class="header" href="#apprentice-1">Apprentice</a></h5>
+<p>Apprentices must have five of the guild skills at 30% at least and must make themselves available for one mission per year.</p>
+<h5 id="journeymen"><a class="header" href="#journeymen">Journeymen</a></h5>
+<p>Journeymen assassins must have five of the guild skills at 50% at least. They must be available for one mission per three months.</p>
+<h5 id="masters"><a class="header" href="#masters">Masters</a></h5>
+<p>Master Assassins must have five of the guild skills at 75% and at least one of the three Heroic Abilities taught by the guild. They must spend at least six months of the year in residence at one of the guild’s secret strongholds.</p>
+<h5 id="grand-master"><a class="header" href="#grand-master">Grand Master</a></h5>
+<p>The Grand Master must have at least five of the guild skills at 90% and obtain all three of the Heroic Abilities. The Grand Master dwells in the guild’s headquarters.</p>
+<h4 id="guild-skills"><a class="header" href="#guild-skills">Guild Skills</a></h4>
+<p>The guild offers training in: Craft (Poison), Resilience, Stealth, Any Dagger style, Any Bow style, Sorcery (Black Serpent Grimoire) and Manipulation.</p>
+<blockquote>
+<h4 id="alarics-tale--cult-of-the-thunderer"><a class="header" href="#alarics-tale--cult-of-the-thunderer">Alaric’s Tale – Cult of the Thunderer</a></h4>
+<p>Alaric dwells in the Gloamwood amid barbaric tribes.</p>
+<p>At the age of 21 all warriors of the tribe are expected to become initiates of the Thunderer cult and Alaric is no exception. On his 21st birthday he is taken into the tribe’s most sacred shrine where he must undergo certain testing rituals – of his courage, his magic and his understanding of the Thunderer.</p>
+<p>The cult skills are Spear fighting, Lore (The Thunderer), Evade, Perception and Common Magic. Alaric has each of these skills at more than 30% and so passes the tests involving his skills.</p>
+<p>Next is his commitment to the cult: this is sealed through Alaric establishing a Pact with the Thunderer. In a deeply mystical ceremony Alaric is tested with fire and words and, in the final act, ascends the bare hill above the shrine to stand and glory in the full force of an oncoming storm. This rite creates the Pact (the Thunderer) and Alaric’s player enters this onto his character sheet. Alaric dedicates 4 POW to the Pact, making his Pact (The Thunderer) 14% (CHA + 4 dedicated POW). He is now an initiate of the cult and bound by its teachings.</p>
+<p>The benefits Alaric derives from his cult are as follows:</p>
+<ul>
+<li>Alaric can learn the cult’s Divine Magic spells and cast them at Lore (The Thunderer) 52%. The inherent Magnitude for any Divine Spell he casts is equal to his Pact divided by 10 and rounded up, so Alaric’s Divine Spells will have a Magnitude of 2. As his Pact deepens, so will the potency of his Divine Magic. He can also pray for up to four Divine Spells – the amount of his POW dedication. Alaric learns, through his initiation and later progress in the cult, Lightning Strike, Shield, Bless (Spear &amp; Shield) and Channel Strength.</li>
+<li>He can gain access to training in the cult’s skills at a much reduced cost with dedicated teachers. The cult also specialises in several Common Magic spells, which again Alaric can learn at reduced cost and with dedicated teachers.</li>
+<li>Most importantly, Alaric has the support of the entire cult behind him. As an Initiate he will be expected to work long and hard for the cult but in return he will be able to call upon colleagues and fellow cultists for help or advice. Furthermore, initiation into the cult marks Alaric as a warrior within the tribe and this is a moment of great pride for the young Adventurer.</li>
+</ul>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/10_Sorcery.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/12_Heroic_Abilities.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/10_Sorcery.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/12_Heroic_Abilities.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

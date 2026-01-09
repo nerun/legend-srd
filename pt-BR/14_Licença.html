@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>✅ Licença - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="14-licença"><a class="header" href="#14-licença">14. Licença</a></h1>
+<h2 id="declaração-de-conteúdo-aberto"><a class="header" href="#declaração-de-conteúdo-aberto">Declaração de Conteúdo Aberto</a></h2>
+<h3 id="legend-pela-mongoose-publishing"><a class="header" href="#legend-pela-mongoose-publishing">LEGEND, pela Mongoose Publishing</a></h3>
+<p>Aqui na Mongoose Publishing, nós queremos que, aquilo que nós acreditamos ser verdadeiramente um dos melhores RPGs de fantasia do mercado, seja fácil de usar e modificar. Portanto, criamos este livro de regras de Conteúdo Aberto, em conjunto com a Open Game License.</p>
+<p>Todo o texto deste livro é designado como Conteúdo Aberto – isso significa que você é livre para usar a Open Game License (a seguir) para reproduzir este texto e com ele criar seus próprios cenários e mecânicas. Você pode até imprimir e vender sua obra, se for esse o seu desejo (e desejamos a você muita sorte se decidir fazer isso!).</p>
+<p>Ao usar o Conteúdo Aberto deste livro, você também tem permissão para baixar o logotipo “Legend Compatible” de nosso site (na página de produtos Legend) e usá-lo em qualquer obra Legend que você publicar, para demonstrar que seu material faz parte da vasta família Legend.</p>
+<p>Por favor, repare que a arte deste livro não é de Conteúdo Aberto.</p>
+<p>Todos os livros da linha Legend (aqueles cujos títulos contêm a palavra “Legend”) também serão designados como Conteúdo Aberto, permitindo que você expanda seus próprios jogos em várias direções diferentes, mas ainda mantendo uma base sólida com a qual todos estão familiarizados.</p>
+<p>Por exemplo, pode ser que você use o Legend para produzir seu próprio mundo de jogo. Se você quiser adicionar alguma ação em alto mar, pode ser mais fácil apenas copiar as regras de Conteúdo Aberto que produzimos em “Pirates of Legend”, sabendo que todos que jogam Legend estarão mais familiarizados com essas regras.</p>
+<h3 id="lendas-por-daniel-dias-rodrigues"><a class="header" href="#lendas-por-daniel-dias-rodrigues">LENDAS, por Daniel Dias Rodrigues</a></h3>
+<p>Esta obra é uma tradução do Conteúdo Aberto da Mongoose Publishing e, dessa forma, é considerada Material Derivado nos termos da seção 1(b) da OGL e, por extensão, eu me qualifico como um licenciado. Na qualidade de licenciado, conforme seção 7 da OGL, eu não posso fazer uso de Identidade do Produto da Mongoose Publishing. O nome, a marca e o logotipo “Legend” são Identidade do Produto da Mongoose Publishing, mesmo que eles não tenham escrito isso, pois está incluso por padrão nas seções 1(e) e (f). Então, para poder traduzir, eu criei um novo nome para meu produto: “Lendas”.</p>
+<p>Todo o texto de “Lendas Livro Básico” é designado como Conteúdo Aberto e só pode ser usado sob os termos da Open Game License v1.0a.</p>
+<blockquote>
+<p>Os títulos <strong>“Lendas”</strong>, <strong>“Lendas de Poder e Magia”</strong> e <strong>“Demanda das Runas”</strong> (este último usado em uma tradução da edição anterior) são designados como <strong>Identidade do Produto</strong> nos termos das seções 1(e), 1(f) e 7 da OGL, e não podem ser usados, quer seja comercial ou gratuitamente, nem mesmo para indicar compatibilidade.</p>
+</blockquote>
+<p>Caso deseje indicar compatibilidade com essas regras, em vez disso use o logotipo “Legend Compatible” fornecido pela Mongoose Publishing.</p>
+<hr>
+<h2 id="open-game-license-ogl"><a class="header" href="#open-game-license-ogl">Open Game License (OGL)</a></h2>
+<p>Segue texto original em inglês da licença aplicada à esta obra e uma tradução não oficial da mesma.</p>
+<p>Como aviso, o texto traduzido da licença não possui validade legal. Foi aqui disponibilizado apenas para facilitar o entendimento dos desenvolvedores de jogos que decidirem usar este Conteúdo Aberto. Em caso de dúvidas entre o texto original em inglês e a tradução, prevalece o entendimento do texto original.</p>
+<hr>
+<h3 id="open-game-license-version-10a"><a class="header" href="#open-game-license-version-10a">Open Game License Version 1.0a</a></h3>
+<p>The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc (“Wizards”). All Rights Reserved.</p>
+<p><strong>1. Definitions: (a) “Contributors”</strong> means the copyright and/or trademark owners who have contributed Open Game Content; <strong>(b) “Derivative Material”</strong> means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; <strong>(c) “Distribute”</strong> means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; <strong>(d) “Open Game Content”</strong> means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity; <strong>(e) “Product Identity”</strong> means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; <strong>(f) “Trademark”</strong> means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor <strong>(g) “Use”, “Used” or “Using”</strong> means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content; <strong>(h) “You” or “Your”</strong> means the licensee in terms of this agreement.</p>
+<p><strong>2. The License:</strong> This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.</p>
+<p><strong>3. Offer and Acceptance:</strong> By Using the Open Game Content You indicate Your acceptance of the terms of this License.</p>
+<p><strong>4. Grant and Consideration:</strong> In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.</p>
+<p><strong>5. Representation of Authority to Contribute:</strong> If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.</p>
+<p><strong>6. Notice of License Copyright:</strong> You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder’s name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.</p>
+<p><strong>7. Use of Product Identity:</strong> You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.</p>
+<p><strong>8. Identification:</strong> If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.</p>
+<p><strong>9. Updating the License:</strong> Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.</p>
+<p><strong>10. Copy of this License:</strong> You MUST include a copy of this License with every copy of the Open Game Content You Distribute.</p>
+<p><strong>11. Use of Contributor Credits:</strong> You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.</p>
+<p><strong>12. Inability to Comply:</strong> If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.</p>
+<p><strong>13. Termination:</strong> This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.</p>
+<p><strong>14. Reformation:</strong> If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.</p>
+<p><strong>15. COPYRIGHT NOTICE</strong></p>
+<p><em>Open Game License v1.0a</em> Copyright 2000, Wizards of the Coast, Inc.</p>
+<p><em>Legend Core Rulebook</em>, Copyright 2011, Mongoose Publishing Ltd.</p>
+<p><em>Lendas Livro Básico</em>, Copyright 2023, Daniel Dias Rodrigues.</p>
+<hr>
+<h3 id="licença-de-jogo-aberto-versão-10a"><a class="header" href="#licença-de-jogo-aberto-versão-10a">Licença de Jogo Aberto Versão 1.0a</a></h3>
+<p>O texto a seguir é de propriedade da Wizards of the Coast, Inc. e foi registrado como Copyright da Wizards of the Coast, Inc (“Wizards”) no ano de 2000. Todos os direitos reservados.</p>
+<p><strong>1. Definições: (a) “Contribuidor(es)”</strong> significa o(s) proprietário(s) dos direitos autorais e/ou marcas comerciais que tenham contribuído para o Conteúdo de Jogo Aberto; <strong>(b) “Material Derivado”</strong> significa material protegido por direitos autorais, incluindo obras derivadas e traduções (inclusive em outras linguagens de computador), combinação, modificação, correção, adição, extensão, atualização, aperfeiçoamento, compilação, resumo ou outra forma em que uma obra já existente pode ser refeita, transformada ou adaptada; <strong>(c) “Distribuir”</strong> significa reproduzir, licenciar, alugar, arrendar, vender, difundir, exibir publicamente, transmitir ou distribuir; <strong>(d) “Conteúdo de Jogo Aberto”</strong> significa a mecânica de jogo, e inclui os métodos, procedimentos, processos e rotinas na medida em que esse conteúdo não incorpora a Identidade do Produto e é um aperfeiçoamento sobre a arte prévia e conteúdos adicionais claramente identificados como Conteúdo de Jogo Aberto pelo Contribuidor, e significa qualquer obra coberta por esta Licença, incluindo traduções e obras derivadas sob a legislação de direitos autorais, mas exclui especificamente a Identidade do Produto; <strong>(e) “Identidade do Produto”</strong> significa os nomes de produtos e linhas de produtos, logotipos e marcas de identificação, incluindo o conjunto-imagem (identificação visual); artefatos; criaturas; personagens; histórias, enredos, tramas, elementos temáticos, diálogos, incidentes, linguagem, arte, símbolos, desenhos, pinturas, semelhanças, formatos, poses, conceitos, temas e gráficos, fotográficos e outras representações visuais ou de áudio; nomes e descrições de personagens, magias, encantamentos, personalidades, times, personas, semelhanças e habilidades especiais; lugares, localizações, ambientes, criaturas, equipamentos, habilidades ou efeitos mágicos ou sobrenaturais, logotipos, símbolos ou desenhos gráficos; ou qualquer outra marca comercial ou marca registrada claramente identificada como Identidade do Produto pelo proprietário da Identidade do Produto, e que não se inclui no Conteúdo de Jogo Aberto; <strong>(f) “Marca Comercial”</strong> significa os logotipos, nomes, marcas, sinais, o lema, os desenhos que são usados por um Contribuidor para identificar a si mesmo, os seus produtos ou os produtos associados que contribuíram com o Conteúdo de Jogo Aberto pelo Contribuidor; <strong>(g) “Usar”, “Usado(s)” ou “Usando”</strong> significa usar, Distribuir, copiar, editar, formatar, modificar, traduzir e de qualquer forma criar Material Derivado do Conteúdo de Jogo Aberto; <strong>(h) “Você” ou “Seu(ua)(s)”</strong> significa o licenciado nos termos deste acordo.</p>
+<p><strong>2. A Licença:</strong> Esta licença se aplica a qualquer Conteúdo de Jogo Aberto que contenha um aviso indicando que o Conteúdo de Jogo Aberto só pode ser usado sob abrigo e nos termos desta Licença. Você deve apor um aviso em qualquer Conteúdo de Jogo Aberto que você usar. Nenhum termo pode ser adicionado ou subtraído desta Licença, exceto conforme descrito pela própria licença. Não podem ser aplicados quaisquer outros termos ou condições a qualquer Conteúdo de Jogo Aberto distribuído sob esta licença.</p>
+<p><strong>3. Oferta e Aceitação:</strong> Usando o Conteúdo de Jogo Aberto você indica sua aceitação dos termos desta Licença.</p>
+<p><strong>4. Consideração e Concessão:</strong> Em consideração por concordar com a utilização desta Licença, os Contribuidores concedem-lhe de forma perpétua, mundial, e isenta de royalties, uma licença não exclusiva, nos exatos termos desta Licença, para Usar o Conteúdo de Jogo Aberto.</p>
+<p><strong>5. Declaração de Autoridade para Contribuir:</strong> Se você está contribuindo com material original como Conteúdo de Jogo Aberto, você declara que suas contribuições são sua criação original e/ou você possui direitos suficientes para conceder os direitos transmitidos por esta Licença.</p>
+<p><strong>6. Aviso de Licença de Direitos Autorais:</strong> Você deve atualizar a parte AVISO DE DIREITOS AUTORAIS desta Licença para incluir o texto exato do AVISO DE DIREITOS AUTORAIS de qualquer Conteúdo de Jogo Aberto que você está copiando, modificando ou distribuindo, e você deve adicionar o título, a data de copyright, e nome do detentor dos direitos ao AVISO DE DIREITOS AUTORAIS de qualquer Conteúdo de Jogo Aberto original que você Distribuir.</p>
+<p><strong>7. Uso de Identidade do Produto:</strong> Você concorda em não usar qualquer Identidade do Produto, inclusive como uma indicação quanto à compatibilidade, exceto quando expressamente autorizado em outro Acordo independente com o proprietário de cada elemento daquela Identidade do Produto. Você concorda em não indicar a compatibilidade ou co-adaptabilidade com qualquer Marca Comercial ou Marca Registrada, em conjugação com uma obra que contenha Conteúdo de Jogo Aberto, exceto quando expressamente autorizado em outro Acordo independente com o titular da Marca Comercial ou Marca Registrada. O uso de qualquer Identidade do Produto no Conteúdo de Jogo Aberto não constitui uma violação da propriedade da Identidade do Produto. O proprietário de qualquer Identidade do Produto utilizado no Conteúdo de Jogo Aberto manterá todos os direitos, títulos e interesses na e da Identidade do Produto.</p>
+<p><strong>8. Identificação:</strong> Se você Distribuir Conteúdo de Jogo Aberto Você deve indicar claramente quais partes da obra que você está distribuindo são Conteúdo de Jogo Aberto.</p>
+<p><strong>9. Atualização da Licença:</strong> Wizards ou seus agentes designados podem publicar versões atualizadas desta Licença. Você pode usar qualquer versão autorizada desta Licença para copiar, modificar e distribuir qualquer Conteúdo de Jogo Aberto originalmente distribuído sob qualquer versão desta Licença.</p>
+<p><strong>10. Cópia desta Licença:</strong> Você DEVE incluir uma cópia desta Licença com cada cópia do Conteúdo de Jogo Aberto que Você Distribuir.</p>
+<p><strong>11. Uso dos Créditos do Contribuidor:</strong> Você não pode comercializar ou fazer publicidade do Conteúdo de Jogo Aberto usando o nome de qualquer Contribuidor a menos que você tenha a permissão escrita do Contribuidor para fazê-lo.</p>
+<p><strong>12. Incapacidade de Cumprir:</strong> Se for impossível para Você cumprir qualquer dos termos desta Licença com relação a alguma parte ou a todo o Conteúdo de Jogo Aberto, devido à lei, ordem judicial ou regulamentação governamental, então você não poderá usar qualquer Conteúdo de Jogo Aberto afetado.</p>
+<p><strong>13. Encerramento:</strong> Esta Licença terminará automaticamente se você falhar em cumprir com todas as condições aqui apresentadas e não reparar tal violação no prazo de 30 dias contados do conhecimento da violação. Todas as sublicenças devem sobreviver ao término desta Licença.</p>
+<p><strong>14. Reforma:</strong> Se qualquer disposição desta Licença for considerada inexequível, tal disposição será reformada apenas na medida necessária para torná-la exequível.</p>
+<p><strong>15. AVISO DE DIREITOS AUTORAIS</strong></p>
+<p><em>Open Game License v1.0a</em> Copyright 2000, Wizards of the Coast, Inc.</p>
+<p><em>Legend Core Rulebook</em>, Copyright 2011, Mongoose Publishing Ltd.</p>
+<p><em>Lendas Livro Básico</em>, Copyright 2023, Daniel Dias Rodrigues.</p>
+<hr>
+<p><img src="../Legend%20Compatible%20Logo.png" alt="Legend Compatible"></p>
+<h2 id="logotipo-de-compatibilidade-com-legend"><a class="header" href="#logotipo-de-compatibilidade-com-legend">Logotipo de Compatibilidade com Legend</a></h2>
+<p>Todo o texto do RPG Legend é designado como Conteúdo de Jogo Aberto (<em>Open Game Content</em>), assim como todo o texto de todos os livros desta linha com capas de cor lisa e com as palavras “… of Legend” em seus títulos.</p>
+<p>Ao utilizar qualquer material de Conteúdo Aberto em qualquer um desses livros, você também tem permissão para usar livremente o logotipo “Legend Compatible” em qualquer publicação ou site onde esse Conteúdo Aberto seja usado ou modificado. O logotipo “Legend Compatible” pode ser redimensionado, mas não pode ser alterado de nenhuma outra forma.</p>
+<p>Legend, o texto dos livros de regras de Legend, o logotipo Legend e o logotipo Legend Compatible permanecem sob Copyright da Mongoose Publishing 2011.</p>
+<p>Toda a arte incluída nos livros de regras de Legend é expressamente designada como não sendo Conteúdo Aberto, não podendo ser utilizada sem autorização por escrito da Mongoose Publishing.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../pt-BR/13_Gamemastering_Legend.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../pt-BR/13_Gamemastering_Legend.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

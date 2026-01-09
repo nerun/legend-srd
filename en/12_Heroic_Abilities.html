@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>✅ Heroic Abilities - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="12-heroic-abilities"><a class="header" href="#12-heroic-abilities">12. Heroic Abilities</a></h1>
+<p>What separates a hero from an Adventurer?</p>
+<p>Actions, deeds, reputation and history, obviously, but in some cases a hero is defined by his capabilities. A lucky few demonstrate innate talents that distinguish them from the rank and file. These talents and capabilities are known as <em>Heroic Abilities</em>.</p>
+<p>Heroic Abilities are powers and enhancements available through seeking reclusive masters, HeroQuesting supernatural gifts, divine blessings or progression within a cult. Adventurers gain these abilities, which augment their existing skills and magic, as rewards for heroic aspirations and actions.</p>
+<p>Gaining a Heroic Ability is not as simple as training in a skill or buying a spell. Heroic Abilities need to be earned and usually in one of the following ways:</p>
+<ul>
+<li>Attaining a certain rank, usually Level 3 or Level 4, in a faction.</li>
+<li>Undertaking epic or heroic quests, either as part of cult business or some other endeavour decided by the Games Master.</li>
+<li>Studying with another hero – learning from them, emulating them and, eventually, developing a similar technique.</li>
+</ul>
+<p>At their simplest, Heroic Abilities are gained once an Adventurer has accrued enough Hero Points to buy one. However, this should never be the <em>sole</em> criteria for gaining a Heroic Ability. Games Masters should bear in mind that a Heroic Ability is not a piece of merchandise that an Adventurer can pick up at the market after accumulating enough ‘money’ in the form of Hero Points. These are rare and wonderful abilities, not merely an ‘Adventurer sheet upgrade’. In order to learn these abilities, an Adventurer must have proved himself heroically and not simply on a one-off endeavour. True heroes continue to live up to their reputations and are prepared to undergo countless hazards with a more or less selfless outlook.</p>
+<p>Thus, although an Adventurer might reach the rank of, say, Priest in a church and thereby become eligible for a Heroic Ability (if his cult offers them) he is not necessarily entitled to add it to his Adventurer sheet. The Games Master may very well require the Adventurer to earn the Heroic Ability through a specific scenario or further adventure.</p>
+<p>On some occasions Adventurers will encounter heroes who already have Heroic Abilities and seek to learn from this master. This is permissible of course but no self respecting hero will ever gladly, easily or freely impart knowledge and expertise that he has spent years earning unless the prospective pupil demonstrates his own worth. Even though a student wanting to learn a Heroic Ability might have the right amount of Hero Points to spend, the Games Master is fully within his rights to insist on the Adventurer proving himself in some fashion before the Heroic Ability is taught.</p>
+<h2 id="using-heroic-abilities"><a class="header" href="#using-heroic-abilities">Using Heroic Abilities</a></h2>
+<p>The description of the ability indicates how it is used in game play. However, invoking a Heroic Ability always costs the Adventurer one Magic Point whenever it is used. Although Heroic Abilities are not magical powers, they are, to some extent, fuelled by the same reserves that power Common Magic. Invoking a Heroic Ability involves delving into one’s own character, channelling the intangible forces that fire deeds of heroism.</p>
+<p>To invoke a Heroic Ability no Skill Test is needed; simply the spending of one Magic Point and the clear statement of the ability to be used in advance of any Skill Test it applies to.</p>
+<p>The duration of the ability is given in its description and at the end of the ability’s duration, its effects end. The Adventurer can invoke the ability again immediately afterwards, as long as he has the Magic Points to do so and as long as the ability’s effects do not leave him incapacitated (through fatigue, for instance).</p>
+<h2 id="heroic-abilities-described"><a class="header" href="#heroic-abilities-described">Heroic Abilities Described</a></h2>
+<h3 id="arrow-cutting"><a class="header" href="#arrow-cutting">Arrow Cutting</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, any Close Combat Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> A number of melee rounds equal to CON</p>
+<p>Your reactions are preternatural, allowing you to parry missile attacks with melee weapons instead of being limited to a shield.</p>
+<h3 id="awesome-smash"><a class="header" href="#awesome-smash">Awesome Smash</a></h3>
+<p><strong>Requirements:</strong> STR 15 or higher, any unarmed or bludgeon Weapon Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 12</p>
+<p><strong>Duration:</strong> One melee attack</p>
+<p>Invoked whilst wielding a bludgeoning weapon or using Unarmed combat, you cause an automatic knockback of one metre per two points of rolled damage <em>before</em> it is reduced by parrying, armour or magic. If the victim strikes any obstacle they smash into it, fall prone and automatically receive the attacker’s Damage Bonus to a random location, ignoring any protection.</p>
+<h3 id="battle-fury"><a class="header" href="#battle-fury">Battle Fury</a></h3>
+<p><strong>Requirements:</strong> CON 15 or higher, any Close Combat Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 12</p>
+<p><strong>Duration:</strong> A number of melee rounds equal to CON</p>
+<p>You are a terrible foe on the battlefield, as fearsome and unstoppable as a raging wild boar. You can enter a Battle Fury as a Combat Action. While in a Battle Fury, you automatically succeed in any Resilience roll required for sustaining a Serious or Major Wound. You also automatically succeed in any Persistence roll when resisting mental or emotional attacks. Upon leaving Battle Fury, you automatically gain three levels of Fatigue.</p>
+<h3 id="born-to-the-saddle"><a class="header" href="#born-to-the-saddle">Born to the Saddle</a></h3>
+<p><strong>Requirements:</strong> POW 15 or higher, Riding 90% or higher</p>
+<p><strong>Hero Points:</strong> 8</p>
+<p><strong>Duration:</strong> Until the terrain or situation has been cleared, or if in combat, a number of melee rounds equal to CON</p>
+<p>Sitting in the saddle is more natural to you than walking. Each time this ability is invoked you may ignore any and all riding based situational modifiers for terrain or the mount’s behaviour. In addition you may use your Riding skill instead of your Evade skill when evading missiles.</p>
+<h3 id="dead-eye"><a class="header" href="#dead-eye">Dead Eye</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, any ranged Weapon skill at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One missile attack</p>
+<p>Your accuracy with either thrown or projected missile weapons (whichever type you have mastery in) is the stuff of legends. Invoking this ability allows you to increase the range of your chosen type of missile weapons by 50% and if you successfully hit you may automatically select the location struck – permitting you to bypass the effects of anything less than total cover.</p>
+<h3 id="defiant-leap"><a class="header" href="#defiant-leap">Defiant Leap</a></h3>
+<p><strong>Requirements:</strong> STR 15 or higher, Athletics 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One extraordinary jump</p>
+<p>You are able to defy gravity when performing a single vertical or horizontal jump. You may roll your Damage Bonus and add this value in metres to the distance achieved.</p>
+<h3 id="deflecting-parry"><a class="header" href="#deflecting-parry">Deflecting Parry</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, any Close Combat Weapon Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One parry</p>
+<p>You may increase the size of your parrying weapon or shield by two steps for a single parry. This might allow an unarmed defender to ward off a halberd, or the user of a buckler to deflect a mounted lance attack.</p>
+<h3 id="disease-immunity"><a class="header" href="#disease-immunity">Disease Immunity</a></h3>
+<p><strong>Requirements:</strong> CON 15 or higher, Resilience 70% or higher</p>
+<p><strong>Hero Points:</strong> 8</p>
+<p><strong>Duration:</strong> Continuous – body automatically burns 1 Magic Point when it is infected</p>
+<p>You are immune to all normal diseases. Each time you are exposed to a disease, your body unconsciously invokes this ability and purges the infection. Magical diseases will still affect you, though you gain a +20% bonus to tests to resist them.</p>
+<h3 id="duellist"><a class="header" href="#duellist">Duellist</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, any 1H Combat Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One melee round</p>
+<p>Mastery of your chosen duelling weapon allows you, for brief moments, to react with blinding speed. As a free act you can invoke this ability to grant yourself a <em>single</em> extra Combat Action for that round. This extra CA may only be used for attacks or parries.</p>
+<h3 id="empathic-wound"><a class="header" href="#empathic-wound">Empathic Wound</a></h3>
+<p><strong>Requirements:</strong> POW 15 or higher, Influence skill at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One injury</p>
+<p>One of the more unusual of the Heroic Abilities, Empathic Wound is a dangerous and taxing ability and is normally only used by those who shun or forswear violence. When invoked, any damage you suffer from being harmed is mirrored upon your attacker, whether it be from torture, stuck by a weapon, or targeted by a spell. Your inviolate sanctity causes the assailant to psychosomatically or mystically suffer the exact same effects of any damage caused to you.</p>
+<h3 id="heroic-aura"><a class="header" href="#heroic-aura">Heroic Aura</a></h3>
+<p><strong>Requirements:</strong> CHA 15 or higher, Influence skill at 90% or higher</p>
+<p><strong>Hero Points:</strong> 12</p>
+<p><strong>Duration:</strong> One melee round</p>
+<p>Your presence is not only heartening to your comrades, you are also a shining example to others. You may take a Combat Action to bolster all allies within your CHA in metres with your presence, either gaining your CHA as a bonus to any Persistence or Resilience tests they are called upon to make, or as a bonus to all Combat Styles for the remainder of the Combat Round.</p>
+<h3 id="linguist"><a class="header" href="#linguist">Linguist</a></h3>
+<p><strong>Requirements:</strong> INT 15 or higher, two Language skills (aside from your native tongue) at 50% or higher</p>
+<p><strong>Hero Points:</strong> 8</p>
+<p><strong>Duration:</strong> Several hours</p>
+<p>Your study of languages has taught you the common roots of all tongues, allowing you to pick up new foreign languages with startling ease. Invoking this ability, you must either converse with a speaker of a strange language for one hour, or simply hear the language being spoken for two or more hours. You then automatically gain the Language skill in that language at its basic score. A successful Improvement roll when improving a Language skill doubles the skill points gained (roll 2D4+2 rather than 1D4+1).</p>
+<h3 id="loremaster"><a class="header" href="#loremaster">Loremaster</a></h3>
+<p><strong>Requirements:</strong> INT 15 or higher, four Lore skills at 50% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One recall attempt</p>
+<p>You are a font of knowledge, possessed of more learning than even you can readily remember. Any time you fail a Lore Skill Test, you are entitled to make an immediate Persistence test (with the same modifiers as the original Lore test) to see if you can recall some shred of knowledge relating to the subject at hand. Typically, this will reveal less information than a successful Lore test would have but it should still be enough to be of benefit to you.</p>
+<h3 id="mighty-blow"><a class="header" href="#mighty-blow">Mighty Blow</a></h3>
+<p><strong>Requirements:</strong> STR 15 or higher, any Close Combat Weapon Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One melee attack</p>
+<p>You can increase the size of your weapon by two steps for a single attack. This helps the blow overwhelm any parry which intercepts it, allowing damage to penetrate.</p>
+<h3 id="poison-immunity"><a class="header" href="#poison-immunity">Poison Immunity</a></h3>
+<p><strong>Requirements:</strong> CON 15 or higher, Resilience 70% or higher</p>
+<p><strong>Hero Points:</strong> 8</p>
+<p><strong>Duration:</strong> Continuous – body automatically burns 1 Magic Point when it is poisoned</p>
+<p>You are immune to all normal poisons. Each time you are poisoned, your body unconsciously invokes this ability and purges the toxin. Magical poisons will still affect you, though you gain a +20% bonus to tests to resist them.</p>
+<h3 id="reincarnation"><a class="header" href="#reincarnation">Reincarnation</a></h3>
+<p><strong>Requirements:</strong> POW 15 or higher, Pact, Sorcery (Grimoire) 90% or higher</p>
+<p><strong>Hero Points:</strong> 12</p>
+<p><strong>Duration:</strong> One Use</p>
+<p>Upon death you are reincarnated as an animal or creature reflecting the runic affiliation or nature of your cult. Your physical Characteristics (STR, CON, SIZ and DEX) become those of the creature you are reborn into but your INT, POW and CHA remain those of the Adventurer. This Heroic Ability does not require a Magic Point to use. It can only be used once and it is gone.</p>
+<h3 id="severing-slash"><a class="header" href="#severing-slash">Severing Slash</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, any cutting Weapon Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One melee attack</p>
+<p>If wielding a cutting weapon, you can maximise its damage for a single blow.</p>
+<h3 id="sundering-strike"><a class="header" href="#sundering-strike">Sundering Strike</a></h3>
+<p><strong>Requirements:</strong> STR 15 or higher, any Close Combat Weapon Style at 90% or higher</p>
+<p><strong>Hero Points:</strong> 12</p>
+<p><strong>Duration:</strong> One melee attack</p>
+<p>You can smash or cleave an inanimate object with no harm to your weapon. Any damage you roll completely ignores the Armour Points of the object. Thus you could cut a chain, or smash a door with a single blow. If attacking an opponent’s weapon, you must succeed in the attack and equal or beat the opponent’s level of success to successfully strike the parrying object.</p>
+<h3 id="tireless"><a class="header" href="#tireless">Tireless</a></h3>
+<p><strong>Requirements:</strong> CON 15 or higher, Athletics 90% or higher</p>
+<p><strong>Hero Points:</strong> 8</p>
+<p><strong>Duration:</strong> Special</p>
+<p>Your stamina is Heroic, allowing you to continue fighting or working long after others drop from exhaustion. Each time you invoke this ability you reduce your Fatigue by one level.</p>
+<h3 id="wall-leaping"><a class="header" href="#wall-leaping">Wall Leaping</a></h3>
+<p><strong>Requirements:</strong> DEX 15 or higher, Acrobatics 90% or higher</p>
+<p><strong>Hero Points:</strong> 10</p>
+<p><strong>Duration:</strong> One round of running</p>
+<p>Displaying incredible agility, you can run along or up walls for short distances to escape or gain a better position against an enemy. You may only use Wall Leaping if not Overloaded, Exhausted or Debilitated. The entirety of your Movement in a Combat Round may be made along a vertical surface, allowing you to bypass an obstruction that might otherwise block your path or even climb a wall at lightning speed. However, you cannot continue moving along a vertical surface from Combat Round to Combat Round – you must reach level ground (or a suitable perch) by the end of your last Combat Action in a round or fall.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/11_Guilds,_Factions_and_Cults.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/13_Gamemastering_Legend.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/11_Guilds,_Factions_and_Cults.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/13_Gamemastering_Legend.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

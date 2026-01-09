@@ -1,0 +1,751 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>❌ Skills - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="3-skills"><a class="header" href="#3-skills">3. Skills</a></h1>
+<p>Characteristics and Attributes define an Adventurer in terms of what he is – how strong, how fast, how much damage he deals with a well-aimed blow and so on. Skills define what an Adventurer can actually <em>do</em>. Ranging from how well an Adventurer can sneak past a guard and how well he can sculpt a statue, to his expertise with a sword. Skills quantify just how good an Adventurer is at specific tasks. The Adventurer Creation process has already introduced Common and Advanced skills; this chapter explores how skills, in general, work and how each skill works specifically.</p>
+<h2 id="skill-tests"><a class="header" href="#skill-tests">Skill Tests</a></h2>
+<p>All skills have a starting value based on the sum of two Characteristics or a single Characteristic multiplied. Cultural Background, Profession and Free Skill Points raise the value of these skills. There is no upper limit to a skill; it can rise over 100% and even higher, indicating truly superhuman capabilities. How skills increase is detailed in Adventurer Advancement beginning on page 68.</p>
+<p>When an Adventurer is called on to roll against a skill, he uses 1D100 and is attempting to roll equal to, or less than, his skill’s value. Achieving this means the skill is used successfully; if the 1D100 roll is above the skill’s value, then the attempt has failed.</p>
+<h3 id="levels-of-success-and-failure"><a class="header" href="#levels-of-success-and-failure">Levels of Success and Failure</a></h3>
+<h5 id="whether-or-not-an-adventurer-succeeds-or-fails-is-important-in-legend-but-it-is-also-very--important-to-see-how-well-he-succeeded-or-failed-for-this-reason-levels-of-success-are-crucial-to-the-game-the-levels-of-success-are-from-best-to-worst"><a class="header" href="#whether-or-not-an-adventurer-succeeds-or-fails-is-important-in-legend-but-it-is-also-very--important-to-see-how-well-he-succeeded-or-failed-for-this-reason-levels-of-success-are-crucial-to-the-game-the-levels-of-success-are-from-best-to-worst">Whether or not an Adventurer succeeds or fails is important in Legend but it is also very  important to see how <em>well</em> he succeeded or failed. For this reason levels of success are crucial to the game. The levels of success are (from best to worst):</a></h5>
+<ul>
+<li>Critical Success</li>
+<li>Success (sometimes referred to as a Normal Success)</li>
+<li>Failure</li>
+<li>Fumble</li>
+</ul>
+<h3 id="when-and-when-not-to-roll"><a class="header" href="#when-and-when-not-to-roll">When and When Not to Roll</a></h3>
+<p>Routine activities; those an Adventurer conducts time and again, under normal circumstances and expected pressures, do not require a roll for success. For example, riding a horse at a trot or gentle gallop across an open field, on a fine day, does not need a Ride test. Similarly a blacksmith making horse shoes with all the right tools and raw materials does not need to make a Craft (Blacksmith) roll.</p>
+<p>Skill Tests are required where the circumstances are out of the ordinary and/or impart some degree of stress, urgency or difficulty to the situation. Riding a horse at a gallop across an open field whilst being pursued by bandits is an instance where a Ride roll is called for. Attempting to make horseshoes with poor quality implements or a Skill Tests of resources is another.</p>
+<h1 id="skills"><a class="header" href="#skills">skills</a></h1>
+<p>The watchword is <em>circumstance</em>. The Games Master is the best judge as to whether the conditions and circumstances warrant a Skill Test. An Adventurer might not need to make a Perception test to hear a neighbouring conversation if the surroundings are relatively quiet. However, if there is a degree of background noise it will be necessary to roll to overhear accurately. If the people the Adventurer is eavesdropping on are whispering, then the Skill Test should incur a penalty for the circumstances, as outlined in <em>Difficult and Haste</em>.</p>
+<h3 id="difficulty-and-haste"><a class="header" href="#difficulty-and-haste">Difficulty and Haste</a></h3>
+<p>Sometimes it will be necessary to make a Skill Test because success or failure needs to be measured but the circumstances in which the skill is being used need to be taken into account.</p>
+<p>Circumstances can make a skill easier or harder to accomplish. For example, running up a steep hill to out-pace a murderous troll requires an Athletics Skill Test but the hill’s gradient means that the circumstances are harder than normal: the skill’s value is therefore modified to reflect this. Conversely hiding from a troll in a dark wood as night sets in, requires a Stealth Skill Test but the darkness makes hiding easier and so the skill’s value is modified accordingly.</p>
+<p>Similarly the amount of time invested in using a skill can have a bearing on its outcome.</p>
+<p>Rushing a job leads to errors whereas paying attention to detail and taking one’s time improves the chance of success.</p>
+<p>Circumstances are graded in the Difficulty and Haste Modifiers table. These modifiers are applied temporarily to the skill’s value until the circumstances change.</p>
+<h5 id="difficulty-and-haste-modifiers"><a class="header" href="#difficulty-and-haste-modifiers">Difficulty and Haste Modifiers</a></h5>
+<pre><code>Difficulty Time Taken Skill Test Modifier
+Very Easy Ten times normal time +60%
+Easy Five times normal time +40%
+Simple Double normal time +20%
+Routine Normal time +0%
+Difficult — –20%
+Hard Half normal time –40%
+Very Hard — –60%
+Formidable Almost instantly –80%
+</code></pre>
+<p>The Difficulty Examples table on page 40 lists a few examples of Skill Tests that may occur in a <em>Legend</em> game, which skills would be used and what difficulty should be assigned to them. Games Masters can use this table as a reference when creating their own Skill Tests for the Adventurers.</p>
+<h3 id="rolling-in-secret"><a class="header" href="#rolling-in-secret">Rolling in Secret</a></h3>
+<p>It is a great deal of fun rolling dice and seeing the outcome. Yet there are going to be occasions where the game is better served by the Games Master making the dice roll on behalf of the Adventurers and in secret, only revealing the result through game-play. For example, an Adventurer might be attempting to disguise himself to gain access to a thieves’ guild. The Adventurer is not aware of how convincing the disguise attempt has been until it is put into practical use, infiltrating the guild headquarters. If the Disguise Skill Test is made secretly by the Games Master then it becomes easier to build an air of suspense and tension as the Adventurer makes his attempts to bypass the guild’s members as he wanders into the guild buildings.</p>
+<h5 id="difficulty-examples"><a class="header" href="#difficulty-examples">Difficulty Examples</a></h5>
+<pre><code>Situation Skill Used Difficulty
+Climbing a cliff face near a large waterfall. Athletics Difficult (–20%) Travelling by rowboat across a stormy sea. Boating Very Hard (–60%) Accurately steering a rowboat in a swift-flowing but broad river.
+
+</code></pre>
+<pre><code>Boating Simple (+20%)
+</code></pre>
+<pre><code>Recalling which plants are edible in farmland. Lore (Regional) Easy (+40%) Recalling which plants are edible in an uncharted jungle.
+
+</code></pre>
+<pre><code>Lore (Plant) Difficult (–20%)
+</code></pre>
+<pre><code>Spotting a shiny gold coin on the floor in a well-lit and
+uncluttered room.
+</code></pre>
+<pre><code>Perception Simple (+20%)
+</code></pre>
+<pre><code>Finding a gold coin in a large refuse dump. Perception Hard (–40%)
+Finding food and water in a bleak desert. Survival Hard (–40%)
+Finding food and water in a forest. Survival Simple (+20%)
+Locating tracks in the snow. Tracking Very Easy (+60%)
+Locating tracks on a busy city street. Tracking Hard (–40%)
+Fixing a complicated lock of foreign design, with
+nothing more than a knife, while being shot at by
+archers.
+</code></pre>
+<pre><code>Mechanisms Formidable
+(–80%)
+</code></pre>
+<p>Not all tests should be made secretly by the Games Master. The best times to use secret rolls are in the following conditions:</p>
+<pre><code>  -	 The Adventurer using the skill would have little or no way of knowing how successful his skill attempt has been until it is put to a practical test.
+
+  -	 The skill's outcome is not immediate.
+  -	 Revealing the outcome of the Skill Test incrementally will create a better sense of tension.
+
+</code></pre>
+<p>Games Master dice rolls are, like all game tools, there to increase the enjoyment of the game for all, not to remove fun and enjoyment from the players. Used with discretion and at times where the outcome may not be immediate, certain or clear-cut, it can be a great way of introducing drama to a situation.</p>
+<h2 id="critical-success"><a class="header" href="#critical-success">Critical Success</a></h2>
+<p>For many Skill Tests it is only necessary to determine whether one is successful or not. However, there may be certain cases where it is important to know <em>how</em> successful an Adventurer was – did he just skim by or did he achieve an incredible feat? This is determined by critical successes.</p>
+<p>A roll of 01 is <em>always</em> a critical success.</p>
+<p>If the Skill Test is equal to or less than 10% of the modified skill (rounded up), then the Adventurer has scored a critical success. Note that the chance of a critical success relates to the <em>modified</em> skill total being used in the test, not the original ‘normal’ skill level. If an Adventurer is suffering a penalty to the Skill Test, it will reduce the Adventurer’s chance of scoring a critical success. Likewise if an Adventurer has a bonus to the Skill Test, it will increase the Adventurer’s critical success chance.</p>
+<p>The actual result of a critical success varies from skill-to-skill and the skill descriptions note the effects for a critical success. However Games Masters are quite at liberty to apply additional results to fit the circumstances; for example:</p>
+<ul>
+<li>
+<p>The task is completed sooner.</p>
+</li>
+<li>
+<p>The task is completed to a higher degree of expertise than normal.</p>
+</li>
+<li>
+<p>The task is completed with élan and style, generally impressing witnesses.</p>
+</li>
+<li>
+<p>The Adventurer gains additional information or insight into the task thanks to their brilliance.</p>
+</li>
+</ul>
+<p>If a critical success is achieved while crafting jewellery, for instance, the Games Master may decide that the finished article is of unusually high quality or that the item was completed faster than usual.</p>
+<h2 id="fumbles"><a class="header" href="#fumbles">Fumbles</a></h2>
+<p>If one can succeed critically, one can also <em>fail</em> critically: a situation known as a fumble. A fumble occurs when:</p>
+<ul>
+<li>The modified skill being used is less than 100%, the result is 99 or 00.The modified skill being used is equal to, or more than 100%, 00 is rolled.</li>
+</ul>
+<p>Very highly skilled Adventurers, or those in circumstances that make using a skill easier, fail less often than Adventurers with a lower degree of skill, or in situations where circumstances have made a skill more difficult to use.</p>
+<p>Essentially, fumbling is the diametric opposite of critical success – the Adventurer has botched the attempt so badly he has experience a dramatic failure.</p>
+<p>The precise effects of a fumble depend on the skill and the skill descriptions offer guidance on what effects a fumbling Adventurer experiences. However, as a rule, fumbles normally result in one of the following mishaps:</p>
+<ul>
+<li>
+<p>The task takes twice as long to finish and is still a failure.</p>
+</li>
+<li>
+<p>The task produces a useless result that actually makes further actions more difficult.</p>
+</li>
+<li>
+<p>The task is failed spectacularly, opening the Adventurer up to derision and scorn from witnesses.</p>
+</li>
+<li>
+<p>The Adventurer becomes impeded or even harmed by his failure.</p>
+</li>
+</ul>
+<h5 id="for-example-alaric-is-using-his-dance-skill-to-impress-selena-the-chieftains-daughter-rolling-99"><a class="header" href="#for-example-alaric-is-using-his-dance-skill-to-impress-selena-the-chieftains-daughter-rolling-99">For Example, Alaric is using his Dance skill to impress Selena, the chieftain’s daughter. Rolling 99</a></h5>
+<h5 id="when-making-his-dance-skill-roll-alaric-trips-stumbles-and-crashes-into-the-musicians-the-gathered"><a class="header" href="#when-making-his-dance-skill-roll-alaric-trips-stumbles-and-crashes-into-the-musicians-the-gathered">when making his Dance skill roll, Alaric trips, stumbles and crashes into the musicians. The gathered</a></h5>
+<h5 id="clan-hoots-and-jeers-in-derision-and-selenas-father-marius-glares-angrily-at-the-red-faced-alaric"><a class="header" href="#clan-hoots-and-jeers-in-derision-and-selenas-father-marius-glares-angrily-at-the-red-faced-alaric">clan hoots and jeers in derision and Selena’s father, Marius, glares angrily at the red-faced Alaric,</a></h5>
+<h5 id="upset-that-such-a-prize-klutz-would-attempt-such-a-complicated-ritual-dance-in-the-first-place-alarics"><a class="header" href="#upset-that-such-a-prize-klutz-would-attempt-such-a-complicated-ritual-dance-in-the-first-place-alarics">upset that such a prize klutz would attempt such a complicated ritual dance in the first place. Alaric’s</a></h5>
+<p><em>chances of impressing Selena have evaporated and, with it, he has angered her father…</em></p>
+<h5 id="later-alarics-rival-for-selenas-affections-owain-attempts-the-same-dance-intending-to-capitalise"><a class="header" href="#later-alarics-rival-for-selenas-affections-owain-attempts-the-same-dance-intending-to-capitalise">Later, Alaric’s rival for Selena’s affections, Owain, attempts the same dance intending to capitalise</a></h5>
+<h5 id="on-alarics-spectacular-failure-owains-dance-skill-is-92-but-the-games-master-decides-to-apply-a"><a class="header" href="#on-alarics-spectacular-failure-owains-dance-skill-is-92-but-the-games-master-decides-to-apply-a">on Alaric’s spectacular failure. Owain’s Dance skill is 92% but the Games Master decides to apply a</a></h5>
+<h5 id="10-bonus-reflecting-the-fact-that-the-crowd-is-behind-owains-attempt-following-alarics-fumble"><a class="header" href="#10-bonus-reflecting-the-fact-that-the-crowd-is-behind-owains-attempt-following-alarics-fumble">+10% bonus reflecting the fact that the crowd is behind Owain’s attempt following Alaric’s fumble.</a></h5>
+<p><em>Owain is therefore rolling against a modified skill of 102%. The dice roll is 00 – Owain also fumbles! The Games Master explains that Owain, swaggering around the great hall, fails to spot a spilled mug</em></p>
+<h5 id="of-mead-slips-on-it-and-executes-a-stumble-every-bit-as-bad-as-alarics-at-the-high-table-marius-shakes"><a class="header" href="#of-mead-slips-on-it-and-executes-a-stumble-every-bit-as-bad-as-alarics-at-the-high-table-marius-shakes">of mead, slips on it and executes a stumble every bit as bad as Alaric’s. At the high table Marius shakes</a></h5>
+<p><em>his head sadly and Selena, trying to remain calm as the arrogant Owain climbs to his feet, winks a</em></p>
+<h5 id="smile-at-alaric-alarics-heart-soars"><a class="header" href="#smile-at-alaric-alarics-heart-soars">smile at Alaric. Alaric’s heart soars.</a></h5>
+<p>Weapon Skill Tests are as vulnerable to fumbles as any other test. A fumbled roll on a Bow Skill Test could result in a snapped bowstring, whilst fumbling a melee weapon attack test could mean the weapon has been clumsily broken. The Combat chapter provides more detailed guidance on combat fumble results.</p>
+<h3 id="automatic-success-and-failure"><a class="header" href="#automatic-success-and-failure">Automatic Success and Failure</a></h3>
+<p>Whenever an Adventurer attempts to use a skill, there is always a chance he will succeed or fail, <em>regardless</em> of the level of his skill. Even a master swordsman with a sword skill of 190% can have a rock slip under his foot or have the sun hit his eyes at just the wrong moment. Likewise, the most unfit Adventurer might be able to climb a cliff in a lashing rainstorm at night, even if the modifiers would reduce his Athletics skill to below 0%.</p>
+<ul>
+<li>Any test result of 01 to 05 is an automatic success.</li>
+<li>Any test result of 96 to 00 is an automatic failure.</li>
+</ul>
+<p>Note that the automatic success and failure rules do not apply if the Games Master has ruled that no test is required or possible.</p>
+<h2 id="defaulting-from-an-advanced-skill"><a class="header" href="#defaulting-from-an-advanced-skill">Defaulting from an Advanced Skill</a></h2>
+<p>Note that while everyone has some facility with Common skills, Advanced skills are generally only possessed by specialists. Nevertheless, there will be times when an untrained Adventurer attempts to use an Advanced skill, even though they do not possess it.</p>
+<p>In these cases, the Games Master may make one of two decisions. The first is that the task is simply impossible for the Adventurer. The Adventurer automatically fails the test.</p>
+<p>Alternately, the Games Master may decide that a default Common skill may be used for that specific situation, as long as there is a logical link between the original Advanced skill and the substitute Common skill. However, such substituted Skill Tests normally suffer at least a –20% penalty, often more.</p>
+<h2 id="levels-of-skill"><a class="header" href="#levels-of-skill">Levels of Skill</a></h2>
+<p>What is considered routine for an Adventurer with a skill of 60% may well be considered difficult for an Adventurer with only 25% in the same skill. So, the value of the skill forms one of the circumstances to take into consideration. The following table gathers skill values into a range of Competencies along with some guidance on what constitutes a routine task.</p>
+<h3 id="augmenting-skills-with-other-skills"><a class="header" href="#augmenting-skills-with-other-skills">Augmenting Skills with Other Skills</a></h3>
+<p>There are occasions where one skill can help with another. For example, a merchant trying to get a good price on a rare vase might want to use his Lore (Pottery) skill to help his Influence or Commerce skill and thus get a good deal. In such situations it is permissible to allow the secondary skill to provide a bonus equal to its critical score to the primary skill. Thus, in the previous example, the merchant has Influence at 70% and Lore (Eastern Pottery) at 63%. The critical score for Lore (Eastern Pottery) is 7% making the merchant’s Influence 77% in total.</p>
+<p>Only one skill at a time can be used to boost another skill and the skills must be complementary to each other for the given situation. The Games Master should also stipulate when an augmentation like this can be applied; it is never an automatic right.</p>
+<h2 id="group-tests"><a class="header" href="#group-tests">Group Tests</a></h2>
+<p>In essence, this is a time-saving device for the Games Master. With a group test, the Games Master may make a single percentile roll to determine the success of a group of individuals all performing the same task, rather than rolling dozens or hundreds of individual die rolls. There are two kinds of group tests: team tests and sorting tests.</p>
+<h3 id="team-tests"><a class="header" href="#team-tests">Team Tests</a></h3>
+<p>In a team test, success is cooperative; everyone reaps the benefit from a single success. If a squad of temple guards are all trying to search for an intruder in a crypt, then any successful Perception test will reveal him to all of them. If each guard rolls a Perception test, not only will things take longer but their mathematical chance of finding the intruder becomes quite high. The Games Master rolls once for the highest skill in the team (the highest Perception skill among the temple guards, for example) and if the roll is a success, everybody succeeds. If the roll is a failure, <em>everybody</em> fails.</p>
+<p>The Games Master may also use a ‘reverse team test’ in a situation where one failure can spell disaster. For example, if a gang of hunters are attempting to sneak up on a deer, any failed Stealth test will startle the quarry. In this case, the hunter with the lowest Stealth skill rolls a Stealth test.</p>
+<p>If he succeeds, everyone succeeds. If the roll is a failure, everybody fails.</p>
+<h5 id="skill-competencies-table"><a class="header" href="#skill-competencies-table">Skill Competencies Table</a></h5>
+<pre><code>Skill Range Competency Description
+01–25 Novice Basic techniques and principles are usually completed without the need for a Skill Test, if enough time is available and necessary equipment is at hand. Advanced techniques require a Skill Test and may suffer a penalty depending on the nature of the task.
+
+26–50 Competent All basic and some advanced techniques are possible without a Skill Test if enough time is available and the necessary equipment is at hand. Some advanced techniques require a Skill Test and may suffer a penalty depending on the nature of the task.
+
+51–75 Professional Advanced tasks can be tackled even in the absence of one or two components necessary for success but, again, at a penalty.
+
+76–100 Expert Almost all techniques are known and can be undertaken
+with confidence even when the right components have been
+compromised.
+101–125 Master The Adventurer is supremely confident in their execution of the skill and can readily improvise or resolve problems easily using effective shortcuts.
+
+126+ Grand Master At this level the Adventurer is an absolute virtuoso of the skill and able to tackle, with confidence, any problem involving the skill's use. The duration taken for most tasks can be halved, if necessary (although a Grand Master knows that time and patience are always key).
+
+</code></pre>
+<h3 id="sorting-tests"><a class="header" href="#sorting-tests">Sorting Tests</a></h3>
+<p>In a sorting test, success is individual. For example, a group of bandits are attempting to outrun the local constabulary, which calls for opposed Athletics tests. Some of the bandits have an Athletics skill of 40%, some of 50% and some of 60%. The Games Master rolls a group test for the bandits, which results in a 49. Those with skills of 50% or more succeed, while the slower bandits begin to fall behind (unless the remainder of the bandits slow their progress to allow their fellows to keep up).</p>
+<p>It is up to the individual Games Master when to move from multiple individual rolls to a group test. The former is certainly more authentic but the more individuals involved in the test, the longer it will take (and the more it will break up the flow of the game) to roll separately for each.</p>
+<h3 id="large-groups-and-percentile-success"><a class="header" href="#large-groups-and-percentile-success">Large Groups and Percentile Success</a></h3>
+<p>From time-to-time, the Games Master may need to determine the success of a large group of people performing the same task, in a situation in which there is no room for error. In this case, he may simply take the skill or Characteristic being employed and use that as the percentage of success.</p>
+<p>_For Example: A group of 100 brigands is attempting to swim across a fast-flowing river a scant distance upstream from a 200 metre waterfall, an activity which calls for an Athletics Skill Test.</p>
+<p>Because of the speed of the current and the nearby waterfall, a failed Skill Test for an individual will result in their being swept away by the current. Rather than rolling 100 Skill Tests, or rolling only one to determine whether all 100 brigands made it across, the Games Master may simply take the Athletics skill as the percentage of success. If the Games Master rules that all the brigands have an Athletics skill of 75, then 75 of them will make it to the other side of the river. The remaining 25 will be swept away over the falls, presumably wondering why none of them had the presence of mind to find a safer place to cross the river._</p>
+<h3 id="assistance"><a class="header" href="#assistance">Assistance</a></h3>
+<p>Adventurers often have the opportunity to help one another during various tests. The Games Master is the final judge as to which tests can be helped with assistance and which require an Adventurer to make the test alone. For instance, if an Adventurer is attempting to lift a huge log out of a road, then clearly several others can help him in the Athletics test required. However, an Adventurer trying to break down a barred door may jam up the doorway too much for anyone else’s shoulder to fit. An Adventurer trying to recall the details of the local history of his own village cannot have strangers help him but several sages can piece together the history of the kingdom from their own memories.</p>
+<p>Every assisting Adventurer adds his critical score to the primary Adventurer’s skill. Remember to apply any relative modifiers to the assisting Adventurer’s skill before determining the critical score.</p>
+<p>The Games Master is the final arbiter of how many Adventurers may assist in any given test and how many attempts may be made in what period of time.</p>
+<h2 id="opposed-skills"><a class="header" href="#opposed-skills">Opposed Skills</a></h2>
+<p>An opposed Skill Test occurs when one skill is <em>actively</em> resisted by another. For example a thief attempts to sneak past a wily palace guard who, being vigilant, is on the look-out for potential crooks.</p>
+<p>In an opposed test both participants roll their respective skills. The winner of the test is the one who gains the higher level of <em>success</em> ; if both participants have the <em>same</em> level of success, then the winner is the one with the <em>higher</em> dice roll within his skill range. (In the extremely unlikely situation that both Adventurers have exactly the same dice result <em>and</em> the same Level of Success, then the Adventurer with the highest skill wins. If it is still a draw, toss a coin to determine the winner!)  If both fail then a stalemate has occurred, forcing the opposed test to be rolled again at a later point.</p>
+<p><em>For example: The cunning thief is attempting to sneak past the vigilant palace guard. The thief uses his Stealth skill, which is at 75%. The guard is opposing with his Perception skill of 60%. Dice are rolled. The thief rolls 71% and the guard rolls 59%. Both have succeeded but the thief has the higher roll within his skill range and sneaks past. Conversely, if the guard has rolled 59% and the thief had rolled 54%, again, both have succeeded but the guard has the higher roll and so spots the thief as he emerges from the shadows.</em>  If both had failed then other circumstances would have intervened. In the previous example, for instance, a chambermaid might have entered the courtyard distracting the guard but interrupting the thief. Once she has passed, the opposed test can be attempted again.</p>
+<h5 id="example-alaric-and-owain-are-engaged-in-a-race-this-calls-for-athletics-opposed-skills-alarics--athletics-is-35-and-owains-is-95-the-dice-are-rolled-and-owain-scores-94--a-very-good-roll-since"><a class="header" href="#example-alaric-and-owain-are-engaged-in-a-race-this-calls-for-athletics-opposed-skills-alarics--athletics-is-35-and-owains-is-95-the-dice-are-rolled-and-owain-scores-94--a-very-good-roll-since">Example: Alaric and Owain are engaged in a race. This calls for Athletics opposed skills. Alaric’s  <em>Athletics is 35% and Owain’s is 95%. The dice are rolled and Owain scores 94 – a very good roll since</em></a></h5>
+<h5 id="it-is-a-high-roll-and-less-than-his-skill-percentage-alarics-roll-is-02--a-critical-success-and-this-beats"><a class="header" href="#it-is-a-high-roll-and-less-than-his-skill-percentage-alarics-roll-is-02--a-critical-success-and-this-beats">it is a high roll and less than his skill percentage. Alaric’s roll is 02 – a critical success and this beats</a></h5>
+<h5 id="owains-standard-success-alarics-lucky-burst-of-speed-clearly-overwhelmed-owains-energy-conserving"><a class="header" href="#owains-standard-success-alarics-lucky-burst-of-speed-clearly-overwhelmed-owains-energy-conserving">Owain’s standard success. Alaric’s lucky burst of speed clearly overwhelmed Owain’s energy-conserving</a></h5>
+<h5 id="pace-had-alaric-rolled-between-05-and-24-owain-would-have-won-because-whilst-both-adventurers"><a class="header" href="#pace-had-alaric-rolled-between-05-and-24-owain-would-have-won-because-whilst-both-adventurers">pace. Had Alaric rolled between 05 and 24, Owain would have won because whilst both Adventurers</a></h5>
+<p><em>succeed, Owain’s is the higher roll whilst still being a normal success.</em>  Opposed Skill Tests are extremely useful for many situations where the skills of one party need to be weighed directly against the skills of another.</p>
+<ul>
+<li>
+<p>Bargaining (Adventurers match Commerce and Commerce, or Commerce and Influence)</p>
+</li>
+<li>
+<p>Evading detection (Adventurer matches Stealth against the opponent’s Perception)</p>
+</li>
+<li>
+<p>Persuading (Adventurer matches Influence against Persistence)</p>
+</li>
+<li>
+<p>Pursuits (participants match Athletics skills, or Evade against Athletics)</p>
+</li>
+<li>
+<p>Withstanding torture (Adventurer matches Resilience against Lore (Torture))</p>
+</li>
+<li>
+<p>Hiding or palming an object (Sleight against Perception)</p>
+</li>
+</ul>
+<h3 id="opposed-skills-over-100"><a class="header" href="#opposed-skills-over-100">Opposed Skills Over 100%</a></h3>
+<p>During opposed tests, whichever participant has the highest mastered skill subtracts 100% from it and uses the remainder as a penalty to <em>everyone</em> in the contest. Thus the most skilled participant has a skill of 100% and everyone else is less than this. This has the benefit of introducing an increased chance of failure for the lesser skilled opponents in the contest; thus improving the chance of a better victory level.</p>
+<p><em>For example, Mikhail the mercenary possesses a Stealth skill of 120%. Since he is the most experienced character he reduces all his opponents’ Perception skills by 20% and he himself is lowered to 100%.</em>  The identification of who has the highest skill must be calculated <em>after</em> any other modifiers for circumstances have been applied.</p>
+<h2 id="using-non-combat-skills-in-combat"><a class="header" href="#using-non-combat-skills-in-combat">Using Non-Combat Skills in Combat</a></h2>
+<p>The Skill Use Combat Action allows Adventurers to use their skills in combat situations whenever they deem it appropriate. For example, an Adventurer may be desperately trying to open a locked door to escape an oncoming enemy who is currently fighting his comrades.</p>
+<p>The actual Skill Tests made are performed as described previously. However, in combat it becomes important to know how long a skill takes to perform. Most will take only a single Combat Action and there are some specific examples listed in the skill descriptions later in this chapter.</p>
+<p>The greatest problem with using a skill in combat is that it is quite possible to be interrupted in the middle of skill use by a random event (such as being struck by a sword). When an Adventurer must use a skill over a number of Combat Rounds, the final effect of the skill (and the test itself) will not normally take place until the end of the final Combat Action. In the meantime, the Adventurer must concentrate on the skill being used – he cannot suspend his skill use to initiate an attacking Combat Action, for instance.</p>
+<p>Normally, an interruption to the skill user will result in either a penalty to the final test or the test automatically failing.</p>
+<h2 id="common-skill-descriptions"><a class="header" href="#common-skill-descriptions">Common Skill Descriptions</a></h2>
+<p>Every Adventurer has access to all the Common skills during Adventurer Creation. These skills detail the most common actions every person in the world can succeed in to one degree or another. Each skill is derived from a combination of two Characteristics or a single Characteristic multiplied.</p>
+<h3 id="athletics-strdex"><a class="header" href="#athletics-strdex">Athletics (STR+DEX)</a></h3>
+<p>This broad skill covers a range of athletic activities useful to Adventurers, including climbing, jumping and running.</p>
+<p>If an Adventurer is wearing armour, the distances he can climb, run or jump are affected by the Armour Penalty. The section on Movement on page 92 of the Game System chapter details these effects. When using Athletics for the following specific actions the rate of Movement is determined by how it has been modified by the effects of any armour worn.</p>
+<p><em>Climbing:</em> Given enough hand and footholds, the right equipment and enough time, an Adventurer can climb any surface without the need for a test. Under normal circumstances, an Adventurer can climb or descend one quarter of his Movement as a Combat Action.</p>
+<ul>
+<li>Climbing a rough surface (trees, steep hills and so on): The Armour Penalty is subtracted from three quarters of the base Movement (6 metres per Combat Action for human Adventurers). If the result is zero or less, they are too burdened by their armour to climb.</li>
+</ul>
+<p>Thus, our hero in his plate armour cannot climb as his Climbing Movement is 6–9 = –3.</p>
+<ul>
+<li>
+<p>Climbing a sheer surface (walls, cliff faces and so on): The Armour Penalty is subtracted from the base Movement divided by two. As with climbing a rough surface, if the result is zero or less, the Adventurer cannot climb.</p>
+</li>
+<li>
+<p>Tests should be made for treacherous surfaces (such as sheer cliffs or wet surfaces) and if an Adventurer is trying to increase the rate of his ascent or descent. An Adventurer can double the rate of his modified Movement by taking a –20% penalty on his Athletics test.</p>
+</li>
+</ul>
+<p>A critical Climbing success allows the Adventurer to triple his Movement rate for the climb.</p>
+<p>A fumbled Climbing roll means the Adventurer falls and cannot make an Acrobatics test (if he has the skill) to attempt to reduce the falling damage.</p>
+<p><em>Jumping:</em> In general, a successful Athletics test allows an Adventurer to jump up to twice his own height horizontally or up to half his own height vertically, if he has at least five metres to run first.</p>
+<p>If he is making a standing jump, these distances are halved. Leaps of over half an Adventurer’s maximum distance result in him falling prone on landing.</p>
+<ul>
+<li>
+<p>If armoured, reduce the distance in metres the Adventurer can jump by the Armour Penalty divided by two.</p>
+</li>
+<li>
+<p>For every full 20% he possesses in this skill, the Adventurer may add an extra metre to a horizontal jump, or 20 centimetres to a vertical jump, if he has space to perform a run up.</p>
+</li>
+<li>
+<p>For a critical success the Adventurer adds a further metre to his total distance and remains upright on landing.</p>
+</li>
+</ul>
+<p>A fumbled Jump roll indicates the Adventurer has landed awkwardly. He must immediately make a Resilience test. If the Resilience test is successful he sustains 1 point of damage to each leg. If the Resilience test fails, then he sustains 1D4 points of damage to each leg.</p>
+<p><em>Throwing:</em> Athletics is also used for throwing items and is used to judge the accuracy of the Adventurer when throwing improvised objects, from small stones to bar stools. Weapons that are thrown use their own specific skill, such as Spear for javelins.</p>
+<p>A thrown object has a maximum range of one metre for every point the Adventurer’s STR exceeds the object’s ENC. The Athletics roll measures the Adventurer’s accuracy during the throw and the Games Master may choose to treat this as a Ranged Combat attack, as described on page 140, if the situation warrants it.</p>
+<h3 id="brawn-strsiz"><a class="header" href="#brawn-strsiz">Brawn (STR+SIZ)</a></h3>
+<p>Brawn is used where physical force (pushing, pulling and lifting) needs to be implemented; forcing a jammed door, for instance, or pulling a cart free of a rut in the road.</p>
+<p>An Adventurer can lift up his STR x1.5 in SIZ without making a Brawn roll. As a mass equivalent, one point of SIZ equals, roughly, 3.5 kilograms.</p>
+<p>For SIZ and mass above this, the Adventurer needs to succeed in a Brawn roll and if successful he can lift up to three times his STR. If the roll is a critical success, then up to five times STR can be lifted.</p>
+<p>If the Brawn roll is fumbled, the Adventurer risks injury: he must make a successful Resilience roll or sustain 1D3 points of damage to the Chest Hit Location (armour does not protect against this damage).</p>
+<h3 id="common-magic-powcha"><a class="header" href="#common-magic-powcha">Common Magic (POW+CHA)</a></h3>
+<p>This skill relates to the magic commonly used by the Adventurer’s community and to which he will have had daily exposure whilst growing up, becoming familiar with a variety of spells and magical effects that are used in the daily tasks of his society. The spells of Common Magic are described in the Common Magic chapter and cover a wide variety of different effects, situations and scenarios.</p>
+<p>If a Common Magic roll is a critical success, then the spell costs 1 less Magic Point (to a minimum of 1) to cast.</p>
+<p>If the roll fumbles, then the Adventurer expends all the Magic Points for the spell’s Magnitude but the spell still fails.</p>
+<h3 id="culture-own-int-x2"><a class="header" href="#culture-own-int-x2">Culture (Own) (INT x2)</a></h3>
+<p>The Culture skill is actually several separate skills, each dealing with a specific culture. The Culture skill is distinct from Lore and Language skills, as it represents a person’s understanding of, and ability to heed, the behaviours, habits, customs and everyday rituals of a specific cultural group. For example, someone making a successful test in Culture (Nomads of the Wastes) understands that it is considered good manners to remove all head-gear and footwear whenever entering a person’s tent; or knows that it is considered polite to pass the bread from left to right at a Waste-Nomad feast, whilst the fermented milk is always passed from right to left.</p>
+<p>A critical success grants the Adventurer a unique understanding or insight into the workings of a particular cultural group, subgroup or type. The Games Master should reveal one or two key, previously unknown, facts about the culture to the Adventurer. Additionally the Adventurer may add the critical value of his Culture skill to any communication or personal credibility tests made in the immediate circumstances.</p>
+<p>A fumble indicates the Adventurer has completely misunderstood a particular cultural practice, reference or social code, which causes an embarrassment that will be, at best, humiliating or, at worst, insulting. The Adventurer will be ostracised until suitable reparations are made.</p>
+<p>Culture (Specific Culture) can also be learned as an Advanced skill when the Adventurer studies a different culture to his own.</p>
+<h3 id="dance-dexcha"><a class="header" href="#dance-dexcha">Dance (DEX+CHA)</a></h3>
+<p>An Adventurer with this skill is accomplished at moving gracefully in time with music or other rhythm, using standardised and often intricate steps and movements. A successful test with Dance results in the audience or partner being pleased by the Adventurer’s performance.</p>
+<p>On a critical success the dance is expressive, fluid and deeply affecting for all who witness it.</p>
+<p>Music is accompanied by perfect movement and emotion. The dance is as persuasive as any Influence test and can be used as such in situations resting on communication and personal credibility. Alternatively any subsequent Influence test is given a bonus to the critical score of the Dance skill.</p>
+<p>A fumbled dance is deeply humiliating to both the dancer and those who watch it. The dancer trips or stumbles. Passion is lost, the execution is clumsy and the dance fails to interpret the music in any shape or form. Any skills resting on communication and personal credibility will suffer a penalty at the discretssion of the Games Master.</p>
+<h3 id="drive-dexpow"><a class="header" href="#drive-dexpow">Drive (DEX+POW)</a></h3>
+<p>If an Adventurer is driving a wagon, chariot or similar vehicle at not more than a walking pace across flat terrain, a Drive roll is not required. Rolls are needed when an Adventurer wants to do something out of the ordinary with a vehicle – traverse treacherous terrain, jump obstacles and so on.</p>
+<p>A critical result either increases the vehicle’s movement by half again, if the skill is being used in a straightforward manner. If being used to perform a special manoeuvre, such as evading an enemy, a critical success allows half the Adventurer’s normal Drive skill to be used as a negative modifier against any applicable skills being used by pursuers for the rest of the Combat Round.</p>
+<p><em>For example: Vadrus the Charioteer is being pursued by the war chariot of his enemy, Kortek. Kortek is hurling javelins with abandon and Vadrus declares he’s going to try to wheel his horses in a bid to evade the javelins. The Games Master calls for a Drive Skill Test from Vadrus’s player. Vadrus’s Drive skill is 70% and the dice roll is 06. This means that a –35% penalty is now applied to Kortek’s attack rolls as Vadrus’s chariot weaves and swerves.</em>  A fumbled Drive roll indicates either a reduction in the vehicle’s speed by half or, if the vehicle is trying to perform a special manoeuvre, it becomes unstable and overturns. If the vehicle overturns all occupants need to make a successful Athletics test to leap clear of the wreckage or sustain 1D6 points of damage to a random location as the vehicle crashes.</p>
+<h3 id="evade-dex-x-2"><a class="header" href="#evade-dex-x-2">Evade (DEX x 2)</a></h3>
+<p>Evade is used to escape from impending danger and can be used against ranged weapons (by dodging or diving out of the way), avoiding traps (triggered, sprung or otherwise), changing the engagement distance in combat and generally getting out of the way of a potential physical hazard.</p>
+<p>For most tasks such as dodging traps or spells, the skill is opposed by the deadliness of the trap (i.e. the skill of its setter) or the casting skill of the sorcerer. Winning the opposed test allows the user to completely escape harm. On the other hand, if they lose they suffer the normal consequences.</p>
+<h5 id="for-example-alaric-investigating-a-murky-old-burial-mound-of-perhaps-jade-throne-kingdom--origin-comes-across-a-sarcophagus-he-tries-to-open-it-and-triggers-the-dart-trap-set-500-years-ago-by"><a class="header" href="#for-example-alaric-investigating-a-murky-old-burial-mound-of-perhaps-jade-throne-kingdom--origin-comes-across-a-sarcophagus-he-tries-to-open-it-and-triggers-the-dart-trap-set-500-years-ago-by">For example, Alaric, investigating a murky old burial mound of (perhaps) Jade Throne Kingdom  <em>origin comes across a sarcophagus. He tries to open it and triggers the dart trap set 500 years ago, by</em></a></h5>
+<h5 id="the-sarcophaguss-designers-the-trap-setters-skill-at-the-time-was-65-alarics-evade-is-46--he"><a class="header" href="#the-sarcophaguss-designers-the-trap-setters-skill-at-the-time-was-65-alarics-evade-is-46--he">the sarcophagus’s designers. The trap-setter’s skill at the time was 65%; Alaric’s Evade is 46% – he</a></h5>
+<h5 id="must-pit-this-against-the-trap-in-an-opposed-roll-alaric-scores-45-and-the-games-master-rolls-31-both"><a class="header" href="#must-pit-this-against-the-trap-in-an-opposed-roll-alaric-scores-45-and-the-games-master-rolls-31-both">must pit this against the trap in an opposed roll. Alaric scores 45 and the Games Master rolls 31. Both</a></h5>
+<h5 id="are-successful-but-alaric-wins-the-contest-with-the-higher-roll-the-trap-is-sprung-as-alaric-lifts-the"><a class="header" href="#are-successful-but-alaric-wins-the-contest-with-the-higher-roll-the-trap-is-sprung-as-alaric-lifts-the">are successful but Alaric wins the contest with the higher roll. The trap is sprung as Alaric lifts the</a></h5>
+<h5 id="sarcophagus-lid-and-a-hail-of-darts-whirr-towards-his-face-alaric-prepared-for-such-an-eventuality--ducks-deftly-to-one-side-and-the-darts-strike-the-wall-behind--since-most-quadruped-or-swimming-creatures-lack-the-evade-skill-they-may-substitute-their-athletics-skill-for-these-situations-instead-in-a-the-same-way-flying-creatures-can-substitute-their-fly-skill-for-evade-when-aloft"><a class="header" href="#sarcophagus-lid-and-a-hail-of-darts-whirr-towards-his-face-alaric-prepared-for-such-an-eventuality--ducks-deftly-to-one-side-and-the-darts-strike-the-wall-behind--since-most-quadruped-or-swimming-creatures-lack-the-evade-skill-they-may-substitute-their-athletics-skill-for-these-situations-instead-in-a-the-same-way-flying-creatures-can-substitute-their-fly-skill-for-evade-when-aloft">sarcophagus lid and a hail of darts whirr towards his face: Alaric, prepared for such an eventuality,  <em>ducks deftly to one side and the darts strike the wall behind.</em>  Since most quadruped or swimming creatures lack the Evade skill, they may substitute their Athletics skill for these situations instead. In a the same way, flying creatures can substitute their Fly skill for Evade when aloft.</a></h5>
+<p>If the Evade roll is fumbled, then the Adventurer has left himself open to the hazard and sustains its <em>maximum</em> damage.</p>
+<h3 id="evaluate-intcha"><a class="header" href="#evaluate-intcha">Evaluate (INT+CHA)</a></h3>
+<p>Every Adventurer places a sense of worth on valuables, trades or propositions. The Evaluate skill enables the Adventurer to determine the value placed on something by others, effectively guessing its market value. With the Evaluate skill, the Adventurer can try to determine the value of specific objects.</p>
+<p>Particularly common or obscure objects might give a bonus or penalty to the test but success will allow an Adventurer to guess the average monetary value of the object (normally guessing accurately to within 10% of its actual value).</p>
+<p>For a critical success the Adventurer not only estimates the item’s value precisely, he also determines a secret or hitherto unknown fact about it that can be used to increase the item’s value by half again.</p>
+<p><em>For example, examining a rare alabaster vase, Matvalk the Merchant scores a critical Evaluate and correctly values the vase at 500 SP. He also notices a minute signature on the base meaning that the vase came from the Shah of Ashan’s renowned slave potter, Gustubus. This means the vase is highly sought after and could be sold for up to 750 SP.</em>  If the Evaluate fumbles, not only does the Adventurer completely misjudge the value of the object, he devalues it by half again. Thus, if Matvalk in the previous example had fumbled his Evaluate roll, he would have valued the vase at only 250 SP.</p>
+<h3 id="first-aid-dexint"><a class="header" href="#first-aid-dexint">First Aid (DEX+INT)</a></h3>
+<p>Living in a dangerous world, most Adventurers are adept at First Aid to one degree or another.</p>
+<p>First Aid is always applied to a specific location. See the First Aid Actions table. An Adventurer may apply First Aid to himself, though there is usually at least a –10% penalty owing to the awkwardness of applying the treatment.</p>
+<p>It normally takes 1D3 minutes to administer First Aid. Neither person can move and Combat Actions cannot be used for any other activity.</p>
+<p>A location that has had any variation of First Aid administered to it cannot benefit from First Aid again until it has fully healed (it is restored to maximum Hit Points once more).</p>
+<p>The use of First Aid requires suitable medical equipment such as bandages or salves. Makeshift medical equipment (such as bandages made from strips of cloth hastily torn from a dirty tunic) will bestow a –20% penalty on the test.</p>
+<h5 id="first-aid-actions"><a class="header" href="#first-aid-actions">First Aid Actions</a></h5>
+<pre><code>Injury Treatment
+Impalement A successful First Aid test removes the impaling item without causing more damage to the victim.
+
+Unconsciousness A successful First Aid test can revive an Adventurer from unconsciousness, though drugged patients may inflict a penalty on the First Aid test.
+
+Injured location A successful First Aid test on an injured location (but not one of 0 or less Hit Points) heals 1D3 Hit Points to that location.
+
+Serious Injury A successful First Aid test on a location suffering from a Serious Injury heals one Hit Point to a location and restores it to functionality (in the case of a limb) or consciousness (in the case of the Abdomen, Chest or Head).
+
+Major Injury A successful First Aid test on a location suffering from a Major Injury does not restore the location's Hit Points. This First Aid merely stabilises the patient so that they will not die from the injury.
+
+</code></pre>
+<p>A critical success in First Aid reduces the treatment time by half. If being used to treat an Injured location (see the First Aid Actions table), then 1D3+1 Hit Points are restored to the hurt location.</p>
+<p>A fumbled First Aid attempt causes more harm than good: the Hit Location being treated suffers  a further 1 point of damage.</p>
+<h3 id="influence-cha-x-2"><a class="header" href="#influence-cha-x-2">Influence (CHA x 2)</a></h3>
+<p>Adventurers skilled in Influence find it easy to persuade others to their way of thinking, whether they are trying to persuade a king to send armies to fight a distant enemy, bribe a guard or merely get a merchant to sell them something at a reduced price.</p>
+<p>Influence tests are normally opposed by the Perception, Persistence or Influence skill and are modified by how much an Adventurer is trying to change an opponent’s mind. For instance, getting a merchant to accept gems instead of coinage as payment is relatively easy, whilst trying to buy a sword for a 50% discount is not.</p>
+<p>For a critical success the Adventurer’s efforts are incredibly persuasive, so much so that not only is the Adventurer successful in what he is trying to attain with his Influence skill but his next Influence test with the same person, no matter when it takes place, is at a bonus equal to the Adventurer’s CHA.</p>
+<p><em>For example, Matvalk the Merchant, having now determined the vase he is studying is worth 750 SP tries to convince the seller that it is a worthless piece of tat. His Influence test is a critical success and Matvalk walks away with the vase for a trifling 200 SP. In his next Influence test with the same merchant, Matvalk’s Influence will be at a +14% bonus, for Matvalk’s CHA value.</em>  A fumbled Influence roll indicates that not only does the Influence attempt fail; it also insults or offends the person being influenced. The reaction depends on the individual and the situation but at the very least it means that all future Influence tests against the same person will be at a –40% penalty.</p>
+<h3 id="insight-intpow"><a class="header" href="#insight-intpow">Insight (INT+POW)</a></h3>
+<p>Insight is the ability to read a person’s verbal and non-verbal behaviours and signals to determine their motives and state of mind. Insight is used to decide if someone is telling a lie, or to predict how someone feels about a particular situation. It is distinct from the Perception skill, since it is used to detect subtle expressions of character and attitude, rather than tangible effects that can be assessed through general observation alone.</p>
+<p>Sometimes it may be more effective for the Games Master to roll the outcome of an Adventurer’s Insight attempt, keeping the result of the roll secret and revealing information according to the degree of success (or failure) – as the results for a critical success or a fumble suggest.</p>
+<p>For a critical success the Adventurer gains the ability to second guess how the person under analysis will react to a given situation. The Games Master should offer private hints to the Adventurer regarding the person’s motivations and likely actions.</p>
+<p>For a fumble, the Adventurer completely misjudges the analysed person’s motives and actions.</p>
+<p>The Games Master should offer the Adventurer a series of private, deliberately misleading hints regarding the person’s motivations and likely actions.</p>
+<h3 id="lore-int-x-2"><a class="header" href="#lore-int-x-2">Lore (INT x 2)</a></h3>
+<p>The Lore skill is actually many different skills, each of which must be improved separately. Each Lore skill defines an area of knowledge for the Adventurer and tests are made whenever a player wants to see if his Adventurer knows something about the subject at hand. This effectively allows the player to ask the Games Master direct questions if the test is successful.</p>
+<p>Every Adventurer has, as a Common Skill, Lore (Regional). This is a measure of the Adventurer’s familiarity with the geography, flora and fauna of the area where he has grown up or spent the most significant amount of time prior to his adventuring career. Attempting to use this skill in unfamiliar circumstances will be at a disadvantage. For instance, an Adventurer raised in an arctic mountain range will suffer a penalty to Lore (Regional) skills in an equatorial desert.</p>
+<p>For a critical success the Adventurer has gained some specific insight or made a startling discovery as a result of the critical success in the Lore skill. The Adventurer should be given one specific fact, relevant to the scenario or campaign that the he can then use as he sees fit.</p>
+<p>A fumbled Lore test indicates a complete misunderstanding of the tenets of the Lore in question.</p>
+<p>In the case of Lore (Regional), for instance, this might mean mistaking a poisonous fungus for an edible one or placing the capital of a country 1,000 miles from its true position.</p>
+<h3 id="perception-intpow"><a class="header" href="#perception-intpow">Perception (INT+POW)</a></h3>
+<p>The Perception skill is used to represent the senses of the Adventurer when detecting objects or other persons. It covers listening for sounds, searching a room, hunting for a specific clue and so on.</p>
+<p>On a critical success the Adventurer has picked-up on a nuance unseen, or unheard, by everyone else. A critical Perception test offers a single burst of enlightenment or recognition that helps avert disaster or completely reveals the concealed.</p>
+<p>Fumbling a Perception test leads to the Adventurer being utterly oblivious to his surroundings.</p>
+<p>He is blissfully unaware of the impending ambush; he has not got a clue that a missing diamond ring layinglies a metre away from his left foot. Fumbling a Perception test in circumstances where the Adventurer is likely to face some threat, such as an attack, provides a bonus to the initial attacks of the opposing side when it launches its schemes.</p>
+<h4 id="alarics-tale"><a class="header" href="#alarics-tale">Alaric’s Tale</a></h4>
+<p><em>Matvalk the merchant has come to Alaric’s village to sell his collection of rare pottery. Alaric is suspicious of the merchant’s intentions, sensing that Matvalk believes the barbarians of the village to be unsophisticated half-wits. The Games Master makes an Insight roll for Alaric, concealing the result from Alaric’s player: the result is 03 – a critical success against Alaric’s Insight 45%. Taking Alaric’s player to one side the Games Master tells him that Matvalk, whilst making a convincing and sincere pretence of being an honest trader has all the hallmarks of worshipping the Trickster god – never a good sign in a barbarian settlement. From now on Alaric will be on the look out for Matvalk’s cunning plans and schemes to make trouble. However, the Games Master does not tell Alaric’s player what the degree of success actually was for the Insight roll: Alaric will find this out for himself in the course of play but the Games Master will ensure that Alaric notices anything Matvalk does that reeks of Trickster worship.</em></p>
+<h3 id="persistence-pow-x-2"><a class="header" href="#persistence-pow-x-2">Persistence (POW x 2)</a></h3>
+<pre><code>Persistence is used whenever an Adventurer has his mental willpower called into question. This may be for anything as simple as concentrating on a task at hand amidst distraction, or it may be to resist the baleful effects of a mind-controlling spell.
+
+</code></pre>
+<pre><code>A critical success in resisting magic means that no further spells cast by the opponent have any affect on the Adventurer for a number of Combat Actions equal to the Adventurer's current Magic Points.
+
+</code></pre>
+<pre><code>In the case of utilising willpower or mental fortitude, a critical Persistence roll enables the Adventurer to shrug-off any psychological effects of the situation and to remain undeterred by whatever it is he is experiencing.
+
+</code></pre>
+<pre><code>Fumbling the Persistence test when resisting magic makes the psychological effect of the spell permanent until healed.
+
+</code></pre>
+<pre><code>If the fumble concerns a matter of willpower, not only does the Adventurer completely fold under the pressure of the experience but becomes unable to conduct any other actions for 1D minutes due to the sheer mental strain.
+
+</code></pre>
+<h4 id="alarics-tale-1"><a class="header" href="#alarics-tale-1">Alaric’s Tale</a></h4>
+<p><em>During a banquet the boastful Owain is clearly attempting to woo the dazzling Selena. Alaric, having consumed a few mugs of mead, watches the flirting with barely concealed jealousy. The Games Master calls for a Persistence roll, applying a –20% penalty for the mead Alaric has drunk. Alaric has Persistence 58% and rolls 52 – a failure with the penalty taken into account. Alaric can keep his jealousy under control no longer and decides to confront his rival.</em></p>
+<h3 id="resilience-con-x-2"><a class="header" href="#resilience-con-x-2">Resilience (CON x 2)</a></h3>
+<pre><code>Resilience is the physical counterpart to Persistence. The higher an Adventurer's Resilience, the more likely he is to handle adverse physical conditions, such as weathering a vicious sandstorm, surviving in a drought or overcoming the effects of poison or disease. It is an important skill for assessing the reaction to injury, as outlined on page 11.
+
+</code></pre>
+<pre><code>When resisting poisons or diseases a critical success allows the Adventurer to avoid making any further Resistance rolls against that specific dose or infection.
+
+</code></pre>
+<pre><code>Fumbling when resisting means that the poison or disease has overwhelmed the Adventurer and that they automatically fail any further Resistance rolls against it.
+
+</code></pre>
+<h4 id="persistence-and-resilience-as-skills"><a class="header" href="#persistence-and-resilience-as-skills">Persistence and Resilience as Skills</a></h4>
+<pre><code>Whilst described as skills, both Persistence and Resilience are a combination of natural capability, personal fortitude and training to deal with situations involving mental and physical stress, including pain. All of us have untapped reserves of Persistence and Resilience; these skills measure the Adventurer's ability to draw upon them to resist a variety of different pressures and conditions.
+
+</code></pre>
+<h4 id="optional-rule--limits-to-persistence-and-resilience"><a class="header" href="#optional-rule--limits-to-persistence-and-resilience">Optional Rule – Limits to Persistence and Resilience</a></h4>
+<p>There are limits to mental and physical endurance; barriers beyond which the mind and body cannot be pushed and surrender becomes inevitable. To represent this, Games Masters may wish to rule in their campaign that Persistence cannot exceed the value of the POW Characteristic multiplied by 5 and Resilience cannot exceed the CON Characteristic multiplied by five. The starting values for each skill are both calculated as normal but they are now no longer ‘limitless’ skills. Of course, their limits can be extended through the improvement of their respective Characteristic scores.</p>
+<h3 id="ride-dexpow"><a class="header" href="#ride-dexpow">Ride (DEX+POW)</a></h3>
+<p>If an Adventurer is riding a creature (with the help of whatever riding equipment is common to his Cultural Background) at not more than a walking pace across flat terrain, a Riding test will never be required. Tests are required when an Adventurer wants to do something out of the ordinary with a mount – traverse treacherous terrain, jump obstacles, ride bareback and so on.</p>
+<p>Riding an unfamiliar species is at least a Difficult (–20%) test; riding a species in a different medium (a horseman riding a dolphin or a griffin, for example) is at least a Hard (–40%) test.</p>
+<p>A critical Ride test allows the Adventurer to double the mount’s Movement for a number of Combat Rounds equal to the rider’s critical range for the Ride skill. Thus, an Adventurer with a Ride skill of 50% would double the movement rate for five Combat Rounds.</p>
+<p>Fumbling a Ride test means the Adventurer must make an Athletics test to avoid losing control and being thrown from the mount (sustaining any falling damage as appropriate).</p>
+<h3 id="sing-powcha"><a class="header" href="#sing-powcha">Sing (POW+CHA)</a></h3>
+<p>All Adventurers are gifted with the tools for singing (unless mute), unlike those who play other musical instruments. Few, however, develop the skill beyond their innate talent (or lack of). A successful test with this skill results in the audience being pleased – or even pleasantly surprised  - by the Adventurer’s performance.</p>
+<p>A critical Sing success can have one of several effects. If singing to earn money, increase by half again the amount earned due to the audience’s appreciation of the performance. If being used to impress someone, add the Sing’s critical score to the Adventurer’s Influence skill. Thus, an Adventurer with a Sing skill of 70% would add +7 to his Influence test.</p>
+<p>If fumbled, then the song was truly terrible; off-key, out of tune and poorly performed. Halve the earnings and the singer suffers a penalty to future Influence rolls at the Games Master’s discretion and the circumstances of the fumble.</p>
+<h3 id="sleight-dexcha"><a class="header" href="#sleight-dexcha">Sleight (DEX+CHA)</a></h3>
+<p>This skill is used to hide or take objects, without drawing undue attention. It is usually opposed by a Perception test if trying to avoid getting caught.</p>
+<p>The object being manipulated can be of any size but particularly small or large objects will bestow bonuses or penalties to the test. For instance, hiding a dagger on a well-clothed person is relatively easy (+20%) but attempting to hide a war sword on the same person is far harder (–20%).</p>
+<p>If the Sleight attempt is being made whilst others are around, perhaps with some vigilance, then the attempt is an opposed roll against the Perception of likely observers.</p>
+<p>On a critical success the Adventurer has concealed or palmed the object so successfully that any subsequent attempts to locate it, using a Perception test, for example, are subject to a penalty (decided by the Games Master) <em>plus</em> the critical score of the Sleight skill.</p>
+<p>On a fumble, not only is the item <em>not</em> concealed, it is dropped or otherwise exposed in full view of whoever is watching. If no one is actively watching for the deception, the sound of the item falling, or some other commotion immediately attracts their attention.</p>
+<h3 id="stealth-dexint"><a class="header" href="#stealth-dexint">Stealth (DEX+INT)</a></h3>
+<p>The Stealth skill is used whenever an Adventurer attempts to personally evade detection by another Adventurer. This usually happens when an Adventurer either tries to move quietly past an enemy, hide from one or perform a combination of both. Stealth tests are typically opposed by the Perception skill and are modified according to the situation.</p>
+<p>On a critical success any subsequent attempts to locate the Adventurer (follow him, find him and so on) are at a penalty <em>plus</em> the critical score of the Stealth skill.</p>
+<p>For a fumble the Adventurer stumbles and causes some form of commotion that immediately attracts the attention of anyone in the vicinity. Furthermore, if any other Adventurers are attempting a Stealth test in the fumbling Adventurer’s company, they suffer a penalty to future Stealth rolls at the Games Master’s discretion and the circumstances of the fumble.</p>
+<h3 id="swim-strcon"><a class="header" href="#swim-strcon">Swim (STR+CON)</a></h3>
+<p>Adventurers normally swim at half their usual Movement. Swim rolls are only required when conditions are less than ideal – swimming while heavily encumbered or in strong currents, for example. Failure of a Swim test while swimming will usually result in the Adventurer not moving at all, though repeated failures may result in drowning. See the Game System chapter on page 76 for more details.</p>
+<p>A critical Swim test allows the Adventurer to swim at his normal Movement rate.</p>
+<p>On a fumble the Adventurer gets into difficulties due to the water conditions. He must make a successful Resilience test or sustain Suffocation damage as described on pages 76-78.</p>
+<h3 id="unarmed-strdex"><a class="header" href="#unarmed-strdex">Unarmed (STR+DEX)</a></h3>
+<p>The Unarmed skill covers all trained and untrained unarmed combat from simple brawling to esoteric martial arts. Punches, kicks, head-butts and all other Unarmed attacks do 1D3 points of damage.</p>
+<p>If using Unarmed the Adventurer may choose to either strike to cause damage or initiate (or break) a grapple.</p>
+<h2 id="advanced-skill-descriptions"><a class="header" href="#advanced-skill-descriptions">Advanced Skill Descriptions</a></h2>
+<p>Advanced skills are those that Adventurers are not expected to have automatically. These skills often require long and difficult training and Adventurers who possess any level of expertise in them often identify themselves according to their expertise. An Adventurer will not have access to many of these skills during Adventurer Creation but others can be learnt through experience.</p>
+<h3 id="acrobatics-strdex"><a class="header" href="#acrobatics-strdex">Acrobatics (STR+DEX)</a></h3>
+<p>Acrobatics covers a range of entertainments, for things such as juggling or tightrope walking. It also includes gymnastics such as tumbling and recovering from falls. Acrobatics can be used in its own right as a performance to impress an audience; but can also provide a bonus to Athletics and Evade Skill Tests. If used in this way, it adds its critical range as a bonus to the base skill.</p>
+<p>Normally, an Adventurer can move at half his base speed across an unstable surface without penalty. To move at his full rate requires an Acrobatics test. A successful Acrobatics test will also halve the damage suffered from falling.</p>
+<p>A critical success allows the Adventurer to double his movement rate when performing a feat of balance or when negotiating an unstable surface. If falling, a critical success will reduce falling damage to a quarter.</p>
+<p>A fumbled Acrobatics roll means that balance and agility has been lost catastrophically. Not only does the Adventurer fall, he falls awkwardly, sustaining the <em>full</em> damage from the fall!</p>
+<h3 id="art-powcha"><a class="header" href="#art-powcha">Art (POW+CHA)</a></h3>
+<p>This skill allows an Adventurer to create works of art. Like the Lore and Craft skills, it is actually a large number of skills grouped together under one heading. There are literally dozens of different artistic endeavours an Adventurer may pursue and each of them is its own individual skill. For instance, an Adventurer who wishes to take up the brush and palette would take Art (Painting).</p>
+<p>A critical success indicates that the artwork produced is of stunning quality – worth half the standard value again of similar products. If being used as part of an Influence test, to impress a prospective client or ally perhaps, then the Influence test will receive a bonus plus the critical score for the Art skill.</p>
+<p>Conversely a fumble means that the artwork is a disaster and worth only what recoverable raw materials were used in its creation. Such artwork cannot be used to influence another party, without causing insult.</p>
+<h3 id="boating-strcon"><a class="header" href="#boating-strcon">Boating (STR+CON)</a></h3>
+<p>This covers small waterborne craft propelled manually by oars or paddles (sail-driven craft are used with the Shiphandling Advanced skill). Travelling across calm water does not usually require a test but adverse conditions such as currents and weather can bestow penalties.</p>
+<p>A critical Boating success increases the Movement rate for the craft by half again.</p>
+<p>If a Boating test is fumbled, the Adventurer should make an Athletics test. If the Athletics test succeeds then the Adventurer has lost an oar or the controlling device for the boat has been   broken. Reduce the craft’s movement by half. If the Athletics test is a failure or fumble, then the boat is in danger of capsizing. All on board need to make either an Acrobatics or Athletics test (whichever is higher) to remain in the boat. Those that fail fall into the water.</p>
+<h3 id="commerce-intcha"><a class="header" href="#commerce-intcha">Commerce (INT+CHA)</a></h3>
+<p>This skill is used to secure the best price for goods being either bought or sold and it can be opposed by another Commerce roll, with the victor securing the advantage. Commerce is more than just haggling or simple bargaining; it is concerned with negotiation, compromise, brinksmanship and knowledge of the strength (or weakness) of the market for what is being traded. Where highly complex commercial deals are being discussed, a succession of opposed Commerce rolls might be called for, with cumulative bonuses or penalties (no greater than +/– 10% at a time) applied to the winner or loser, simulating the ebb and flow of the negotiation before settlement is reached.</p>
+<p>A critical success allows the Adventurer to secure the commodity or service at half its usual price (or selling it for double).</p>
+<p>A fumble indicates that the commodity or service is secured at twice the price or sold for only half the value.</p>
+<h3 id="courtesy-intcha"><a class="header" href="#courtesy-intcha">Courtesy (INT+CHA)</a></h3>
+<p>A noble court, from that of a minor lord to the grand palace of an emperor usually conducts its business, or communicates, in ways that would seem utterly alien to a commoner. With this skill, the Adventurer knows how to navigate the murky and treacherous waters of life amongst the nobility. He understands the subtleties and extravagances of courtly behaviour and can use them to his own advantage.</p>
+<p>A critical success means the Adventurer has made a superb impression with his courteousness and gains a bonus, plus the critical value of his Courtesy skill, in any Influence or similar tests, made soon after the Courtesy skill.</p>
+<p>A fumble causes a devastating faux-pas. The Adventurer is prevented from performing any subsequent Skill Tests involving communication or personal credibility, until reparations have been made.</p>
+<h3 id="craft-dexint"><a class="header" href="#craft-dexint">Craft (DEX+INT)</a></h3>
+<p>Like the Lore skill, the Craft skill is actually several separate skills grouped under a single heading. For example, Craft (Armourer), Craft (Carpenter), Craft (Torturer) and Craft (Potter) are all individual skills.</p>
+<p>Craft skills are used to fashion and create various items and there are literally hundreds of different crafts in the world, from the mundane to the exotic. The following list is by no means exhaustive:</p>
+<p><em>Armourer, baker, basketweaver, blacksmith, bowyer, brewer, butcher, candlemaker, carpenter, cartographer, cobbler, cook, cooper, fletcher, joiner, leatherworker, mason, painter, potter, sculptor, smith, tailor, torturer, weaver.</em>   A critical success allows the item being crafted to be of superior quality, in terms of durability, value or utility (choose one area of excellence). In terms of durability, it has additional AP and HP, distributed as the Adventurer sees fit, equal to the critical score of the skill. For example, a weaponsmith who crafts an especially fine longsword using his skill of 81% can distribute 8 additional points between the sword’s AP and HP. In terms of value, increase the item’s value by half again. In terms of utility, the item provides a bonus equal to its maker’s critical score to whichever skill the item is used for.</p>
+<p>A fumbled roll halves the Armour and Hit Points of the item and reduces its value by half.</p>
+<h3 id="culture-specific-culture-int-x2"><a class="header" href="#culture-specific-culture-int-x2">Culture (Specific Culture) (INT x2)</a></h3>
+<p>Learning the ways of a Culture other than one’s own is an Advanced skill. However it works in precisely the same way as for the Culture (Own) Common Skill. See page 48.</p>
+<h3 id="disguise-intcha"><a class="header" href="#disguise-intcha">Disguise (INT+CHA)</a></h3>
+<p>This skill is used to change an Adventurer’s appearance, imitate cultural accents and mannerisms, or assume a different persona. It is usually opposed by an Insight or Perception test if the Adventurer is trying to avoid being identified.</p>
+<p>A Disguise test will often be modified by the materials an Adventurer has to hand. For instance, it would be very hard to disguise an Adventurer as a royal guardsman if he has no uniform available, whereas an old and moulding cloak will go a long way to helping an Adventurer pull off a disguise as a beggar.</p>
+<p>A critical success indicates that the disguise is completely perfect. The Adventurer gains the confidence of those being deceived and receives a bonus, plus the critical score in the Disguise skill, to any further Skill Tests relying upon the effectiveness of the disguise.</p>
+<p>A fumble means the disguise is so unconvincingly executed as to be obvious. Even in a dark room, it fools no one.</p>
+<h3 id="engineering-int-x2"><a class="header" href="#engineering-int-x2">Engineering (INT x2)</a></h3>
+<p>This skill is used to design, build, activate, repair, sabotage or disassemble large mechanisms, traps or constructs such as siege machines, city gates, drawbridges, mineshafts, sailing ships and so forth.</p>
+<p>A critical success indicates that the quality of the engineering project is first rate in terms of its durability and utility. The project is completed ahead of time and budget.</p>
+<p>A fumble means the results of the project are simply unusable or may have failed to materialise.</p>
+<p>Indeed, the initial attempts have failed so badly that it takes double the time to complete it, whereupon it fails or collapses!</p>
+<h3 id="gambling-intpow"><a class="header" href="#gambling-intpow">Gambling (INT+POW)</a></h3>
+<p>The ability to understand and play games of chance, including calculating odds, keeping one’s composure under high stakes and noticing when someone is cheating or when a game has been rigged.</p>
+<p>A critical success with gambling allows the Adventurer to win a game even if it has been rigged to the highest degree. In terms of calculating or assessing odds of success, the Adventurer will be infallibly accurate in his assessment.</p>
+<p>If the result is a fumble, then the Adventurer has utterly misread the circumstances, signals and other indicators surrounding the game. He loses everything save the shirt on his back (unless he was stupid enough to stake that too).</p>
+<h3 id="healing-intpow"><a class="header" href="#healing-intpow">Healing (INT+POW)</a></h3>
+<p>This includes a number of advanced cures and restorative abilities, including surgery, developing antidotes to poisons and remedying diseases. Use of this skill will always require a healer’s kit (see page 114). Each use of the Healing skill generally takes 1D3x10 minutes to perform.</p>
+<p><em>Curing Diseases:</em> A successful Healing test allows a patient under the effect of a disease to add a bonus to his next opposed Resilience versus Potency test to resist the disease, equal to the critical value of the skill.</p>
+<p><em>Curing Poisons:</em> A successful Healing test allows a patient under the effect of a poison to attempt a second opposed Resilience versus Potency test, with the patient gaining a bonus to his Resilience test equal to the critical value of the skill.</p>
+<p>For a critical success in treating diseases and poisons, the patient gains a bonus to his Resilience test equal to the healer’s Healing skill divided by 5.</p>
+<p>If the roll is fumbled, the remedy weakens the patient’s ability to fight the cause of the affliction; all Resilience tests are at –10% penalty.</p>
+<p><em>Surgery:</em> Surgery is the only way, other than magical healing, that an Adventurer may recover from a Major Wound. Once a successful First Aid test has been made to stabilise a Major Wound (see page 50), a successful Healing test can attempt to set broken bones, stitch flesh together and restore the location so that it is on the road to recovery. As long as the Healing test is a success, the stricken location will begin to heal normally (see Natural Healing on page 86).</p>
+<p>Surgery can re-attach a severed limb but this will not make it usable once more.</p>
+<p>Critical success in surgery indicates that the patient gains a Hit Point due to the superior quality of the healing. Reattached limbs will heal at half the normal rate described under Natural Healing on page 86.</p>
+<p>If the roll is fumbled the affected location remains permanently maimed and never recovers any Hit Points.</p>
+<h3 id="language-intcha"><a class="header" href="#language-intcha">Language (INT+CHA)</a></h3>
+<p>Like the Lore skill, the Language skill is actually several separate skills grouped under a single heading. Language (English), Language (German) and Language (French) are all individual skills.</p>
+<p>Every Adventurer with a Language skill of 50% or more is fluent in that language, though they will likely bear an accent if it is not their native tongue.</p>
+<p>Civilised cultures are more likely than other cultures to have developed literacy although this does not mean that every barbarian or nomad culture, for example, has no written form of its language. It is therefore up to the Games Master to decide if fluency in a language also includes the ability to read and write it, depending on the nature and circumstances of the campaign. If the Games Master wishes the literacy percentage of the Adventurer’s language may be higher or lower than the spoken skill, in which case an appropriate bonus or penalty can be applied to the base Language skill.</p>
+<p>If the Adventurer scores a critical success he has achieved a superb grasp of the language. He gains a bonus equal to his Language critical score for any tests involving communication of personal credibility.</p>
+<p>On a fumble the Adventurer has completely misunderstood or mangled the nuances of the language. All immediate Skill Tests involving communication and personal credibility suffer a penalty.</p>
+<h3 id="lore-int-x2"><a class="header" href="#lore-int-x2">Lore (INT x2)</a></h3>
+<p>This skill is used in the same way as the Lore skill described on page 52. The Advanced range of possibilities for this skill is limited only by a player’s imagination but a list of potential areas of Lore study are listed here:</p>
+<p>Alchemy, art, astronomy, gambling, geography, heraldry, law, logistics, military tactics, mineral, philosophy, poisons, theology.</p>
+<h3 id="mechanisms-dexint"><a class="header" href="#mechanisms-dexint">Mechanisms (DEX+INT)</a></h3>
+<p>This covers an Adventurer’s ability to both assemble and disassemble mechanical devices, including traps and locks. Mechanisms generally involve delicate contraptions with small working parts, as opposed to Engineering, which deals with massive constructions.</p>
+<p>Picking a lock or disassembling a trap usually takes at least one minute to perform, while larger devices will take longer.</p>
+<p>Usually, an Adventurer will simply make a Mechanisms test in order to succeed at assembling or disassembling a device, with appropriate bonuses or penalties decided upon by the Games Master. However, if a device has been designed to specifically resist attempts at disassembly, the Mechanisms test becomes opposed by the Mechanisms skill of the Adventurer who created it.</p>
+<p>On a critical success the Adventurer achieves success in half the usual time and with flawless results.</p>
+<p>On a fumble the mechanism is broken and requires the attention of its maker to fix properly.</p>
+<h3 id="meditation-pow-x2"><a class="header" href="#meditation-pow-x2">Meditation (POW x2)</a></h3>
+<p>The use of Meditation helps to focus concentration and is psychically soothing. Meditation is a skill that must be learned either by study or practice. A successfully meditating Adventurer may recover lost Magic Points at twice the normal rate. Meditating Adventurers retain full awareness of their surroundings and may make Perception tests at no penalty.</p>
+<p>On a critical success the Adventurer triples the rate of Magic Point recovery.</p>
+<p>Fumbling increases the Adventurer’s Fatigue by one level as unwanted thoughts intrude on the psyche.</p>
+<h3 id="oratory-powcha"><a class="header" href="#oratory-powcha">Oratory (POW+CHA)</a></h3>
+<p>This skill is used when addressing large groups of people, such as a priest addressing the faithful or a general exhorting his troops to victory on the eve of a battle. In effect, it is much like Influence, save that it relies more upon emotional appeal than intellectual stimulation and is used for larger groups of people.</p>
+<p>On a critical success the Adventurer wins over the audience completely and utterly, gaining their vociferous agreement. He gains a bonus equal to the critical score of his Oratory skill for all immediate tests concerning communication and personal credibility.</p>
+<p>If fumbled the Adventurer’s arguments come across as shallow and ill-communicated – even insulting. He gains a penalty equal to the critical score of his Oratory skill for all immediate tests concerning communication and personal credibility.</p>
+<h3 id="play-instrument-dexcha"><a class="header" href="#play-instrument-dexcha">Play Instrument (DEX+CHA)</a></h3>
+<p>Like the Lore skill, the Play Instrument skill is actually several separate skills grouped under a single heading. Play Instrument (Dulcimer), Play Instrument (Flute) and Play Instrument (Spoons) are all individual skills. A successful test with this skill will result in the audience being pleased by the Adventurer’s performance.</p>
+<p>On a critical success the music produced is of stunning emotional quality. If being used as part of an Influence test, to impress a prospective client or ally perhaps, then the Influence test receives a bonus of +40 plus the critical score for the Play Instrument skill.</p>
+<p>For a fumble the music is discordant and unpleasant to listen to. If being used as part of an Influence test, to impress a prospective client or ally perhaps, then the Influence test receives a penalty appropriate to the circumstances.</p>
+<h3 id="seduction-intcha"><a class="header" href="#seduction-intcha">Seduction (INT+CHA)</a></h3>
+<p>Seduction combines charm, flirtatiousness, tenacity and cunning. This skill allows the Adventurer to completely win-over the target of the seduction attempt using overt romantic or sexual signals, leading to the target becoming deeply enthralled to the Adventurer and willing to perform one suggested service or command. The target may try to resist a seduction attempt with an opposed Persistence test.</p>
+<h3 id="shiphandling-intcon"><a class="header" href="#shiphandling-intcon">Shiphandling (INT+CON)</a></h3>
+<p>This skill is used in the same way as Boating but is instead applied to waterborne craft that are driven by sail or rows of oars.</p>
+<p>A critical Shiphandling success increases the Movement rate for the craft by half again.</p>
+<p>If the test is fumbled, reduce the craft’s Movement by half</p>
+<h3 id="streetwise-powcha"><a class="header" href="#streetwise-powcha">Streetwise (POW+CHA)</a></h3>
+<p>In some ways, this skill could be considered the urban version of Survival. Rather than helping the Adventurer find food and water, however, this skill allows him to find other things he might need in an urban setting. Streetwise allows an Adventurer to find fences for stolen goods, black markets and general information. Such uses of Streetwise normally require a minimum of 1D4 hours.</p>
+<p>A critical success allows the Adventurer to find what he is looking for 1D2 hours, rather than usual 1D4.</p>
+<p>A fumbled Streetwise means the Adventurer makes some mistake that causes insult or offence, attracting the attention of undesirables who may wish to cause him harm. The Games Master should decide on the specifics according to the circumstances.</p>
+<h3 id="survival-powcon"><a class="header" href="#survival-powcon">Survival (POW+CON)</a></h3>
+<p>This is a broad skill, used whenever the Adventurer has to rely on his own wits to survive outside the comforts of civilisation.</p>
+<p>One Survival test will be required every day that an Adventurer lacks either food, water or a safe place to sleep. Success indicates the Adventurer manages to find whatever he is lacking – failure means he will go without which, over several days, could result in very serious consequences.</p>
+<p>Survival tests are not used when the Adventurer is in a city or town.</p>
+<p>Survival tests may be required in other circumstances as well, such as hunting or gathering food for other Adventurers or attempting to locate the best place in the local terrain to permit a group to rest for an extended period.</p>
+<p>On a critical success the Adventurer has been able to weather the conditions for a number of days equal to half his critical score in Survival (rounded up) without needing to make any further tests against Resilience, for instance.</p>
+<p>On a fumble the Adventurer has done something that causes immediate harm. A Resilience test is required immediately. If failed, the Adventurer suffers 1D3 points of damage to a random location and the Games Master should adjudicate the specifics according to the circumstances of the environment.</p>
+<h3 id="teaching-intcha"><a class="header" href="#teaching-intcha">Teaching (INT+CHA)</a></h3>
+<p>The Adventurer is skilled in the instruction, coaching and tutoring of others. The skill does not work in the same way as other skills. When teaching someone else the teacher’s skill acts as a bonus to the Improvement Roll for his pupil, as described in the section on Adventurer Advancement beginning on page 68.</p>
+<h3 id="track-intcon"><a class="header" href="#track-intcon">Track (INT+CON)</a></h3>
+<p>With this skill an Adventurer can locate the tracks (footprints, disturbed vegetation and so on) of a specific creature and follow them. A test must be made to locate the trail and then again once every hour they are being followed. Modifiers will be imposed depending on what terrain the trail is across (following footprints in the sand is Easy while doing the same across hard cobbles is Formidable), how long ago the tracks were made and whether anything has been done to cover them (either deliberately or via the weather).</p>
+<p>With a critical Track test the Adventurer will not need to make any further Track tests in pursuit of the quarry and is able to anticipate and follow the trail without difficulty.</p>
+<p>For a fumble the trail is completely lost and cannot be recovered.</p>
+<h2 id="magical-skills"><a class="header" href="#magical-skills">Magical Skills</a></h2>
+<p>The magical skills here are distinct from Common Magic and apply to the specific magical paths of Divine Magic and Sorcery. These styles use a combination of two skills to govern how magic works – both the power of spells and their casting. A more thorough explanation of how the skills work can be found in the respective magic chapters but a summary of each skill follows:</p>
+<h3 id="lore-specific-theology-intpow"><a class="header" href="#lore-specific-theology-intpow">Lore (Specific Theology) (INT+POW)</a></h3>
+<p>This is the knowledge and understanding of one’s cult or religion; its history, myths and context in the world. The skill allows the Adventurer to call upon miracles or magic from his deity and is used in casting Divine Spells (see the Divine Magic chapter).</p>
+<p>Critical success – The Divine Spell is not lost when cast and can be cast again.</p>
+<p>Fumble – The spell does not work but is also lost and must be regained as if it had been successfully cast.</p>
+<h3 id="pact-specific-cult-or-deity-cha--dedicated-pow"><a class="header" href="#pact-specific-cult-or-deity-cha--dedicated-pow">Pact (Specific Cult or Deity) (CHA + Dedicated POW)</a></h3>
+<p>This is a measure of one’s devotion to a Divine cult (see the Divine Magic chapter) and its object of veneration. The higher the Pact skill, the more dedicated the follower. Dedicating POW to a Divine cult automatically creates the Pact at a base percentage equal to: CHA+Dedicated POW. It is not a measure of how much an Adventurer knows about the cult or god; that is still measured by the Lore (Specific Theology) skill. Pacts are further explained in the Cults chapter.</p>
+<p>If a critical success is rolled when recovering Divine Spells, the Adventurer recovers all the Divine Spells associated with the Pact simultaneously  If the Pact roll is fumbled then any Divine Spells used cannot be recovered and the Adventurer, irrespective of his standing in the cult or church, must return to a shrine or temple to pray for their return.</p>
+<h3 id="sorcery-grimoire-int-x2"><a class="header" href="#sorcery-grimoire-int-x2">Sorcery (Grimoire) (INT x2)</a></h3>
+<p>Sorcery (Grimoire) is a measure of a sorcerer’s knowledge and intimacy with a particular group of spells, collectively known as a Grimoire. This skill is the ability of the sorcerer to cast all spells   known to a particular school or church of sorcery; i.e. those held within its Grimoire but also measures the depth of relationship and arcane standing the sorcerer has achieved within the order.</p>
+<p>The sorcerer must have studied and memorised the spell to be cast; he cannot use the Sorcery skill to cast spells that are not in a grimoire he is familiar with, as represented by the skill. Even if a sorcerer possesses knowledge of several Grimoires, he is still limited to <em>memorising</em> a maximum number of spells (including those known from Common Magic) equal to his INT.</p>
+<p>The scale of what can be affected by a spell is dependent on the skill in the Sorcery School. The higher the skill, the greater the effect or the target it can be used against.</p>
+<p>To cast a spell, the sorcerer must succeed in a test of his Sorcery (Grimoire) skill. If the spellcasting attempt is a critical success, the entire spell costs zero Magic Points irrespective of the number of manipulations the sorcerer is attempting.</p>
+<p>If the spellcasting attempt is fumbled, then the spell does not work and the sorcerer loses the full Magic Point cost of the spell.</p>
+<h3 id="manipulation-intpow"><a class="header" href="#manipulation-intpow">Manipulation (INT+POW)</a></h3>
+<p>The Manipulation skill is used to manipulate the components of Magnitude, Combine, Duration, Range and Target. When manipulating a spell, the Adventurer must choose which of these components he is manipulating.</p>
+<p>Every 10% or fraction thereof of the Manipulation skill allows 1 point of Manipulation to be assigned to the manipulated component. Sorcerers therefore need to specify, at the moment of casting, how the points of their Manipulation skill will be used. For example: a sorcerer with Manipulation of 50% could place three points into Manipulate Duration and two into Range; or five into a single component.</p>
+<p>This skill is not rolled against when spellcasting. Its value merely limits how much the caster may manipulate a Sorcery spell. However, Sorcery spells cost as many Magic Points to cast, as the number of manipulation components applied to it; with a minimum cost of 1.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/2_Adventurer_Creation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/4_Game_System.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/2_Adventurer_Creation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/4_Game_System.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

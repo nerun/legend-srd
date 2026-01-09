@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>✅ Sorcery - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="10-sorcery"><a class="header" href="#10-sorcery">10. Sorcery</a></h1>
+<p>Sorcery uses formulae, both written and mentally envisaged, to achieve magical effects. A somewhat crude way of looking at Sorcery is to consider it as short-cuts and bypasses that alter the fabric of creation to serve the caster’s own ends. Whereas Common Magic is a miscellany of charms and cantrips, and Divine Magic channels the powers of the gods, Sorcery is a deliberate attempt to bend the way the universe functions.</p>
+<h2 id="sorcery-grimoires"><a class="header" href="#sorcery-grimoires">Sorcery Grimoires</a></h2>
+<p>Sorcerers record their spells in grimoires. A grimoire can hold just one spell or many. Some grimoires are disparate collections with no single theme whereas others are deliberate collections of spells of a particular nature, gathered together to reflect a particular mindset or requirement.</p>
+<p>Grimoires can take unusual forms. In some cultures they are often recorded on scrolls or within tomes. However these are perishable, so some civilisations engrave grimoires on plates of metal, carve them into stone walls or even embed them in crystalline formations. Since the recording of a spell takes up a large amount of space, most enduring grimoires are near immovable and even the smallest scroll with a single spell is large and unwieldy.</p>
+<h2 id="sorcery-and-other-types-of-magic"><a class="header" href="#sorcery-and-other-types-of-magic">Sorcery and Other Types of Magic</a></h2>
+<p>Because Sorcery is based on deliberate endeavours and has little basis in naturally occurring magic, many cultures view it with deep suspicion and may shun it completely. Sorcery may be viewed as heretical and manipulative – magic that breaks the very nature of a divine relationship or corrupts the stability of the spirit world.</p>
+<p>Some sorcerers view Common and Divine Magic with contempt. A good sorcerer does not need to rely on the relationships these kinds of magic require; all he needs is his own intellect and his grimoire. Sorcery can remove the tiresome, restrictive constraints necessary to the other kinds of magic. He can, if he chooses, stand alone and still wield great power. In more open minded societies where Sorcery forms part of a cult’s structure, it is often at the expense of Divine Magic – either because those who established the cult possessed no celestial or otherworldly relationships to begin with, or have lost it through overly dedicating their energies to developing the power Sorcery offers.</p>
+<h2 id="how-sorcery-works"><a class="header" href="#how-sorcery-works">How Sorcery Works</a></h2>
+<p>A sorcerer works magic through two skills, Sorcery (Grimoire) and Manipulation.</p>
+<h2 id="sorcery-grimoire-int-x2"><a class="header" href="#sorcery-grimoire-int-x2">Sorcery (Grimoire) (INT x2)</a></h2>
+<p>The Sorcery (Grimoire) skill reflects the knowledge of all the spells <em>learned</em> from within a particular grimoire. It is this skill which a sorcerer rolls against to see if they cast a spell correctly. The skill also limits the effect of the spell. A sorcerer can study more than one Grimoire and thus possess many Sorcery (Grimoire) skills. Sorcerers are not in the habit of carrying their grimoires around with them: a grimoire is a powerful document and the physical thing is often closely guarded. Therefore sorcerers are forced to memorise spells from their grimoire(s). The complex equations, symbols, incantations and arcane gestures consume a great deal of mental capacity. Therefore no sorcerer can ever memorise more spells, from one or multiple grimoires, than he has INT, with one spell occupying one point of the INT Characteristic. A sorcerer with INT 16 could thus keep in his mind up to 16 spells from the same or multiple grimoires. Casting a spell does not erase it from his mind; but to change which spells he has memorised a sorcerer must spend 1D6 hours expelling an old spell from memory and memorising a new one from its grimoire.</p>
+<p><em>For Example, Jedekiah is a sorcerer of one of the illustrious Jade Circle Schools. As a member of the Seventh Circle sect he has Sorcery (Seventh Jade Grimoire) 60% and Sorcery (Book of the Whisperer) 45%. His INT is 14. The Seventh Jade grimoire has over a dozen spells in its pages whilst the Whisperer’s Bookhas only six. Jedekiah can therefore memorise any combination of spells from either grimoire as long as the total number of spells does not exceed 14. To successfully cast those spells found in the Seventh Jade Grimoire he needs to roll 60% or less; and 45% or less to cast those from the Whisperer’sBook.</em></p>
+<p>If the same spell is found in one or more grimoires a sorcerer knows, he always casts it at the highest rated Sorcery (Grimoire) percentage.</p>
+<h2 id="manipulation-intpow"><a class="header" href="#manipulation-intpow">Manipulation (INT+POW)</a></h2>
+<p>On their own, Sorcery spells can be quite weak and limited in their scope. However a sorcerer’s true power lies in his ability to extend the fundamental aspects of all spells, enhancing their reach. By default, Sorcery spells cast without any Manipulation have a Magnitude of 1, a Range of touch, a Duration equal to the caster’s POW in minutes and focus upon a single target. However, the Manipulation skill allows a sorcerer to modify the spell’s Magnitude, Range, Duration, Targets and even Combine several spells into a single casting.</p>
+<p>Manipulation is a single skill which can be applied to all known Sorcery spells; a separate Manipulation per Grimoire is not necessary.</p>
+<p>The Manipulation skill is never rolled against when casting a spell. Instead, each 10% or fraction thereof of the Manipulation skill allows one point of Manipulation to be assigned to a single Sorcery spell component. Sorcerers therefore need to specify at the moment of casting how the points of their Manipulation skill will be used. <em>For example, Jedekiah with Manipulation 50% could place three points into manipulating Duration and two into manipulating Range; or five into a single component.</em></p>
+<p>Manipulation of the following components is possible:</p>
+<ul>
+<li>Magnitude: Used to penetrate magical defences or resist magical attacks.</li>
+<li>Range: Used to increase the distance a spell can be cast over.</li>
+<li>Duration: Used to extend the period of time the spell’s effects last.</li>
+<li>Targets: Used to increase the number of targets affected by the spell.</li>
+<li>Combine: Used to fuse together several spells into a single casting.</li>
+</ul>
+<p>The Sorcery Manipulation Table shows what effect each point of Manipulation has on the different spell components. It takes no Manipulation to cast a Sorcery spell in its basic format (as indicated by the ‘None’ row).</p>
+<h4 id="sorcery-manipulation-table"><a class="header" href="#sorcery-manipulation-table"><em>Sorcery Manipulation Table</em></a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: center">Points of Manipulation</th><th style="text-align: center">Magnitude</th><th style="text-align: center">Range</th><th style="text-align: center">Duration (minutes)</th><th style="text-align: center">Targets</th><th style="text-align: center">Combine</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center">None</td><td style="text-align: center">1</td><td style="text-align: center">Touch</td><td style="text-align: center">POW</td><td style="text-align: center">1</td><td style="text-align: center">None</td></tr>
+<tr><td style="text-align: center">1</td><td style="text-align: center">2</td><td style="text-align: center">1m x POW</td><td style="text-align: center">2 x POW</td><td style="text-align: center">2</td><td style="text-align: center">2 Spells</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: center">3</td><td style="text-align: center">5m x POW</td><td style="text-align: center">3 x POW</td><td style="text-align: center">3</td><td style="text-align: center">3 Spells</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: center">4</td><td style="text-align: center">10m x POW</td><td style="text-align: center">4 x POW</td><td style="text-align: center">4</td><td style="text-align: center">4 Spells</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: center">5</td><td style="text-align: center">50m x POW</td><td style="text-align: center">5 x POW</td><td style="text-align: center">5</td><td style="text-align: center">5 Spells</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: center">6</td><td style="text-align: center">100m x POW</td><td style="text-align: center">6 x POW</td><td style="text-align: center">6</td><td style="text-align: center">6 Spells</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: center">7</td><td style="text-align: center">500m x POW</td><td style="text-align: center">7 x POW</td><td style="text-align: center">7</td><td style="text-align: center">7 Spells</td></tr>
+<tr><td style="text-align: center">7</td><td style="text-align: center">8</td><td style="text-align: center">1km x POW</td><td style="text-align: center">8 x POW</td><td style="text-align: center">8</td><td style="text-align: center">8 Spells</td></tr>
+<tr><td style="text-align: center">8</td><td style="text-align: center">9</td><td style="text-align: center">5km x POW</td><td style="text-align: center">9 x POW</td><td style="text-align: center">9</td><td style="text-align: center">9 Spells</td></tr>
+<tr><td style="text-align: center">9</td><td style="text-align: center">10</td><td style="text-align: center">10km x POW</td><td style="text-align: center">10 x POW</td><td style="text-align: center">10</td><td style="text-align: center">10 Spells</td></tr>
+<tr><td style="text-align: center">10</td><td style="text-align: center">11</td><td style="text-align: center">15km x POW</td><td style="text-align: center">11 x POW</td><td style="text-align: center">11</td><td style="text-align: center">11 Spells</td></tr>
+<tr><td style="text-align: center">Each point…</td><td style="text-align: center">+1 Magnitude</td><td style="text-align: center">+5km x POW</td><td style="text-align: center">+1 x POW</td><td style="text-align: center">+1</td><td style="text-align: center">+1 Spells</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="magnitude"><a class="header" href="#magnitude"><em>Magnitude</em></a></h3>
+<p>Sorcery spells have a default Magnitude of 1 at no additional Magic Point cost. It costs one Magic Point to augment the Magnitude of a Sorcery spell, regardless of its final intensity.</p>
+<p>Manipulating this component allows the sorcerer to increase the Magnitude of a spell. For Sorcery spells Magnitude is only used to see if it will overcome magical defences or resist magical attacks. It does <em>not</em> modify the effect of the spell which is controlled by the Sorcery (Grimoire) skill.</p>
+<h3 id="range"><a class="header" href="#range"><em>Range</em></a></h3>
+<p>Sorcery spells have a default Range of Touch, at no additional Magic Point cost. It costs one Magic Point to augment the Range of a Sorcery spell, regardless of its final distance.</p>
+<p>Manipulating this component allows the sorcerer to increase the Range of a Sorcery spell. Unlike other manipulations the range value does not progress linearly, enabling sorcerers to cast spells over great distances. However since most spells require the target to be under direct observation, a sorcerer often needs other forms of perception or magical aid to cast sorcery reaching beyond their immediate senses.</p>
+<p>Spells cast at a Range of Touch require the sorcerer to make a successful Unarmed attack on a resisting target. To avoid touch spells a recipient must use Evade to dodge the attack, since defending with a Combat Skill will still transfer the magical effect through the parrying weapon or shield.</p>
+<p>If Range is augmented beyond Touch then the caster automatically strikes his intended target, unless the target is able to dive for cover or flee out of reach <em>before</em> the spell is completed.</p>
+<h3 id="duration"><a class="header" href="#duration"><em>Duration</em></a></h3>
+<p>Sorcery spells have a default Duration equal to the POW of the caster in minutes, at no additional Magic Point cost. It costs one Magic Point to augment the Duration of a Sorcery spell, regardless of its final time span.</p>
+<p>Manipulating this component allows the sorcerer to increase the Duration of a Sorcery spell. The maximum Duration to which the spell can be increased to is noted in the Sorcery Manipulation table.</p>
+<h3 id="targets"><a class="header" href="#targets"><em>Targets</em></a></h3>
+<p>Sorcery spells have a default Target of one person or item, at no additional Magic Point cost. It costs one Magic Point to augment the Targets of a Sorcery spell, regardless of the final number of recipients.</p>
+<p>Manipulating this component allows the sorcerer to increase the number of targets of a Sorcery spell. The maximum number of targets the spell can affect is noted in the Sorcery Manipulation table. If the spell is cast successfully, the <em>effect</em> of the spell is applied multiple times, once for each target included; the spell’s potency is never divided between them.</p>
+<h3 id="combine"><a class="header" href="#combine"><em>Combine</em></a></h3>
+<p>Manipulating this component allows the sorcerer to combine the effects of multiple Sorcery spells in a single casting, so they will affect the target simultaneously. This is the most powerful aspect of Sorcery, as it allows a skilful sorcerer to use his Magic Points judiciously and achieve multiple effects within a short space of time.</p>
+<p>A spell may not be combined with itself – only different spells may be combined. If the combined spells come from different grimoires, then the lowest Sorcery (Grimoire) skill is used as the base casting chance.</p>
+<p>The spells must all have the same target or targets. A sorcerer cannot combine a Palsy targeting an enemy and a Spell Resistance targeting himself, for instance.</p>
+<p>Any other Manipulation effects applied in a combined spellcasting apply to each and every one of the spells involved. Only one Magic Point need be spent per Manipulation effect, regardless of the number of spells involved.</p>
+<p>Each additional spell added to a combined spellcasting costs one extra Magic Point <em>and</em> reduces the casting chance by 10%.</p>
+<h2 id="casting-sorcery-spells"><a class="header" href="#casting-sorcery-spells">Casting Sorcery Spells</a></h2>
+<p>A sorcerer must be able to gesture with his hands, be able to visualise the lay-out of the spell as it appears in the grimoire and be able to chant in order to complete the casting. Whenever a spell is cast, there is always a sight and sound that nearby creatures can detect, be it a flash of light, a crack of thunder or a shimmering in the air. The exact effects are up to the Games Master and player to decide but attempting to invoke a spell subtly permits nearby observers an opposed roll of their Perception versus the casting roll to spot the invocation.</p>
+<p>Casting a Sorcery spell requires a successful Skill Test of the Sorcery (Grimoire) skill to which that spell belongs.</p>
+<h3 id="magic-points"><a class="header" href="#magic-points"><em>Magic Points</em></a></h3>
+<p>Sorcery spells cost one Magic Point plus as many Magic Points as the number of Manipulation effects applied to it. Jedekiah, for example, casting a Sorcery spell upon himself with no Manipulation uses only a single Magic Point. Applying five Manipulations would cost six Magic Points (one for the basic spell, plus one point per Manipulation). Casting <em>two</em> spells upon himself at the same time with the same Manipulations applied to both spells would cost seven Magic Points, as well as reducing his Sorcery (Grimoire) skill by 10%.</p>
+<h3 id="casting-modifiers"><a class="header" href="#casting-modifiers"><em>Casting Modifiers</em></a></h3>
+<p>Sorcery spellcasting tests apply the same modifiers as Common Magic spellcasting tests.</p>
+<h3 id="casting-critical-successes"><a class="header" href="#casting-critical-successes"><em>Casting Critical Successes</em></a></h3>
+<p>If the Sorcery (Grimoire) roll is a critical success, the spell costs no Magic Points to cast, irrespective of the amount of Manipulation applied to it.</p>
+<h3 id="casting-failures"><a class="header" href="#casting-failures"><em>Casting Failures</em></a></h3>
+<p>If the casting test fails the spell does not take effect and costs the caster a single Magic Point.</p>
+<h3 id="casting-fumbles"><a class="header" href="#casting-fumbles"><em>Casting Fumbles</em></a></h3>
+<p>If the Sorcery roll is fumbled the spell fails and the sorcerer loses the full Magic Point cost of the spell.</p>
+<h3 id="casting-time"><a class="header" href="#casting-time"><em>Casting Time</em></a></h3>
+<p>All Sorcery spells take as many Combat Actions to cast as the number of Manipulations used to cast them, with a minimum casting time of 1. No other Combat Action may be taken while casting a spell, although the Adventurer may still walk up to his Movement rate while spellcasting.</p>
+<p>A spell’s effect takes effect at the end of its last casting Combat Action.</p>
+<p>Physical and magical attacks on a sorcerer as he casts automatically ruin the spell if he suffers a Major Wound, is immobilised, or is prevented from observing the target. Lesser distractions require successful Persistence tests to maintain concentration on the spell.</p>
+<h2 id="dismissing-sorcery-spells"><a class="header" href="#dismissing-sorcery-spells">Dismissing Sorcery Spells</a></h2>
+<p>Like Common Magic, a caster can dismiss any active Sorcery spell(s) he has cast as a single Combat Action, at any point.</p>
+<h3 id="acquiring-sorcery"><a class="header" href="#acquiring-sorcery"><em>Acquiring Sorcery</em></a></h3>
+<p>Adventurers desiring to learn Sorcery must fulfil certain conditions:</p>
+<ul>
+<li>Have access to the grimoire from which the spell originates.</li>
+<li>Be able to read the language of the grimoire.</li>
+<li>Have time to conduct the study in quiet and solitude.</li>
+<li>Possess enough Improvement Rolls to learn the Sorcery (Grimoire) skill for that grimoire.</li>
+</ul>
+<p>No matter how many spells are contained within, it requires one week of studying a grimoire to gain its specific Sorcery (Grimoire) skill. This is treated as learning a new Advanced Skill and starts at a base percentage of INT x2. Once the theories and philosophy described by the grimoire are understood, the sorcerer may then begin to learn the spell or spells contained within.</p>
+<p>Each spell takes a further week and two Improvement Rolls to learn, after which the sorcerer will then be able to cast that spell using the Sorcery (Grimoire) skill for the grimoire it belongs to. A sorcerer belonging to a sorcery cult is usually forbidden from transcribing the spells from the grimoire – as doing so may allow the knowledge to spread beyond their reach.</p>
+<p>Depending on the setting and culture, admittance to such grimoires may be difficult. Whilst membership of some sorcery cults or schools may allow study of their grimoire free of charge; others might require gifts paid, quests performed or attaining a specific membership rank before granting access.</p>
+<h3 id="spell-traits-and-descriptions"><a class="header" href="#spell-traits-and-descriptions"><em>Spell Traits and Descriptions</em></a></h3>
+<p>Every Sorcery spell is defined by several traits defining the spell and how it is used in the game. A description then follows describing the spell’s precise effects. The traits used by Sorcery spells are detailed here.</p>
+<p>By default all Sorcery spells are binary in effect rather than progressive: they either work or they do not. The strength of the effect, or scope of the target they can affect, is dependent on the caster’s Sorcery skill in the grimoire from which that spell comes.</p>
+<p><strong>Autonomous:</strong> The spell’s effects will remain until its duration ends, without need for concentration.</p>
+<p><strong>Concentration:</strong> The spell’s active effects continue so long as the Adventurer concentrates on it. Once focus is dropped, the spell’s effect ceases or remains static until concentration can be resumed. A sorcerer may move or perform non-complex actions without penalty. More stressful situations, such as walking a narrow ledge, engaging in combat, suffering serious injury, or casting another spell immediately require a Persistence roll to maintain focus. By default a sorcerer may only concentrate on a single Concentration spell at any one time.</p>
+<p><strong>Resist (Evade/Persistence/Resilience):</strong> An offensively cast spell does not take effect automatically. The target may make an Opposed Test of their Evade, Persistence or Resilience skill (as specified by the spell) against the casting roll of the sorcerer, to avoid the effect of the spell entirely. To resist using the Evade skill, the Adventurer must expend a Combat Action.</p>
+<h2 id="abjure-substanceprocess"><a class="header" href="#abjure-substanceprocess">Abjure (Substance/Process)</a></h2>
+<p>Autonomous</p>
+<p>There are many Abjure spells; for instance, Abjure Air, Abjure Food, Abjure Water and so on. Each discrete Abjure spell permits a sorcerer to forgo a single specific substance or process necessary for life, such as air, water, food, sleep and so forth. The sorcerer can affect a living target of up to three points of SIZ for every 10% of his Sorcery (Grimoire) skill, utterly removing the need for that particular requirement until the spell ends. Thus an Abjure (Air) spell could allow a sorcerer to move underwater without needing to breath.</p>
+<p>Many exotic versions of this spell exist, which affect dreams, pain or even aging.</p>
+<h2 id="animate-substance"><a class="header" href="#animate-substance">Animate (Substance)</a></h2>
+<p>Concentration, Resist (Special)*</p>
+<p>This spell animates a specific type of substance as indicated by the particular spell; thus there are many variants of Animate available. The sorcerer animates three points of SIZ or a cubic metre of insubstantial material for every 10% of his Sorcery (Grimoire) skill, causing it to move about and interact clumsily with its surroundings. The substance moves at a rate of one metre by default,   although points of SIZ or ENC may be substituted for extra movement on a three for one basis; and cubic metres on a one for one basis.</p>
+<p>Jedekiah knows the Animate (Wind) spell and has increased his Sorcery (Seventh Jade Grimoire) to 73%. He is sailing a small skiff across the sea when he sees a warship bearing down on him. In desperation he tries to escape and invokes the wind to his aid. The Games Master decides that the skiff’s sails hold two cubic metres of air, so the remaining six cubic metres Jedekiah can normally control may be used instead to increase the wind’s speed. Converting them over and adding to the base one metre speed provided by the spell, allows the skiff to be blown at an additional seven metres per round. More than enough to outdistance the warship.</p>
+<p>The sorcerer’s chance to have the animated object perform any complex physical skill is equal to his own chance to perform that action halved (before any modifiers). If combined with the appropriate Form/Set spell (through application of the Combine Manipulation), the caster can perform much finer manoeuvring of the target. In this case, the animated object will use the caster’s full skill scores for physical activities.</p>
+<p><em>*The myriad versions of this spell normally only affect inanimate matter, such as clay, steel, dead flesh and so on; or ethereal substances such as air, fire, darkness. If the substance is already under magical control or is a living elemental, then the target gains a Resistance roll of some form, such as an opposed magical skill or Persistence. Darker versions of this spell are rumoured which allow sorcerers to animate living creatures and control them like puppets.</em></p>
+<h2 id="attract-harm"><a class="header" href="#attract-harm">Attract (Harm)</a></h2>
+<p>Autonomous, Resist (Persistence)</p>
+<p>This spell steers attacks of a singular type <em>within its range</em> , so they strike the recipient instead. It works differently according to the type of harm affected by the spell variant. This can even cause a spell or missile attack to turn back upon its own caster!  <strong>Magic</strong> – Draws offensive spells of up to 1 Magnitude per 10% known in the Sorcery (Grimoire) skill.</p>
+<p><strong>Missiles</strong> – Attracts all missile attacks which inflict up to a maximum (including magical augments) of 1 Hit Point per 10% known in the Sorcery (Grimoire) skill.</p>
+<p><strong>Spirits</strong> – Baits any hostile spirit with up to 3 POW per 10% known in the Sorcery (Grimoire) skill.</p>
+<p><strong>Energy</strong> – Redirects all sources of harm linked to a particular energy or effect, such as fire, poison, cold, undeath and similar forces.</p>
+<h2 id="banish"><a class="header" href="#banish">Banish</a></h2>
+<p>Autonomous, Resist (Persistence)</p>
+<p>Allows a sorcerer to dismiss spiritual or demonic entities of up to 3 POW per 10% of his Sorcery (Grimoire) skill. If the spell overcomes the Persistence of the targeted entity it is sent back to the Plane from whence it originally came. The spell does not work against otherworldly beings which are bound within a material object or fetish. However, if the entity is temporarily freed from its binding to perform a service, then the spell breaks whatever magical hold linking it to its owner/master. Likewise the spell cannot cast forth a spirit or demon possessing a victim, only one that is first tricked into abandoning the host.</p>
+<h2 id="castback"><a class="header" href="#castback">Castback</a></h2>
+<p>Autonomous</p>
+<p>Castback is a defensive invocation shielding the sorcerer from hostile magic and has a chance of sending it back to the attacking spellcaster. It reflects hostile magic of up to 1 Magnitude per 10% of the caster’s Sorcery (Grimoire) skill and only affects spells that target the user specifically and possess the Resist trait. Such spells may affect the protected Adventurer normally but if it is resisted, the spell is launched back at the person who cast it.</p>
+<h2 id="damage-enhancement"><a class="header" href="#damage-enhancement">Damage Enhancement</a></h2>
+<p>Autonomous</p>
+<p>This spell can be cast upon anything capable of inflicting physical damage; weapons, traps, unarmed attacks or even other offensive spells. Attacks and weapons, where maximum damage does not exceed two Hit Points per 10% of the caster’s Sorcery (Grimoire) skill, will always do the maximum amount of damage without needing to roll.</p>
+<p>Thus a sorcerer with Damage Boosting 43% could cast the spell on a War Sword, which normally does 1D8 damage. If successful, the sword would then automatically inflict eight points of damage every hit until the spell ended.</p>
+<h2 id="damage-resistance"><a class="header" href="#damage-resistance">Damage Resistance</a></h2>
+<p>Autonomous</p>
+<p>This spell protects the body of the recipient (including clothing and small belongings carried upon his person) by generating an invisible force field, which deflects incoming damage. Any attack where damage does not exceed one Hit Point per 10% of the caster’s Sorcery (Grimoire) skill, glances off with no effect – although the protected Adventurer may still suffer from Knockback if applicable. Attacks that inflict more damage than the spell can handle, completely bypass it with no reduction.</p>
+<p>Damage Resistance may be combined with other spells which provide magical Armour Points. In this case the damage is compared to the Damage Resistance spell first and only encounters the Protection spell if the Damage Resistance is bypassed.</p>
+<h2 id="diminish-characteristic"><a class="header" href="#diminish-characteristic">Diminish (Characteristic)</a></h2>
+<p>Autonomous, Resist (Persistence/Resilience)</p>
+<p>A Diminish spell exists for each Characteristic (so, Diminish Strength, Diminish Constitution and so on). The spell temporarily reduces a target’s Characteristic by two points per 10% of the sorcerer’s Sorcery (Grimoire) skill. To be effective, the targeted creature must possess the Characteristic in question. If used malevolently Diminish (STR, DEX, CON or SIZ) are resisted with Resilience; Diminish (INT, POW or CHA) are resisted with Persistence. The minimum value any Characteristic can be reduced to is 1.</p>
+<p>Note that creatures affected by Diminish SIZ actually shrink, rather than becoming wasted and skeletal as they do with the Tap spell. Diminish is incompatible with any other Characteristic reducing spell.</p>
+<h2 id="dominate-species"><a class="header" href="#dominate-species">Dominate (Species)</a></h2>
+<p>Concentration, Resist (Persistence)</p>
+<p>This spell gives the caster control over a creature belonging to a specific species: thus many variations of this spell exist. A sorcerer may attempt to dominate a target of up to 3 INT per 10% of his Sorcery (Grimoire) skill. If the target fails to resist, it must obey the commands of the caster for the duration of the spell. Suicidal commands instantly break the spell, although the target might be tricked into doing something indirectly fatal. Commands which run contrary to the target’s ethics or instincts allow the dominated subject another opposed Persistence roll to escape control.</p>
+<p>The controlled target shares a limited one-way telepathic link with the sorcerer by which it can receive orders. If the sorcerer and the dominated creature do not share a common language, the sorcerer can order it by forming a mental image of the actions he wishes it to perform. However, control of the subject lapses once it leaves the normal Range parameters. To keep track of what a dominated subject is doing once out of sight; the sorcerer must use some other form of magic.</p>
+<p>A separate Dominate spell must be learned for different species. However, each variant is quite broad in scope, covering an entire <em>family</em> of a type of creature. For example: felines, canines, bears, fish, snakes and so forth.</p>
+<h2 id="enhance-characteristic"><a class="header" href="#enhance-characteristic">Enhance (Characteristic)</a></h2>
+<p>Autonomous, Resist (Persistence/Resilience)</p>
+<p>An Enhance spell exists for each Characteristic (so, Enhance Strength, Enhance Constitution and so on). Essentially the reverse of the Diminish spell, Enhance temporarily increases the specified Characteristic by two points per 10% of the caster’s Sorcery (Grimoire) skill. A creature must have the Characteristic in question to be affected and the Characteristic cannot be boosted beyond twice its original value.</p>
+<p>If used malevolently, Enhance (STR, DEX, CON or SIZ) are resisted with Resilience; Enhance (INT, POW or CHA) are resisted with Persistence.</p>
+<p>This spell is incompatible with any other Characteristic boosting spell.</p>
+<h2 id="fly"><a class="header" href="#fly">Fly</a></h2>
+<p>Concentration, Resist (Evade)</p>
+<p>Using this spell allows the caster (or whomever or whatever he targets with the spell) to fly. A sorcerer can affect a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill. Those affected by this spell move at the spellcaster’s behest, not their own. By default the spell grants a Movement rate of one metre per round, although points of SIZ may be substituted for extra movement on a three for one basis.</p>
+<p>Offensive use of the spell allows a victim to attempt an opposed Evade roll (or equivalent) to initially break free of the spell’s grip.</p>
+<h2 id="formset-substance"><a class="header" href="#formset-substance">Form/Set (Substance)</a></h2>
+<p>Autonomous, Resist (Resilience)</p>
+<p>There are many Form/Set spells in existence, each one controlling a general type of substance. The categories are broadly based upon form and material, for example; gases, liquids, earth and stone, metal, wood, flames, darkness, ice, flesh and bone and so on.</p>
+<p>The spell affects up to three points of SIZ (or one cubic metre of an ethereal/gaseous substance) per 10% of the caster’s Sorcery (Grimoire) skill. For the duration of the spell, the affected material can be formed into whatever shape the sorcerer desires; although complex configurations require an appropriate craft skill and several rounds of concentration to mould. Assuming the material is solid, the substance retains its shape at the end of the spell. More mutable substances like water immediately flow back to their natural form.</p>
+<p>This spell can also be used to mend damage done to an object. The sorcerer must be able to affect the entire object and must succeed at an appropriate Craft test; but if successful he will restore the full Hit Points to an item.</p>
+<p>Normally this spell is only employed on inanimate substances. However, if used against a living or animate creature, the spell must be able to affect the entire target and the target receives an opposed Resilience roll to resist. No damage is inflicted on those that fail but their appearance and outward physique may be warped as desired.</p>
+<h2 id="glow"><a class="header" href="#glow">Glow</a></h2>
+<p>Autonomous, Resist (Evade)</p>
+<p>This spell causes an area to glow with a soft light, bright enough to be able to read by. Sorcerers can illuminate a space of up to one metre radius for every 10% of their Sorcery (Grimoire) skill.</p>
+<p>The light is able to counter Darkness spells equal to or less than its Magnitude. However, if the Darkness spell is centred upon an animate creature, then the target may resist using its Evade skill.</p>
+<h2 id="haste"><a class="header" href="#haste">Haste</a></h2>
+<p>Autonomous</p>
+<p>Haste increases the Movement rate of whatever it is cast on. The spell affects targets of up to 3 SIZ per 10% of the caster’s Sorcery (Grimoire) skill. By default, the base Movement of the target is doubled. To further improve speed a sorcerer may substitute surplus points of SIZ for extra movement, each 3 SIZ giving an extra one metre. Haste is incompatible with other Movement boosting spells.</p>
+<h2 id="hinder"><a class="header" href="#hinder">Hinder</a></h2>
+<p>Autonomous, Resist (Evade)</p>
+<p>Hinder decreases the movement rate of whatever it is cast on. The spell affects targets of up to 3 SIZ per 10% of the caster’s Sorcery (Grimoire) skill. By default, the base Movement of the target is halved. To further reduce speed a sorcerer may substitute surplus points of SIZ for extra effect, each 3 SIZ giving an additional reduction of one metre per round. A target’s Movement cannot be lowered to less than one with this spell. Hinder is incompatible with other Movement slowing spells.</p>
+<h2 id="holdfast"><a class="header" href="#holdfast">Holdfast</a></h2>
+<p>Autonomous, Resist (Resilience)</p>
+<p>Holdfast causes an object of up to 3 SIZ per 10% of the caster’s Sorcery (Grimoire) skill, to merge with another, contacting surface. The binding is unbreakable by normal means, save for the destruction of the target or the surface it is bonded to. Only magic can dispel the effect, by overcoming the Magnitude of the Holdfast.</p>
+<p>This spell can affect both organic and inorganic substances. However, if a sorcerer attempts to bond a living being, or anything it is holding or wearing, the spell may be resisted using the Resilience skill. Failing to resist indicates the victim is bound to an object it touches, or his sword is bound inside its scabbard for example.</p>
+<h2 id="intuition"><a class="header" href="#intuition">Intuition</a></h2>
+<p>Concentration, Resist (Persistence)</p>
+<p>Intuition allows a sorcerer to discern the emotions and motives of the target, as if he had made a successful Insight roll. The caster may affect targets of up to 3 POW per 10% of his Sorcery (Grimoire) skill. The sorcerer however is unable to read memories or guarded thoughts, so a target who is aware that this spell is being used may attempt to veil his feelings, gaining another opposed test of their Persistence roll against the caster’s Sorcery (Grimoire) percentage, each time the caster attempts to discern a new fact.</p>
+<h2 id="mystic-vision"><a class="header" href="#mystic-vision">Mystic Vision</a></h2>
+<p>Concentration</p>
+<p>This spell allows the caster to perceive magic, by augmenting his primary senses. It allows him to see, hear or perhaps even smell spells, enchanted items and even a creature’s Magic Points. The sorcerer must be able to actually detect the creature or object for this spell to work. Mystic Vision also enables observation into the hero, spirit and essence planes – although the spell does not grant access.</p>
+<p>Sorcerers will either roughly know how many Magic Points an object or creature currently has (1–10, 11–20, 21–30 and so forth), or will automatically be aware of a spell’s magical origin (Common, Divine or Sorcery).</p>
+<p>Spells or enchantments of up to one Magic Point (or POW) per 10% of the caster’s Sorcery (Grimoire) skill, have all their attributes revealed – including what the spell does, whether it has been overcharged, enchantment conditions and the unique ‘aura’ of who cast it; which can be used to identify other spells cast by the same person.</p>
+<h2 id="neutralise-magic"><a class="header" href="#neutralise-magic">Neutralise Magic</a></h2>
+<p>Autonomous</p>
+<p>Neutralise Magic negates a combined Magnitude of spells on a target. The spell affects up to one point of Magnitude for every 10% of the sorcerer’s Sorcery (Grimoire) skill. It works by dismissing the most powerful spell it can act on, reducing its <em>own</em> effect by the Magnitude of the eliminated spell, then continues to dismiss the next most powerful spell it can still affect. A spell cannot be partially eliminated, so only ‘complete’ spells are negated.</p>
+<p>Jedekiah is under the effect of a Magnitude 2 Protection spell, a Magnitude 4 Haste spell and a Magnitude 6 Damage Resistance spell. When hit by a Neutralise Magic cast at 44% (affects 5 Magnitude), the Damage Resistance spell is ignored as it is too powerful. The Haste spell is neutralised but this reduces the Neutralise Magic’s effect to 1, which is not enough to take out the Protection spell.</p>
+<p>Enchantments and other permanent magical effects are temporarily neutralised for the duration of the spell.</p>
+<p>Neutralise Magic can be used defensively, as if parrying or evading to neutralise incoming spells.</p>
+<h2 id="palsy"><a class="header" href="#palsy">Palsy</a></h2>
+<p>Autonomous, Resist (Resilience)</p>
+<p>This spell paralyses one random Hit Location on the target. The sorcerer can affect locations of up to ome Hit Point per 10% of his Sorcery (Grimoire) skill. The effect of the spell depends on the location struck. A limb stops working; the abdomen causes both legs to collapse and the head or chest results in unconsciousness.</p>
+<h2 id="phantom-sense"><a class="header" href="#phantom-sense">Phantom (Sense)</a></h2>
+<p>Concentration, Resist (Special)</p>
+<p>Each specific Phantom spell produces an illusion which affects a different sense or perception. There are five basic versions, one for each of sight, sound, smell, taste and touch; but there are also variants for unusual sensory mechanisms (such as the darksense of trolls). Illusions produced by each Phantom spell are stimulations of the <em>target’s</em> own perceptions and nervous system – not temporary manifestations of reality.</p>
+<p>Targets of a phantasm must succeed in an opposed test of their Persistence against the caster’s Sorcery (Grimoire), otherwise they truly believe what they are experiencing.</p>
+<p>Phantasms cannot cause direct harm, although they may be injurious in an indirect manner, such as creating an illusion of a cow over a griffon, or by masking the taste of a virulent poison. However, most effects are psychosomatic in nature and permit further Resistance rolls when used offensively.</p>
+<p>Phantom spells can react to their surroundings as long as the sorcerer maintains concentration over them. If concentration lapses, then the illusion remains static within the victim’s mind, continuing to produce the last effect imagined by the caster – the smell of roses, a moaning wind, bone biting cold and so on. The sorcerer can resume concentration at a later time to change the illusion as long as the spell has not expired. Multiple Phantom spells can be concentrated on simultaneously as long as they are cast as a single spell using the Combine manipulation.</p>
+<p>Spells providing magical protection block a Phantom (Sense) spell of equal or lesser Magnitude.</p>
+<h3 id="odour"><a class="header" href="#odour">Odour</a></h3>
+<p>This spell reproduces <em>any</em> single scent, anything from the delectable odour of lotus perfume to the stench of rotting flesh. If used offensively and the caster overcomes the target in an opposed roll of Sorcery (Grimoire) versus Resilience, an odour can be created which incapacitates or entrances those who smell it.</p>
+<h3 id="taste"><a class="header" href="#taste">Taste</a></h3>
+<p>This illusion creates or hides <em>any</em> single taste for consumables, substances or persons within the spell’s effect. If used offensively, such as creating the burning effect of hot chillies to cause the victim to gag, the caster must overcome the target in an opposed roll of Sorcery (Grimoire) versus Resilience. Several Phantom (Taste) spells could, for example, make a meagre meal of boiled worms, sour berries and nettle leaves taste like the recipient’s favourite meal – although the texture might need some work.</p>
+<h3 id="sight"><a class="header" href="#sight">Sight</a></h3>
+<p>Creates a visual illusion of anything the caster can imagine. The vision is completely non- corporeal, so physical interaction passes straight through. If used subtly, it can augment or modify the appearance of an already existing target; granting outlandish clothing or changing colour for example. Creating a complete fabrication out of context with the setting, or physically interacting with it, allows the viewer an opposed roll of their Perception against the caster’s Sorcery (Grimoire). Animate creatures produced by this spell, which <em>appear</em> to perform complex physical actions, use the relevant skills of the sorcerer. For example, an illusionary giant ant sent to attack the recipient would use the caster’s own Unarmed combat skill to fight.</p>
+<h3 id="sound"><a class="header" href="#sound">Sound</a></h3>
+<p>This spell creates an audible illusion, anything from a whisper to a clap of thunder. The caster can manipulate the nature and volume of the sound as long as he continues to concentrate upon it. Although a sorcerer can create very loud sounds, he cannot cause permanent deafness or damage with them. However, the illusionary volume can be such that recipients standing next to each other need a Perception roll to hear each other speak; and any task which requires hearing one’s own voice or maintaining concentration (such as spell casting), must win an opposed test of Persistence against the spell to continue.</p>
+<h3 id="touch"><a class="header" href="#touch">Touch</a></h3>
+<p>This spell creates an illusion of tactility, which can be Combined with other illusions to give them a greater sense of reality. It can simulate any type of tactual sensation from feathery to prickly, soft to hard and even hot and cold. Since the spell simply produces an illusionary sensation in the nerves of those who touch the phantasm, it cannot inflict and is itself, immune to damage. However, victims of the spell may still believe they have been wounded and must succeed in opposed rolls of Resilience versus the caster’s Sorcery (Grimoire) in order to avoid the (psychosomatic) effects of receiving a Serious or Major Wound, even though they have not suffered any actual harm.</p>
+<h2 id="protective-ward"><a class="header" href="#protective-ward">Protective Ward</a></h2>
+<p>Autonomous</p>
+<p>This spell requires the use of the Combine manipulation. It must be coupled with Damage Resistance, Spell Resistance, Spirit Resistance or any combination of these three spells. When completed, the Protective Ward creates an area of protection of up to one metre radius per 10% of the caster’s Sorcery (Grimoire) skill. Casting the spell requires that the ward be inscribed into a solid surface, such as hard packed earth, stone flagstones or even a wooden deck of a ship. Once cast it cannot be moved, although the surface it is inscribed upon can be.</p>
+<p>The Protective Ward’s perimeter contains the benefits of its combined Resistance spell(s). It only inhibits spells or attacks entering the circle from the outside – attacks or spells originating within the circle are unaffected. Thus a Protective Circle against spirits would block out external spirits   but have no effect on those already inside its perimeter. A Protective Circle against damage or spells would block out incoming attacks/spells but have no effect on those attacks made within the sphere (including attacks targeting those outside the sphere).</p>
+<p>Diverse versions of this spell are known which rely upon different geometries (circles, triangles and so on) or runes.</p>
+<h2 id="project-sense"><a class="header" href="#project-sense">Project (Sense)</a></h2>
+<p>Concentration</p>
+<p>Each ‘Project (Sense)’ is an individual spell, specific to one of the five primary senses but there are also variants for unusual sensory mechanisms, such as Darksense. The spell allows the sorcerer to project one of the recipient’s senses beyond his body via an invisible and intangible receptor, which transmits the specified type of sensory input back. This permits the recipient to use his Perception skill (with that sense) anywhere the receptor is.</p>
+<p>The sorcerer decides at the time the spell is cast where the receptor initially manifests – either beside the spell’s recipient or a location well known to the sorcerer within the spell’s range. The receptor has a Movement of one metre per 10% of the caster’s Sorcery (Grimoire) skill. Concentration is only required to move the receptor – when stationary, the spell is treated as Autonomous instead.</p>
+<p>A sorcerer can use Project (Sense) to be able to aim a second spell at a target who is out of direct observation – whether because of distance or blocking obstacles. The piggy-backed spell must also have sufficient Range to reach the target.</p>
+<p>Project (Sense) can be detected by those using magical perception and, if desired, dispelled. Attacking the receptor with a magically augmented weapon or a spell, will transfer the magical damage/effect back to the recipient.</p>
+<h2 id="regenerate"><a class="header" href="#regenerate">Regenerate</a></h2>
+<p>Concentration</p>
+<p>This spell functions much like the Divine Magic spells of Heal Wound and Regrow Limb, in that it will repair Serious or Major Wounds, even allowing a severed or maimed limb to be reattached or grow anew. The sorcerer may rejuvenate locations with a maximum of one Hit Point per 10% of the caster’s Sorcery (Grimoire) skill. This spell cannot raise an Adventurer from death.</p>
+<p>Regenerate heals a damaged location back to one Hit Point (and no more), requiring the sorcerer to concentrate for a period of one entire round per HP recovered. Locations which have been severed and cannot be reattached take one minute per HP healed to regenerate.</p>
+<h2 id="restoration"><a class="header" href="#restoration">Restoration</a></h2>
+<p>Concentration</p>
+<p>One of the few methods known of healing Characteristic damage, such as that caused by the Tap spell, Restoration works in a similar manner to Regenerate. The sorcerer may restore Characteristics of up to three points per 10% of the caster’s Sorcery (Grimoire) skill. If the original value of the Characteristic was higher than this, then it cannot be healed. Each point restored takes one minute to regenerate.</p>
+<h2 id="sense-object-or-substance"><a class="header" href="#sense-object-or-substance">Sense (Object or Substance)</a></h2>
+<p>Concentration</p>
+<p>Eminently useful for finding valuables, lost possessions or hidden objects from afar, this spell has a variant for every substance imaginable. Sense (Substance) causes all sources of that substance within range of the spell to resonate to the caster’s dominant sense. For example, diamonds may visibly gleam like ice; amber could taste like cinnamon; water tinkle with a crystalline chime and so on. Whilst the spell can be cast over extreme ranges, it has difficulty detecting substances concealed or blanketed behind significant layers of solid material. The spell can penetrate a combined thickness of up to one metre of wood/ earth/rock/water, or one centimetre of metal per 10% of the caster’s Sorcery (Grimoire) skill. For example, if a sorcerer is seeking a hidden hoard of gold in a castle, his Sorcery skill’s value must be able to penetrate the <em>combined</em> thicknesses of all the walls between him and the treasure.</p>
+<p>Although each Sense spell is specific to particular objects or substances, the categories can be quite broad. For instance: gems, flesh and bones, metals, weapons, cult specific artefacts or even chaos.</p>
+<h2 id="shapechange-species-to-species"><a class="header" href="#shapechange-species-to-species">Shapechange (Species) to (Species)</a></h2>
+<p>Autonomous, Resist (Resilience)</p>
+<p>Shapechange morphs the shape and form of a target from one species to another. A sorcerer can affect, in total, up to three points of SIZ per 10% of his Sorcery (Grimoire). The SIZ of the original form, added to the <em>difference</em> in SIZ between the original and modified form, must be within this range. The target acquires the average physical (STR, CON, SIZ and DEX) Characteristics of the creature assumed, plus whatever natural attacks and modes of locomotion it possesses. If the caster has a superior skill than the new form, he may substitute his own in preference.</p>
+<p>For example, a sorcerer of SIZ 10 who wishes to change into a brown bear (average SIZ 25), requires a minimum Sorcery (Grimoire) of 81%. Whereas if the same sorcerer wished to turn into a dog (average SIZ 3), he would only need a Sorcery (Grimoire) skill of 51%.</p>
+<p>Each Shapechange variant is a separate spell. However, each species is quite broad in scope, covering an entire <em>family</em> of a type of creature. For example: felines, canines, bears, fish, snakes and so on. The spell only works on living things – the dead or inanimate cannot be shapechanged.</p>
+<h2 id="smother"><a class="header" href="#smother">Smother</a></h2>
+<p>Autonomous, Resist (Resilience)</p>
+<p>A sorcerer may cast Smother on a target of up to 3 SIZ per 10% of his Sorcery (Grimoire) skill. If he fails to resist he begins to asphyxiate, immediately suffering damage at the start of the following Combat Round and continues to suffocate for the duration of the spell.</p>
+<p>This spell can also be used to extinguish fires, as the flames will be starved of oxygen. In this case the sorcerer can affect up to three cubic metres of flames per 10% of Sorcery (Grimoire) skill.</p>
+<h2 id="spell-resistance"><a class="header" href="#spell-resistance">Spell Resistance</a></h2>
+<p>Autonomous</p>
+<p>A magical ward that blocks any incoming spell of up to 1 Magnitude per 10% of the caster’s Sorcery (Grimoire) skill.</p>
+<p>Spell Resistance remains in place for the entirety of its duration – spells that successfully breach the Spell Resistance do not dispel it. However, it does not discriminate between incoming spells  - a comrade attempting to magically heal the recipient of Spell Resistance must overcome it in order to successfully use a healing spell.</p>
+<h2 id="spirit-resistance"><a class="header" href="#spirit-resistance">Spirit Resistance</a></h2>
+<p>Autonomous</p>
+<p>This spell blocks spirits or otherworld entities of up to 3 POW per 10% of the caster’s Sorcery (Grimoire) skill, from coming into contact with the recipient. A blocked spirit unable to touch a recipient will not be able to personally attack or harm him, or engage him in spirit combat. Spells cast at the recipient by a spirit or otherworld entity, are likewise blocked unless their Magnitude exceeds the Magnitude of the Spirit Resistance.</p>
+<h2 id="tap-characteristic"><a class="header" href="#tap-characteristic">Tap (Characteristic)</a></h2>
+<p>Concentration, Resist (Persistence)</p>
+<p>Each Characteristic has a Tap spell; thus Tap (Strength), Tap (Constitution) and so on. These devastating spells allow the caster to <em>permanently</em> strip a target of Characteristic points, transforming the tapped Characteristic points into Magic Points for his own use. It works only on creatures possessing the Characteristic being tapped. It is possible for a sorcerer to Tap his own Characteristics… but that is truly the act of a desperate sorcerer.</p>
+<p>The Characteristics of targeted creatures can be reduced to a minimum of 1. However, Tap only consumes and transfers one point per round, making it less versatile in combat. Characteristic points lost to Tap are destroyed permanently, though the victim can regain them via certain healing magic, or by raising them through the normal means of increasing a Characteristic.</p>
+<p>A Characteristic may be tapped for up to one point per 10% of the sorcerer’s Sorcery (Grimoire) skill, from which the sorcerer gains an equivalent number of Magic Points. The sorcerer can only increase his Magic Points to double his normal maximum, although he may simply Tap a target and dissipate any excess – a truly malicious use of the spell. All Magic Points above his normal maximum gained through Tap disappear once the spell expires.</p>
+<p>Note that creatures affected by Tap (SIZ) become wasted and skeletal, rather than shrinking as they do with the Diminish spell.</p>
+<p>There are reputed to be exotic and very rare versions of the Tap spell that consume other aspects of a victim, such as Tap (Youth), Tap (Emotion), Tap (Memory) and so forth. Without exception, these are regarded with even more loathing and hatred than the more common Tap spell!</p>
+<h2 id="treat-wounds"><a class="header" href="#treat-wounds">Treat Wounds</a></h2>
+<p>Concentration</p>
+<p>This spell dramatically accelerates the natural healing rate of the target. It heals up to one Hit Point per 10% of the caster’s Sorcery (Grimoire) skill, at the end of each round. The amount healed can be divided across multiple locations as the recipient desires. However, the healing does not affect Serious or Major Wounds, which require the Regenerate spell instead.</p>
+<h2 id="telepathy"><a class="header" href="#telepathy">Telepathy</a></h2>
+<p>Autonomous, Resist (Persistence)</p>
+<p>The telepathy spell allows a sorcerer to not only mentally communicate with the target but also receive its sensory perceptions as well. If this is undesired the target may resist the spell. The caster can establish a link with creatures of up to 3 INT per 10% of his Sorcery (Grimoire) skill. The more skilful the sorcerer, the better able he is to penetrate the mental complexities of more intelligent creatures. If sub-sentient such as in the case of an animal, the sorcerer gains limited comprehension in terms of feelings – but can still communicate.</p>
+<h2 id="teleport"><a class="header" href="#teleport">Teleport</a></h2>
+<p>Concentration, Resist (Evade)</p>
+<p>Teleport allows a sorcerer to instantaneously move himself, or a target to anywhere within the range of the spell, as long as the destination is in direct observation, there is solid footing and no object bars their arrival. If these conditions are not met, the spell automatically fails. The caster is able to teleport objects up to 3 points of SIZ per 10% of his Sorcery (Grimoire) skill.</p>
+<h2 id="wrack"><a class="header" href="#wrack">Wrack</a></h2>
+<p>Concentration, Resist (Resilience)</p>
+<p>This spell injures victims by wracking them with magical force. If the target fails to resist, every Combat Action the sorcerer can inflict a random location with an amount of damage according to their Sorcery (Grimoire) skill.</p>
+<p>1–20% 1D2 damage, 21–40% 1D4, 41–60% 1D6, 61–80% 1D8, 81–100% 1D10, 101–120% 2D6, 121–140% 1D6+1D8, 141–160% 2D8 and so on.</p>
+<p>Armour provides no protection but magical defences (such as Countermagic Shield or Spell Resistance) reduce rolled damage by the Magnitude they normally block (assuming the Wrack spell penetrates).</p>
+<p>There are many versions of this spell that afflict the victim with different torments. For example one form of Wrack (Darkness) slowly freezes the target with frigid tendrils of shadow, whereas another might cause their limbs to crack and shatter or simply inflict an agonising poison.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/9_Divine_Magic.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/11_Guilds,_Factions_and_Cults.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/9_Divine_Magic.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/11_Guilds,_Factions_and_Cults.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

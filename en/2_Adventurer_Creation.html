@@ -1,0 +1,1677 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>❌ Adventurer Creation - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="2-adventurer-creation"><a class="header" href="#2-adventurer-creation">2. Adventurer Creation</a></h1>
+<p><em>Legend</em> characters are called <em>Adventurers</em> and this chapter explains how they are created. Every player in <em>Legend</em> creates and controls at least one Adventurer and it is through their Adventurer that players explore the game world around them. Adventurers, as their name suggests, are seeking adventure, glory and heroism; they are prepared to engage in feats and endeavours that the common populace shy away from. Adventurers in <em>Legend</em> are heroes in the making; the ones who, in time, might become the subjects of stories, legends and myths of their own.</p>
+<h2 id="adventurer-overview"><a class="header" href="#adventurer-overview">Adventurer Overview</a></h2>
+<p>Every Adventurer is comprised of certain game statistics that describe the character and what he is capable of. These statistics are as follows:</p>
+<p><strong>Characteristics</strong> – Seven Characteristics define an Adventurer: Strength, Constitution, Size, Intelligence, Power, Dexterity and Charisma. These are physical and mental attributes that define how strong, resilient, large, clever, quick and charismatic the Adventurer is. From these seven Characteristics all other game statistics flow.</p>
+<p><strong>Attributes</strong> – Derived from the seven Characteristics, Attributes are secondary statistics that provide modifiers for certain actions or determine particular capabilities. Each is described in more detail later in this chapter but the attributes are: Combat Actions, Damage Modifiers, Improvement Roll Modifiers, Hit Points, Magic Points, Strike Rank and Movement.</p>
+<p><strong>Skills</strong> – Skills are the engine room of a <em>Legend</em> Adventurer. Skills are particular talents, abilities, capabilities and professional skills that are shaped by an Adventurer’s culture, the profession he has chosen for himself and the way he has chosen to develop his interests and competencies.</p>
+<p>Skills are divided into Common and Advanced; Common skills are common to all Adventurers.</p>
+<p>Advanced skills differ from one Adventurer to another, reflecting culture, profession and individual interests. However all skills work in the same way and have starting values derived from a combination, or multiple, of the seven Characteristics.</p>
+<p><strong>Community</strong> – No man is an island. Even before your Adventurer has set forth on his career as a potential hero, he has been supported by family, friends and allies. He may also have made valuable contacts, gained a few rivals and perhaps even some enemies. An Adventurer’s Community is a summary of those people he knows and may be able to call upon in the future  - or who may call upon him.</p>
+<p><strong>Magic, Weapons, Equipment</strong> and so on – In addition to these game statistics every Adventurer has additional information relating to what magic they know (if any), weapons they are experienced in using, equipment they carry and other pertinent information about the Adventurer in the here and now. These elements are introduced at the appropriate points in the Adventurer Creation process and later in this book.</p>
+<h1 id="adventurer-creation"><a class="header" href="#adventurer-creation">adventurer creation</a></h1>
+<p>There is a sample <em>Legend</em> Adventurer sheet on page 36. It has sections for all the information described here, and more, and is used during play as a record of your Adventurer’s current status. Various statistics – skills, for example, and Hit Points – will change frequently during the game, so complete the Adventurer sheet in pencil and keep an eraser handy to make changes as they occur.</p>
+<p>Permission is granted to make copies of the <em>Legend</em> Adventurer Sheet for personal use. A downloadable copy can be found at <a href="http://www.mongoosepublishing.com.">http://www.mongoosepublishing.com.</a></p>
+<h2 id="characteristics"><a class="header" href="#characteristics">Characteristics</a></h2>
+<p>Every Adventurer, creature, monster and Non-Player Character in <em>Legend</em> is defined by the same seven Characteristics. These are the building blocks for every other aspect of a <em>Legend</em> Adventurer, describing their physical, mental and spiritual status. The higher the figure, for a Characteristic, the better. Low scores in Characteristics tend to mean weakness or ill-health  - although much depends on the race that the Characteristics describe; some races have a low statistical range simply due to their natural physiology so a low score in a Characteristic might indicate a perfectly normal state of existence. A dwarf, for example, is always likely to have a lower SIZ than a human.</p>
+<p>For your first Adventurer it is recommended that you create a human. Other races are available and because all creatures in <em>Legend</em> are defined in the same way, it means that just about any race or creature type can be created as an Adventurer. Humans, however, are the easiest to understand and the wisest choice for a new Adventurer. Human Characteristics range between 3 and 21 although the upper limit for a starting Adventurer is likely to be 18.</p>
+<p>The Characteristics, and their abbreviations, are as follows:</p>
+<h4 id="strength-str"><a class="header" href="#strength-str">Strength (STR)</a></h4>
+<p>Strength is a measure of an Adventurer’s raw muscle power. It acts as an indicator of how much someone can lift, push or pull, or how tightly he grasps something. Strength determines if an Adventurer can wield the heaviest hand weapons at full ability. It is also a component in calculating the Damage Modifier, which may increase the effect of physical attacks. Human STR cannot naturally exceed 21. If an Adventurer is reduced to zero Strength for any reason he lacks the ability to move and becomes bed-ridden until STR improves somehow (through natural healing or magic, for example).</p>
+<h4 id="constitution-con"><a class="header" href="#constitution-con">Constitution (CON)</a></h4>
+<p>Constitution measures the health and vitality of an Adventurer and helps to determine how much physical damage he can sustain. Adventurers with a high CON are likely to have more Hit Points meaning that they can soak-up more damage during combat. CON also determines how long it takes before an Adventurer starts to feel the effects of fatigue and weariness. Human CON cannot naturally exceed 21. If CON is reduced to zero the Adventurer dies.</p>
+<h4 id="size-siz"><a class="header" href="#size-siz">Size (SIZ)</a></h4>
+<p>Size represents the average of an Adventurer’s mass. SIZ determines if an Adventurer can see over something, or fit through a small opening. SIZ also helps calculate the Adventurer’s Hit Points and damage bonus. Human SIZ cannot naturally be higher than 21. If SIZ is reduced to zero it results in death.</p>
+<h4 id="intelligence-int"><a class="header" href="#intelligence-int">Intelligence (INT)</a></h4>
+<p>INT represents an Adventurer’s capacity for learning, rationalising and analysis. It is less a measure of cleverness and more how the Adventurer applies what he knows either practically or analytically. INT affects many other game statistics and is important if the Adventurer is to be a competent magician. Human INT cannot naturally exceed 21. If, somehow, INT reaches zero, then the Adventurer is reduced to a witless, drooling idiot until INT is restored in some form.</p>
+<p>INT is also used as a bonus when rolling to improve skills. See the Skills chapter for more information.</p>
+<h4 id="power-pow"><a class="header" href="#power-pow">Power (POW)</a></h4>
+<p>A somewhat abstract Characteristic, POW represents the force of both an Adventurer’s soul and his innate magical and spiritual presence. The more Power an Adventurer has, the greater their force of will, confidence and capacity for magic. Human POW cannot naturally exceed 21.</p>
+<p>POW can also be pledged to show devotion to the gods and in exchange for certain divine gifts or benefits. If POW is reduced to zero, the Adventurer usually dies – either completely sapped of his soul or his spirit has been taken into the gods’ care. However, depending on circumstances,</p>
+<h4 id="adventurer-can-exist-with-zero-pow--but-may-have-ceased-to-be-human-altogether"><a class="header" href="#adventurer-can-exist-with-zero-pow--but-may-have-ceased-to-be-human-altogether">Adventurer can exist with zero POW – but may have ceased to be human altogether.</a></h4>
+<h4 id="dexterity-dex"><a class="header" href="#dexterity-dex">Dexterity (DEX)</a></h4>
+<p>A measure of physical co-ordination, agility, suppleness and nimbleness, DEX is an important component in many physical skills. A decent DEX represents someone who is quick, keen of eye and fleet of movement. DEX determines how often in a fight an Adventurer can strike or defend himself – an important consideration if he is outnumbered or the skill of his foes is perhaps greater than his own. Human DEX cannot naturally exceed 21. If it is reduced to zero, the Adventurer is paralysed completely and cannot move in any way until DEX is recovered in some way (through healing or magic, for instance).</p>
+<h4 id="charisma-cha"><a class="header" href="#charisma-cha">Charisma (CHA)</a></h4>
+<p>Charisma measures the force of personality. Adventurers with a high CHA have the ability to make friends easily, find themselves the focus of attention when it is needed (and sometimes when not) and persuade others to do things. Adventurers with a low CHA tend not to be noticed so readily or have a hard time making themselves heard. Charisma is not a measure of how beautiful or handsome an Adventurer is; it is, instead, an indicator of confidence and the ability to express one’s self. Human CHA has no upper limit although it is rare for it to exceed 21. If reduced to zero in any way, then the Adventurer has become completely uncommunicative and emotionless – a shell of a person.</p>
+<p>CHA also influences the number of Improvement Rolls the Adventurer has when opportunities for skill and Characteristic improvements come around.</p>
+<h3 id="determining-characteristics"><a class="header" href="#determining-characteristics">Determining Characteristics</a></h3>
+<p>An Adventurer’s Characteristics can be determined in one of several ways. The Games Master will decide which method is to be used.</p>
+<h4 id="random-roll-in-order"><a class="header" href="#random-roll-in-order">Random Roll, In Order</a></h4>
+<p>Roll 3D6 for STR, CON, POW, DEX and CHA taking each dice roll result as it comes. For INT and SIZ roll 2D6+6 again, taking the rolled results.</p>
+<h4 id="random-roll-assign"><a class="header" href="#random-roll-assign">Random Roll, Assign</a></h4>
+<p>Roll 3D6 five times and choose which result will be allocated to which Characteristic from STR, CON, POW, DEX and CHA. Next, roll 2D6+6 twice and decide which score with be allocated to INT and which to SIZ.</p>
+<h4 id="points-build"><a class="header" href="#points-build">Points Build</a></h4>
+<p>Some players prefer not to roll dice to determine the Characteristics for their Adventurer, either</p>
+<h4 id="because-they-do-not-like-leaving-their-adventurer-to-chance-or-because-they-have-a-certain"><a class="header" href="#because-they-do-not-like-leaving-their-adventurer-to-chance-or-because-they-have-a-certain">because they do not like leaving their Adventurer to chance or because they have a certain</a></h4>
+<h4 id="adventurer-type-and-certain-characteristic-values-in-mind-this-option-allows-the-players-to"><a class="header" href="#adventurer-type-and-certain-characteristic-values-in-mind-this-option-allows-the-players-to">Adventurer type and certain Characteristic values in mind. This option allows the players to</a></h4>
+<h4 id="design-their-adventurer-by-assigning-a-number-of-points-to-their-characteristics-from-a-pool-of"><a class="header" href="#design-their-adventurer-by-assigning-a-number-of-points-to-their-characteristics-from-a-pool-of">design their Adventurer by assigning a number of points to their Characteristics from a pool of</a></h4>
+<p>Characteristic Design Points.</p>
+<pre><code>  -	 Players have 80 Characteristic Design Points.
+</code></pre>
+<pre><code>  -	 1 point in a Characteristic costs 1 Design Point.
+</code></pre>
+<pre><code>  -	 Characteristics cannot be lower than 6 or greater than 18.
+</code></pre>
+<pre><code>  -	 All Characteristic Design Points must be used in the design process. Points cannot be held over or used for anything else.
+
+</code></pre>
+<h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
+<p>Attributes are a series of game statistics that are derived from the Adventurer’s Characteristic scores. Attributes represent capabilities that the Adventurer draws upon during the game to help resolve certain actions and outcomes. The attributes are as follows:</p>
+<h4 id="characteristic-values--optional-rule"><a class="header" href="#characteristic-values--optional-rule">Characteristic Values – Optional Rule</a></h4>
+<p>In both Random Roll options Games Masters may wish to allow one, or both, of the following options:</p>
+<ul>
+<li>
+<p>Re-roll any result of 6 or less.</p>
+</li>
+<li>
+<p>Allow the player to take up to two points from one Characteristic and assign them to another. This swap may only be done once and neither SIZ nor INT can benefit from the swap. Furthermore, no Characteristic can be allowed to fall below 3 or exceed 18.</p>
+</li>
+</ul>
+<p>Using the Points Build system, some players may want to design an Adventurer with Characteristics that exceed 18 and may go as high as 21. Games Masters may allow this as an option but if so, every Characteristic point above 18 costs 2 Characteristic Design Points to buy.</p>
+<p>So, if a player wanted to have an Adventurer with STR 20, it would cost 22 Design Points: 18 points for STR 18 and then a further 4 points to raise STR 18 to STR 20.</p>
+<h3 id="age"><a class="header" href="#age">Age</a></h3>
+<p><em>Legend</em> Adventurers start the game at 16+1D4 years of age, so between the ages of 17 and 20.</p>
+<p>Their life experiences are most likely confined to the communities of their births and they have yet to experience the wider world. It is permissible for Adventurers to be older and more experienced than the novices the Adventurer Creation rules generate, and the rules for Experienced Adventurers are given on page 25 towards the end of this chapter. It is up to the Games Master to decide if players start the game with more experienced Adventurers or not.</p>
+<h4 id="alaric-the-brave--an-example-adventurer"><a class="header" href="#alaric-the-brave--an-example-adventurer">Alaric the Brave – An Example Adventurer</a></h4>
+<pre><code>Throughout Legend we will follow the progress of Alaric the Brave: from initial dice rolls right through to his first few adventures. We begin at the beginning: with a blank Adventurer sheet, a pencil and some dice.
+
+</code></pre>
+<pre><code>The Games Master has decided that Adventurers in his campaign will be rolled using the Random Assign method. Alaric's player must therefore roll 3D6 five times, noting the results, and 2D6+6 twice, again, noting the outcomes.
+
+</code></pre>
+<pre><code>For the 3D6 rolls he gets the following: 10, 12, 13, 7 and 14. For the two 2D6+6 rolls he gets 16 and 14.
+
+</code></pre>
+<pre><code>Alaric's player decides to allocate the results as follows: STR 12, CON 7, SIZ 14, INT 16, POW 14, DEX 13, CHA 10.
+
+</code></pre>
+<pre><code>Alaric is around the human average for Strength. He is no weight-lifter but neither is he a weakling.
+
+With CON 7, Alaric most likely suffers from coughs, sneezes and winter chills. He might have suffered an illness as a young child that has left his body weakened, or suffered some childhood injury that did not heal properly. SIZ 14 indicates Alaric is above average height. He stands taller than the other boys in his village and is stockier maybe. With INT 16 – Alaric is smart. He is observant, good at committing things to memory and has the ability to analyse problems and solve them quickly. His POW of 14 means his spirit is strong; with an above average Power score he will find working magic easier and will be noticeable to the gods who watch over his village. Alaric's DEX 13 is above average, so he is pretty agile and fast. He is noted for accuracy in various village games, such as horseshoe throwing. Finally, CHA 10 is about average: Alaric is personable but not especially so. People know who Alaric is but he does not stand out from the crowd.
+
+</code></pre>
+<h4 id="alarics-tale"><a class="header" href="#alarics-tale">Alaric’s Tale</a></h4>
+<p><em>Rolling 1D4 and adding the result to 16 we find that Alaric begins the game at 20 years of age.</em></p>
+<h3 id="combat-actions"><a class="header" href="#combat-actions">Combat Actions</a></h3>
+<p>Adventurers frequently get into fights – from bar-room brawls, through duels of honour, to tense melees with vile monsters and up to pitched battles in the midst of a war surrounded by thousands of comrades.</p>
+<p>Combat Actions, abbreviated to CA, are the number of times that an Adventurer can act to either attack an enemy, defend himself from attack or perform some other action during battle.</p>
+<p>The number of CA an Adventurer has during a Combat Round (a period of time explained later in this book) is dependent on his DEX and INT. Add together DEX and INT and divide the result by 2 (rounding up); then consult the Combat Actions table.</p>
+<h5 id="combat-actions-1"><a class="header" href="#combat-actions-1">Combat Actions</a></h5>
+<pre><code>Average of DEX and INT Combat Actions
+6 or less 1
+7–12 2
+13–18 3
+For every additional 6 points +
+</code></pre>
+<h4 id="alarics-tale-1"><a class="header" href="#alarics-tale-1">Alaric’s Tale</a></h4>
+<pre><code>Alaric's DEX of 13 and INT of 16, added together and divided by 2, gives him 3 CA. In a fight, Alaric is going to be confident and fast enough to act several times – an advantage over slower opponents.
+
+</code></pre>
+<h3 id="damage-modifier"><a class="header" href="#damage-modifier">Damage Modifier</a></h3>
+<p>Bigger and stronger Adventurers are able to hit harder than smaller, weaker ones. The Damage Modifier is a dice roll that is made <em>in addition</em> to the damage rolled for a weapon. <em>For example, an Adventurer with a Damage Modifier of +1D4 rolls a four-sided dice alongside the damage for the sword he is using and adds it to the total.</em>  To calculate the Adventurer’s Damage Modifier, add together the scores for STR and SIZ and look up the result on the Damage Modifier table.</p>
+<h5 id="damage-modifier-1"><a class="header" href="#damage-modifier-1">Damage Modifier</a></h5>
+<pre><code>STR + SIZ Damage Modifier
+1–5 –1D
+6–10 –1D
+11–15 –1D
+16–20 –1D
+21–25 +
+26–30 +1D
+31–35 +1D
+36–40 +1D
+41–45 +1D
+46–50 +1D
+51–60 +1D
+61–70 +2D
+71–80 +2D
+81–90 +2D
+91–100 +2D
+</code></pre>
+<p>Note that the Damage Modifier can be negative. If an Adventurer is physically small and weak he may not have the strength, leverage and reach to swing a weapon and strike to its full damage potential. Hence, a negative Damage Modifier is still rolled but the result is subtracted from the weapon’s damage total. If the Damage Modifier reduces a weapon’s damage to zero or a negative number, then no damage has been inflicted on that occasion.</p>
+<h3 id="hit-points"><a class="header" href="#hit-points">Hit Points</a></h3>
+<p>In <em>Legend</em> the body of every creature – human, animal and monster – is divided into a number of Hit Locations: each Hit Location has a number of Hit Points. Whenever a weapon strikes or a wound is taken, the place where it hits or where the wound affects is determined and damage applied to the Hit Points for that location.</p>
+<p>Humans have seven Hit Locations: Head, Chest, Abdomen, Right Arm, Left Arm, Right Leg and Left Leg. The number of Hit Points each Hit Location has is based on CON and SIZ. Add the Adventurer’s CON and SIZ scores together and cross reference the result on the Hit Points per Location table.</p>
+<h5 id="hit-points-per-location"><a class="header" href="#hit-points-per-location">Hit Points per Location</a></h5>
+<pre><code>Location
+</code></pre>
+<h6 id="con--siz"><a class="header" href="#con--siz">CON + SIZ</a></h6>
+<h6 id="15-610-1115-1620-2125-2630-3135-3640-"><a class="header" href="#15-610-1115-1620-2125-2630-3135-3640-">1–5 6–10 11–15 16–20 21–25 26–30 31–35 36–40 +</a></h6>
+<pre><code>Each Leg 1 2 3 4 5 6 7 8 +
+Abdomen 2 3 4 5 6 7 8 9 +
+Chest 3 4 5 6 7 8 9 10 +
+Each Arm 1 1 2 3 4 5 6 7 +
+Head 1 2 3 4 5 6 7 8 +
+</code></pre>
+<h4 id="alarics-tale-2"><a class="header" href="#alarics-tale-2">Alaric’s Tale</a></h4>
+<p><em>Alaric’s STR 12 and SIZ 14 equal 26, which gives him +1D2 as a Damage Modifier. His above- average SIZ means that Alaric can gain more leverage when swinging with a weapon, or place more weight behind it when thrusting, which improves its damage.</em></p>
+<h4 id="alarics-tale-3"><a class="header" href="#alarics-tale-3">Alaric’s Tale</a></h4>
+<p>_With a CON of 7 and SIZ of 14 we know that Alaric is big but not necessarily in the best of shape.</p>
+<p>CON+SIZ gives a result of 21 which, cross referenced on the Hit Points per Location table gives the following Hit Points per location: Right and Left Leg: 5; Abdomen: 6; Chest: 7; Right and Left Arm:</p>
+<p>4; and Head: 5_</p>
+<p><em>Alaric’s bulk and body mass helps compensate for his somewhat flimsy constitution and Alaric has reasonable Hit Point scores in each location.</em></p>
+<h3 id="improvement-roll-modifier"><a class="header" href="#improvement-roll-modifier">Improvement Roll Modifier</a></h3>
+<p>At the end of a <em>Legend</em> story, Adventurers are given the opportunity to improve their Adventurer’s skills and Characteristics.</p>
+<p>The CHA score provides either a penalty or a bonus to the number of Improvement Rolls an Adventurer has (see Adventurer Advancement starting on page 68); this reflects the relationship</p>
+<h4 id="that-the-adventurer-has-with-his-community-peers-and-colleagues-or-if-cha-is-particularly"><a class="header" href="#that-the-adventurer-has-with-his-community-peers-and-colleagues-or-if-cha-is-particularly">that the Adventurer has with his community, peers and colleagues, or, if CHA is particularly</a></h4>
+<p>low, the difficulty of attempting to improve one’s capabilities without the assistance of others.</p>
+<h5 id="improvement-roll-modifier-1"><a class="header" href="#improvement-roll-modifier-1">Improvement Roll Modifier</a></h5>
+<pre><code>CHA Improvement Roll Modifier
+6 or less –
+7 – 12 0
+13 – 18 +
+For every additional 6 points of CHA +
+</code></pre>
+<h4 id="alarics-tale-4"><a class="header" href="#alarics-tale-4">Alaric’s Tale</a></h4>
+<pre><code>Alaric's CHA of 10 means that he gains no Improvement Roll modifier when it comes to improving his skills and Characteristics; thus, if the Games Master allocates three Improvement Rolls to the ```
+
+##### Adventurers, Alaric takes advantage of all three. Had his CHA been higher though – say 15 – he
+
+</code></pre>
+<p>would gain an additional Improvement Roll. Conversely, if his CHA was 6 or less, he would have one roll fewer than the number granted by the Games Master.</p>
+<pre><code>#### Alaric's Tale
+
+</code></pre>
+<p>With POW 14 Alaric has 14 Magic Points. Alaric is interested in becoming active in one of the religions of his community and will, in the future, dedicate some of his POW to his god to show his devotion and this will reduce his available Magic Points but, for now, his Magic Points are the same as his POW.</p>
+<pre><code>### Magic Points
+
+Magic Points represent a pool of points that are used to fuel spells and other magical effects.
+
+Usually the Magic Point total is equal to the Adventurer's POW but this can change depending on whether or not an Adventurer has dedicated any of his POW to the worship of a god. This is explained in more detail later in the book, so, for now, Magic Points are equal to the Adventurer's POW Characteristic.
+
+Expended Magic Points normally recover after a sufficient period of rest.
+
+### Movement
+
+Human Adventurers have a base Movement rate of eight metres per Combat Round. Movement is described in more detail in the Game System chapter.
+
+### Strike Rank
+
+How frequently an Adventurer acts in combat is defined by Combat Actions. How _quickly_ he acts is defined by Strike Rank. Strike Rank is described in more detail in the Combat chapter but essentially, the higher an Adventurer's Strike Rank the quicker he acts in a Combat Round.
+
+Strike Rank is based on two components and is calculated as follows:
+
+  -	 Add together INT and DEX and divide the result by two (rounding up). An Adventurer's speed of action is a combination ability to weigh-up his opponents and spot potential openings and opportunities, and his overall speed and quickness of action.
+
+  -	 Subtract the Strike Rank penalty incurred through wearing armour. This is described in more detail on page 125 but Adventurers who are wearing armour of any kind tend to have their movements restricted and have to handle the additional weight of their protection; this slows down the ability to react in a combat situation. The Strike Rank penalty for armour is the total amount of Armour Points the Adventurer is carrying, divided by 5 (rounded up).
+
+Natural armour – such as a dragon's scales – does not inflict a Strike Rank penalty. Similarly, armour provided by some magic spells does not inflict a Strike Rank penalty either.
+
+## Common Skills
+
+Every Adventurer has a range of Common skills allowing him to perform a variety of actions with varying degrees of expertise. These are detailed more fully in the Skills chapter. At this point of Adventurer creation, players will only need to know the base values of each Common skill.
+
+The basic score of each Common skill is determined by the sum of two Characteristics or a multiple of a single Characteristic. The value represents the Adventurer's innate competence in a given area, along with any training he has received as part of his formative years.
+
+The Common Skills table shows how the basic values are calculated. The score represents the percentage chance of success for a skill; so, an Athletics score of 25 is expressed as 25%. How skill percentages work, and each Common Skill's full description, is given in the Skills chapter.
+
+Every Adventurer possesses the skills listed in the Common Skills table; however there are three other categories of skills that, whilst considered to be Common, are not automatically listed.
+
+Close Combat styles and Ranged Combat styles are special skills for using weapons. Instead of having a single Close Combat or Ranged Combat skill, an Adventurer possesses a number of different Close Combat Styles for different combinations of weapons. For example, one Adventurer might be much more adept at using a Sword and Shield Close Combat Style than she is at wielding two shortswords. All Close Combat and Ranged Combat Styles start at the basic percentages listed in the following table but are tracked separately and do not automatically appear in the Common Skills section of the _Legend_ Adventurer Sheet.
+
+#### Alaric's Tale
+
+_Taking Alaric's INT of 16 and DEX of 13, adding them together and dividing by two gives him a Strike Rank of 15 (16+13 = 29/2 = 14.5, rounded up to 15)._  _Alaric has also inherited his grandfather's leather jerkin, which covers his chest and abdomen and gives 2 Armour Points of protection to both Hit Locations. This means Alaric is carrying 4 points of armour and suffers a Strike Rank penalty because of it. 4 divided by 5 gives a result of 0.8 which is rounded up to 1. Alaric's Strike Rank of 15 is therefore reduced to 14, reflecting the encumbrance of the leather armour._   The existence of Common Magic in a game is up to the Games Master. In a high-fantasy setting, then every Adventurer may know a few useful spells. In a grittier, lower-magic game, then only those who have studied a form of magic can cast spells. Ask your Games Master if Common Magic is available in your game; if it is, it starts at the basic percentage listed.
+
+</code></pre>
+<p>Skills Basic Percentage
+Each Close Combat style STR+DEX
+Each Ranged Combat style DEX x
+Common Magic POW+CHA</p>
+<pre><code>##### Common Skills
+
+</code></pre>
+<p>Common Skills Basic Percentage
+Athletics STR+DEX
+Brawn STR+SIZ
+Culture (Own) INT x
+Dance DEX+CHA
+Drive DEX+POW
+Evade DEX x
+Evaluate INT+CHA
+First Aid INT+DEX
+Influence CHA x
+Insight INT+POW
+Lore (Regional) INT x
+Perception INT+POW
+Persistence POW x
+Resilience CON x
+Ride DEX+POW
+Sing CHA+POW
+Sleight DEX+CHA
+Stealth DEX+INT
+Swim STR+CON
+Unarmed STR+DEX</p>
+<pre><code>#### Alaric's Tale
+
+</code></pre>
+<p>Alaric’s player checks with the Games Master and learns that Common Magic is available to everyone in the setting. Alaric’s basic scores in each of the Common skills are therefore as follows:</p>
+<pre><code></code></pre>
+<p>Athletics 25%,Brawn 26%, Common Magic 24%, Culture (Own) 32%, Dance 23%, Driving 27%, Evade 26%, Evaluate 26%, First Aid 29%, Influence 20%, Insight 30%, Lore (Regional) 32%, Perception 30%, Persistence 28%, Ranged Combat 26%, Resilience 14%, Ride 27%, Sing 24%, Sleight 23%, Stealth 29%, Swim 19%, Unarmed 25%.</p>
+<pre><code></code></pre>
+<p>Bear in mind that these are Alaric’s starting skill values reflecting his natural abilities and competencies:</p>
+<p>many of these areas will improve as the Adventurer Creation process continues.</p>
+<pre><code>
+## Previous Experience
+
+#### The next stage of creating an Adventurer is to determine their Adventurer's previous  experience. Each Adventurer starts the game between the ages of 17 and 20, and were most likely considered an adult at age 14 or 15, depending on the culture. Therefore the Adventurer has already had many years-worth of learning and experience that needs to be reflected in his skills: this includes skills developed within the Adventurer's culture and those skills developed as part of professional training.
+
+Previous experience therefore has three steps. First the player must pick the Adventurer's **Cultural Background** , which is a reflection of the kind of cultural upbringing the Adventurer has had.
+
+This provides certain starting skill bonuses reflecting this upbringing.
+
+Second, the player must pick a **Profession** and gain further skills and skill bonuses associated with that profession. The list of professions provided is considered appropriate to an Adventurer, however, it is entirely possible that an Adventurer might be a tailor, rather than a sailor and the appropriate skills for that kind of profession will have to be determined between the player and Games Master.
+
+Third, the player determines and allocates the Adventurer's **Free Skill Points**. These represent the remainder of the Adventurer's experience outside of his upbringing and profession.
+
+### Cultural Background
+
+_Legend_ Adventurers come from one of four cultural backgrounds:
+
+</code></pre>
+<ul>
+<li>Barbarian</li>
+<li>Civilised</li>
+<li>Nomad</li>
+<li>Primitive</li>
+</ul>
+<pre><code>Players are free to choose which Cultural Background their Adventurer belongs to, although Games Masters may insist that all Adventurers in a group come from the same one. This helps bring a group of Adventurers together, provides opportunities for friendships and community support to develop and provides a strong reason to explain why these individuals have come together. However it is not uncommon for Adventurers in the same group to come from very different Cultural Backgrounds and, where this is the case, a good variety of skills and magic gives the adventuring group flexibility and interest.
+
+A description of each Cultural Background follows and includes a view of the culture from the perspective of one of its members. Included in the description is a list of skill bonuses and new skills appropriate to that culture.
+
+Players should apply the skill bonuses immediately to the Common skills on their Adventurer Sheet and add the additional new skills, known as Advanced Skills, to the appropriate section of the sheet. In many cases a Cultural Background lists a range of skills and invites the player to pick one, or more, that will gain a bonus: in this way players from the same Cultural Background can ensure that their Adventurers are different in the areas they have developed.
+
+#### Barbarian
+
+Tribal in nature, barbarians tend to shun civilisation, viewing those who live in towns and cities as weak and corrupt. They are much closer to nature and live as one with the land, hunting and tending to their farms far out in the wilderness. Most are adept in the use of weaponry as they must face many dangers throughout their lives. Many have extensive boating or animal handling/riding skills.
+
+</code></pre>
+<p>Common Skill Bonuses Combat Styles Advanced Skills Starting Money
+All barbarian Adventurers
+gain the following
+bonuses:
++30% to Culture (Own)
+and Lore (Regional)
++10% to Athletics and
+Resilience
++5% to Brawn, Perception,
+Ride and Stealth</p>
+<pre><code></code></pre>
+<p>Barbarian
+Adventurers choose
+three Combat Styles
+from the following,
+and gain a +10%
+bonus to each:
+2H Axe, 2H Hammer,
+2H Spear, Axe and
+Shield, Blowgun, Bow,
+Dagger, Hammer and
+Shield, Sling, Spear
+and Shield, Staff, 1H
+Sword, Sword and
+Shield, Unarmed</p>
+<pre><code></code></pre>
+<p>All barbarian
+Adventurers gain the
+following Advanced
+Skills:
+Language (Native)
++50%
+Survival</p>
+<pre><code></code></pre>
+<p>In addition,
+barbarians choose
+one Advanced Skill
+from the following:
+Craft (any),
+Lore (any), Play
+Instrument, Track</p>
+<pre><code></code></pre>
+<p>Barbarians begin
+the game with
+4D6 x20 Silver
+Pieces.</p>
+<pre><code>#### Civilised
+
+Civilised Adventurers hail from an urban culture, which includes a village, town or city that is part of a wider network of similar settlements. In a civilised culture, education is becoming a right, not a privilege and the skills of the civilised Adventurer reflect this. However, he may be lacking in some of the skills that Adventurers from other backgrounds will depend upon for survival in a harsh world.
+
+</code></pre>
+<p>Common Skill Bonuses Combat Styles Advanced Skills Starting Money
+All civilised Adventurers
+gain the following
+bonuses:
++30% to Culture (Own)
+and Lore (Regional)
++20% to Evaluate and
+Influence</p>
+<pre><code></code></pre>
+<p>Civilised Adventurers
+choose one Combat
+Style from the
+following and gain a
++10% bonus:</p>
+<pre><code></code></pre>
+<p>2H Spear, 2H Sword,
+Bow, Crossbow,
+Dagger, Polearm,
+Rapier, Spear and
+Shield, Spear, Sword
+and Shield</p>
+<pre><code></code></pre>
+<p>All civilised
+Adventurers gain the
+following Advanced
+Skills:
+Courtesy
+Language (Native)
++50%</p>
+<pre><code></code></pre>
+<p>In addition, civilised
+Adventurers choose
+three Advanced Skills
+from the following:
+Art (any), Craft (any),
+Language (any), Lore
+(any), Mechanisms,
+Play Instrument,
+Streetwise</p>
+<pre><code></code></pre>
+<p>Civilised
+Adventurers begin
+the game with
+4D6 x75 Silver
+Pieces</p>
+<pre><code>
+#### Nomad
+
+Nomadic people are constantly on the move, with no home and hearth to call their own. They may move aimlessly about, or they may have several camps they move to and from throughout the year. With no crops and few herd animals of their own, nomads are adept at surviving on what they can quickly and easily scavenge from the land.
+
+</code></pre>
+<p>Common Skill Bonuses Combat Styles Advanced Skills Starting Money
+All nomad Adventurers
+gain the following
+bonuses:
++10% to Athletics,
+Perception, Resilience and
+Stealth
++30% to Culture (Own)
+and Lore (Regional)
++10% to ONE of either
+Brawn, Drive, Ride or
+Swim</p>
+<pre><code></code></pre>
+<p>Nomad Adventurers
+choose two Combat
+Styles from the
+following and gain a
++10% bonus to each:</p>
+<pre><code></code></pre>
+<p>2H Axe, 2H Hammer,
+2H Spear, Axe and
+Shield, Blowgun, Bow,
+Dagger, Hammer and
+Shield, Sling, Spear
+and Shield, Spear.</p>
+<pre><code></code></pre>
+<p>All nomad
+Adventurers gain the
+following Advanced
+Skills:
+Language (Native)
++50%
+Survival</p>
+<pre><code></code></pre>
+<p>In addition, nomad
+Adventurers choose
+one Advanced Skill
+from the following:
+Boating, Craft (any),
+Language (any), Lore
+(any), Play Instrument,
+Track</p>
+<pre><code></code></pre>
+<p>Nomad
+Adventurers
+begin the game
+with 4D6 x
+Silver Pieces</p>
+<pre><code>#### Primitive
+
+People of other cultures commonly dismiss primitive people as little more than animals. While mostly prejudice, it is true that primitive peoples have not mastered the technology that so many other cultures take for granted, as they still rely on flint spears and arrows and they are highly skilled at the basic knowledge needed for survival in the wild.
+
+</code></pre>
+<p>Common Skill Bonuses Combat Styles Advanced Skills Starting Money
+All primitive Adventurers
+gain the following
+bonuses:
++15% to Athletics,
+Perception, Resilience and
+Stealth
++30% to Culture (Own)
+and Lore (Regional)</p>
+<pre><code></code></pre>
+<p>Primitive Adventurers
+choose one Combat
+Style from the
+following and gain a
++10% bonus.
+1H Axe, 1H Hammer,
+1H Spear, 2H
+Hammer, Blowgun,
+Bow, Dagger, Sling,
+Spear and Shield</p>
+<pre><code></code></pre>
+<p>All primitive
+Adventurers gain the
+following Advanced
+Skills:
+Language (Native)
++50%
+Survival
+Track</p>
+<pre><code></code></pre>
+<p>Primitive
+Adventurers
+begin the game
+with 4D6 x
+Silver Pieces.</p>
+<pre><code>
+### Professions
+
+Every _Legend_ Adventurer starts the game having followed a profession. The profession he chooses may not necessarily be the one he continues to follow as he begins his adventuring life but it is the career he embarked on as part of the transition to adulthood and it further defines his skill development. The professions available are dependent on the Cultural Background; in some cultures the list of available professions is quite narrow because the needs of the community are straightforward and cultural traditions will push young adults along a certain path. In others, the list is more diverse, reflecting a more complex community and society with wider needs or cultural traditions that have diversified over the centuries.
+
+Players should therefore examine the list of professions available to them based on the cultural background chosen in the previous stage of Previous Experience. Like the cultural background the profession offers bonuses to Common Skills and access to new Advanced Skills. These are applied to the Adventurer Sheet immediately.
+
+#### Alaric's Tale
+
+_The campaign Alaric will be joining is set in a fantasy setting of the Game Master's creation, called the Bleak Isle. The Games Master advises the players that he would like all the Adventurers to come from the same Cultural Background but that they can choose which background that will be. After some discussion the players decide that they will all play members of the same clan living in the area of the Bleak Isle known as the Gloamwood. This means that either Barbarian or Nomad would be a good fit for the region and the players settle on Barbarian. Alaric's player enters this on his Adventurer sheet._  _Running through the skill bonuses and options, Alaric's adjusted Common skills now look like this:_  _Athletics 35% Brawn 31% Culture (Own) 62%, Lore (Regional) 62%, Perception 35%, Resilience 24%, Ride 32%, Stealth 34%._  _Alaric also gets to choose three Combat Styles gaining a +10% bonus to each. He chooses Spear and Shield, Dagger and Sling. Spear and Shield, and Dagger, are both Close Combat styles, whilst Sling is a Ranged Combat style. His Close Combat skills start at STR+DEX, which for Alaric is 25%, and Ranged Combat skills start at DEX x2, which is 26%. With his barbarian 10% bonus Alaric's weapon skills are therefore Spear and Shield 35%, Dagger 35%, Sling 36%._  _Alaric also gains three Advanced Skills. These need to be written onto his Adventurer Sheet as Advanced Skills vary from one character to another and are therefore not listed. He gains Language (Native) at its starting value and a +50% bonus; he also gains Survival at its starting percentage. Additionally he must choose one particular Advanced Skill from the Barbarian Cultural Background list: Alaric goes for Lore (The Thunderer). He knows that there are Thunder Worshippers in the setting and the idea of worshipping a storm god intrigues him. The Games Master agrees that this is a good choice of Advanced Skill and it is entered into his Adventurer Sheet along with the others._  _Alaric checks on the Basic Values for his Advanced Skills and notes down the percentages. These are:
+
+Language (Native) (INT+CHA) 26%+50% = 76%; Survival (POW+CON) = 21%; Lore (The Thunderer) (INT x2) = 32%_   Some professions also introduce Magical Skills. These Magical Skills are described in the Skills chapter, beginning on page 38.
+
+If a profession duplicates an Advanced Skill gained through the cultural background (or the skill 
+
+#### is offered as an Advanced Skill option and the player chooses it again) then the Adventurer gains
+
+a +10% bonus to it.
+
+##### Professions
+
+</code></pre>
+<p>Profession</p>
+<pre><code></code></pre>
+<p>Cultural
+Background Common Skill Bonuses Advanced Skills Magic
+Acrobat Barbarian,
+Civilised</p>
+<pre><code></code></pre>
+<p>Athletics +15%, Evade
++15%, Sleight +10%</p>
+<pre><code></code></pre>
+<p>Acrobatics</p>
+<pre><code></code></pre>
+<p>Alchemist Civilised Evaluate +10%, First Aid
++10%</p>
+<pre><code></code></pre>
+<p>Lore (Alchemy) Manipulate,
+Sorcery
+(Grimoire)
+Animal
+Trainer</p>
+<pre><code></code></pre>
+<p>All Driving +5%, First Aid
++5%, Lore (Regional) +20%,
+Persistence +10%, Resilience
++5%, Riding +5%
+Bard All Influence +5%, Lore
+(Regional) +5%, Perception
++5%, Sing +10%, Sleight
++5%</p>
+<pre><code></code></pre>
+<p>Select Two
+Language, Lore,
+Play Instrument</p>
+<pre><code></code></pre>
+<p>Blacksmith Barbarian,
+Civilised</p>
+<pre><code></code></pre>
+<p>Brawn +15%, Evaluate +5%,
+Hammer +10%, Resilience
++10%</p>
+<pre><code></code></pre>
+<p>Craft
+(Blacksmith)</p>
+<pre><code></code></pre>
+<p>Champion/
+Knight/
+Noble
+Warrior</p>
+<pre><code></code></pre>
+<p>All Influence +5%, Athletics
+OR Brawn OR Riding +5%</p>
+<pre><code></code></pre>
+<p>Pick any two Combat Styles
+appropriate to your culture,
+receiving both at a +10%
+bonus.</p>
+<pre><code></code></pre>
+<p>Select Two
+Courtesy, Culture
+(Other), Oratory,
+Play Instrument</p>
+<pre><code></code></pre>
+<p>Courtier Civilised Influence +15%, Lore
+(Regional) +5%, Perception
++5%, Sleight OR Dance
++5%</p>
+<pre><code></code></pre>
+<p>Select Two
+Courtesy, Lore
+(Art), Lore
+(Heraldry), Lore
+(Philosophy), Play
+Instrument
+Craftsman All Evaluate +20%, Influence
++5%, Persistence +5%</p>
+<pre><code></code></pre>
+<p>Craft (Any)</p>
+<pre><code></code></pre>
+<p>Select One
+Craft (Other),
+Engineering,
+Mechanisms</p>
+<pre><code>
+Diplomat Civilised Culture (Own) +10%,
+Influence +10%, Perception
++10%
+
+**Select Two**
+Courtesy,
+Culture (Other),
+Language (Other),
+Lore (Any), Play
+Instrument
+Explorer Barbarian,
+Civilised
+
+</code></pre>
+<p>Lore (Regional) +20%,
+Perception +5%, Resilience
++5%</p>
+<pre><code>**Select Two**
+Language
+(Other), Lore
+(Astronomy),
+Lore (Geography),
+Shiphandling,
+Survival
+Farmer Barbarian,
+Civilised,
+Primitive
+
+</code></pre>
+<p>Athletics +5%, Brawn
++10%, Driving +5%, Lore
+(Regional) +10%, Resilience
++10%</p>
+<pre><code></code></pre>
+<p>Craft (Farming)</p>
+<pre><code>Fisherman All Athletics +5%, Lore
+(Regional) +5%, Resilience
++10%, Swim +10%
+
+**Select Two**
+Boating,
+Craft (Any),
+Shiphandling,
+Survival
+Herdsman Barbarian,
+Nomad,
+Primitive
+
+</code></pre>
+<p>First Aid +5%, Lore
+(Regional) +10%, Resilience
++15%, Sling +10%</p>
+<pre><code></code></pre>
+<p>Survival</p>
+<pre><code>Hunter All Lore (Regional) +10%,
+Resilience +10%, Stealth
++10%, **One** missile weapon
+style appropriate to your
+culture +10%
+
+</code></pre>
+<p>Track</p>
+<pre><code>Mercenary Barbarian,
+Nomad,
+Civilised
+
+</code></pre>
+<p>Pick any two Combat Styles
+appropriate to your culture,
+receiving both at a +10%
+bonus.</p>
+<pre><code></code></pre>
+<p>Select Two
+Athletics +10%, Driving
++10%, Evade +10%,
+Evaluate +10%, Resilience
++10%, Riding +10%,
+Unarmed +10%</p>
+<pre><code></code></pre>
+<p>Lore (Tactics)</p>
+<pre><code>Merchant Civilised,
+Barbarian
+
+</code></pre>
+<p>Evaluate +20%, Influence
++5%, Lore (Regional) +5%</p>
+<pre><code></code></pre>
+<p>Select Two
+Commerce,
+Language (Other),
+Lore (Logistics),
+Shiphandling</p>
+<pre><code>**Profession**
+
+</code></pre>
+<p>Cultural
+Background Common Skill Bonuses Advanced Skills Magic</p>
+<pre><code>
+Miner Barbarian,
+Civilised
+
+</code></pre>
+<p>Athletics +10%,
+Brawn+10%, Hammer
++10%, Resilience +10%</p>
+<pre><code></code></pre>
+<p>Lore (Mineral)</p>
+<pre><code>Noble Civilised Sword +10%, Influence
++10%, Persistence +5%,
+Riding +5%
+
+</code></pre>
+<p>Select Two
+Courtesy,
+Culture (Other),
+Language, Lore
+(Any), Play
+Instrument</p>
+<pre><code>Physician Civilised Evaluate +5%, First Aid
++20%, Lore (Regional) +5%,
+Perception +10%,
+
+</code></pre>
+<p>Healing</p>
+<pre><code>Priest Barbarian,
+Civilised,
+Nomad
+
+</code></pre>
+<p>Influence +15%, Lore
+(Regional) +5%, Persistence
++10%</p>
+<pre><code>Lore
+(Specific
+Theology),
+Pact (Cult or
+God)
+Sailor Civilised,
+Primitive
+
+</code></pre>
+<p>Athletics +10%, Lore
+(Regional) +5%, Resilience
++5%, Swim +10%</p>
+<pre><code>**Select Two**
+Boating,
+Culture (Other),
+Language (Other),
+Shiphandling
+Scholar Civilised Culture (Own) +10%,
+Evaluate +5%, Lore
+(Regional) +5%, Persistence
++10%
+
+</code></pre>
+<p>2 x Lore (Any)</p>
+<pre><code>Shaman Barbarian,
+Nomad,
+Primitive
+
+</code></pre>
+<p>First Aid +5%, Influence
++5%, Lore (Regional) +5%,
+Persistence +5%</p>
+<pre><code></code></pre>
+<p>Select One
+Healing, Lore
+(Any), Survival</p>
+<pre><code></code></pre>
+<p>Lore (Specific
+Theology),
+Pact (Cult or
+God)</p>
+<pre><code>Soldier/
+Warrior
+
+</code></pre>
+<p>All Athletics +5%, Brawn +5%,
+Evade +5%, Resilience +5%</p>
+<pre><code></code></pre>
+<p>Pick any two Combat Styles
+appropriate to your culture,
+receiving both at a +10%.</p>
+<pre><code></code></pre>
+<p>Lore (Tactics)</p>
+<pre><code>Spy Civilised Evade +5%, Insight +5%,
+Lore (Regional) +5%,
+Perception +5%, Persistence
++5%, Sleight OR Stealth
++5%
+
+**Select Two**
+Culture (Other),
+Disguise,
+Language
+(Other), Track
+Thief All Evaluate +10%, Perception
++10%, Sleight +10%, Stealth
++10%
+
+</code></pre>
+<p>Select One
+Disguise,
+Mechanisms,
+Streetwise</p>
+<pre><code>**Profession**
+
+</code></pre>
+<p>Cultural
+Background Common Skill Bonuses Advanced Skills Magic</p>
+<pre><code>
+</code></pre>
+<p>Tracker Barbarian,
+Nomad,
+Primitive</p>
+<pre><code></code></pre>
+<p>Athletics +10%, Perception
++10%, One weapon style
+appropriate to your culture
++10%</p>
+<pre><code></code></pre>
+<p>Survival, Track</p>
+<pre><code></code></pre>
+<p>Witch All First Aid +10%, Insight
++5%, Lore (Regional) +5%</p>
+<pre><code></code></pre>
+<p>Select One
+Healing, Lore
+(Any), Survival</p>
+<pre><code></code></pre>
+<p>Choose
+from:
+Lore (Specific
+Theology)
+and Pact
+(Cult or
+God) OR
+Manipulate
+and Sorcery
+(Grimoire)
+Sorcerer Civilised Insight +5%, Lore
+(Regional) +5%, Persistence
++10%</p>
+<pre><code></code></pre>
+<p>Select One
+Language, Lore
+(Any)</p>
+<pre><code></code></pre>
+<p>Manipulate,
+Sorcery
+(Grimoire)
+Woodsman Barbarian,
+Primitive</p>
+<pre><code></code></pre>
+<p>Athletics +10%, Axe
++10%, Brawn +10%, Lore
+(Regional) +5%, Resilience
++5%</p>
+<pre><code></code></pre>
+<p>Survival</p>
+<pre><code>### Free Skill Points
+
+Every _Legend_ Adventurer receives an additional 250 Skill Points to spend on their Adventurer.
+
+The player can add these Free Skill Points to his skills in the following ways:
+
+  -	 Add to a Common skill or Combat Style skill score.
+  -	 Add to an Advanced skill score, as long as the Adventurer already possesses the skill.
+
+  -	 Buy an Advanced skill. This costs 10 Free Skill Points and the Advanced skill starts at its basic Characteristic-derived score.
+
+  -	 Buy skills enabling Magic to be cast. If Common Magic is supported in the _Legend_ setting , then the Adventurer will already have this as a Common skill; otherwise it will need to be bought as an Advanced Skill. The other magic enabling skills are Pact (Deity) and Lore (Specific Theology) – for Divine cult members or Manipulation and Sorcery (Grimoire) for Sorcerers.
+
+**Important Note:** No single skill can benefit from more than 30 Free Skill Points. This means that an Advanced skill purchased with Free Skill Points cannot be increased by more than 20 points.
+
+_For example, if Alaric, as part of his Free Skill Points, chose to buy Tracking (an Advanced Skill), it would cost 10 Skill Points to buy the skill at its basic, Characteristic value – in this case Alaric's INT+CON, making it 23% – and Alaric would not be able to spend more than an additional 20 points on it meaning that, if he chose to raise it, the maximum it could be would be 43%._  ``` Profession ``` ``` Cultural Background Common Skill Bonuses Advanced Skills Magic ``` 
+
+#### Alaric's Tale
+
+_Coming from a barbarian culture,
+Alaric has a whole range of professions
+to choose from. Running through the
+list the one that appeals most is Warrior.
+Alaric's player reasons that because Alaric
+is big and reasonably clever, his size and
+smarts will give him an advantage in
+combat. He also decides that his father
+was a warrior too and, in a barbarian
+culture, it is a case of Like Father,
+Like Son._
+
+_Choosing Warrior as his profession,
+Alaric gains +5% to Athletics,
+Brawn, Evade and Resilience.
+He also gains +10% to any two
+Combat Styles and, because he
+already has Spear and Shield and
+Dagger, he decides that he will
+improve these two Combat Styles.
+For his Advanced Skill, Alaric
+gains Lore (Tactics) – useful in
+cattle raids._
+
+_So, having determined cultural
+background and profession, Alaric's
+skills are now:_
+
+_Common: Athletics 40%, Brawn
+36%, Culture (Own) 62%,
+Dance 23%, Drive 27%, Evade
+31%, Evaluate 26%, First Aid 29%,
+Influence 20%, Insight 30%, Lore
+(Regional) 62%, Perception 35%,
+Persistence 28%, Resilience 24%,
+Ride 32%, Sing 24%, Sleight
+23%, Stealth 34%, Swim 19%,
+Unarmed 25%._
+
+_Advanced: Language (Gloaming)
+76%, Lore (The Thunderer)
+32%, Lore (Tactics) 32%,
+Survival 21%_
+
+_Combat Styles: Spear and Shield
+45%, Dagger 45%, Sling 36%_
+
+_Alaric is now ready to move
+onto the third stage of Previous
+Experience._
+
+#### Alaric's Tale
+
+_Alaric chooses to spend his 250 Free Skill Points in the following way:_  **Spend New Skill Value** _Athletics +30% 70% Evade +15% 46% First Aid +20% 49% Insight +25% 55% Perception +20% 55% Persistence +30% 58% Resilience +30% 54% Spear and Shield +25% 70% Sling +25% 61% Common Magic +10% 34% Lore (The Thunderer) +20% 52%_  _He has distributed his Free Skill Points across a range of Common Skills, including Combat Styles and Common Magic. He has invested 20 points in his Advanced Lore skill and has not invested more than 30 points in any one skill._ 
+
+### Advanced Adventurers
+
+It is perfectly acceptable for Adventurers to begin the game at a higher level than that used for creating basic, young adult Adventurers.
+
+The following lists the ways a Games Master should alter Adventurer Creation in order to create Adventurers of an advanced experience level.
+
+All advanced Adventurers are created normally, including choosing cultural background and profession, until the time comes to spend Free Skill Points, which they can distribute freely without limitation.
+
+## Community
+
+The final stage of Adventurer Creation is to discover something of the Adventurer's back-story.
+
+What has happened in the formative years of their life? Who are their family and friends? Has the Adventurer made any rivals or enemies? How well known is he or she? This section of Adventurer generation aims to answer these questions.
+
+### Families
+
+All Adventurers have families. Family ties might still be close or severed long ago. The family might be large and rambling or small and close-knit. The family might have a reputation that has been a help or hindrance to the Adventurer, or its connections might be useful for all sorts of reasons now or in the future.
+
+Roll 1D100 on each column of the Family Ties Table to determine the parental status, number of siblings and what the general, extended family structure is like.
+
+#### Advanced Adventurers Table
+
+</code></pre>
+<p>Seasoned Veteran Master Hero
+Minimum Age 21 28 35 42
+Free Skill Points 350 450 550 650
+Money Double that
+for Cultural
+Background</p>
+<pre><code></code></pre>
+<p>Fives times that
+for Cultural
+Background</p>
+<pre><code></code></pre>
+<p>10 times that
+for Cultural
+Background</p>
+<pre><code></code></pre>
+<p>20 times that
+for Cultural
+Background
+Characteristics 1D3 additional
+Characteristic
+points, which
+may be split
+between
+Characteristics as
+desired.</p>
+<pre><code>###### 1D4+1
+
+</code></pre>
+<p>additional
+Characteristic
+points, which
+may be split
+between
+Characteristics as
+desired.</p>
+<pre><code>###### 1D6+2
+
+</code></pre>
+<p>additional
+Characteristic
+points, which
+may be split
+between
+Characteristics
+as desired.</p>
+<pre><code>###### 1D8+4
+
+</code></pre>
+<p>additional
+Characteristic
+points, which
+may be split
+between
+Characteristics as
+desired.
+Status Level 1:
+May be an
+apprentice
+member of a
+guild, an initiate
+in a church, an
+apprentice in
+a sorcery order
+or an initiate
+or squire in a
+martial order, if
+appropriate.</p>
+<pre><code></code></pre>
+<p>Level 2:
+May be an
+journeyman
+member of a
+guild, an acolyte
+in a church, an
+adept in a sorcery
+order or a knight
+or brother in a
+martial order, if
+appropriate.</p>
+<pre><code></code></pre>
+<p>Level 3:
+May be either
+a master of a
+guild, a Priest
+of a church,
+a Mage in a
+sorcery order,
+or a knight
+captain or elder
+brother in a
+martial order if
+appropriate.</p>
+<pre><code></code></pre>
+<p>Level 4:
+May be either a
+Lord of a guild,
+or a Priest of
+a church, an
+Archmage in a
+sorcery order, or
+a grand master
+or abbot in a
+martial order, if
+appropriate.</p>
+<pre><code></code></pre>
+<p>Hero Points 3 6 9 12
+Heroic Abilities None One, if
+requirements are
+met</p>
+<pre><code></code></pre>
+<p>Two, if
+requirements
+are met</p>
+<pre><code></code></pre>
+<p>Three, if
+requirements are
+met</p>
+<pre><code>##### Family Ties Table
+
+</code></pre>
+<p>1D100 Parents/Guardians Siblings Family Size
+01–20 Both Parents present None Self Contained
+21–40 No Living Parents 1D4 1D4 Aunts and Uncles on each
+parent’s side
+41–60 One birth parent plus step–
+parent</p>
+<pre><code></code></pre>
+<p>1D6 1D6 Aunts and Uncles on each
+parent’s side
+61–80 Single Parent – Father 1D8 1D8 Aunts and Uncles on each
+parent’s side
+81–00 Single Parent – Mother 2D6 1D10 Aunts and Uncles on each
+parent’s side</p>
+<pre><code>
+For large families it is recommended that details be left deliberately vague. Part of the fun is introducing that roguish or well-connected uncle or cousin at strategic points in a campaign or scenario, and keeping family details at a high level allows for considerable flexibility in developing interesting and intriguing plot twists.
+
+How well is the family connected? Is it important or run-of-the-mill? Is it well liked or does the family name carry with it a stigma? The following tables help decide how well known the family is and what kind of weight it carries at local, regional and national levels.
+
+##### Family Reputation
+
+</code></pre>
+<p>1D100 Reputation Contacts, Enemies and Rivals
+01–20 Poor reputation 1D3 Enemies or Rivals
+21–50 Average reputation but a few skeletons and
+secrets in the background</p>
+<pre><code></code></pre>
+<p>1 Enemy or Rival</p>
+<pre><code></code></pre>
+<p>51–65 Average reputation —
+66–85 Good reputation but a few skeletons and
+secrets in the background</p>
+<pre><code></code></pre>
+<p>1 Contact or Ally</p>
+<pre><code></code></pre>
+<p>86–00 Reputation of excellent standing 1D3 Contacts or Allies</p>
+<pre><code>##### Family Connections
+
+</code></pre>
+<p>1D100 Connections Contacts, Enemies and Rivals
+01–20 No connections worth mentioning —
+21–80 Family has reasonable connections within the
+community</p>
+<pre><code>###### —
+
+</code></pre>
+<p>81–90 Family is considered well connected with
+other families and persons holding local
+power</p>
+<pre><code></code></pre>
+<p>1 Contact and 1 Rival</p>
+<pre><code></code></pre>
+<p>91–95 Family is considered well connected with
+other families and persons holding local and
+regional power</p>
+<pre><code></code></pre>
+<p>2 Contacts, 1 Rival and 1 Enemy</p>
+<pre><code></code></pre>
+<p>96–00 Family is considered well connected with
+other families and persons holding local,
+regional and national power</p>
+<pre><code></code></pre>
+<p>2 Contacts, 2 Rivals and 2
+Enemies</p>
+<pre><code>As an optional stage for the Adventurer's background, are they married? Roll 1D100 and compare it with the Adventurer's Influence skill. If the result is equal to, or less than, Influence then the Adventurer is married, should the player wish it. If the result is higher than the Influence skill he is unmarried. How happily the Adventurer is married is up to the player to decide – similarly, children. If the Adventurer wants to have children by his spouse then he may roll 1D3–1, giving a result of between 0 and 2 children, about right for Adventurers in these kinds of cultures and starting ages. The age of any children will be, again, 1D3–1, with a result of 0 indicating a new-born.
+
+### Allies, Contacts, Enemies and Rivals
+
+Through both his family and his personal dealings, an Adventurer may make acquaintances that will help or hinder him in the future. The Family Reputation and Family Connections tables will have determined if Allies, Contacts, Enemies or Rivals are present in the Adventurer's life and, if so, how many are out there.
+
+  -	 **Contacts** are individuals that the Adventurer knows and has had friendly dealings with in the past. They have useful skills or positions and may be willing to aid the Adventurer.
+
+  -	 **Allies** are individuals that the Adventurer knows and has had friendly dealings with in the past. Allies will actively go out of their way to provide aid when asked for it.
+
+  -	 **Rivals** are people who hate or oppose the Adventurer and will attempt to interfere or harass him.
+
+  -	 **Enemies** are even worse than Rivals – a Rival will normally work within the law but an Enemy wants the Adventurer dead, imprisoned or otherwise doomed.
+
+Note any Allies, Contacts, Enemies or Rivals on the Adventurer sheet along with a little detail on why they have this relationship with the Adventurer. Players can give as much detail as they wish, from the sketchy ( _Rival in the Clan_ ) to the detailed ( _Harrick the Hairy is my Rival, because I disobeyed his orders while out hunting. He had me embarrassed in front of the clan elders, damn him! I'll have my revenge on him one day!_ ).
+
+Other Adventurers can be Contacts, Allies or even Rivals for the purposes of the Connections rule (opposite) and may be implicated in Background Events, which follow.
+
+### Background Events
+
+When an Adventurer is created he usually begins life as a young man but this does not mean his previous childhood and adolescence was lived in an uneventful bubble. We all undergo life-shaping experiences that define who we are, what we do and what approach we have to life. Games Masters are strongly recommended to spend time with their players developing the previous lives of the Adventurers. This does not need to be especially detailed and neither does it need to be too specific. Past experiences can be fleshed-out during the course of play or even be ignored all together. Establishing the background events to an Adventurer's life can be extremely rewarding and provide the fuel for countless future adventures, if the Games Master desires it.
+
+#### Alaric's Tale
+
+</code></pre>
+<p>On the Family Ties table, Alaric’s rolls are 96 (Single Mother), 59 (1D6 Siblings – result of 4; he has two brothers and two sisters, Alaric’s player decides) and 68 (1D8 relatives on each parent’s side – a total of 9 in all). It is decided that Alaric’s father died several years ago, when Alaric was no more than 10 years old, leaving his mother to raise him and his two brothers and two sisters with the help of their extensive family. Despite having lost his father, Alaric had plenty of male role-models in his life.</p>
+<pre><code></code></pre>
+<p>For Family Reputation the roll is 91 – Alaric’s extended family has an Excellent Reputation and this grants 1D3 (result 2) Allies or Contacts. Alaric chooses one of each and decides to detail them later.</p>
+<p>For Family Connections, the 1D100 roll is 33 – so Alaric’s family has reasonable connections within the community.</p>
+<pre><code></code></pre>
+<p>Alaric’s player decides that Alaric is unmarried – but has designs, to be explored further along in this part of Adventurer Creation.</p>
+<pre><code>
+Of course the Cultural Background of the Adventurer will have some say in what these previous experiences were, or, at the very least, determine where they took place. But the _general_ nature of life experiences tends to be universal. The following table offers a wide selection of possible background events and some suggested game effects that the players and Games Master may wish to apply to the Adventurers during Adventurer Creation. Every Adventurer should roll once on the Background Events table; if the player is feeling very adventurous, then he may roll twice. If an event is thought to be restrictive or inappropriate for either the Adventurer or the campaign, it can either be ignore, or re-rolled.
+
+#### Alaric's Tale
+
+_It was determined that Alaric has an Ally and a Contact. He decides to make the Ally his father's brother (so Alaric's uncle), Marius who is the chieftain of Alaric's clan. The Contact is Selena, Marius's daughter. The two were childhood friends and Alaric's player decides that Alaric is in love with Selena but dare not admit his feelings until he has proven himself worthy._ 
+
+#### Alaric's Tale
+
+_For his Background Event Alaric's 1D100 roll is 76 – Raised by a Guild or Military Order. The Games Master knows this is not appropriate given what we know of Alaric already and suggests a re-roll. The result this time is 56 – Major Wound; Alaric suffered a major wound as a child that left him with a scar across his left leg. Alaric's player decides the wound was caused by a troll – the same troll that killed his father on a hunting expedition – and so now Alaric both fears and hates trolls: he wants revenge on the troll who murdered his father some day._ 
+
+#### Alaric's Tale
+
+_Two other Adventurers are being created alongside Alaric: Lilina and Thrace. All are from the same cultural background and from the same clan, living in the Gloamwood. The three players agree that Lilina and Thrace were all with Alaric when the troll attacked and murdered his father and gave Alaric the scar across his leg. The three of them have sworn an oath to find and kill the troll some day._  _As this forms a connection with two other Adventurers, Alaric receives +10% to any two skills. He decides to improve Spear and Shield and Survival._ 
+
+### Connections
+
+Why do parties of Adventurers come together? This is always an interesting question to answer when beginning a _Legend_ campaign. Sometimes the Adventurers have a reason for being together  - coming from the same clan, village or town; drinking in the same tavern when monsters attack it; travelling in the same caravan. Yet perhaps the Adventurers have had some previous, significant history together, before play begins. This is where the Connections rule comes into Adventurer Creation and it involves at least two players and their Adventurers.
+
+If both players agree, then any Background Event can involve another suitable Adventurer. Only one Adventurer needs to have rolled the specific event. If this is done, then _both_ Adventurers gain a +10% bonus to any skill, Common, Advanced, Combat or Magical, gained so far. Adventurers may gain a maximum of _two_ such bonuses from this rule and each connection must be with a different Adventurer.
+
+##### Background Events Table
+
+</code></pre>
+<p>1D100 Event
+01 Accidentally injured or killed a childhood friend.
+02 Afflicted by visions of a God or Goddess.
+03 Afflicted by visions of the future.
+04 Amnesia. No memory of life before age of 18. Unsure if current family is real or bogus.</p>
+<p>05–06 Attacked or chased by a creature or monster – harbour a deep fear of the creatures as a result.</p>
+<p>07–08 Battle – Adventurer witnessed a great battle or other conflict.
+09 Birth Mark. Adventurer has a prominent and unusual birth-mark that has been mistaken for the holy sign of a particular god.</p>
+<p>10 Blind. Adventurer either born blind or struck by blindness later. Other senses have compensated.</p>
+<p>11 Body Double. The Adventurer is either a very close likeness or almost identical double of someone famous (or infamous).</p>
+<p>12 Born under a significant conjunction of the stars and thus marked for greatness.</p>
+<p>13–15 Brother or Sister died or killed.
+16–18 Bullied viciously by one or more youths.
+19–20 Childhood sweetheart – Adventurer was once married to childhood sweetheart.</p>
+<p>21–22 Childhood sweetheart lost – Adventurer’s childhood sweetheart married a friend or rival.</p>
+<p>23 Deaf. Adventurer either born deaf or struck by deafness later. Other senses have compensated.</p>
+<p>24 Destitution – the Adventurer’s family fell into destitution.
+25 Disappearance. A family member disappeared 1D10 years ago and Adventurer is on a quest to find them.</p>
+<p>26 Discovery – Adventurer discovered, by accident, some long-lost lore, formula or piece of knowledge that various agencies are now hunting.</p>
+<p>27–29 Disease or Plague – Adventurer suffered disease or grave illness as a child.</p>
+<p>30 Family Secret – the Adventurer’s family harbours a great secret.
+31 Family Treasure – the Adventurer’s family are the custodians of a great treasure.</p>
+<p>32–35 Father died or killed.
+36 Feud and Romance. Adventurer’s family has a long-standing feud with religious/ trade/political rivals. Adventurer has fallen in love with son/daughter of the rival family/organisation – something which must be kept secret.</p>
+<p>37 Feud. Adventurer’s family has a long-standing feud with religious/trade/political rivals that has recently turned to bloodshed.</p>
+<p>38 Foundling – Adventurer was abandoned by birth parents and brought up by adoptive guardians.</p>
+<pre><code>
+39–40 Fraud – The Adventurer has been part of a fraud or scam: or the victim of one.
+
+41 Fugitive – Adventurer gave secret help to a known fugitive.
+42 Gender Change – Adventurer was once a member of the opposite sex but changed to current gender through a curse or powerful magic.
+
+43 Identity change – The Adventurer has adopted a new identity for some reason.
+
+44 Inadvertent Comments. Something the Adventurer did or said resulted in a fight, battle or war. The remark or action was innocent but the repercussions tragic.
+
+45–46 Inheritance or Legacy Denied. Adventurer has been cheated out of a huge legacy left by a parent or relative.
+
+47–48 Inheritance or Legacy. Adventurer is set to inherit a huge legacy from a parent or relative.
+
+49 Kidnapped and/or indentured by a powerful sorcerer who needed an apprentice.
+
+50 Kidnapped or press-ganged into military service.
+
+51 Last Will. Adventurer is on a quest to fulfil the dying wish of a relative or loved one.
+
+52 Local Coward. Well-known in local community for a particularly _unheroic_ deed.
+
+53–54 Local Hero. Well-known in local community for a particularly heroic deed.
+
+55–56 Major Wound – Adventurer suffered a major wound as a child that leaves a permanent scar or other sign of injury.
+
+57 Merchant Dynasty. Adventurer is born into a powerful mercantile family or dynasty.
+
+58 Met a great hero at a time when he or she was relatively unknown.
+
+59 Met a villain at a time when he or she was relatively unknown.
+60 Mistaken Identity – Case of mistaken identity resulted in a period of imprisonment or some other punishment.
+
+61–63 Mother died or killed.
+64 Mute. Adventurer either born mute or struck mute later. Fluent sign language communicator.
+
+65 Orphaned. The Adventurer lost both parents either through illness, an accident or some other tragedy.
+
+66–67 Ostracised from family.
+68 Penance. Adventurer is undergoing penance for some insult or slight committed against someone in power or authority.
+
+69 Personal Treasure – Found a great treasure and hid it for safekeeping.
+
+70 Physical deformity of a random location. No ill effects, as Adventurer has learned to adapt.
+
+71–72 Pioneers. Family moved to a new country as settlers, refugees or pioneers.
+
+##### 1D100 Event
+
+73 Political Family. One parent is a high-ranking political official.
+74 Prosperity – The Adventurer rises from destitution to great wealth.
+75 Raised by a cult or monastic Order.
+76 Raised by a Guild or Military Order.
+77 Raised by distant relatives.
+78 Raised by inhumans (trolls, for example, or dwarves).
+79 Ran away to sea or to join a travelling troupe.
+80 Religious Family. One parent is a high-ranking religious official.
+81 Sect or Cult. Discovered that family is part of a secret sect or cult and disagrees with their views. Trying to escape both family and those who hunt them.
+
+82 Shipwrecked or stranded as a youth and lived alone for several years before rescued or found.
+
+83 Sidekick. Somehow the Adventurer has picked up a loyal companion or retainer.
+
+This does not make the companion a welcome presence, necessarily, but the relationship has somehow endured over the years.
+
+84 Slavery. Spent childhood and young adulthood as a slave before escaping or being freed.
+
+85 Sole Survivor – Family wiped out by some tragedy.
+86 Sole survivor of a tragedy that wiped out the Adventurer's entire settlement/ community.
+
+87–88 Squire – Adventurer indentured as a vassal or squire to a famous knight or warrior.
+
+89–90 Twin. Adventurer has a twin brother.
+91–92 Twin. Adventurer has a twin sister.
+93 Visited by ghosts or spirits.
+94–95 Well-travelled. The Adventurer either singly or with family/friends, has travelled widely.
+
+96 Wicked Step-Parent. One parent died and the other remarried. The step-parent is cold, calculating and brutal towards the Adventurer. A typical evil step-parent.
+
+97–98 Roll again and take both events.
+99–00 Roll twice more and take all events.
+
+##### 1D100 Event
+
+Players are encouraged to explore and embellish upon a rolled event. For example, how could two different Adventurers both have a connection through the 'Mute' event? In this case, one Adventurer might act as the other's interpreter, the two having grown up together and developed a form of sign language known only to them.
+
+## Final Stages
+
+Adventurer Creation is nearly complete. All that remains is to name the Adventurer, if this has not already been done, determine what, if any, starting magic is available to him and buy the Adventurer's beginning equipment using the money determined by Cultural Background.
+
+### Names
+
+_Legend_ is a fantasy game and so names reflecting ancient cultures, popular fantasy fiction, TV and movies are more appropriate than contemporary names. The Cultural Background and Profession can be of help in naming an Adventurer; a civilised craftsman for example, might be Urwin the Potter; or a barbarian warrior might be Harrick Swiftaxe, son of Hendrick Redbeard.
+
+Give some thought to the Adventurer's name – it will be important!
+
+### Hero Points
+
+Adventurers begin with 2 Hero Points.
+
+### Magic
+
+There are several different types of magic available to _Legend_ Adventurers and the types available  from the start of play depend on the Cultural Background, the Adventurer's Profession and the availability of magic in the setting. Is magic commonplace, with every Adventurer having a  smattering of spells learned as part of growing up, or is magic rare and strange, and only those Adventurers who studied under some arcane tutor possess spells?  If Common Magic is freely available, then the spells that an Adventurer has at the start of the  game depend on his Cultural Background. In such games every Adventurer begins with 6 points to spend on Common Magic spells, as described in the Common Magic chapter. The following  limits apply to all Adventurers:
+
+  -	 1 point is equal to 1 point of Magnitude (thus Bladesharp 2 would cost 2 points)
+
+  -	 No spell can exceed Magnitude 3 
+
+  -	 Spells must be chosen from the Cultural Background Magic table 
+
+##### Thus, Alaric could begin with up to six Magnitude 1 spells, three Magnitude 2 spells or two
+
+Magnitude 3 spells.
+
+The skills used for Divine Magic and Sorcery, and the way each works, are detailed in the  appropriate magical chapter and the Skills chapter  
+
+#### Cultural Background Magic
+
+</code></pre>
+<p>All Cultures Barbarian Civilised Nomad Primitive
+Bandit’s Cloak,
+Bearing
+Witness,
+Becalm,
+Befuddle,
+Bladesharp,
+Bludgeon,
+Cauterise,
+Chill,
+Co-ordination,
+Detect X,
+Disruption,
+Dullblade,
+Extinguish,
+Fate,
+Firearrow,
+Heal,
+Ignite,
+Light,
+Lucky,
+Mindspeech,
+Mobility,
+Multimissile,
+Parry,
+Pierce,
+Protection,
+Push/Pull,
+Second Sight,
+Slow,
+Speedart,
+Strength,
+Spirit Bane,
+Vigour,
+Warmth,
+Water Breath</p>
+<pre><code></code></pre>
+<p>Armoursmith’s
+Boon,
+Bestial
+Enhancement,
+Clear Path,
+Darkwall,
+Demoralise,
+Dragon’s Breath,
+Endurance,
+Fanaticism,
+Frostbite,
+Thunder’s Voice</p>
+<pre><code></code></pre>
+<p>Abacus,
+Armoursmith’s
+Boon,
+Babel,
+Countermagic,
+Demoralise,
+Dragon’s Breath,
+Entertainer’s
+Smile,
+Glamour,
+Golden Tongue,
+Mason’s Boon
+Repair,
+Understanding</p>
+<pre><code></code></pre>
+<p>Bestial
+Enhancement,
+Clear Path,
+Darkwall,
+Demoralise,
+Endurance,
+Fanaticism,
+Frostbite,
+Thunder’s Voice</p>
+<pre><code></code></pre>
+<p>Bestial
+Enhancement,
+Clear Path,
+Darkwall,
+Endurance,
+Fanaticism,
+Frostbite,
+Thunder’s Voice</p>
+<pre><code>### Magic Using Characters
+
+Various professions – Sorcerer, Priest, Shaman and Witch – begin the game with additional magic to Common Magic, as noted in the Magic column. The skills in this column reflect the higher types of magic these Professions use, such as Sorcery in the case of the Sorcerer.
+
+Usually access to these forms of higher magic are granted through cult membership, as discussed in the Cults chapter. Players choosing these Professions may therefore be considered Pious Members of a divine cult or sorcery order, appropriate to the Adventurer's background.
+
+Priests and Shamen: Gain Divine spells appropriate to their cult as defined in the Divine Magic chapter and based on how much POW is dedicated to the Pact with the god.
+
+Sorcerers and Witches: Gain a Grimoire appropriate to their cult. If a pre-defined cult is being used then the spells contained in the Grimoire will be already determined. If a Grimoire needs to be developed from scratch, it will contain up to four Sorcery spells appropriate to the sorcery order's nature and teachings.
+
+Greater detail on these types of magic is found in the respective magic chapters.
+
+### Equipment
+
+The Equipment chapter has an extensive list of items Adventurers can purchase but all Adventurers are assumed to begin the game with the following:
+
+  -	 Clothes they wear and a set of spares.
+  -	 Some personal mementoes, good-luck charms, talismans or similar.
+  -	 A week's worth of food, either fresh or preserved.
+  -	 One weapon relevant to their weapon skills and culture.
+
+If the Adventurer is a Noble by Profession then he also has _one_ of the following:
+
+  -	 A set of armour with a maximum protection of 1D6 Armour Points.
+  -	 An additional weapon that is considered an heirloom.
+  -	 A mount appropriate to the culture (horse, camel, mule and so forth).
+
+  -	 A flask of very good wine.
+  -	 A piece of flashy-looking jewellery worth 1D6 x100 Silver Pieces.
+  -	 A set of very fine and expensive spare clothes suitable for a ball or banquet.
+
+Note down the Size, Reach, Damage, attack skill, AP and HP of any weapons the Adventurer possesses. Also note down Unarmed Combat damage (1D3).
+
+#### Alaric's Tale
+
+Alaric is nearly complete. All that is left to do is decide his Common Magic. Alaric has 6 points to spend on Common Magic spells. He can only choose spells common to all cultures and those from the Barbarian column of the Cultural Background Magic table.
+
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/1_Welcome_to_Legend.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/3_Skills.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/1_Welcome_to_Legend.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/3_Skills.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

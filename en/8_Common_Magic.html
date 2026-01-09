@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>✅ Common Magic - Legend SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-12662964.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-add66717.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Legend SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="8-common-magic"><a class="header" href="#8-common-magic">8. Common Magic</a></h1>
+<p>Common Magic is the name given to a variety of spells that are routinely encountered throughout many societies where magic is used on a daily basis. Separate cultures may place a different emphasis on Common Magic’s importance and have very different spells in regular use; but Common Magic is just what it says: magic that is common to all and encountering it is not considered to be out of the ordinary.</p>
+<p>Common Magic is taught as part of a culture’s approach to and understanding of magic. Thus, in settings where magic is prevalent, a certain set of Common Magic spells will be taught to the community as a part of their cultural learning and development. Religious cults and schools of sorcery generally offer a certain set of Common Magic spells reflecting their nature.</p>
+<h2 id="casting-common-magic"><a class="header" href="#casting-common-magic">Casting Common Magic</a></h2>
+<p>The casting of any Common Magic spell requires a successful Common Magic roll. This one skill covers casting of any Common Magic spells known. An Adventurer who knows Bladesharp and Thunder’s Voice casts both at the same Common Magic value; the two spells do not have discrete casting skills.</p>
+<p>Whenever a Common Magic spell is cast there is always a sight and sound that nearby creatures can detect, be it a flash of light, a crack of thunder or a shimmering in the air. The exact effects are up to the Games Master and player to decide for any given spell but will automatically be detected by any creatures within 10 metres times the Magnitude of the spell. Example effects are included with each spell description.</p>
+<h1 id="common-magic"><a class="header" href="#common-magic">Common Magic</a></h1>
+<blockquote>
+<h4 id="alarics-tale"><a class="header" href="#alarics-tale">Alaric’s Tale</a></h4>
+<p><em>Being part of an barbarian clan living in the enchanted Gloamwood, Alaric experiences magic every day. As part of his clan education, and interest in the heavenly wars of the Thunderer, Alaric has learned Bladesharp 2, Thunder’s Voice 1, Heal 2 and Vigor 1. He casts all four spells with his Common Magic skill of 34% and the number following the spell’s name is the maximum magnitude at which Alaric can cast the spell.</em></p>
+<p><em>It is likely that, given time, Alaric will learn more Common Magic – either new spells, or by developing the Magnitude for existing ones.</em></p>
+</blockquote>
+<h2 id="situational-modifiers-for-common-magic"><a class="header" href="#situational-modifiers-for-common-magic">Situational Modifiers for Common Magic</a></h2>
+<p>Like any skill, Common Magic is subject to circumstances which may inhibit a spell’s chance of success. The Common Magic skill modifiers are as follows:</p>
+<h5 id="casting-modifiers-situational-modifiers"><a class="header" href="#casting-modifiers-situational-modifiers">Casting Modifiers Situational Modifiers</a></h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Situation</th><th>Skill Modifier <sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></th></tr>
+</thead>
+<tbody>
+<tr><td>Spellcaster is gagged or silenced</td><td>Automatic Failure</td></tr>
+<tr><td>Spellcaster is restrained</td><td>–30%</td></tr>
+<tr><td>Spellcaster is prone</td><td>–20%</td></tr>
+<tr><td>Spellcaster is on unstable ground</td><td>–20%</td></tr>
+<tr><td>Partially obscured target</td><td>–20% <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
+<tr><td>Heavily obscured target</td><td>-40% <sup class="footnote-reference" id="fr-2-2"><a href="#footnote-2">2</a></sup></td></tr>
+<tr><td>Totally obscured target</td><td>Automatic Failure</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="casting-time"><a class="header" href="#casting-time">Casting Time</a></h3>
+<p>All Common Magic spells take a number of Combat Actions to cast equal to half their Magnitude (rounded up). Thus a Bladesharp 3 spell would take 2 CA to cast. More powerful spells take longer to cast as the Adventurer seeks to harness the spell’s inherent power.</p>
+<p>No offensive Combat Action may be taken while casting a spell, though the Adventurer may slowly walk up to half his Movement rate or can act defensively, Parrying or Evading, for instance.</p>
+<p>The Adventurer need not have a hand free to cast a Common Magic spell, with the exception of Touch spells, which must be delivered by touching their target.</p>
+<p>A spell’s result takes effect at the end of its last casting Combat Action.</p>
+<p>Distractions or significant injuries inflicted on a spellcaster as he casts (such as a Serious Wound) require unopposed Persistence tests to maintain concentration on the spell. If the spellcaster is incapacitated from a Major Wound or by some other effect, blinded for instance, then the spell automatically fails.</p>
+<h4 id="magic-point-cost"><a class="header" href="#magic-point-cost">Magic Point Cost</a></h4>
+<p>A Common Magic spell costs a number of Magic Points equal to its Magnitude. So, casting a Magnitude 2 spell costs 2 Magic Points.</p>
+<h4 id="dismissing-spells"><a class="header" href="#dismissing-spells">Dismissing Spells</a></h4>
+<p>As a single Combat Action, a caster can dismiss any spell he has cast. Ceasing to focus on a Concentration spell is immediate and not a Combat Action.</p>
+<h2 id="learning-common-magic-spells"><a class="header" href="#learning-common-magic-spells">Learning Common Magic Spells</a></h2>
+<p>In order to learn a spell, an Adventurer must locate a teacher who already knows it and is willing to teach it in exchange for money, services or even undertaking a quest to prove themselves worthy. An Adventurer with connections to a religious cult or sorcerous order will have an easier time finding teachers for more powerful spells. Beginning Adventurers may already have a selection of Common Magic spells at the start of their adventuring career, depending on their Cultural Background.</p>
+<p>Every Common Magic spell is graded by its Magnitude, a score that indicates its relative power.</p>
+<p>Magnitude 1 spells are the weakest and easiest to learn. Learning a new spell takes one day per point of Magnitude and costs the equivalent number of Improvement Rolls.</p>
+<h5 id="learning-common-magic-spells-1"><a class="header" href="#learning-common-magic-spells-1">Learning Common Magic Spells</a></h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Magnitude</th><th>Cost</th><th>Time to Learn</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1 Improvement Roll</td><td>1 day</td></tr>
+<tr><td>2</td><td>2 Improvement Rolls</td><td>2 days</td></tr>
+<tr><td>3</td><td>3 Improvement Rolls</td><td>3 days</td></tr>
+<tr><td>4</td><td>4 Improvement Rolls</td><td>4 days</td></tr>
+<tr><td>5</td><td>5 Improvement Rolls</td><td>5 days</td></tr>
+<tr><td>6</td><td>6 Improvement Rolls</td><td>6 days</td></tr>
+<tr><td>7</td><td>7 Improvement Rolls</td><td>7 days</td></tr>
+<tr><td>+1</td><td>+1 Improvement Roll</td><td>+1 day</td></tr>
+</tbody>
+</table>
+</div>
+<p>A spell’s Magnitude also defines the intellect required by the individual to absorb, memorise and articulate its fabric. The maximum Magnitude of a Common Magic spell any Adventurer can learn is equal to his INT divided by three (rounding up). Thus Alaric, with INT 16 can learn any Common Magic spell up to a maximum Magnitude of 6. If Alaric wanted to learn the Dragon Breath spell, it would cost him two Improvement Rolls and two days of study.</p>
+<p>Increasing the Magnitude of a known spell is similar to learning the spell at that Magnitude from scratch. Thus, if Alaric wanted to increase from Bladesharp 2 to Bladesharp 3 he would need to find a teacher who knows Bladesharp 3 and spend three days in study of the spell. However, the number of Improvement Rolls required to learn a higher Magnitude version of a spell, is equal to the difference in their Magnitudes, i.e. learning Bladesharp 4, when you already know Bladesharp 2, only costs a further two Improvement Rolls.</p>
+<p>Learning a spell at a higher Magnitude means that the Adventurer can still cast the spell at a lower Magnitude if he so chooses or needs. Thus Alaric could learn Bladesharp 3 but still cast Bladesharp 1 and Bladesharp 2.</p>
+<h2 id="spell-traits-and-descriptions"><a class="header" href="#spell-traits-and-descriptions">Spell Traits and Descriptions</a></h2>
+<p>Every Common Magic spell is defined by a series of traits that tells you what kind of spell it is and how it is used in the game. A description then follows describing the spell’s precise effects.</p>
+<p>The traits used by spells are detailed here.</p>
+<p><strong>Area (X):</strong> The spell affects all targets within a radius specified in metres.</p>
+<p><strong>Concentration:</strong> The spell’s effects remain in place as long as the Adventurer concentrates on it.</p>
+<p>Concentrating on a spell is functionally identical to casting the spell, requiring the spellcaster to continue to chant and ignore distractions.</p>
+<p><strong>Duration (X):</strong> The spell’s effects will stay in place for the number of minutes indicated.</p>
+<p><strong>Instant:</strong> The spell’s effects take place instantly. The spell itself then disappears.</p>
+<p><strong>Magnitude (X)</strong> : The strength and power of the spell. Also the minimum number of Magic Points required to cast it. If two identical spells are cast on the same target, only the spell with the greater Magnitude takes effect – their Magnitudes do not stack.</p>
+<p><strong>Progressive:</strong> This indicates that the spell can be learnt and cast at greater levels of Magnitude.</p>
+<p>The spell can also be cast at a lower Magnitude if the caster desires.</p>
+<p><strong>Ranged:</strong> Ranged spells may be cast upon targets up to a maximum distance of the Adventurer’s POW x 5 in metres.</p>
+<p><strong>Resist (Evade/Persistence/Resilience):</strong> The spell’s effects do not occur automatically. The target may make an Opposed Test of their Evade, Persistence or Resilience (as specified by the spell) against the casting roll, in order to avoid the effect of the spell entirely. Note that Resist (Evade) spells require the target to be able to use a Combat Action in order to Evade.</p>
+<p><strong>Touch:</strong> Touch spells require the Adventurer to actually touch his target for the spell to take effect.</p>
+<p>The spellcaster must remain in physical contact with the target for the entire casting.</p>
+<p><strong>Trigger:</strong> The spell temporarily lies dormant until an event stated in the description takes place.</p>
+<p>The spell then takes effect and is expended. If the triggering event does not occur within five minutes, the spell fades.</p>
+<h2 id="common-magic-spells"><a class="header" href="#common-magic-spells">Common Magic Spells</a></h2>
+<h3 id="abacus"><a class="header" href="#abacus">Abacus</a></h3>
+<p>Instant, Magnitude 1</p>
+<p>This spell allows the caster to instantly count the quantity of individual pieces, parts or units that one collection of something has. The caster must specify what is being counted: sacks of grain on a barn floor, trollish infantry in an army, arrows in a stockpile and so on. This number will be exact and unerring but will not account for miscalculations due to poorly defined terms for counting.</p>
+<h3 id="armoursmiths-boon"><a class="header" href="#armoursmiths-boon">Armoursmith’s Boon</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to his next Craft Skill Test involving any sort of forged metal and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="babel"><a class="header" href="#babel">Babel</a></h3>
+<p>Duration 5, Magnitude 2, Ranged, Resist (Persistence)</p>
+<p>If this spell is successful, it garbles the language of the affected creature. The target can still think and, for the most part, act normally but anything it says comes out as gibberish. Thus, a commanding officer would be unable to give orders to his men and a spellcaster would be unable to cast spells.</p>
+<h3 id="bandits-cloak"><a class="header" href="#bandits-cloak">Bandit’s Cloak</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to his next Stealth Skill Test involving any sort of hiding or lurking and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="bearing-witness"><a class="header" href="#bearing-witness">Bearing Witness</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to his next Skill Test made to discover lies, secrets or hidden objects and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="beast-call"><a class="header" href="#beast-call">Beast Call</a></h3>
+<p>Instant, Magnitude 2, Ranged, Resist (Resilience)</p>
+<p>The Beast Call serves to attract an animal within range. When the spell is cast, it affects a targeted creature with a fixed INT of 7 or less. If it fails to resist, the creature will be naturally drawn to the place where the spell is cast, whereupon the spell effect terminates. Any barrier, immediate threat or counter control also ends the effects of the spell, leaving the creature to react naturally. For example, the Beast Call spell might cause a horse to turn and walk towards the spell but a single yank of its reins by the rider would end the spell’s effect. This spell is a potent aid to hunters and herders.</p>
+<h3 id="bestial-enhancement"><a class="header" href="#bestial-enhancement">Bestial Enhancement</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>This spell causes the creature to become more bestial, augmenting its natural weapons and reflexes. For every point of Magnitude, it increases the target’s chance to hit with natural weapons by +5% and they deal one point of extra damage. This extra damage is magical and will affect creatures that can only be hurt by magic. The base natural weapon damage remains non-magical.</p>
+<h3 id="becalm"><a class="header" href="#becalm">Becalm</a></h3>
+<p>Instant, Magnitude 1, Touch</p>
+<p>This spell gives the target the ability to sleep for exactly 10 hours uninterrupted by bad dreams, pains, aches or even gentle movement. Unless stirred by a loud noise or abrupt physical contact, the target will have a full night’s rest. It should be noted that the spell does not put the target to sleep, merely calms their mind in order to better enjoy their next slumber. This spell is useful to spellcasters who wish to fully regain their Magic Points.</p>
+<h3 id="befuddle"><a class="header" href="#befuddle">Befuddle</a></h3>
+<p>Duration 5, Magnitude 2, Ranged, Resist (Persistence)</p>
+<p>If successful, this spell confuses an opponent to the extent that it may forget who it is or who its friends are. The affected target may not cast spells and may only take non-offensive actions. The target may run if it so chooses or Evade and Parry normally in combat, though it may not make any attacks unless it is attacked first.</p>
+<p>Spirits and non-corporeal creatures are not affected by this spell.</p>
+<h3 id="bladesharp"><a class="header" href="#bladesharp">Bladesharp</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>This spell can be cast on any weapon capable of cutting and/or thrusting. For every point of Magnitude, it increases the attack chance with the weapon by +5% and deals one point of extra damage. This extra damage is magical and affects creatures that can only be hurt by magic. The weapon’s base damage remains non-magical. A weapon under the effects of Bladesharp cannot benefit from other damage enhancing spells such as Pierce or Fireblade.</p>
+<h3 id="bludgeon"><a class="header" href="#bludgeon">Bludgeon</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>This spell can be cast on any crushing or smashing weapon, such as a warhammer, club or mace.</p>
+<p>For every point of Magnitude, it increases the attack chance with the weapon by +5% and deals one point of extra damage. This extra damage is magical and will affect creatures that can only be hurt by magic. The weapon’s base damage remains non-magical.</p>
+<h3 id="boon-of-lasting-night"><a class="header" href="#boon-of-lasting-night">Boon of Lasting Night</a></h3>
+<p>Area Special, Duration 5, Magnitude 1, Progressive</p>
+<p>If successful, the spell turns the area of effect into a sphere of darkness equal to a moonless night.</p>
+<p>All non-magical light (including sunlight) passing or present within the boundary is reduced to the equivalent of a candle. This radius of the area is equal to the Magnitude of the spell.</p>
+<h3 id="cauterise"><a class="header" href="#cauterise">Cauterise</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to his next First Aid or Healing Skill Test made to mend open wounds and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="chill"><a class="header" href="#chill">Chill</a></h3>
+<p>Instant, Magnitude 1, Touch</p>
+<p>This spell allows the caster to drastically lower the temperature of any mundane object. With this ability he can speed up the cooling of metal in a forge, make pub drinks cold for his companions, along with several other interesting tricks. It is up to the Games Master to decide the exact effects this would have in a given situation.</p>
+<h3 id="clear-path"><a class="header" href="#clear-path">Clear Path</a></h3>
+<p>Duration 5, Magnitude 1</p>
+<p>This spell allows the caster to move through even the most tangled, thorny brush as if he were on an open road.</p>
+<h3 id="co-ordination"><a class="header" href="#co-ordination">Co-ordination</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>For every point of Magnitude of this spell, the caster’s DEX score increases by two. This may have an additional effect on his skills and Attributes, such as Combat Actions and Strike Rank.</p>
+<p>The caster cannot increase his DEX in this way to more than twice its original value.</p>
+<h3 id="countermagic"><a class="header" href="#countermagic">Countermagic</a></h3>
+<p>Instant, Magnitude 1, Progressive, Ranged</p>
+<p>Countermagic is used to dismiss another spell within range. The targeted spell is nullified if the Magnitude of the Countermagic equals or exceeds its own. Countermagic can be cast <em>reactively</em> to neutralise offensive spells, by using the <em>Cast Spell</em> Combat Action.</p>
+<p>Exploring an ancient tomb, Lilina encounters her dreaded enemy, Rhazil the Vivisectionist.</p>
+<p>On his first Combat Action Rhazil casts a Befuddle spell. Lilina immediately declares that she is using the Cast Spell Combat Action to defend herself. She casts Countermagic 2, which fortunately dismisses Rhazil’s spell before it can hit her.</p>
+<h3 id="countermagic-shield"><a class="header" href="#countermagic-shield">Countermagic Shield</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>This spell actively disrupts offensive spells aimed at the caster or his equipment. Countermagic Shield will attempt to block the effects of any spells cast toward it. It will not have any effect on spells that are already affecting an Adventurer. The effects of Countermagic Shield depend on the relative Magnitude of both itself and the incoming spell.</p>
+<h5 id="countermagic-shield-results"><a class="header" href="#countermagic-shield-results">Countermagic Shield Results</a></h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Incoming Spell’s Magnitude is…</th><th>Effect</th></tr>
+</thead>
+<tbody>
+<tr><td>1 or more points weaker than Countermagic Shield’s Magnitude.</td><td>Incoming spell eliminated and Countermagic Shield remains.</td></tr>
+<tr><td>Equal to the Countermagic Shield’s Magnitude.</td><td>Both incoming spell and Countermagic Shield are eliminated.</td></tr>
+<tr><td>1 or more points stronger than Countermagic Shield’s Magnitude.</td><td>Countermagic Shield eliminated and incoming spell takes effect.</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="darkwall"><a class="header" href="#darkwall">Darkwall</a></h3>
+<p>Area Special, Duration 5, Magnitude 2, Ranged</p>
+<p>By casting this spell, the Adventurer creates a patch of pitch blackness that fills the target area.</p>
+<p>Light sources within this area shed no illumination and normal sight ceases to function. Other senses such as a bat’s sonar function normally. The radius of the area is equal to the Magnitude of the spell.</p>
+<h3 id="demoralise"><a class="header" href="#demoralise">Demoralise</a></h3>
+<p>Duration 5, Magnitude 2, Ranged, Resist (Persistence)</p>
+<p>The target of this spell will become demoralised, losing all hope of victory and losing faith in its own abilities. When <em>attacking</em> , the target’s weapon skills are halved (before modifiers) and it may not cast offensive spells. However, the target continues to defend at its full skill. If this spell takes effect before combat begins, the target will try to avoid fighting and will either run or surrender. The effects of this spell are automatically cancelled by the Fanaticism spell and vice versa.</p>
+<h3 id="detect-x"><a class="header" href="#detect-x">Detect X</a></h3>
+<p>Concentration, Magnitude 1, Ranged, Resist (Special)</p>
+<p>Detect is several spells, which allow the caster to locate the targets of the spell within its range.</p>
+<p>This effect is stopped by dense or thick materials such as metal, or earth and stone at least one metre thick. It is also blocked by Countermagic Shield (or equivalent spells) of a greater Magnitude. The separate Detect spells are listed here.</p>
+<p><em>Detect Enemy:</em> Gives the location of creatures who intend to harm the caster. Targets attempting to keep their motivations hidden may resist with Persistence.</p>
+<p><em>Detect Magic</em> : Gives the location of enchanted items, magical creatures or active spells.</p>
+<p><em>Detect Species</em> : Each unique Detect Species spell will give the location of members of the specified species. Examples of this spell include Detect Duck, Detect Rhino or Detect Trollkin.</p>
+<p><em>Detect Substance</em> : Each unique Detect Substance spell will give the location of substances of the specified type. Examples of this spell include Detect Coal, Detect Gold or Detect Wood.</p>
+<p>The Games Master should provide the rough power of the detected subject (‘weak magic’ or ‘rich gold lode’) and require further Common Magic tests for more detailed information.</p>
+<h3 id="disruption"><a class="header" href="#disruption">Disruption</a></h3>
+<p>Instant, Magnitude 1, Progressive, Ranged, Resist (Resilience)</p>
+<p>A particularly grisly offensive spell, Disruption literally pulls a target’s body apart. For each point of Magnitude the target suffers 1D3 points of damage to a random Hit Location, ignoring any Armour Points.</p>
+<h3 id="dragons-breath"><a class="header" href="#dragons-breath">Dragon’s Breath</a></h3>
+<p>Instant, Magnitude 2, Ranged, Resist (Evade)</p>
+<p>With this spell, the caster spits a stream of fire at his target. If the fire is not evaded, it inflicts 1D10 points of heat damage to a random location. Armour Points are effective against this damage and it counts as both magical and fire damage.</p>
+<h3 id="dullblade"><a class="header" href="#dullblade">Dullblade</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Ranged</p>
+<p>This spell can be cast on any weapon but will not affect unarmed attacks or natural weaponry.</p>
+<p>For every point of Magnitude, it reduces the damage dealt by the targeted weapon by two.</p>
+<h3 id="endurance"><a class="header" href="#endurance">Endurance</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch</p>
+<p>For every point of Magnitude, this spell restores one level of Fatigue that the target is currently suffering from.</p>
+<h3 id="entertainers-smile"><a class="header" href="#entertainers-smile">Entertainer’s Smile</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to the target’s next Dance, Sing or Play Instrument Skill Test involving the observations and appreciation of others and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="extinguish"><a class="header" href="#extinguish">Extinguish</a></h3>
+<p>Instant, Magnitude 1, Progressive, Ranged</p>
+<p>This spell instantly puts out fires. At Magnitude 1, it can extinguish a Flame, Magnitude 2 a Small Fire, Magnitude 3 a Large Fire and Magnitude 4 will put out an Inferno (see page 83 for sizes of fire).</p>
+<h3 id="fanaticism"><a class="header" href="#fanaticism">Fanaticism</a></h3>
+<p>Duration 5, Magnitude 2, Ranged, Resist (Persistence)</p>
+<p>The target of this spell becomes fanatical, believing he can defeat any foe and overcome any obstacle. His <em>attacks</em> with Close Combat Weapon skills are increased by half but he may not attempt to evade, parry or cast spells. The effects of this spell are automatically cancelled by the Demoralise spell and vice versa. Willing targets of Fanaticism may surrender to the spell without resisting it.</p>
+<h3 id="fate"><a class="header" href="#fate">Fate</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch, Resist (Persistence)</p>
+<p>This spell allows the caster to influence fate, either for the good or ill of the target. The caster can increase or decrease the target’s next Skill Test by 10% for each point of the spell’s Magnitude.</p>
+<p>The caster must choose at the time of the casting whether to increase or decrease the target’s chances – allowing him to give his friends an advantage or hobble his enemies. Only the next Skill Test made after (resisting) the spell’s casting is affected.</p>
+<h3 id="firearrow"><a class="header" href="#firearrow">Firearrow</a></h3>
+<p>Instant 1, Magnitude 1, Touch, Trigger</p>
+<p>Casting this spell on a missile weapon (such as an arrow, bolt, rock or dart) will cause it to burst into flame when it is fired or thrown. When it hits a target, the missile will deal an extra 1D points of magical fire atop its normal damage. A missile under the effects of Firearrow cannot benefit from Multimissile or Speedart.</p>
+<h3 id="fireblade"><a class="header" href="#fireblade">Fireblade</a></h3>
+<p>Duration 5, Magnitude 3, Touch</p>
+<p>By touching a cutting or impaling weapon, the caster causes its blade to burst into flame. For the duration of the spell, this weapon will deal an extra 1D6 points of magical fire damage atop of its normal damage. A weapon under the effects of Fireblade cannot benefit from other damage enhancing spells such as Bladesharp or Pierce.</p>
+<h3 id="frostbite"><a class="header" href="#frostbite">Frostbite</a></h3>
+<p>Instant, Magnitude 2, Ranged, Resist (Resilience)</p>
+<p>This attack spell allows the caster to freeze his opponent, dealing 1d3 points of damage (rolled once) to all Hit Locations, ignoring any Armour Points. Magical effects that protect against cold damage can block this effect but mundane items (such as cold weather gear) are ineffective.</p>
+<h3 id="glamour"><a class="header" href="#glamour">Glamour</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>For every point of Magnitude of this spell, the caster’s CHA score increases by +2. This may have an additional effect on his skills. The caster cannot increase his CHA in this way to more than twice its original value.</p>
+<h3 id="golden-tongue"><a class="header" href="#golden-tongue">Golden Tongue</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>The caster gains a bonus to any Commerce, Evaluate or Influence test equal to +5% x the Magnitude of the spell. This bonus only applies when an Adventurer is evaluating, buying or selling goods or equipment.</p>
+<h3 id="hand-of-death"><a class="header" href="#hand-of-death">Hand of Death</a></h3>
+<p>Instant, Magnitude 4, Resist (Resilience), Touch, Trigger</p>
+<p>This fearsome spell allows the caster to deal an awful wound with the merest touch. Casting the Hand of Death, charges his body with the spell. Touching an unsuspecting target, or succeeding at an Unarmed attack against a wary target, releases the spell’s effect. If the Resilience test to resist the effect is failed, the Hit Location touched immediately suffers enough damage to cause a Major Wound. If the Resilience test is a success, the target only loses 1d3 Hit Points. Armour does not protect against this damage.</p>
+<h3 id="heal"><a class="header" href="#heal">Heal</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch</p>
+<p>For every point of Magnitude of this spell, the caster can repair one Hit Point of damage to an injured Hit Location. Casting this spell on creatures of a different species will have half the Hit Points restored.</p>
+<p>This spell cannot re-attach a severed limb, or heal a maimed one. Such wounds require stronger magic.</p>
+<h3 id="ignite"><a class="header" href="#ignite">Ignite</a></h3>
+<p>Instant, Magnitude 1, Ranged, Resist (Resilience)</p>
+<p>Ignite sets fire to anything flammable within range, creating a Flame (see page 88). Living creatures <em>cannot</em> be ignited and if the target is worn or held by a living being (such as clothing) then the wearer/wielder may resist.</p>
+<h3 id="light"><a class="header" href="#light">Light</a></h3>
+<p>Area Special, Duration 5, Magnitude 1, Ranged</p>
+<p>When cast on an inanimate object, this spell produces a steady radiance which extends one metre per point of Magnitude. The area is considered to be illuminated. Note that only the specified area is illuminated – everything outside the area of effect is not.</p>
+<h3 id="lucky"><a class="header" href="#lucky">Lucky</a></h3>
+<p>Instant, Magnitude 2, Trigger</p>
+<p>This spell allows the caster to re-roll his next <em>failed</em> Skill Test but cannot be used to re-roll a fumble. Whatever the result of the second roll may be, the caster must accept it. A caster can only benefit from one casting of Lucky at a time.</p>
+<h3 id="masons-boon"><a class="header" href="#masons-boon">Mason’s Boon</a></h3>
+<p>Instant, Magnitude 1, Progressive, Trigger</p>
+<p>This spell grants the caster a +10% bonus per point of Magnitude to his next Craft Skill Test involving any form of natural earth, stone or sand and cannot stack with any other spell-effect bonuses.</p>
+<h3 id="mindspeech"><a class="header" href="#mindspeech">Mindspeech</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Ranged</p>
+<p>This spell affects one target for every point of Magnitude. It allows telepathy between the caster and any target, though targets will not have telepathy with one another. The words transmitted by telepathy must be whispered and will be heard directly in the head of the recipient, in the same language in which it was spoken.</p>
+<h3 id="mobility"><a class="header" href="#mobility">Mobility</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>For every point of Magnitude of this spell, the target’s Movement score is increased by one metre.</p>
+<h3 id="multimissile"><a class="header" href="#multimissile">Multimissile</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch, Trigger</p>
+<p>Cast on a missile weapon (such as a knife, arrow, javelin or rock), this spell is triggered when it is fired or thrown. Multimissile creates one additional magical missile for every point of Magnitude. Each magical missile’s attack is rolled for separately and compared against the target’s <em>single</em> Evade or (shield) Parry roll. They use the same dice of damage as the original but will not benefit from the firer’s Damage Modifier. The additional missiles created through Multimissile will affect creatures that can only be hurt by magic. A missile under the effects of Multimissile cannot benefit from Firearrow, Pierce or Speedart.</p>
+<h3 id="parry"><a class="header" href="#parry">Parry</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>Parry improves the caster’s defences whilst parrying with the targeted weapon or shield. Each point of Magnitude increases his parry chance by +5% and the Armour Points of the weapon by 1.</p>
+<h3 id="pierce"><a class="header" href="#pierce">Pierce</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>This spell can be cast on any weapon with a blade or point. For every point of Magnitude, it ignores two Armour Points when it strikes an armoured location, including magical Armour Points. A weapon under the effects of Pierce cannot benefit from other damage enhancing spells such as Bladesharp or Fireblade.</p>
+<h3 id="protection"><a class="header" href="#protection">Protection</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>For every point of Magnitude of this spell, one Armour Point is added to every Hit Location of the caster. This stacks with any existing armour and is treated in the same manner.</p>
+<h3 id="pushpull"><a class="header" href="#pushpull">Push/Pull</a></h3>
+<p>Instant, Magnitude 1, Progressive, Ranged, Resist (Resilience)</p>
+<p>This spell allows the caster to move an item of up to 1 SIZ or ENC per point of Magnitude either towards or away from the caster in a straight line, as if pushed suddenly from one direction or the other. The item is not moved with significant enough force to inflict damage unless it is naturally damaging (a bottle of acid, for instance) and the caster has no control over the distance pushed or pulled; as this depends on the location of the item or the surface it rests on. Living creatures targeted by this spell are allowed a Resilience roll to resist.</p>
+<h3 id="repair"><a class="header" href="#repair">Repair</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch</p>
+<p>Every point of Magnitude of this spell repairs one Hit Point of damage to a non-living target. The marks of repair remain visible, probably reducing the target’s market value, unless an appropriate Craft test is made at the time of casting.</p>
+<h3 id="second-sight"><a class="header" href="#second-sight">Second Sight</a></h3>
+<p>Duration 5, Magnitude 3, Ranged</p>
+<p>Second Sight allows the caster to gauge the POW aura of every creature and magic item within range, which is not blocked from his vision. The caster will know if each aura is less than his own POW, within three points of his own POW or greater than his own POW.</p>
+<p>Second Sight also reveals invisible entities, such as spirits or ethereal undead, though only a hazy image will show (treat such targets as partially obscured).</p>
+<h3 id="skybolt"><a class="header" href="#skybolt">Skybolt</a></h3>
+<p>Instant, Magnitude 3, Ranged, Resist (Evade)</p>
+<p>The caster summons a lightning bolt from the heavens regardless of the weather. The target must be outdoors in plain view. Skybolt inflicts 2D6 points of damage to a single chosen location.</p>
+<p>Only <em>magical</em> Armour Points offer protection against this damage.</p>
+<h3 id="slow"><a class="header" href="#slow">Slow</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Ranged, Resist (Resilience)</p>
+<p>For every point of Magnitude of this spell, the target’s Movement score will be decreased by one metre. A target’s Movement may not be reduced to below one through use of this spell.</p>
+<h3 id="speedart"><a class="header" href="#speedart">Speedart</a></h3>
+<p>Instant, Magnitude 1, Progressive, Touch, Trigger</p>
+<p>Cast on a missile weapon (such as a knife, arrow, javelin or rock), this spell is triggered when it is fired or thrown. Attempts to parry or evade the missile suffer a –5% penalty per Magnitude of the spell and damage is increased by one point per Magnitude. A missile under the effects of Speedart cannot benefit from Firearrow, Multimissile or Pierce.</p>
+<h3 id="spirit-bane"><a class="header" href="#spirit-bane">Spirit Bane</a></h3>
+<p>Area Special, Duration 5, Magnitude 1, Progressive, Resist (Persistence)  This spell creates a zone with a radius of one metre per point of Magnitude, which spirits find exceptionally hard to enter. Any spirit with a POW less than the caster’s attempting to enter the protected area must resist the spell in order to do so. Spirits within the zone at the time of its creation must resist it or be compelled to leave as quickly as possible.</p>
+<h3 id="strength"><a class="header" href="#strength">Strength</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>For every point of Magnitude of this spell, the caster’s STR score increases by +2. This may have an additional effect on his skills and Attributes, such as Damage Modifier. The caster cannot increase his STR in this way to more than twice its original value.</p>
+<h3 id="thunders-voice"><a class="header" href="#thunders-voice">Thunder’s Voice</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>This spell grants the caster a thunderous voice of command. For every point of Magnitude of this spell, the caster has +10% added to his Influence skill and can also be heard at up to the spell’s Magnitude x 100 in metres.</p>
+<h3 id="understanding"><a class="header" href="#understanding">Understanding</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>This spell grants the caster a +5% per point of Magnitude bonus to any Language skill he currently knows.</p>
+<h3 id="vigour"><a class="header" href="#vigour">Vigour</a></h3>
+<p>Duration 5, Magnitude 1, Progressive, Touch</p>
+<p>For every point of Magnitude of this spell, the caster’s CON score increases by +2. This may have an additional effect on his skills and Attributes. The caster cannot increase his CON in this way to more than twice its original value.</p>
+<h3 id="warmth"><a class="header" href="#warmth">Warmth</a></h3>
+<p>Duration 5, Magnitude 1, Progressive</p>
+<p>This spell keeps the caster warm and comfortable in a bitter cold environment. He suffers no penalties to Fatigue tests from a cold environment while this spell is functioning. Warmth also protects the caster from one point of cold damage (magical or mundane) for every point of Magnitude.</p>
+<h3 id="water-breath"><a class="header" href="#water-breath">Water Breath</a></h3>
+<p>Duration 5, Magnitude 2,</p>
+<p>This spell allows the caster to breathe water for the duration of the effect. Water Breath has no effect on the target’s ability to breathe air.</p>
+<hr>
+<ol class="footnote-definition">
+<li id="footnote-1">
+<p>These modifiers are cumulative – a prone spellcaster casting at a partially obscured target decreases his Common Magic skill by –40%. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>These modifiers only apply if the spell has a target other than the spellcaster, his immediate location, his carried possessions or a touched object/individual. <a href="#fr-2-1">↩</a> <a href="#fr-2-2">↩2</a></p>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../en/7_Magic.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../en/9_Divine_Magic.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../en/7_Magic.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../en/9_Divine_Magic.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
