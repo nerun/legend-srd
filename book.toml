@@ -1,0 +1,8 @@
+[book]
+title = "Legend SRD"
+authors = ["Lawrence Whitaker", "Pete Nash", "Gareth Hanrahan"]
+language = "pt-BR"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "rust"

@@ -1,3 +1,5 @@
+# License
+
 ## Open Content Declaration
 
 Here at Mongoose Publishing, we want what we truly believe to be one of the best fantasy RPGs on the market to be easy to use and modify. We have therefore made this rulebook Open Content, in conjunction with the Open Game Licence.
@@ -11,6 +13,8 @@ Please note that the artwork in this book is not Open Content.
 All books in the core Legend range (those whose titles have the word 'Legend' in them) will also be designated as Open Content, allowing you to expand your own games in many different directions, while maintaining a solid root that everyone will be familiar with.
 
 For example, you might be using Legend to produce your own gaming world. If you wanted to add some high seas action, you can simply and quickly bring over the Open Content rules we produce in, say, Pirates of Legend, knowing that everyone who plays Legend will at least be familiar with those rules.
+
+---
 
 ## Open Game License Version 1.0a
 
@@ -49,6 +53,10 @@ The following text is the property of Wizards of the Coast, Inc. and is Copyrigh
 *Open Game License v1.0a* Copyright 2000, Wizards of the Coast, Inc.
 
 *Legend Core Rulebook*, Copyright 2011, Mongoose Publishing Ltd.
+
+---
+
+![Legend Compatible](../Legend%20Compatible%20Logo.png)
 
 ## Legend Compatible Logo
 
