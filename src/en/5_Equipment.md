@@ -10,8 +10,8 @@ Essentially Games Masters are the final arbiter on what equipment Adventurers ca
 
 As its default currency, _Legend_ uses coins minted in lead, copper, silver and gold. The standard, everyday coins are copper and silver, with gold being the preserve of the very wealthy. The names for coins vary from place-to-place but for ease of economy, coins maintain a similar value and standard, as follows:
 
-5 Lead Bits (LB) = 1 Copper Penny (CP)
-10 Copper Pennies = 1 Silver Piece (SP)
+5 Lead Bits (LB) = 1 Copper Penny (CP)  
+10 Copper Pennies = 1 Silver Piece (SP)  
 20 Silver Pieces = 1 Gold Crown (GC)
 
 ## Armour
@@ -20,7 +20,7 @@ Armour absorbs weapon damage. Any successful attack must first penetrate an Adve
 
 However, armour is not infallible: every piece of armour has certain limitations and weak-spots and a well-aimed or well-timed blow can bypass armour completely. So a total reliance on armour  - even good metal armour – is perhaps misplaced. For comfort, and as part of its protection, all armour is considered lined or padded.
 
-# equipment
+# Equipment
 
 Each piece of armour is characterised by the following qualities:
 
@@ -44,17 +44,17 @@ Armour made for an Adventurer of SIZ 1 to 5 will have its cost and ENC halved fr
 
 ### Armour Types
 
-**Soft Leather** : Armour made from cured hides – the simplest form of armour usually found amongst primitive cultures but also worn in more cultivated styles where protection is important but not necessarily an essential.
+**Soft Leather:** Armour made from cured hides – the simplest form of armour usually found amongst primitive cultures but also worn in more cultivated styles where protection is important but not necessarily an essential.
 
-**Hard Leather** : Strengthened hides and cured leather used for shields and body armour. Hard leather is the consistency of shoe leather: hard wearing yet flexible.
+**Hard Leather:** Strengthened hides and cured leather used for shields and body armour. Hard leather is the consistency of shoe leather: hard wearing yet flexible.
 
 **Linen Cuirass:** Similar to a heavy leather cuirass but the armour is crafted from multiple layers of quilted linen. The thick, stiff fabric provides decent protection at a fraction of the weight of other materials  **Ringmail** : Bronze or iron rings sewn onto a leather backing. Heavier than leather but affords much better protection.
 
-**Scalemail** : Similar to Ringmail but the rings are replaced with scales of metal that overlap, like the scales of a fish or serpent.
+**Scalemail:** Similar to Ringmail but the rings are replaced with scales of metal that overlap, like the scales of a fish or serpent.
 
-**Chainmail** : Woven metal links which, whilst heavy, are flexible and more durable than armour relying on a leather base.
+**Chainmail:** Woven metal links which, whilst heavy, are flexible and more durable than armour relying on a leather base.
 
-**Plate** : Made of moulded individual metal plates, this armour provides excellent protection but is encumbering and comes with a heavy price tag.
+**Plate:** Made of moulded individual metal plates, this armour provides excellent protection but is encumbering and comes with a heavy price tag.
 
 ##### Armour Types and Costs
 
@@ -92,7 +92,8 @@ Arms All
 ```
 ```
 Coif/Hood Head Soft and Hard Leather, Ringmail, Chainmail
-Coat Chest, Arms and Abdomen Soft and Hard Leather, Ringmail, Scalemail, Chainmail Helm Head Soft and Hard Leather, Scalemail, Plate ```  
+Coat Chest, Arms and Abdomen Soft and Hard Leather, Ringmail, Scalemail, Chainmail Helm Head Soft and Hard Leather, Scalemail, Plate
+```  
 
 ## Clothing
 
@@ -102,7 +103,6 @@ This section is a collection of outfits and special items of clothing that are a
 Article of
 Clothing Description Cost
 Apron, crafter's This is a heavy leather apron worn by smiths, glass blowers and other professionals who must withstand direct and oppressive heat. Its special design makes it heavy (2 ENC) but it can shield the wearer's chest, abdomen and upper legs from up to 10 points of heat-based damage per minute. It is awkward to move around in and imposes a –10% Evade penalty because of its stiffness.
-
 ```
 ###### 4 SP
 
@@ -136,13 +136,11 @@ withstand the rigours of stirrup and saddle.
 
 ```
 Breeches, common Common, full or three-quarter length trousers in a variety of fabrics and cuts.
-
 ```
 ###### 1 SP
 
 ```
 Breeches, fancy As for common breeches but cut or decorated to the latest fashion.
-
 ```
 ###### 3 SP
 
@@ -162,7 +160,6 @@ commonly wool.
 ```
 Coat, fancy As for previous but cut in the latest fashion. 8 SP
 Coat, winter A woolly coat lined with fur. It is thick and warm, repelling the stiff and bitter winds of the high mountains or cold winters. Anyone wearing a winter coat can add +10% to his Survival or Resilience Skill Tests to avoid the effects of natural cold.
-
 ```
 ###### 10 SP
 
@@ -327,19 +324,19 @@ Each Close Combat weapon is characterised by the following qualities:
 
 **STR/DEX:** The minimum STR and DEX scores needed to easily wield this weapon. For every point a Characteristic is below these minimums, a –5% penalty is applied to a Adventurer's skill when attacking and parrying with this weapon.
 
-**Size** : Each weapon possesses a size rating. This is related to its mass, leverage and stability.
+**Size:** Each weapon possesses a size rating. This is related to its mass, leverage and stability.
 
 The value is used to determine both the weapon's ability to inflict and parry damage. The size categories are Small (S), Medium (M), Large (L), Huge (H) and Enormous (E).
 
-**Reach** : The weapon's length, how far it can reach in combat (see page 139). The size categories are Touch (T), Short (S), Medium (M), Long (L) and Very Long (VL).
+**Reach:** The weapon's length, how far it can reach in combat (see page 139). The size categories are Touch (T), Short (S), Medium (M), Long (L) and Very Long (VL).
 
-**Combat Manoeuvres** : The Combat Manoeuvres (see the Combat chapter) a weapon can inflict  - such as Bashing, Impale and so forth.
+**Combat Manoeuvres:** The Combat Manoeuvres (see the Combat chapter) a weapon can inflict  - such as Bashing, Impale and so forth.
 
 **ENC:** The weight and bulk of the weapon. See page 86 for more details on Encumbrance and its effects on Adventurers.
 
 **AP/HP:** The Armour Points and Hit Points possessed by the weapon. When Hit Points reach 0, the weapon is broken and useless.
 
-**Cost** : The average cost in silver pieces to purchase this weapon.
+**Cost:** The average cost in silver pieces to purchase this weapon.
 
 #### Close Combat Weapon Descriptions
 
@@ -437,9 +434,9 @@ Just as Close Combat weapons are defined by certain qualities, so are Ranged wea
 
 **STR/DEX:** The minimum STR and DEX scores needed to easily wield this weapon. For every point a Characteristic is below these minimums, a –5% penalty is applied to an Adventurer's skill when attacking with this weapon.
 
-**Size** : Each ranged weapon possesses a size rating. In the case of projectile weapons, this does not relate to the firing weapon itself but rather to how 'forceful' its ammunition is. The value is used to determine whether the weapon can overcome any shield which may parry it. The size categories are Small (S), Medium (M), Large (L), Huge (H) and Enormous (E).
+**Size:** Each ranged weapon possesses a size rating. In the case of projectile weapons, this does not relate to the firing weapon itself but rather to how 'forceful' its ammunition is. The value is used to determine whether the weapon can overcome any shield which may parry it. The size categories are Small (S), Medium (M), Large (L), Huge (H) and Enormous (E).
 
-**Combat Manoeuvres** : Any specific Combat Manoeuvres applicable to the weapon or its ammunition.
+**Combat Manoeuvres:** Any specific Combat Manoeuvres applicable to the weapon or its ammunition.
 
 **ENC:** The weight and bulk of the weapon. See page 86 for more details on Encumbrance and its effects on Adventurers.
 
