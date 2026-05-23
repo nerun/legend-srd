@@ -7,7 +7,7 @@
   <a href="https://github.com/nerun/legend-srd"><img src="https://img.shields.io/github/stars/nerun/legend-srd"></a>
   <br />
   <a href="https://nerun.github.io/legend-srd/en/index.html"><img src="https://progress-bar.xyz/100/?title=conversion%20to%20markdown" /></a>
-  <a href="https://nerun.github.io/legend-srd/en/index.html"><img src="https://progress-bar.xyz/38/?title=formatting%20and%20revision" /></a>
+  <a href="https://nerun.github.io/legend-srd/en/index.html"><img src="https://progress-bar.xyz/45/?title=formatting%20and%20revision" /></a>
   <a href="https://nerun.github.io/legend-srd/pt-BR/index.html"><img src="https://progress-bar.xyz/6/?title=translation%20(pt-BR)" /></a>
 </p>
 

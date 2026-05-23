@@ -1,6 +1,6 @@
 # 5. Equipment
 
-Adventuring is a profession like any other and this means that success often relies on good equipment – not just on what the Adventurer knows or has experienced. This chapter covers a comprehensive array of different equipment for Adventurers, including weapons and armour and also items which might, at first glance, offer little practical value but, in the right place and at the right time, prove to be life-savers.
+Adventuring is a profession like any other and this means that success often relies on good equipment — not just on what the Adventurer knows or has experienced. This chapter covers a comprehensive array of different equipment for Adventurers, including weapons and armour and also items which might, at first glance, offer little practical value but, in the right place and at the right time, prove to be life-savers.
 
 Games Masters should read through this chapter and decide which items are going to be available to the Adventurers based on their Cultural Background. The tables listing prices and so forth offer guidance on availability but it is perfectly possible that a barbarian village has traded with civilised merchants and therefore come into possession of goods one would not ordinarily find in a barbarian community. Similarly cultural taboos might forbid or restrict the sale of certain goods, or shortages in one commodity or another might mean availability is very limited.
 
@@ -18,7 +18,7 @@ As its default currency, _Legend_ uses coins minted in lead, copper, silver and 
 
 Armour absorbs weapon damage. Any successful attack must first penetrate an Adventurer's armour before it starts reducing Hit Points. This simple fact alone makes armour an essential for any Adventurer intending to face great peril or deliberately seek out dangerous challenges.
 
-However, armour is not infallible: every piece of armour has certain limitations and weak-spots and a well-aimed or well-timed blow can bypass armour completely. So a total reliance on armour  - even good metal armour – is perhaps misplaced. For comfort, and as part of its protection, all armour is considered lined or padded.
+However, armour is not infallible: every piece of armour has certain limitations and weak-spots and a well-aimed or well-timed blow can bypass armour completely. So a total reliance on armour — even good metal armour — is perhaps misplaced. For comfort, and as part of its protection, all armour is considered lined or padded.
 
 # Equipment
 
@@ -26,7 +26,7 @@ Each piece of armour is characterised by the following qualities:
 
 **AP:** How many Armour Points are given to each location covered by this type of armour. If an Adventurer is wearing multiple pieces of armour on a location, only the highest Armour Point score is used.
 
-**ENC:** The weight and bulk of the armour. See page 86 for more details on Encumbrance and its effects on Adventurers.
+**ENC:** The weight and bulk of the armour. See the Encumbrance section in the Game System chapter for more details on its effects on Adventurers.
 
 **Locations:** Which Hit Locations this type of armour protects.
 
@@ -36,7 +36,9 @@ Each piece of armour is characterised by the following qualities:
 
 The more and/or heavier, the armour worn, the more restricted and slower an Adventurer is likely to be in combat. Total the APs for each armoured location and divide the result by five, rounding up. The result is the Armour Penalty applied to the Adventurer's Strike Rank.
 
-_For example a chainmail shirt covers three locations for 5 AP per location. This gives a total of 15 AP which, divided by five, gives an Armour Penalty of –3. A full suit of plate mail, covering seven locations at 6 AP has a total of 42 AP which, divided by 5 and rounded up, gives an Armour Penalty of –9. In combat these penalties would reduce the Strike Rank of the wearers._  The same Armour Penalty is applied to various types of Movement, such as swimming or climbing. If these penalties are too great, then the Adventurer may find themselves unable to perform such actions (see page 92).
+_For example a chainmail shirt covers three locations for 5 AP per location. This gives a total of 15 AP which, divided by five, gives an Armour Penalty of –3. A full suit of plate mail, covering seven locations at 6 AP has a total of 42 AP which, divided by 5 and rounded up, gives an Armour Penalty of –9. In combat these penalties would reduce the Strike Rank of the wearers._
+
+The same Armour Penalty is applied to various types of Movement, such as swimming or climbing. If these penalties are too great, then the Adventurer may find themselves unable to perform such actions (see the Movement section in the Game System chapter).
 
 ### Effects of SIZ on Armour
 
@@ -44,11 +46,13 @@ Armour made for an Adventurer of SIZ 1 to 5 will have its cost and ENC halved fr
 
 ### Armour Types
 
-**Soft Leather:** Armour made from cured hides – the simplest form of armour usually found amongst primitive cultures but also worn in more cultivated styles where protection is important but not necessarily an essential.
+**Soft Leather:** Armour made from cured hides — the simplest form of armour usually found amongst primitive cultures but also worn in more cultivated styles where protection is important but not necessarily an essential.
 
 **Hard Leather:** Strengthened hides and cured leather used for shields and body armour. Hard leather is the consistency of shoe leather: hard wearing yet flexible.
 
-**Linen Cuirass:** Similar to a heavy leather cuirass but the armour is crafted from multiple layers of quilted linen. The thick, stiff fabric provides decent protection at a fraction of the weight of other materials  **Ringmail** : Bronze or iron rings sewn onto a leather backing. Heavier than leather but affords much better protection.
+**Linen Cuirass:** Similar to a heavy leather cuirass but the armour is crafted from multiple layers of quilted linen. The thick, stiff fabric provides decent protection at a fraction of the weight of other materials
+
+**Ringmail** : Bronze or iron rings sewn onto a leather backing. Heavier than leather but affords much better protection.
 
 **Scalemail:** Similar to Ringmail but the rings are replaced with scales of metal that overlap, like the scales of a fish or serpent.
 
@@ -58,261 +62,88 @@ Armour made for an Adventurer of SIZ 1 to 5 will have its cost and ENC halved fr
 
 ##### Armour Types and Costs
 
-```
-Armour AP ENC Cost in Silver per Hit Location
-Soft Leather 1 1 50
-Hard Leather 2 2 100
-Linen 2 1 75
-Ringmail 3 2 200
-Scalemail 4 2 250
-Chainmail 5 3 400
-Plate 6 3 1,
-```
+| Armour       | AP | ENC | Cost in Silver per Hit Location |
+| ------------ |:--:|:---:|:-------------------------------:|
+| Soft Leather | 1  | 1   | 50                              |
+| Hard Leather | 2  | 2   | 100                             |
+| Linen        | 2  | 1   | 75                              |
+| Ringmail     | 3  | 2   | 200                             |
+| Scalemail    | 4  | 2   | 250                             |
+| Chainmail    | 5  | 3   | 400                             |
+| Plate        | 6  | 3   | 1,200                           |
+
 Thus, a full suit of plate, covering all seven Hit Locations, would cost 8,400 SP. A full suit of Hard Leather costs 700.
 
 However armour does not need to be bought as a full suit: different pieces can be mixed and matched, although nobles, especially, delight in wearing crafted armour of one type. The  coverage offered by different armour types and styles is summarised in the Armour Pieces table:
 
 ##### Armour Pieces Table
 
-```
-Name Hit Locations Covered Type of Armour
-Greaves Legs All
-Pants or Trews Abdomen and Legs Soft Leather, Hard Leather, Ringmail,
-Scalemail, Chainmail
-Skirt Abdomen All
-Hauberk Chest and Abdomen Soft Leather, Hard Leather, Ringmail,
-Scalemail, Chainmail
-Byrnie/Cuirass Chest Soft Leather, Linen, Ringmail, Chainmail,
-Breastplate Chest Plate
-Sleeves/
-Vambraces
-```
-```
-Arms All
-```
-```
-Coif/Hood Head Soft and Hard Leather, Ringmail, Chainmail
-Coat Chest, Arms and Abdomen Soft and Hard Leather, Ringmail, Scalemail, Chainmail Helm Head Soft and Hard Leather, Scalemail, Plate
-```  
+| Name              | Hit Locations Covered   | Type of Armour                                             |
+| ----------------- | ----------------------- | ---------------------------------------------------------- |
+| Greaves           | Legs                    | All                                                        |
+| Pants or Trews    | Abdomen and Legs        | Soft Leather, Hard Leather, Ringmail, Scalemail, Chainmail |
+| Skirt             | Abdomen                 | All                                                        |
+| Hauberk           | Chest and Abdomen       | Soft Leather, Hard Leather, Ringmail, Scalemail, Chainmail |
+| Byrnie/Cuirass    | Chest                   | Soft Leather, Linen, Ringmail, Chainmail                   |
+| Breastplate       | Chest                   | Plate                                                      |
+| Sleeves/Vambraces | Arms                    | All                                                        |
+| Coif/Hood         | Head                    | Soft and Hard Leather, Ringmail, Chainmail                 |
+| Coat              | Chest, Arms and Abdomen | Soft and Hard Leather, Ringmail, Scalemail, Chainmail      |
+| Helm              | Head                    | Soft and Hard Leather, Scalemail, Plate                    |
 
 ## Clothing
 
 This section is a collection of outfits and special items of clothing that are available from place-to- place. Unlike common goods, many of these items are very self-explanatory. The way someone is dressed can modify Influence rolls in certain situations. Being well dressed may offer a bonus when trying to convince poorer folk, or may bring a penalty when negotiating your way past bandits.
 
-```
-Article of
-Clothing Description Cost
-Apron, crafter's This is a heavy leather apron worn by smiths, glass blowers and other professionals who must withstand direct and oppressive heat. Its special design makes it heavy (2 ENC) but it can shield the wearer's chest, abdomen and upper legs from up to 10 points of heat-based damage per minute. It is awkward to move around in and imposes a –10% Evade penalty because of its stiffness.
-```
-###### 4 SP
-
-```
-Baldric A belt or sash worn over one shoulder that is typically used
-to carry a weapon (usually a sword) or another item such as
-a musical instrument or a drum.
-```
-###### 2 SP
-
-```
-Belt, leather Any functional, no-nonsense leather belt. 6 CP
-Belt, fancy As for previous, but dyed with an ornate buckle or
-decorative patterns stamped into the leather.
-```
-###### 2 SP
-
-```
-Boots, Common Typically calf-high and made of sturdy leather. 6 SP
-Boots, high Typically thigh-high and made from a more supple leather
-than a common boot, for comfort.
-```
-###### 8 SP
-
-```
-Boots, riding Typically knee-high and made of sturdy leather with
-reinforcement in the soul and the inside of the calf to
-withstand the rigours of stirrup and saddle.
-```
-###### 10 SP
-
-```
-Breeches, common Common, full or three-quarter length trousers in a variety of fabrics and cuts.
-```
-###### 1 SP
-
-```
-Breeches, fancy As for common breeches but cut or decorated to the latest fashion.
-```
-###### 3 SP
-
-```
-Cape A sleeveless, hoodless garment worn around the shoulders.
-A cape usually covers just the wearer's back.
-```
-###### 3 SP
-
-```
-Coat, common Any standard cut of coat used for warmth and in inclement
-weather. May be made from a variety of fabrics but most
-commonly wool.
-```
-###### 2 SP
-
-```
-Coat, fancy As for previous but cut in the latest fashion. 8 SP
-Coat, winter A woolly coat lined with fur. It is thick and warm, repelling the stiff and bitter winds of the high mountains or cold winters. Anyone wearing a winter coat can add +10% to his Survival or Resilience Skill Tests to avoid the effects of natural cold.
-```
-###### 10 SP
-
-Cloak, common Usually hooded and reaching to either the knees or ankles, a cloak is more substantial a garment than a cape. It gives protection against rain and wind.
-
-###### 2 SP
-
-Cloak, winter A large fur and leather cloak with an extra flap to close
-around the body completely, a winter cloak is too heavy
-and thick to wear all the time but does a great deal to
-ward off the wind and snow in such conditions. Anyone
-wearing a winter cloak can add +10% to his Survival
-or Resilience Skill Tests to avoid the effects of natural
-cold. A winter cloak may also be used as a warm blanket/
-bedroll combination.
-
-###### 12 SP
-
-Dress, common A woman's garment, usually of ankle length. 2 SP
-
-Dress, fancy As for common dress but cut and decorated to the fashion
-of the day.
-
-###### 5 SP
-
-Dress, noble Ceremonial or symbolic robes worn by nobles and official
-dignitaries when on official business.
-
-###### 150 SP
-
-Gloves, common A pair of leather gloves, snugly fitting. 5 CP
-
-Gloves, fancy As for common gloves but with fashionable decoration and
-often made from silk, rather than leather.
-
-###### 2 SP
-
-Hat, brimmed Any broad-brimmed hat. 8 CP
-
-Hood Used by assassins and bandits but also by vigilantes and
-anonymous heroes, the hood is a fabric garment, which
-can be pulled up over the head to protect it from bright
-light or adverse weather. The bottom part extends over the
-shoulders to shed rain.
-
-###### 1 SP
-
-Loincloth A piece of leather worn around the waist and designed to
-protect modesty rather than to offer any real warmth or
-protection.
-
-###### 1 CP
-
-Robe, woollen Functional woollen robes often worn by priests or monks
-when not engaged on official or ceremonial duties.
-
-###### 2 SP
-
-Robe, religious As for woollen robes but decorated to give the wearer a
-+10% bonus to his Influence skill when dealing with any
-member of the faith represented by the robes.
-
-###### 25 SP
-
-Sash, common A length of brightly coloured fabric worn around the waist
-and tied, or secured with a sash clasp. Can also be used as a
-means for securing a weapon.
-
-###### 3 CP
-
-##### Article of
-
-##### Clothing Description Cost
-
-Sash, fancy As for common sash but highly decorated or patterned and
-made from fine materials such as samite or silk.
-
-###### 2 SP
-
-Shirt, common Any thin, cotton or linen shirt or blouse, usually with long sleeves.
-
-###### 2 CP
-
-Shirt, fancy As for common but fashionably cut and decorated with
-ruffs, lace or other
-
-###### 2 SP
-
-Shirt, noble As for common and fancy but dyed and of fine silk or
-muslin.
-
-###### 75 SP
-
-Shoes, common Ankle-high shoes, fastened with a strap and toggle. 2 SP
-
-Shoes, fancy As for common shoes but decorated or dyed. 6 SP
-
-Shoes, sandals Open-topped footwear usually worn with ankle straps. 1 SP  Skirt/kilt A hard-wearing skirt or kilt usually made from pleated linen or wool.
-
-###### 5 SP
-
-Tabard, common A length of cloth with a hole or slit cut for the head and then secured at the waist with either a drawstring or belt.
-
-Traditionally peasant garb, used instead of a coat.
-
-###### 7 CP
-
-Tabard,
-emblazoned
-
-```
-Similar in make to a common tabard but normally
-constructed of better quality linens and dyes, the
-emblazoned tabard bears a colourful and easily
-recognisable insignia or crest of a guild, noble house, or
-similar group. Wearing such a tabard automatically brings
-assumptions that the wearer is a member or employee of
-the group depicted.
-```
-###### 10 SP
-
-Toga, common A length of good quality cotton that is worn in a wrap and
-drape style. Comfortable and elegant enough for either
-official occasions or casual wear.
-
-###### 5 CP
-
-Toga, fancy As for the common toga but decorated tastefully at the hem
-and in strategic places along the length of the cloth so that
-the pattern shows in the drapes.
-
-###### 2 SP
-
-Toga, noble As for common and fancy but made from the finest linen
-and tastefully decorated.
-
-###### 100 SP
-
-Tunic, common A sleeveless jacket of sheepskin, wool or thin leather that is secured with buttons, toggles or ties.
-
-###### 6 CP
-
-Tunic, fancy As for common but cut and decorated in the day's fashions. 2 SP 
-
-##### Article of
-
-##### Clothing Description Cost
+| Article of Clothing | Description                                                                                                                                                                                                                                                                                                                                                                                                                | Cost   |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Apron, crafter's    | This is a heavy leather apron worn by smiths, glass blowers and other professionals who must withstand direct and oppressive heat. Its special design makes it heavy (2 ENC) but it can shield the wearer's chest, abdomen and upper legs from up to 10 points of heat-based damage per minute. It is awkward to move around in and imposes a –10% Evade penalty because of its stiffness.                                 | 4 SP   |
+| Baldric             | A belt or sash worn over one shoulder that is typically used to carry a weapon (usually a sword) or another item such as a musical instrument or a drum.                                                                                                                                                                                                                                                                   | 2 SP   |
+| Belt, leather       | Any functional, no-nonsense leather belt.                                                                                                                                                                                                                                                                                                                                                                                  | 6 CP   |
+| Belt, fancy         | As for previous, but dyed with an ornate buckle or decorative patterns stamped into the leather.                                                                                                                                                                                                                                                                                                                           | 2 SP   |
+| Boots, common       | Typically calf-high and made of sturdy leather.                                                                                                                                                                                                                                                                                                                                                                            | 6 SP   |
+| Boots, high         | Typically thigh-high and made from a more supple leather than a common boot, for comfort.                                                                                                                                                                                                                                                                                                                                  | 8 SP   |
+| Boots, riding       | Typically knee-high and made of sturdy leather with reinforcement in the sole and the inside of the calf to withstand the rigours of stirrup and saddle.                                                                                                                                                                                                                                                                   | 10 SP  |
+| Breeches, common    | Common, full or three-quarter length trousers in a variety of fabrics and cuts.                                                                                                                                                                                                                                                                                                                                            | 1 SP   |
+| Breeches, fancy     | As for common breeches but cut or decorated to the latest fashion.                                                                                                                                                                                                                                                                                                                                                         | 3 SP   |
+| Cape                | A sleeveless, hoodless garment worn around the shoulders. A cape usually covers just the wearer's back.                                                                                                                                                                                                                                                                                                                    | 3 SP   |
+| Coat, common        | Any standard cut of coat used for warmth and in inclement weather. May be made from a variety of fabrics but most commonly wool.                                                                                                                                                                                                                                                                                           | 2 SP   |
+| Coat, fancy         | As for previous but cut in the latest fashion.                                                                                                                                                                                                                                                                                                                                                                             | 8 SP   |
+| Coat, winter        | A woolly coat lined with fur. It is thick and warm, repelling the stiff and bitter winds of the high mountains or cold winters. Anyone wearing a winter coat can add +10% to his Survival or Resilience Skill Tests to avoid the effects of natural cold.                                                                                                                                                                  | 10 SP  |
+| Cloak, common       | Usually hooded and reaching to either the knees or ankles, a cloak is more substantial a garment than a cape. It gives protection against rain and wind.                                                                                                                                                                                                                                                                   | 2 SP   |
+| Cloak, winter       | A large fur and leather cloak with an extra flap to close around the body completely, a winter cloak is too heavy and thick to wear all the time but does a great deal to ward off the wind and snow in such conditions. Anyone wearing a winter cloak can add +10% to his Survival or Resilience Skill Tests to avoid the effects of natural cold. A winter cloak may also be used as a warm blanket/bedroll combination. | 12 SP  |
+| Dress, common       | A woman's garment, usually of ankle length.                                                                                                                                                                                                                                                                                                                                                                                | 2 SP   |
+| Dress, fancy        | As for common dress but cut and decorated to the fashion of the day.                                                                                                                                                                                                                                                                                                                                                       | 5 SP   |
+| Dress, noble        | Ceremonial or symbolic robes worn by nobles and official dignitaries when on official business.                                                                                                                                                                                                                                                                                                                            | 150 SP |
+| Gloves, common      | A pair of leather gloves, snugly fitting.                                                                                                                                                                                                                                                                                                                                                                                  | 5 CP   |
+| Gloves, fancy       | As for common gloves but with fashionable decoration and often made from silk, rather than leather.                                                                                                                                                                                                                                                                                                                        | 2 SP   |
+| Hat, brimmed        | Any broad-brimmed hat.                                                                                                                                                                                                                                                                                                                                                                                                     | 8 CP   |
+| Hood                | Used by assassins and bandits but also by vigilantes and anonymous heroes, the hood is a fabric garment, which can be pulled up over the head to protect it from bright light or adverse weather. The bottom part extends over the shoulders to shed rain.                                                                                                                                                                 | 1 SP   |
+| Loincloth           | A piece of leather worn around the waist and designed to protect modesty rather than to offer any real warmth or protection.                                                                                                                                                                                                                                                                                               | 1 CP   |
+| Robe, woollen       | Functional woollen robes often worn by priests or monks when not engaged on official or ceremonial duties.                                                                                                                                                                                                                                                                                                                 | 2 SP   |
+| Robe, religious     | As for woollen robes but decorated to give the wearer a +10% bonus to his Influence skill when dealing with any member of the faith represented by the robes.                                                                                                                                                                                                                                                              | 25 SP  |
+| Sash, common        | A length of brightly coloured fabric worn around the waist and tied, or secured with a sash clasp. Can also be used as a means for securing a weapon.                                                                                                                                                                                                                                                                      | 3 CP   |
+| Sash, fancy         | As for common sash but highly decorated or patterned and made from fine materials such as samite or silk.                                                                                                                                                                                                                                                                                                                  | 2 SP   |
+| Shirt, common       | Any thin, cotton or linen shirt or blouse, usually with long sleeves.                                                                                                                                                                                                                                                                                                                                                      | 2 CP   |
+| Shirt, fancy        | As for common but fashionably cut and decorated with ruffs, lace or other adornments.                                                                                                                                                                                                                                                                                                                                      | 2 SP   |
+| Shirt, noble        | As for common and fancy but dyed and of fine silk or muslin.                                                                                                                                                                                                                                                                                                                                                               | 75 SP  |
+| Shoes, common       | Ankle-high shoes, fastened with a strap and toggle.                                                                                                                                                                                                                                                                                                                                                                        | 2 SP   |
+| Shoes, fancy        | As for common shoes but decorated or dyed.                                                                                                                                                                                                                                                                                                                                                                                 | 6 SP   |
+| Shoes, sandals      | Open-topped footwear usually worn with ankle straps.                                                                                                                                                                                                                                                                                                                                                                       | 1 SP   |
+| Skirt/kilt          | A hard-wearing skirt or kilt usually made from pleated linen or wool.                                                                                                                                                                                                                                                                                                                                                      | 5 SP   |
+| Tabard, common      | A length of cloth with a hole or slit cut for the head and then secured at the waist with either a drawstring or belt. Traditionally peasant garb, used instead of a coat.                                                                                                                                                                                                                                                 | 7 CP   |
+| Tabard, emblazoned  | Similar in make to a common tabard but normally constructed of better quality linens and dyes, the emblazoned tabard bears a colourful and easily recognisable insignia or crest of a guild, noble house, or similar group. Wearing such a tabard automatically brings assumptions that the wearer is a member or employee of the group depicted.                                                                          | 10 SP  |
+| Toga, common        | A length of good quality cotton that is worn in a wrap and drape style. Comfortable and elegant enough for either official occasions or casual wear.                                                                                                                                                                                                                                                                       | 5 CP   |
+| Toga, fancy         | As for the common toga but decorated tastefully at the hem and in strategic places along the length of the cloth so that the pattern shows in the drapes.                                                                                                                                                                                                                                                                  | 2 SP   |
+| Toga, noble         | As for common and fancy but made from the finest linen and tastefully decorated.                                                                                                                                                                                                                                                                                                                                           | 100 SP |
+| Tunic, common       | A sleeveless jacket of sheepskin, wool or thin leather that is secured with buttons, toggles or ties.                                                                                                                                                                                                                                                                                                                      | 6 CP   |
+| Tunic, fancy        | As for common but cut and decorated in the day's fashions.                                                                                                                                                                                                                                                                                                                                                                 | 2 SP   |
 
 ## Weaponry
 
 It would be unthinkable for an Adventurer to set out into danger without the means to protect himself. For many Adventurers a sword or dagger suffices but many soldiers, skilled in a variety of weapons, know that different weapons have different applications and that a sword, whilst good against one type of foe, is completely useless against another.
 
-The assortment of weapons – Close and Ranged Combat – is extensive. Each weapon is described and the description provides any additional effects a weapon might have in a particular situation.
+The assortment of weapons — Close and Ranged Combat — is extensive. Each weapon is described and the description provides any additional effects a weapon might have in a particular situation.
 
 ### Close Combat Weapons
 
@@ -328,11 +159,11 @@ Each Close Combat weapon is characterised by the following qualities:
 
 The value is used to determine both the weapon's ability to inflict and parry damage. The size categories are Small (S), Medium (M), Large (L), Huge (H) and Enormous (E).
 
-**Reach:** The weapon's length, how far it can reach in combat (see page 139). The size categories are Touch (T), Short (S), Medium (M), Long (L) and Very Long (VL).
+**Reach:** The weapon's length, how far it can reach in combat (see Weapon Reach — Closing and Disengaging section in the Combat chapter). The size categories are Touch (T), Short (S), Medium (M), Long (L) and Very Long (VL).
 
-**Combat Manoeuvres:** The Combat Manoeuvres (see the Combat chapter) a weapon can inflict  - such as Bashing, Impale and so forth.
+**Combat Manoeuvres:** The Combat Manoeuvres (see the Combat chapter) a weapon can inflict — such as Bashing, Impale and so forth.
 
-**ENC:** The weight and bulk of the weapon. See page 86 for more details on Encumbrance and its effects on Adventurers.
+**ENC:** The weight and bulk of the weapon. See the Encumbrance section in the Game System chapter for more details on its effects on Adventurers.
 
 **AP/HP:** The Armour Points and Hit Points possessed by the weapon. When Hit Points reach 0, the weapon is broken and useless.
 
@@ -350,7 +181,7 @@ Bucklers are often used to attack with the off-hand, when the main weapon is tie
 
 **Chain:** This two metre length of chain is one step above using an improvised weapon. It is very difficult to parry, any weapon interposed against a chain is treated as one step smaller for the purpose of blocking damage. However, the wielder also suffers the same penalty when parrying with this weapon. If an opponent is caught by surprise, it can also be used as a garrotte.
 
-**Club:** Perhaps the simplest of all weapons and almost certainly the oldest, the club is simply a long, stout piece of wood used to bludgeon others. However, there are several cultures that have carved clubs made of stone, or bone – all of which can be sculpted or decorated according to the wielder's preference.
+**Club:** Perhaps the simplest of all weapons and almost certainly the oldest, the club is simply a long, stout piece of wood used to bludgeon others. However, there are several cultures that have carved clubs made of stone, or bone — all of which can be sculpted or decorated according to the wielder's preference.
 
 **Dagger:** Essentially a large knife attached to a short handle, the dagger is often carried as a backup or parrying weapon. Thieves, assassins and bandits often enjoy the use of daggers because they can be hidden and drawn with ease. Daggers are usually well-balanced enough to throw effectively.
 
@@ -358,7 +189,7 @@ Bucklers are often used to attack with the off-hand, when the main weapon is tie
 
 **Falchion:** A single edged, cleaver-like sword that delivers heavy, chopping blows.
 
-**Garrotte:** An assassin's weapon, the garrotte is a cord, chain or thin braided metal wire used to loop around a target's neck and strangle him. Only usable during a grapple or from behind on an unsuspecting victim, the garrotte inflicts its damage each and every Combat Action the wielder continues to actively crush his victim's throat. Whilst being strangled, the victim can attempt to wrestle free, or damage his opponent so badly they are forced to let go – but acts at a penalty due to the strangler being directly behind him.
+**Garrotte:** An assassin's weapon, the garrotte is a cord, chain or thin braided metal wire used to loop around a target's neck and strangle him. Only usable during a grapple or from behind on an unsuspecting victim, the garrotte inflicts its damage each and every Combat Action the wielder continues to actively crush his victim's throat. Whilst being strangled, the victim can attempt to wrestle free, or damage his opponent so badly they are forced to let go — but acts at a penalty due to the strangler being directly behind him.
 
 **Great Axe:** Up to two metres in length, dwarfing the battleaxe in size, the great axe may be either single or double-bladed and must be used with both hands. It also suffers no damage when used to break inanimate wooden objects.
 
@@ -438,7 +269,7 @@ Just as Close Combat weapons are defined by certain qualities, so are Ranged wea
 
 **Combat Manoeuvres:** Any specific Combat Manoeuvres applicable to the weapon or its ammunition.
 
-**ENC:** The weight and bulk of the weapon. See page 86 for more details on Encumbrance and its effects on Adventurers.
+**ENC:** The weight and bulk of the weapon. See the Encumbrance section in the Game System chapter for more details on its effects on Adventurers.
 
 **AP/HP:** The Armour Points and Hit Points possessed by the weapon. When Hit Points reach zero, the weapon is broken and useless.
 
@@ -450,190 +281,55 @@ Just as Close Combat weapons are defined by certain qualities, so are Ranged wea
 
 **Blowgun:** This is a hollow tube or pipe, usually made of wood or bone, which expels a tiny dart when its user blows on one end. As the dart itself is capable of negligible damage, blowguns are seldom used without some kind of poison. An Adventurer's Damage Modifier is never applied when he is using a blowgun. If fired at someone wearing more protection than normal clothing, it requires the Combat Manoeuvre of either Bypass Armour or Choose Location to strike flesh.
 
-**Bolas:** A thrown weapon comprising of two or more weights tied together with lengths of cord.
-
-Whirled and released, the bolas works by entangling its target in the cords and inflicts damage from the winding weights. Unlike other Ranged weapons, the bolas cannot be parried by shields.
-
-It may only be evaded.
+**Bolas:** A thrown weapon comprising of two or more weights tied together with lengths of cord. Whirled and released, the bolas works by entangling its target in the cords and inflicts damage from the winding weights. Unlike other Ranged weapons, the bolas cannot be parried by shields. It may only be evaded.
 
 ##### Close Combat Weapons
 
-```
-Damage
-Dice
-```
-###### STR/
+| Weapon | Damage Dice | STR/DEX | Size | Reach | Combat Manoeuvres | ENC | AP/HP | Cost |
+|---|---|---|---|---|---|---|---|---|
+| Ball & chain | 1D6+1 | 9/11 | M | M | Entangle, Stun Location | 2 | 6/8 | 250 SP |
+| Battleaxe | 1D6+1 / 1D8+1 | 11/9 / 9/9 | M | M | Bleed, Sunder (2H only) | 1 | 4/8 | 100 SP |
+| Buckler | 1D3 | –/5 | M | S | — | 1 | 6/8 | 50 SP |
+| Chain | 1D4 | 7/12 | M | M | Entangle | 1 | 8/6 | 10 SP |
+| Club | 1D6 | 7/– | M | S | Stun Location | 1 | 4/4 | 5 SP |
+| Dagger[^2] | 1D4+1 | –/– | S | S | Bleed, Impale | — | 6/8 | 30 SP |
+| Dirk | 1D3+2 | –/– | S | S | Bleed, Impale | — | 6/6 | 50 SP |
+| Falchion | 1D6+2 | 7/9 | M | M | Bleed | 1 | 6/10 | 200 SP |
+| Garrotte | 1D2 | –/9 | S | T | — | — | 1/2 | 15 SP |
+| Great axe | 1D12+2 | 13/9 | H | L | Bleed, Sunder | 2 | 4/10 | 125 SP |
+| Great club | 2D6 | 12/9 | H | L | Stun Location | 3 | 4/10 | 50 SP |
+| Great hammer | 1D10+3 | 11/9 | H | L | Stun Location, Sunder | 3 | 4/10 | 250 SP |
+| Great sword | 2D8 | 13/11 | H | L | Bleed, Impale, Sunder | 4 | 6/12 | 300 SP |
+| Halberd[^1] | 1D8+2 | 7/7 | L | VL | Entangle, Impale, Sunder | 4 | 4/10 | 250 SP |
+| Hatchet[^2] | 1D6 | –/9 | S | S | Bleed | 1 | 3/6 | 25 SP |
+| Heater shield[^3] | 1D4 | 9/– | L | S | — | 2 | 6/12 | 150 SP |
+| Hoplite shield[^3] | 1D4 | 11/– | H | S | — | 3 | 6/18 | 300 SP |
+| Kite shield[^3] | 1D4 | 13/– | H | S | — | 3 | 4/18 | 300 SP |
+| Knife[^2] | 1D3 | –/– | S | S | Bleed, Impale | — | 5/4 | 10 SP |
+| Lance[^1] | 1D10+2 | 9/9 | H | VL | Impale, Sunder | 3 | 4/10 | 150 SP |
+| Longspear[^1] | 1D10+1 | 5/5 | L | VL | Impale | 2 | 4/10 | 30 SP |
+| Longsword | 1D8 / 1D10 | 13/9 / 9/9 | M / L | L / L | Bleed, Impale, Sunder (2H only) | 2 | 6/12 | 250 SP |
+| Mace | 1D8 | 7/7 | M | S | Stun Location | 1 | 6/6 | 100 SP |
+| Main Gauche | 1D4 | –/11 | S | S | Bleed | — | 6/7 | 180 SP |
+| Military flail | 1D10 | 13/11 | L | L | Stun Location | 3 | 4/10 | 250 SP |
+| Military pick | 1D6+1 | 11/5 | M | M | Stun Location, Sunder | 3 | 6/10 | 180 SP |
+| Morning star | 2D4 | 9/9 | M | S | Stun Location | 2 | 4/10 | 150 SP |
+| Net[^2] | 1D4 | 10/11 | S | L | Entangle | 3 | 2/20 | 200 SP |
+| Poleaxe | 1D8+2 | 11/9 | L | L | Impale, Stun Location, Sunder | 2 | 6/10 | 150 SP |
+| Poniard[^2] | 1D4 | –/7 | S | S | Bleed, Impale | — | 4/5 | 60 SP |
+| Quarter staff | 1D8 | 7/7 | M | L | Stun Location | 2 | 4/8 | 20 SP |
+| Rapier | 1D8 | 7/13 | M | L | Impale | 1 | 5/8 | 100 SP |
+| Sabre | 1D6+1 | 7/7 | M | M | Bleed, Impale | 1 | 6/8 | 225 SP |
+| Scimitar | 1D8 | 7/11 | M | M | Bleed | 2 | 6/10 | 200 SP |
+| Short spear[^1][^2] | 1D8+1 | 5/5 | M | L | Impale | 2 | 4/5 | 20 SP |
+| Short sword | 1D6 | 5/7 | M | S | Bleed, Impale | 1 | 6/8 | 100 SP |
+| Target[^3] | 1D6 | 9/– | L | S | Impale | 2 | 4/12 | 150 SP |
+| Trident[^2] | 1D8 | 10/7 | M | L | Impale | 2 | 4/10 | 155 SP |
+| War sword | 1D8 | 9/7 | M | M | Bleed, Impale | 2 | 6/10 | 175 SP |
 
-```
-DEX Size Reach
-```
-```
-Combat
-Manoeuvres ENC
-```
-###### AP/
-
-```
-HP Cost
-Ball & chain 1D6+1 9/11 M M Entangle,
-Stun Location
-```
-###### 2 6/8 250 SP
-
-```
-Battleaxe 1D6+
-1D8+
-```
-###### 11/
-
-###### 9/
-
-```
-M M Bleed, Sunder
-(2H only)
-```
-###### 1 4/8 100 SP
-
-```
-Buckler 1D3 –/5 M S — 1 6/8 50 SP
-Chain 1D4 7/12 M M Entangle 1 8/6 10 SP
-Club 1D6 7/– M S Stun Location 1 4/4 5 SP
-Dagger^2 1D4+1 –/– S S Bleed, Impale — 6/8 30 SP
-Dirk 1D3+2 –/– S S Bleed, Impale — 6/6 50 SP
-Falchion 1D6+2 7/9 M M Bleed 1 6/10 200 SP
-Garrotte 1D2 –/9 S T — — 1/2 15 SP
-Great axe 1D12+2 13/9 H L Bleed, Sunder 2 4/10 125 SP
-Great club 2D6 12/9 H L Stun Location 3 4/10 50 SP
-Great
-hammer
-```
-```
-1D10+3 11/9 H L Stun
-Location,
-Sunder
-```
-###### 3 4/10 250 SP
-
-```
-Great sword 2D8 13/11 H L Bleed, Impale,
-Sunder
-```
-###### 4 6/12 300 SP
-
-```
-Halberd^1 1D8+2 7/7 L VL Entangle,
-Impale,
-Sunder
-```
-###### 4 4/10 250 SP
-
-```
-Hatchet^2 1D6 –/9 S S Bleed 1 3/6 25 SP
-Heater
-shield^3
-```
-###### 1D4 9/– L S — 2 6/12 150 SP
-
-```
-Hoplite
-shield^3
-```
-###### 1D4 11/– H S — 3 6/18 300 SP
-
-```
-Kite shield^3 1D4 13/– H S — 3 4/18 300 SP
-Knife^2 1D3 –/– S S Bleed, Impale — 5/4 10 SP
-Lance^1 1D10+2 9/9 H VL Impale,
-Sunder
-```
-###### 3 4/10 150 SP
-
-```
-Damage
-Dice
-```
-###### STR/
-
-```
-DEX Size Reach
-```
-```
-Combat
-Manoeuvres ENC
-```
-###### AP/
-
-```
-HP Cost
-Longspear^1 1D10+1 5/5 L VL Impale 2 4/10 30 SP
-Longsword 1D
-1D
-```
-###### 13/
-
-###### 9/
-
-###### M
-
-###### L
-
-###### L
-
-###### L
-
-```
-Bleed, Impale,
-Sunder (2H
-only)
-```
-###### 2 6/12 250 SP
-
-```
-Mace 1D8 7/7 M S Stun Location 1 6/6 100 SP
-Main
-Gauche
-```
-```
-1D4 –/11 S S Bleed — 6/7 180 SP
-```
-```
-Military flail 1D10 13/11 L L Stun Location 3 4/10 250 SP
-Military pick 1D6+1 11/5 M M Stun
-Location,
-Sunder
-```
-###### 3 6/10 180 SP
-
-```
-Morning star 2D4 9/9 M S Stun Location 2 4/10 150 SP
-Net^2 1D4 10/11 S L Entangle 3 2/20 200 SP
-Poleaxe 1D8+2 11/9 L L Impale, Stun
-Location,
-Sunder
-```
-###### 2 6/10 150 SP
-
-```
-Poniard^2 1D4 –/7 S S Bleed, Impale — 4/5 60 SP
-Quarter staff 1D8 7/7 M L Stun Location 2 4/8 20 SP
-Rapier 1D8 7/13 M L Impale 1 5/8 100 SP
-Sabre 1D6+1 7/7 M M Bleed, Impale 1 6/8 225 SP
-Scimitar 1D8 7/11 M M Bleed 2 6/10 200 SP
-Short spear1,
-2
-```
-```
-1D8+1 5/5 M L Impale 2 4/5 20 SP
-```
-```
-Short sword 1D6 5/7 M S Bleed, Impale 1 6/8 100 SP
-Target^3 1D6 9/– L S Impale 2 4/12 150 SP
-Trident^2 1D8 10/7 M L Impale 2 4/10 155 SP
-War sword 1D8 9/7 M M Bleed, Impale 2 6/10 175 SP
-```
-(^1) This weapon may be set against a charge.
-(^2) This weapon suffers no penalty when thrown.
-(^3) This weapon may Parry Ranged weapons.
+[^1]: This weapon may be set against a charge.
+[^2]: This weapon suffers no penalty when thrown.
+[^3]: This weapon may Parry Ranged weapons.
 
 **Dart:** A dart resembles an arrow with a longer head and shorter shaft (usually slightly less than half a metre in length). Darts are rarely a warrior's weapon and are found in the hands of small game huntsmen and roguish Adventurers.
 
@@ -661,104 +357,26 @@ War sword 1D8 9/7 M M Bleed, Impale 2 6/10 175 SP
 
 ##### Ranged Weapons
 
-```
-WeaponDamage
-```
-```
-Damage
-ModifierRange Load
-```
-###### STR/
+| Weapon | Damage | Damage Modifier | Range | Load | STR/DEX | SIZ | Combat Manoeuvres | ENC | AP/HP | Cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Arbalest | 1D12 | N | 180m | 4 | 10/9 | E | Impale, Sunder | 3 | 6/10 | 500 SP |
+| Blowgun | — | N | 15m | 1 | –/9 | — | Impale | — | 1/4 | 30 SP |
+| Bolas | 1D4 | Y | 15m | — | –/9 | — | Entangle | — | 2/2 | 10 SP |
+| Dagger | 1D4 | Y | 10m | — | –/9 | S | Impale | — | 4/6 | 30 SP |
+| Dart | 1D4 | Y | 20m | — | –/9 | S | Impale | — | 2/1 | 10 SP |
+| Discus | 1D4+1 | Y | 50m | — | –/9 | L | Stun Location | — | 2/3 | 30 SP |
+| Hatchet | 1D6 | Y | 10m | — | 7/11 | S | Bleed | 1 | 03/06/11 | 25 SP |
+| Heavy crossbow | 1D10 | N | 150m | 3 | 7/9 | H | Impale, Sunder | 2 | 4/8 | 350 SP |
+| Javelin | 1D8 | Y | 30m | — | 5/9 | H | Impale, Pin Weapon (Shield) | 1 | 3/8 | 20 SP |
+| Light crossbow | 1D8 | N | 100m | 2 | 5/9 | L | Impale | 1 | 4/5 | 150 SP |
+| Long bow | 1D8 | Y | 175m | 1 | 13/11 | H | Impale | 1 | 4/7 | 200 SP |
+| Net | — | N | 2.5m | — | 10/11 | — | Entangle | 3 | 2/20 | 200 SP |
+| Recurve bow | 1D8 | Y | 175m | 1 | 13/11 | H | Impale | 1 | 4/8 | 225 SP |
+| Short bow | 1D6 | Y | 80m | 1 | 9/11 | L | Impale | 1 | 4/4 | 75 SP |
+| Sling | 1D8 | Y | 200m | 1 | –/11 | L | Stun Location | — | 1/2 | 5 SP |
+| Staff sling | 2D6 | Y | 100m | 3 | –/11 | H | Stun Location | 2 | 3/6 | 20 SP |
+| Trident | 1D8 | Y | 10m | — | 10/7 | L | Impale | 2 | 4/10 | 155 SP |
 
-###### DEX SIZ
-
-```
-Combat
-ManoeuvresENCAP/ HP Cost
-Arbalest 1D12 N 180m 4 10/9 E Impale,
-Sunder
-```
-###### 3 6/10 500
-
-###### SP
-
-```
-Blowgun — N 15m 1 –/9 — Impale — 1/4 30 SP
-Bolas 1D4 Y 15m — –/9 — Entangle — 2/2 10 SP
-Dagger 1D4 Y 10m — –/9 S Impale — 4/6 30 SP
-Dart 1D4 Y 20m — –/9 S Impale — 2/1 10 SP
-Discus 1D4+1 Y 50m — –/9 L Stun
-Location
-```
-###### — 2/3 30 SP
-
-```
-Hatchet 1D6 Y 10m — 7/11 S Bleed 1 03/06/1125 SP
-Heavy
-crossbow
-```
-```
-1D10 N 150m 3 7/9 H Impale,
-Sunder
-```
-###### 2 4/8 350
-
-###### SP
-
-```
-Javelin 1D8 Y 30m — 5/9 H Impale, Pin
-Weapon
-(Shield)
-```
-###### 1 3/8 20 SP
-
-```
-Light
-crossbow
-```
-```
-1D8 N 100m 2 5/9 L Impale 1 4/5 150
-SP
-Long
-bow
-```
-```
-1D8 Y 175m 1 13/11H Impale 1 4/7 200
-SP
-Net — N 2.5m — 10/11— Entangle 3 2/20 200
-SP
-Recurve
-bow
-```
-```
-1D8 Y 175m 1 13/11H Impale 1 4/8 225
-SP
-Short
-bow
-```
-```
-1D6 Y 80m 1 9/11 L Impale 1 4/4 75 SP
-```
-```
-Sling 1D8 Y 200m 1 –/11 L Stun
-Location
-```
-###### — 1/2 5 SP
-
-```
-Staff
-sling
-```
-```
-2D6 Y 100m 3 –/11 H Stun
-Location
-```
-###### 2 3/6 20 SP
-
-```
-Trident 1D8 Y 10m — 10/7 L Impale 2 4/10 155
-SP
-```
 #### Ranged Weapon Ammunition
 
 The following table lists specific types of ammunition, how sturdy they might be, whether they weigh enough to have an ENC score and their cost. Please note that unless an entry has a (#) after its name, the price listed is for a single item.
@@ -773,31 +391,35 @@ The following table lists specific types of ammunition, how sturdy they might be
 
 **Arrow, Signal:** Not made for combat at all, signal arrows have a hollow head bored out in the same fashion as a shrilling whistle. When fired (preferably upward into the air) the arrow corkscrews and emits a distinct and piercing wail that can be heard on a clear day for up to five kilometres. If actually fired at a target, the arrow has a –20% penalty to hit and will cause half damage if successful.
 
-**Blowgun Darts:** Blowgun darts are small, thin needles or stubby miniature arrowheads that often have a tuft of down or cotton at the end in order to catch the rush of air in a blowgun. They are not designed to do damage but can deliver a single dose of poison to a target quite easily – if the firer can manage to bypass his armour, of course.
+**Blowgun Darts:** Blowgun darts are small, thin needles or stubby miniature arrowheads that often have a tuft of down or cotton at the end in order to catch the rush of air in a blowgun. They are not designed to do damage but can deliver a single dose of poison to a target quite easily — if the firer can manage to bypass his armour, of course.
 
-**Crossbow Bolts:** Simple and stout, bolts are miniature arrows with smaller fletching designed to carry the bolt on existing force rather than keep it aloft. They tend to have thinner, more compact heads of metal on them to drive deeper with the impact but some have the wider hunting heads commonly seen on arrows. Bolts tend to be thicker than arrows and are purchased to fit a specific type of crossbow – wrist, light, medium or heavy.
+**Crossbow Bolts:** Simple and stout, bolts are miniature arrows with smaller fletching designed to carry the bolt on existing force rather than keep it aloft. They tend to have thinner, more compact heads of metal on them to drive deeper with the impact but some have the wider hunting heads commonly seen on arrows. Bolts tend to be thicker than arrows and are purchased to fit a specific type of crossbow — wrist, light, medium or heavy.
 
 **Sling Bullets:** Stone or lead ovals that can reach surprising speeds and accuracy when hurled by a skilled user. Bullets can be retrieved rather easily and most can even be hammered or rolled back into a usable shape with little effort (as lead becomes soft when heated slightly).
 
 ##### Ranged Weapon Ammunition
 
-```
-Ammunition AP/HP ENC Cost
-Arbalest bolts (10) 1/2 1 5 SP
-Arrow, bodkin (10) 1/1 — 1 SP
-Arrow, broadhead (10) 1/1 — 2 SP
-Arrow, fishing 1/2 — 2 CP
-Arrow, signal 1/1 — 3 CP
-Arrow, wood-headed 1/1 — 2 CP
-Blowgun darts (10) 1/1 — 2 SP
-Crossbow bolts (10) 1/1 — 2 SP
-Sling bullets (10) 1/1 — 5 CP
-```
+| Ammunition              | AP/HP | ENC | Cost |
+|-------------------------|--------|-----|------|
+| Arbalest bolts (10)     | 1/2    | 1   | 5 SP |
+| Arrow, bodkin (10)      | 1/1    | —   | 1 SP |
+| Arrow, broadhead (10)   | 1/1    | —   | 2 SP |
+| Arrow, fishing          | 1/2    | —   | 2 CP |
+| Arrow, signal           | 1/1    | —   | 3 CP |
+| Arrow, wood-headed      | 1/1    | —   | 2 CP |
+| Blowgun darts (10)      | 1/1    | —   | 2 SP |
+| Crossbow bolts (10)     | 1/1    | —   | 2 SP |
+| Sling bullets (10)      | 1/1    | —   | 5 CP |
+
 #### Using Ranged Weapons in Close Combat
 
 Just as Close Combat weapons are not designed to be thrown, so most Ranged weapons are not generally designed to be used in Close Combat. Sometimes, however, Adventurers will be left with no option but to club someone with a crossbow butt or stab an enemy with an arrow...
 
 If used in Close Combat, a projectile weapon or its ammunition is usually treated as an improvised weapon. Use the most applicable combat skill the Adventurer has but apply a –2 modifier to any damage rolled, reflecting the inappropriate use of the weapon.
+
+<mark>
+Review formatting from this point forward (p.111 of Legend PDF)
+</mark>
 
 ## Food and Lodging
 
@@ -819,7 +441,7 @@ Trail rations, 1 day 5 CP
 
 The following items, whilst billed as general, cover a range of specifics as well as day-to-day adventuring needs. Some are more useful than others but resourceful Adventurers will be able to find a use for just about any of the items listed in the following General Items table.
 
-Each item has a description noting any specifics or game effects. The Cultures column notes which Cultural Backgrounds are _most likely_ to have access to the item – although this is offered as a guideline only. If an item has no ENC value, it is light enough to be negligible when carried.
+Each item has a description noting any specifics or game effects. The Cultures column notes which Cultural Backgrounds are _most likely_ to have access to the item — although this is offered as a guideline only. If an item has no ENC value, it is light enough to be negligible when carried.
 
 ##### General Items
 
@@ -849,7 +471,7 @@ snare/trap
 Using a coiled spring or a weight and pulley, the
 animal snare/trap is designed to snatch small game
 animals like hares or pheasant with remarkable
-force – possibly killing the animal with the rapidly
+force — possibly killing the animal with the rapidly
 yanking noose.
 ```
 ```
@@ -960,7 +582,7 @@ Craft tools This is a small satchel containing portable tools
 appropriate to a particular craft. These tools are
 the bare minimum required to practise the craft
 without a skill penalty. A set of craft tools is useful
-for only one craft – an Adventurer must buy more
+for only one craft — an Adventurer must buy more
 sets of tools for any additional crafts.
 
 ```
@@ -1296,7 +918,7 @@ and ignited, enough to sustain a small fire for
 one minute. Oil is packaged in small pottery or
 glass bottles but can also occasionally be found
 in waxed leather skins. A skin cannot be 'broken'
-as mentioned previously – either on purpose or
+as mentioned previously — either on purpose or
 accidentally.
 
 ```
@@ -1391,7 +1013,7 @@ The mainstay of any barber's tools, the folding
 razor is the best implement to painstakingly
 remove three day old stubble. Useful for a variety
 of reasons, the razor can also be used to inflict
-rather nasty wounds on bare flesh – inflicting 1D3
+rather nasty wounds on bare flesh — inflicting 1D3
 damage upon scoring a hit on an unarmoured Hit
 Location. Armour of any kind stops this damage
 completely and dulls the blade considerably. Apart
@@ -1435,7 +1057,7 @@ perfect for ripping through wood, which is
 attached to a leather-wrapped handle. With
 enough strokes back and forth, the hand saw can
 cut through wood at a rate of 1D4 Hit Points per
-round – ignoring AP from the wooden object.
+round — ignoring AP from the wooden object.
 If used as a makeshift weapon it can be used as a
 crude short sword (with a –15% penalty) but will
 likely never be usable as a saw again.
@@ -1535,7 +1157,7 @@ be lit with flint and tinder in one round and will
 burn for one hour. A torch illuminates a three
 metre radius. If used as a weapon, it is considered
 a club (wielded with a –10% penalty), except that
-it does not inflict normal damage – instead, it
+it does not inflict normal damage — instead, it
 inflicts 1D4 fire damage and a fumble or critical
 hit will also extinguish the brand.
 ```
@@ -1739,7 +1361,7 @@ A specialised saddle designed for beasts with wings like
 griffons and sky bulls, this is a must for aerial cavalry. The
 flight saddle has additional thigh stirrups that keep a rider
 tethered to the animal as it flies. The straps are difficult to
-unlatch when in motion – requiring a Mechanisms roll at
+unlatch when in motion — requiring a Mechanisms roll at
 +10% to do so in combat.
 ```
 ###### 3 100 SP

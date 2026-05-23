@@ -8,12 +8,12 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 
 | Capítulo                      | Págs. | Trad. |   %   |
 |-------------------------------|:-----:|:-----:|------:|
-| 1 Bem-vindo à Lendas          |   2   |   2   | 100,0 |
+| 1 Bem-vindo à Lendas          |   3   |   3   | 100,0 |
 | 2 Criação de Aventureiro      |  33   |  10   |  30,3 |
 | 3 Skills                      |  28   |   0   |   0   |
 | 4 Game System                 |  28   |   0   |   0   |
-| 5 Equipment                   |  27   |   0   |   0   |
-| 6 Combat                      |  32   |   0   |   0   |
+| 5 Equipment                   |  29   |   0   |   0   |
+| 6 Combat                      |  30   |   0   |   0   |
 | 7 Magic                       |   3   |   0   |   0   |
 | 8 Common Magic                |  15   |   0   |   0   |
 | 9 Divine Magic                |  19   |   0   |   0   |
@@ -22,4 +22,4 @@ Esse é o projeto de tradução do [Legend Core Rulebook](https://www.mongoosepu
 | 12 Heroic Ablities            |   7   |   0   |   0   |
 | 13 Gamemastering Legend       |  14   |   0   |   0   |
 | 14 Licença                    |   2   |   2   | 100,0 |
-| TOTAL                         | 238   |  14   |   5,9 |
+| TOTAL                         | 239   |  15   |   6,3 |
