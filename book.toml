@@ -9,6 +9,7 @@ default-theme = "rust"
 preferred-dark-theme = "rust"
 mathjax-support = true
 fold = { enable = true, level = 0 }
+additional-css = ["custom.css"]
 git-repository-url = "https://github.com/nerun/legend-srd"
 
 [build]

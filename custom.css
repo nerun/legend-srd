@@ -1,0 +1,31 @@
+/* REDUZ UM POUCO O ESPAÇAMENTO VERTICAL DOS TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 3rem;
+}
+
+/* Insere LOGO na sidebar antes de tudo */
+.sidebar-scrollbox::before {
+    content: "";
+    display: block;
+    background: url("Legend Compatible Logo.png") no-repeat center;
+    background-size: contain;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/* ARRUMA TABELAS */
+table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+table th,
+table td {
+    padding: 2px 6px;
+    white-space: normal;
+}
+
+table td:not(:first-child) {
+    text-align: center;
+}
